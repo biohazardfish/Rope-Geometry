@@ -1,0 +1,18 @@
+
+> rope-geometry-poc@1.0.0 report:phase4b
+> node scripts/report-phase4b.js
+
+{
+  "inventoryValid": true,
+  "completeMaterialPath": false,
+  "referenceStatus": "INCOMPLETE",
+  "components": 9,
+  "openPorts": 14,
+  "outcomeCounts": {
+    "PARTIALLY_RESOLVED": 6,
+    "UNRESOLVED": 5,
+    "CORRECTED": 1
+  },
+  "sourceAssetsChecked": 90,
+  "preservedFiles": 30
+}

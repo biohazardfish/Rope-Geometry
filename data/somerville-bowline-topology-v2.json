@@ -1,0 +1,1702 @@
+{
+  "schemaVersion": 2,
+  "id": "somerville-phase4b",
+  "revisionOf": "data/somerville-bowline-topology.json",
+  "units": "ordinal-material-order; drawing pixels only",
+  "ropeDiameterMetres": 0.01,
+  "target": {
+    "handedness": "right-handed",
+    "wrapCount": 2,
+    "slipped": false,
+    "columnCount": 1,
+    "video": "references/video/01-TheDuchy-RightHanded.mp4",
+    "acceptedIntervalSeconds": [
+      8,
+      149
+    ],
+    "endExclusive": true,
+    "note": "149 s shows Slipped title. Later content is excluded; filename does not delimit a variant."
+  },
+  "sources": [
+    {
+      "id": "original",
+      "url": "https://crash-restraint.com/blog/2010/04/27/the-somerville-bowline",
+      "author": "Topologist",
+      "published": "2010-04-27",
+      "colorMeaning": "Gray working bight vs orange long side; not two target ropes or an extra splice node.",
+      "sequence": [
+        "wrap cuff",
+        "working bundle around long bundle",
+        "transfer loop to long bundle",
+        "working end over X",
+        "beneath cuff",
+        "return through loop",
+        "dress"
+      ],
+      "crossingTransferAllowed": false
+    },
+    {
+      "id": "duchy",
+      "url": "https://www.theduchy.com/courses/foundations-1/topics/somerville-bowline",
+      "sequence": [
+        "doubled bight wraps cuff",
+        "bight over cuff",
+        "long-side bundle loop",
+        "bight beneath cuff and through loop",
+        "dress"
+      ],
+      "untying": [
+        "open loop",
+        "withdraw bight from loop",
+        "withdraw from beneath cuff",
+        "unwind"
+      ],
+      "crossingTransferAllowed": false
+    },
+    {
+      "id": "topologist-video",
+      "file": "references/video/02-Topologist-SingleColumn.mp4",
+      "sourceIdentification": "On-screen crash-restraint.com/ties/66; remote-file identity not asserted.",
+      "sequence": [
+        "wraps",
+        "long-side loop around working bight",
+        "beneath cuff and return",
+        "dress",
+        "release demonstration"
+      ],
+      "crossingTransferAllowed": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "100427-D0018",
+      "source": "original",
+      "locator": "100427-D0018",
+      "asset": "references/phase4b/100427-D0018.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0018.jpg",
+      "sha256": "ceb466946f0a7d7304024f06bbe53abe65adaa948e565a9b86a3c316784853bc"
+    },
+    {
+      "id": "100427-D0019",
+      "source": "original",
+      "locator": "100427-D0019",
+      "asset": "references/phase4b/100427-D0019.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0019.jpg",
+      "sha256": "027275a8fefcec7901fd006b0501cef91fa3c2fdaf44ac036e3e4aa002bd6ae4"
+    },
+    {
+      "id": "100427-D0020",
+      "source": "original",
+      "locator": "100427-D0020",
+      "asset": "references/phase4b/100427-D0020.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0020.jpg",
+      "sha256": "d8f556a57b37fdc0e6e97f18e3d13dbf4eb89e68201a2c1a22bc64c2b52ca183"
+    },
+    {
+      "id": "100427-D0021",
+      "source": "original",
+      "locator": "100427-D0021",
+      "asset": "references/phase4b/100427-D0021.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0021.jpg",
+      "sha256": "226a71a3f5f65cae7e490af7f72296a495b35196a5b022a8b8a1bcd7ee933c4b"
+    },
+    {
+      "id": "100427-D0023",
+      "source": "original",
+      "locator": "100427-D0023",
+      "asset": "references/phase4b/100427-D0023.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0023.jpg",
+      "sha256": "9840d94ed1d62974a1c96a67ff21bbbfdf38b0577bd0746ecb59a8fe003b695b"
+    },
+    {
+      "id": "100427-D0024",
+      "source": "original",
+      "locator": "100427-D0024",
+      "asset": "references/phase4b/100427-D0024.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0024.jpg",
+      "sha256": "c63c1fec4342e519bf5ec95e604839bd2f39c5350be2ad022862dd777c205ae0"
+    },
+    {
+      "id": "100427-D0025",
+      "source": "original",
+      "locator": "100427-D0025",
+      "asset": "references/phase4b/100427-D0025.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0025.jpg",
+      "sha256": "7188b0864075bdb85f9a0367b32486c64611288d7cb8f014853ba16eb5638e9b"
+    },
+    {
+      "id": "100427-D0026",
+      "source": "original",
+      "locator": "100427-D0026",
+      "asset": "references/phase4b/100427-D0026.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0026.jpg",
+      "sha256": "487a106c295250f68f2ed09fcd20025e34168f12077d2c0bda569f4472ea382a"
+    },
+    {
+      "id": "100427-D0027",
+      "source": "original",
+      "locator": "100427-D0027",
+      "asset": "references/phase4b/100427-D0027.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0027.jpg",
+      "sha256": "2063b05bf96fc05089b8939ae43db4b9e247e5b3d86e1e8038d41d0d215d9992"
+    },
+    {
+      "id": "100427-D0028",
+      "source": "original",
+      "locator": "100427-D0028",
+      "asset": "references/phase4b/100427-D0028.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0028.jpg",
+      "sha256": "3dc3ee09e7741d70eb8c02047f2a6822ab60b813e4e6b85b46223791a5f1eff1"
+    },
+    {
+      "id": "100427-D0029",
+      "source": "original",
+      "locator": "100427-D0029",
+      "asset": "references/phase4b/100427-D0029.jpg",
+      "url": "https://crash-restraint.com/blog/files/100427-D0029.jpg",
+      "sha256": "0b8998a18332bbf921b9296ff09a7b1937ddfe5b575ccf42bba16d6ba61d1bcd"
+    },
+    {
+      "id": "duchy-detail-1",
+      "source": "duchy",
+      "locator": "Somerville Bowline -1",
+      "asset": "references/phase4b/duchy-detail-1.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/3bdca9ec9521483babc6d0c26394f81183910417-1500x1500.jpg",
+      "sha256": "7592270aaf7ec9ca7db18a4d5e00294cfaee3c78dd65903abb9a1060690e5128"
+    },
+    {
+      "id": "duchy-detail-2",
+      "source": "duchy",
+      "locator": "Somerville Bowline -2",
+      "asset": "references/phase4b/duchy-detail-2.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/cc09378af992a01e0f0d630fcd460964f519c5bd-1500x1500.jpg",
+      "sha256": "6f07d7ef0976b63456c272fa5d21ef054fb348010aff68f2cbb9a2ffcef60b4b"
+    },
+    {
+      "id": "duchy-detail-3",
+      "source": "duchy",
+      "locator": "Somerville Bowline -3",
+      "asset": "references/phase4b/duchy-detail-3.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/0c00d307c18002a5ee1f8bdc568238c39ce3f357-1500x1500.jpg",
+      "sha256": "c99a3d5f89f659c95d103e48310d5ebb71bca52e715e5631bcf7648368b31edc"
+    },
+    {
+      "id": "duchy-detail-4",
+      "source": "duchy",
+      "locator": "Somerville Bowline -4",
+      "asset": "references/phase4b/duchy-detail-4.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/bda045239bfbe07292cc6aca8236902a135c7949-1500x1500.jpg",
+      "sha256": "524e97ef79edfb695b077a2e02051e7bae7a84b0050d63f503038c303ead6f1e"
+    },
+    {
+      "id": "duchy-detail-5",
+      "source": "duchy",
+      "locator": "Somerville Bowline -5",
+      "asset": "references/phase4b/duchy-detail-5.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/4fa5c94dfeb915eb0fd8127b2dc1d32294b7969a-1500x1500.jpg",
+      "sha256": "658ba6f3488df22b6b5b5bc74379429498c0b14eb69d4907b87071a1f34a2d8d"
+    },
+    {
+      "id": "duchy-detail-6",
+      "source": "duchy",
+      "locator": "Somerville Bowline -6",
+      "asset": "references/phase4b/duchy-detail-6.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/6c74fa34330ee3d398ce2ac5ff84b6a65f6a1050-1500x1500.jpg",
+      "sha256": "525885eecb80695bd5974e96f5de4c618a1ca579111d8658686a463f23680561"
+    },
+    {
+      "id": "duchy-detail-7",
+      "source": "duchy",
+      "locator": "Somerville Bowline -7",
+      "asset": "references/phase4b/duchy-detail-7.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/4d3e92de8217ac5a1f5cbcf2c31848decae0c9bf-1500x1500.jpg",
+      "sha256": "c0b5200feb1ac9579ae745a4c4b310c33c04eef62f37821035f2c4316632e6ad"
+    },
+    {
+      "id": "duchy-detail-8",
+      "source": "duchy",
+      "locator": "Somerville Bowline -8",
+      "asset": "references/phase4b/duchy-detail-8.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/8f0d441ea9b913255ae69eb211d0585c08c3e02b-1500x1500.jpg",
+      "sha256": "4245ea1183fbd1281948b9e5849fb09e6823d5873038d81915a5f04ec2f14e91"
+    },
+    {
+      "id": "duchy-detail-9",
+      "source": "duchy",
+      "locator": "Somerville Bowline -9",
+      "asset": "references/phase4b/duchy-detail-9.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/659f6feda3b9373fd6010b65add2fca49d698abf-1500x1500.jpg",
+      "sha256": "df620b2bd89cc925b6c492505e23a549d377257cd1a3e6f9bb381198b50fc792"
+    },
+    {
+      "id": "duchy-detail-10",
+      "source": "duchy",
+      "locator": "Somerville Bowline -10",
+      "asset": "references/phase4b/duchy-detail-10.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/534b21d1f890cea1df69cd6f44e88958ab64b771-1500x1500.jpg",
+      "sha256": "3708c50ab475ba9897ca9d7b0c3004ea097e1231c8634ce5f80f904908d797e8"
+    },
+    {
+      "id": "duchy-detail-11",
+      "source": "duchy",
+      "locator": "Somerville Bowline -11",
+      "asset": "references/phase4b/duchy-detail-11.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/ae9209bc19a9fd772bd905742ff02d7983f45bc3-1500x1500.jpg",
+      "sha256": "d30b6d3c4db8e97e8c3c798de922ddf8e70d44d0634945dcca15adc20ca92a59"
+    },
+    {
+      "id": "duchy-detail-12",
+      "source": "duchy",
+      "locator": "Somerville Bowline -12",
+      "asset": "references/phase4b/duchy-detail-12.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/3cb97361f638b3d6f21832068dfa79b4873ca552-1500x1500.jpg",
+      "sha256": "c2f5f66c31fde18bcc197560bb47d805147a6b8cda6036c609612f17fcb0af98"
+    },
+    {
+      "id": "duchy-detail-13",
+      "source": "duchy",
+      "locator": "Somerville Bowline -13",
+      "asset": "references/phase4b/duchy-detail-13.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/3f88e2a6e8205391705fd26169b618576b1438d8-1500x1500.jpg",
+      "sha256": "5e9821cf236e91102454acf58ce5955479d6b7230c992a11e31a1616ba4d3bca"
+    },
+    {
+      "id": "duchy-detail-14",
+      "source": "duchy",
+      "locator": "Somerville Bowline -14",
+      "asset": "references/phase4b/duchy-detail-14.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/b2b328dd8efaad2e1ff71f9e7a7f81460d910e29-1500x1500.jpg",
+      "sha256": "8cc595cc46de7dfc1fd462505cdeab3deb958349498d33906fc0707743874cca"
+    },
+    {
+      "id": "duchy-detail-15",
+      "source": "duchy",
+      "locator": "Somerville Bowline -15",
+      "asset": "references/phase4b/duchy-detail-15.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/3c14eaa1d21d165fdb2793bbc94088c7361ba49b-1500x1500.jpg",
+      "sha256": "e3607c4efe4b5cc24fd7147ec99a2c359d87f596d1fbf89145e0f243c96122ec"
+    },
+    {
+      "id": "duchy-detail-16",
+      "source": "duchy",
+      "locator": "Somerville Bowline -16",
+      "asset": "references/phase4b/duchy-detail-16.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/ef3bf317ad6e8769852dc08cdb1dc55dc02ae91b-1500x1500.jpg",
+      "sha256": "f06b8ed6ae0f4548d39b16969eed3d7822326a7a0b6ae1a8bf79fdb6732e0e33"
+    },
+    {
+      "id": "duchy-detail-17",
+      "source": "duchy",
+      "locator": "Somerville Bowline -17",
+      "asset": "references/phase4b/duchy-detail-17.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/1eb4467867ce4910fe46c25eec57540d81205330-1500x1500.jpg",
+      "sha256": "3eb1d8c1cff5d5eb24792438f0b567fab112aceb41c23e26e0344076954603b3"
+    },
+    {
+      "id": "duchy-detail-18",
+      "source": "duchy",
+      "locator": "Somerville Bowline -18",
+      "asset": "references/phase4b/duchy-detail-18.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/6f52327a7baa995c05bc9d7daad6902ac5141827-1500x1500.jpg",
+      "sha256": "33e2b2422ad58c8ae7b4b3a1bbbb385bdc9abf7e8dbd7aabf6baf58953c3bceb"
+    },
+    {
+      "id": "duchy-detail-19",
+      "source": "duchy",
+      "locator": "Somerville Bowline -19",
+      "asset": "references/phase4b/duchy-detail-19.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/1ac3b80eb33965aa0b772ff6298bf2a73184f635-1500x1500.jpg",
+      "sha256": "db9ba46cb135604106c8d082a9845959add7d13a3a6ad0b51beb915b2dcda103"
+    },
+    {
+      "id": "duchy-detail-20",
+      "source": "duchy",
+      "locator": "Somerville Bowline -20",
+      "asset": "references/phase4b/duchy-detail-20.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/98c39c695924861cc216b1b29870d6fd04153b48-1500x1500.jpg",
+      "sha256": "db7fb7a8f88a12464c15b7d9d19f99694831dab70584537825c58eecca5b6052"
+    },
+    {
+      "id": "duchy-detail-21",
+      "source": "duchy",
+      "locator": "Somerville Bowline -23",
+      "asset": "references/phase4b/duchy-detail-21.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/2e8bdd6ef1f1043ea770484202e3dfb162524f31-1500x1500.jpg",
+      "sha256": "51c5afebb4b5e386bf8efb261ec0d49f3a2f5220c918a5906a0bdaade864e770"
+    },
+    {
+      "id": "duchy-detail-22",
+      "source": "duchy",
+      "locator": "Somerville Bowline -24",
+      "asset": "references/phase4b/duchy-detail-22.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/c56a7591cd90d1789b56585c046c81f9c824b75f-1500x1500.jpg",
+      "sha256": "1c170e6ac33fcda7cf7dfa20df2e5dc1b520441afcd8581b17409774ebe364da"
+    },
+    {
+      "id": "duchy-detail-23",
+      "source": "duchy",
+      "locator": "Somerville Bowline -21",
+      "asset": "references/phase4b/duchy-detail-23.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/7114d7c82716b46636afb45fbebf5a8c1663e02d-1500x1500.jpg",
+      "sha256": "86c0b1fb2b37e14f95c334387a6125d68851260c30904b0fcd47b14f11f90f47"
+    },
+    {
+      "id": "duchy-detail-24",
+      "source": "duchy",
+      "locator": "Somerville Bowline -22",
+      "asset": "references/phase4b/duchy-detail-24.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/e45dfeb34acab0067e03960b5aa3ab83caf796cb-1500x1500.jpg",
+      "sha256": "009a3c6940a271556b5503a64ba640832877453b9283bea0b652c39cd126b3fa"
+    },
+    {
+      "id": "duchy-untie-1",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Untying-1",
+      "asset": "references/phase4b/duchy-untie-1.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/6e3da3e49e1f1e0103f0c4a05726d127a43681e7-1500x1500.jpg",
+      "sha256": "685da1fac5895105252b39bbab6dcd6f3a51b3a13610c8df39026796086a7ca4"
+    },
+    {
+      "id": "duchy-detail-26",
+      "source": "duchy",
+      "locator": "Somerville Bowline -25",
+      "asset": "references/phase4b/duchy-detail-26.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/5afc520fefa3fee9d386de120240cea44a18738b-1500x1500.jpg",
+      "sha256": "3a199b3f0f73587c755fba300c507cba56b87d8630e60754b6a22878b798b5a3"
+    },
+    {
+      "id": "duchy-untie-2",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Untying-2",
+      "asset": "references/phase4b/duchy-untie-2.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/42f272b30a773ed08444236e9ad743f996434f1c-1500x1500.jpg",
+      "sha256": "39d2fa6f155ed87e50012f9c331866e86fd222b4da05f3ed3b50390b148116b6"
+    },
+    {
+      "id": "duchy-untie-3",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Untying-3",
+      "asset": "references/phase4b/duchy-untie-3.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/655175283618f132dab0963585db25048dea9445-1500x1500.jpg",
+      "sha256": "5744e42ae2054dd3d0366ac2fe97b308a9779109851732003b49784a44f7dc17"
+    },
+    {
+      "id": "duchy-untie-4",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Untying-4",
+      "asset": "references/phase4b/duchy-untie-4.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/208f32e54e7f48dd92ed7f2de8e970290957bce8-1500x1500.jpg",
+      "sha256": "409a1722a7c421b7566cb47ff895cac3fcf01719d3da38947580be78f392dd94"
+    },
+    {
+      "id": "duchy-untie-5",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Untying-5",
+      "asset": "references/phase4b/duchy-untie-5.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/cd3fe97eebda923e2b3e56dc85ada8c18b5dbd67-1500x1500.jpg",
+      "sha256": "107b36a73f6965b8e61291874f39dbba2ecfe4e5d3070f5a13fd71479493acf1"
+    },
+    {
+      "id": "duchy-untie-6",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Untying-6",
+      "asset": "references/phase4b/duchy-untie-6.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/94fc8011edb985d756eac6bde35f8b2293909ecd-1500x1500.jpg",
+      "sha256": "c5012fb67e1fc5d5f9d8191e4995192b21e769e002ebd376379f1e9abfd79d04"
+    },
+    {
+      "id": "duchy-untie-7",
+      "source": "duchy",
+      "locator": "Somerville Bowline - Slipped-13",
+      "asset": "references/phase4b/duchy-untie-7.jpg",
+      "url": "https://cdn.sanity.io/images/vedbawa9/production/bb3983be4d186e7c211a374fcc4a5855ab1343d9-1500x1500.jpg",
+      "sha256": "2b015e5ebbc8ff480b5b612dab96a7e8269b8e83672ada813a2c4435ba33f922"
+    },
+    {
+      "id": "duchy-t22",
+      "source": "duchy",
+      "locator": "22 seconds",
+      "timeSeconds": 22,
+      "asset": "references/phase4b/duchy-wrap-22.jpg",
+      "sha256": "c243c3df75a2a60fae624b4bd54530cfd13ab278ef57a9f852948221036540ac"
+    },
+    {
+      "id": "duchy-t24",
+      "source": "duchy",
+      "locator": "24 seconds",
+      "timeSeconds": 24,
+      "asset": "references/phase4b/duchy-wrap-24.jpg",
+      "sha256": "ac016a66531ab3347aefb69baf958faaa5d94384284498cbe158c2aa802b6705"
+    },
+    {
+      "id": "duchy-t26",
+      "source": "duchy",
+      "locator": "26 seconds",
+      "timeSeconds": 26,
+      "asset": "references/phase4b/duchy-wrap-26.jpg",
+      "sha256": "d39248cebf05c675e694fb3ff2ef946de43b4269d5c6b2deb9b1c9768d3e46fb"
+    },
+    {
+      "id": "duchy-t28",
+      "source": "duchy",
+      "locator": "28 seconds",
+      "timeSeconds": 28,
+      "asset": "references/phase4b/duchy-wrap-28.jpg",
+      "sha256": "9a888de2f0d0c248bcf8ed44cff9b7de57fe2b3a0ce1149b339a3ba8892b44a7"
+    },
+    {
+      "id": "duchy-t30",
+      "source": "duchy",
+      "locator": "30 seconds",
+      "timeSeconds": 30,
+      "asset": "references/phase4b/duchy-wrap-30.jpg",
+      "sha256": "9c4392626e0e818569668bbeb46ea7ef445d41fecbcf7a7a3f095cbc351f4f03"
+    },
+    {
+      "id": "duchy-t32",
+      "source": "duchy",
+      "locator": "32 seconds",
+      "timeSeconds": 32,
+      "asset": "references/phase4b/duchy-wrap-32.jpg",
+      "sha256": "3aa5c5d31f135d6f3701b06144e5243d7b68f665a75dc0ab8c8784629534abd7"
+    },
+    {
+      "id": "duchy-t34",
+      "source": "duchy",
+      "locator": "34 seconds",
+      "timeSeconds": 34,
+      "asset": "references/phase4b/duchy-wrap-34.jpg",
+      "sha256": "878af1094f2639beafb461c6b8eb120f2421ce0739845fa96e0930336173bec1"
+    },
+    {
+      "id": "duchy-t36",
+      "source": "duchy",
+      "locator": "36 seconds",
+      "timeSeconds": 36,
+      "asset": "references/phase4b/duchy-wrap-36.jpg",
+      "sha256": "7ef40a813d6b499ddf47e5845a7bfdce077b67c19e897898c1986f32f9a107fa"
+    },
+    {
+      "id": "duchy-t38",
+      "source": "duchy",
+      "locator": "38 seconds",
+      "timeSeconds": 38,
+      "asset": "references/phase4b/duchy-wrap-38.jpg",
+      "sha256": "852c1ef99e2f74a47ed379686dd50c29baf644b8e94feae349b3b1a38c2b4656"
+    },
+    {
+      "id": "duchy-t40",
+      "source": "duchy",
+      "locator": "40 seconds",
+      "timeSeconds": 40,
+      "asset": "references/phase4b/duchy-wrap-40.jpg",
+      "sha256": "97109ee4f2e96e2d87eb0b2fdda62e006712dbf9e5520e81fdf87e50240961d1"
+    },
+    {
+      "id": "duchy-t42",
+      "source": "duchy",
+      "locator": "42 seconds",
+      "timeSeconds": 42,
+      "asset": "references/phase4b/duchy-wrap-42.jpg",
+      "sha256": "187ebeb13884a01f67c4560f240732b4dedb0f670c83df265043655a4a9ff91c"
+    },
+    {
+      "id": "duchy-t44",
+      "source": "duchy",
+      "locator": "44 seconds",
+      "timeSeconds": 44,
+      "asset": "references/phase4b/duchy-wrap-44.jpg",
+      "sha256": "4903c83ac5120f314fe1b97377e6f0b66b3eb8ce25211d81cb4bb800f2f82613"
+    },
+    {
+      "id": "duchy-t72",
+      "source": "duchy",
+      "locator": "72 seconds",
+      "timeSeconds": 72,
+      "asset": "references/phase4b/duchy-lock-72.jpg",
+      "sha256": "f3f8428c3f3558d24d0e2af2a48c8491a1775e513a0c7d9a59f7b53f95ca7d08"
+    },
+    {
+      "id": "duchy-t78",
+      "source": "duchy",
+      "locator": "78 seconds",
+      "timeSeconds": 78,
+      "asset": "references/phase4b/duchy-lock-78.jpg",
+      "sha256": "007a8ab1e3b03ba348ccf3a84e911068267be688d2d0986e3b5583630bec2868"
+    },
+    {
+      "id": "duchy-t84",
+      "source": "duchy",
+      "locator": "84 seconds",
+      "timeSeconds": 84,
+      "asset": "references/phase4b/duchy-lock-84.jpg",
+      "sha256": "8658ac48993df6d91008838eb0a4edb786d6173929dd591275c14e26ef94723f"
+    },
+    {
+      "id": "duchy-t90",
+      "source": "duchy",
+      "locator": "90 seconds",
+      "timeSeconds": 90,
+      "asset": "references/phase4b/duchy-lock-90.jpg",
+      "sha256": "89f1d2c87e10b6cb3f8d16452d2229bc2a9f9e925af030f6715fe93643f342bb"
+    },
+    {
+      "id": "duchy-t96",
+      "source": "duchy",
+      "locator": "96 seconds",
+      "timeSeconds": 96,
+      "asset": "references/phase4b/duchy-lock-96.jpg",
+      "sha256": "07509283d137dadf747df3afde0e51082a487e516001214270f9f71cdfeed93f"
+    },
+    {
+      "id": "duchy-t102",
+      "source": "duchy",
+      "locator": "102 seconds",
+      "timeSeconds": 102,
+      "asset": "references/phase4b/duchy-lock-102.jpg",
+      "sha256": "f3f05b366c431d0a1341b850ab862502f3375b0bc00977fef73335179cb14c11"
+    },
+    {
+      "id": "duchy-t108",
+      "source": "duchy",
+      "locator": "108 seconds",
+      "timeSeconds": 108,
+      "asset": "references/phase4b/duchy-lock-108.jpg",
+      "sha256": "0cb062e2f581008af60d80fe1e2abedac30812136dcc41ac5edde0e6bdabb2f4"
+    },
+    {
+      "id": "duchy-t110",
+      "source": "duchy",
+      "locator": "110 seconds",
+      "timeSeconds": 110,
+      "asset": "references/phase4b/duchy-lock-110.jpg",
+      "sha256": "bc2934e8860e9c0349b0ed4330cd6059add058531f21379a61221c9ad29a32a4"
+    },
+    {
+      "id": "duchy-t112",
+      "source": "duchy",
+      "locator": "112 seconds",
+      "timeSeconds": 112,
+      "asset": "references/phase4b/duchy-lock-112.jpg",
+      "sha256": "75434d62f3b2948d8f45f6c8d8e189d03a4fc7bb417404dbbf540ad3a26bd7b9"
+    },
+    {
+      "id": "duchy-t114",
+      "source": "duchy",
+      "locator": "114 seconds",
+      "timeSeconds": 114,
+      "asset": "references/phase4b/duchy-lock-114.jpg",
+      "sha256": "59a9928c1a2f8c91d4517675e70e5219280cd5e3531f7ca2804c183f1faa6aed"
+    },
+    {
+      "id": "duchy-t116",
+      "source": "duchy",
+      "locator": "116 seconds",
+      "timeSeconds": 116,
+      "asset": "references/phase4b/duchy-lock-116.jpg",
+      "sha256": "fcb8774cc7877cf203073bd931d89d7775b88672f77c9e7938fe1b11765716bd"
+    },
+    {
+      "id": "duchy-t118",
+      "source": "duchy",
+      "locator": "118 seconds",
+      "timeSeconds": 118,
+      "asset": "references/phase4b/duchy-lock-118.jpg",
+      "sha256": "ed4dab3ead2ca295c676196fbc870254a47b161a3d25af841887e00c91df6e97"
+    },
+    {
+      "id": "topologist-t90",
+      "source": "topologist-video",
+      "locator": "90 seconds",
+      "timeSeconds": 90,
+      "asset": "references/phase4b/topologist-lock-90.jpg",
+      "sha256": "8824ee934d3b8db425325b81b5f47ae55ab2c16fd9d75d75e33dc2f32c510843"
+    },
+    {
+      "id": "topologist-t96",
+      "source": "topologist-video",
+      "locator": "96 seconds",
+      "timeSeconds": 96,
+      "asset": "references/phase4b/topologist-lock-96.jpg",
+      "sha256": "73f3b75466f27cea4f05be6f65af02d001f763a6a241e66296da54f8d76bcfb9"
+    },
+    {
+      "id": "topologist-t102",
+      "source": "topologist-video",
+      "locator": "102 seconds",
+      "timeSeconds": 102,
+      "asset": "references/phase4b/topologist-lock-102.jpg",
+      "sha256": "927cd7c7e7f028c1009979c4a2fc8454964fb0dd1f98687f3a445a29035ef1c9"
+    },
+    {
+      "id": "topologist-t108",
+      "source": "topologist-video",
+      "locator": "108 seconds",
+      "timeSeconds": 108,
+      "asset": "references/phase4b/topologist-lock-108.jpg",
+      "sha256": "073c6a9b3c302254239f8aef316e85f3d21cc11a2c8fcc7ca046f28fdae5115d"
+    },
+    {
+      "id": "topologist-t114",
+      "source": "topologist-video",
+      "locator": "114 seconds",
+      "timeSeconds": 114,
+      "asset": "references/phase4b/topologist-lock-114.jpg",
+      "sha256": "c145304c2714bf7b589139886902e183749572bd832cb072b2419846e6e76020"
+    },
+    {
+      "id": "topologist-t120",
+      "source": "topologist-video",
+      "locator": "120 seconds",
+      "timeSeconds": 120,
+      "asset": "references/phase4b/topologist-lock-120.jpg",
+      "sha256": "3c34524451f8f433d54883b37b0c0e1277ed3c947293ab6a20438656c741a02a"
+    },
+    {
+      "id": "topologist-t126",
+      "source": "topologist-video",
+      "locator": "126 seconds",
+      "timeSeconds": 126,
+      "asset": "references/phase4b/topologist-lock-126.jpg",
+      "sha256": "a3ee9c053654a3af88c52e9039b8c95a81d64d60140ac9bb96e65baf737766a7"
+    },
+    {
+      "id": "topologist-t132",
+      "source": "topologist-video",
+      "locator": "132 seconds",
+      "timeSeconds": 132,
+      "asset": "references/phase4b/topologist-lock-132.jpg",
+      "sha256": "d658f549ade7426352892ebccc9e3562746267efb85ef943e4dff3754bb65d08"
+    },
+    {
+      "id": "topologist-t144",
+      "source": "topologist-video",
+      "locator": "144 seconds",
+      "timeSeconds": 144,
+      "asset": "references/phase4b/topologist-lock-144.jpg",
+      "sha256": "d6959110465e7bf5b9cdf58f4223574bc013a80e20a59418e1d2f9dd56e417bd"
+    },
+    {
+      "id": "topologist-t156",
+      "source": "topologist-video",
+      "locator": "156 seconds",
+      "timeSeconds": 156,
+      "asset": "references/phase4b/topologist-lock-156.jpg",
+      "sha256": "65d36d186f6d32e78a67579b627b4321f8ef13dd9ae8864f1b675591045b80c6"
+    },
+    {
+      "id": "topologist-t168",
+      "source": "topologist-video",
+      "locator": "168 seconds",
+      "timeSeconds": 168,
+      "asset": "references/phase4b/topologist-lock-168.jpg",
+      "sha256": "e9a1c33c7e95245d424360bdc34a7d80682b2afe6e31ffc534da084fdf500bad"
+    },
+    {
+      "id": "topologist-t180",
+      "source": "topologist-video",
+      "locator": "180 seconds",
+      "timeSeconds": 180,
+      "asset": "references/phase4b/topologist-lock-180.jpg",
+      "sha256": "b5dfedc0c1de61943e7e0fcefa21c8c0d4e9dfe260d29848d145dd6849c3d7d1"
+    },
+    {
+      "id": "duchy-t12",
+      "source": "duchy",
+      "locator": "12 seconds",
+      "timeSeconds": 12,
+      "asset": "references/phase4b/duchy-video-012.jpg",
+      "sha256": "cf11c0dee4702c5bbcb80528c9523057f84b022051e193cc70ce161afa0bf605"
+    },
+    {
+      "id": "duchy-t60",
+      "source": "duchy",
+      "locator": "60 seconds",
+      "timeSeconds": 60,
+      "asset": "references/phase4b/duchy-video-060.jpg",
+      "sha256": "eae5b4300409f04024886d7f0c1513608d0fba1b89d521e7f63f986644ed8b42"
+    },
+    {
+      "id": "duchy-t124",
+      "source": "duchy",
+      "locator": "124 seconds",
+      "timeSeconds": 124,
+      "asset": "references/phase4b/duchy-video-124.jpg",
+      "sha256": "165502f545f9a9ff55ace0f6adfcf95788d23b12f48753ddca94748423513914"
+    },
+    {
+      "id": "duchy-t132",
+      "source": "duchy",
+      "locator": "132 seconds",
+      "timeSeconds": 132,
+      "asset": "references/phase4b/duchy-video-132.jpg",
+      "sha256": "0fbd4e4d4055efd21e50c0a52751b2439046dbd2c30cbd38320f6ac7569e290d"
+    },
+    {
+      "id": "duchy-t140",
+      "source": "duchy",
+      "locator": "140 seconds",
+      "timeSeconds": 140,
+      "asset": "references/phase4b/duchy-video-140.jpg",
+      "sha256": "a096559a28aefa56477e095b91da94c155266de9770c6b3b5e25c9df3255a7b5"
+    },
+    {
+      "id": "duchy-t148",
+      "source": "duchy",
+      "locator": "148 seconds",
+      "timeSeconds": 148,
+      "asset": "references/phase4b/duchy-video-148.jpg",
+      "sha256": "682d4872ceacc2b04ac8769c1ff2b3f3ee4f88eb5014dd91d442693807d39a49"
+    },
+    {
+      "id": "duchy-t149",
+      "source": "duchy",
+      "locator": "149 seconds",
+      "timeSeconds": 149,
+      "asset": "references/phase4b/duchy-video-149.jpg",
+      "sha256": "2b846d9b263ff1548600561db040d170d3095eb6b43936331c19700f46f4beaa"
+    },
+    {
+      "id": "duchy-t154",
+      "source": "duchy",
+      "locator": "154 seconds",
+      "timeSeconds": 154,
+      "asset": "references/phase4b/duchy-video-154.jpg",
+      "sha256": "30c3b52a75ca3a90185e902780c3c788d59fbbe7c4b535fd6bda3de674312c55"
+    },
+    {
+      "id": "duchy-t260",
+      "source": "duchy",
+      "locator": "260 seconds",
+      "timeSeconds": 260,
+      "asset": "references/phase4b/duchy-video-260.jpg",
+      "sha256": "f83d6694ee638bbc32a5bc1186d6052664a929be5a1a6798d6ea1b47ec0c5306"
+    },
+    {
+      "id": "duchy-t269",
+      "source": "duchy",
+      "locator": "269 seconds",
+      "timeSeconds": 269,
+      "asset": "references/phase4b/duchy-video-269.jpg",
+      "sha256": "2503d8ec2ce208d565407f07116b71ec5b13e27c815fa2ceb5ce40fdf8a44345"
+    },
+    {
+      "id": "duchy-t274",
+      "source": "duchy",
+      "locator": "274 seconds",
+      "timeSeconds": 274,
+      "asset": "references/phase4b/duchy-video-274.jpg",
+      "sha256": "fb90ecbe622d116f89b78d7e7e960278feeede5c2347c586d47e811326ed3780"
+    }
+  ],
+  "claims": [
+    {
+      "id": "single-rope",
+      "status": "SUPPORTED",
+      "reason": "One rope is doubled; the fold joins its two arms, not two rope objects.",
+      "evidence": [
+        "duchy-detail-1",
+        "100427-D0018"
+      ]
+    },
+    {
+      "id": "four-cuff-runs",
+      "status": "SUPPORTED",
+      "reason": "The selected detailed example has two wraps of a doubled bundle, producing four visible cuff runs.",
+      "evidence": [
+        "duchy-detail-3",
+        "duchy-detail-24"
+      ]
+    },
+    {
+      "id": "loop-owner",
+      "status": "SUPPORTED",
+      "reason": "The locking loop is in the long-side bundle; the working bight passes through it.",
+      "evidence": [
+        "100427-D0020",
+        "duchy-detail-15",
+        "duchy-untie-2"
+      ]
+    },
+    {
+      "id": "passage-order",
+      "status": "SUPPORTED",
+      "reason": "Bight traverses beneath the cuff and returns through the loop; release images show loop exit before cuff withdrawal.",
+      "evidence": [
+        "duchy-detail-19",
+        "duchy-untie-4",
+        "duchy-untie-6"
+      ]
+    },
+    {
+      "id": "final-strand-route",
+      "status": "PENDING_REVIEW",
+      "reason": "Bundle sequence does not bind individual lanes through the rear cuff and locking core.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-t114",
+        "duchy-untie-5"
+      ]
+    },
+    {
+      "id": "source-equivalence",
+      "status": "PENDING_REVIEW",
+      "reason": "The bundle-level operations correspond, but exact final physical-strand correspondence and winding parity are not established; no crossings transferred from original.",
+      "evidence": [
+        "100427-D0025",
+        "duchy-detail-24"
+      ]
+    }
+  ],
+  "column": {
+    "id": "column",
+    "kind": "external-cylinder",
+    "partOfMaterialGraph": false,
+    "axisConvention": "Photo wrist at screen left; elbow at screen right. Positive axis wrist to elbow. Do not mirror sources.",
+    "workingMotion": "Detailed tutorial: bight over top away from operator, underneath back toward operator.",
+    "materialWindingSign": null,
+    "status": "PENDING_REVIEW",
+    "count": 2,
+    "cuffIds": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "laneMeaning": "Screen-left to screen-right in completed photo D24; not material order.",
+    "evidence": [
+      "duchy-detail-2",
+      "duchy-detail-3",
+      "duchy-detail-24"
+    ]
+  },
+  "states": [
+    {
+      "id": "FINAL",
+      "kind": "completed",
+      "projectionId": "duchy-photo-front",
+      "evidence": [
+        "duchy-detail-24"
+      ],
+      "image": "duchy-detail-24",
+      "segments": [
+        {
+          "id": "C1",
+          "role": "cuff-visible",
+          "fromNode": "c1-top",
+          "toNode": "c1-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              790,
+              488
+            ],
+            [
+              762,
+              610
+            ]
+          ]
+        },
+        {
+          "id": "C2",
+          "role": "cuff-visible",
+          "fromNode": "c2-top",
+          "toNode": "c2-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              817,
+              488
+            ],
+            [
+              791,
+              610
+            ]
+          ]
+        },
+        {
+          "id": "C3",
+          "role": "cuff-visible",
+          "fromNode": "c3-top",
+          "toNode": "c3-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              842,
+              488
+            ],
+            [
+              818,
+              610
+            ]
+          ]
+        },
+        {
+          "id": "C4",
+          "role": "cuff-visible",
+          "fromNode": "c4-top",
+          "toNode": "c4-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              867,
+              488
+            ],
+            [
+              845,
+              610
+            ]
+          ]
+        },
+        {
+          "id": "T0",
+          "role": "standing-pair-visible",
+          "fromNode": "t0-out",
+          "toNode": "t0-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              330,
+              1050
+            ],
+            [
+              710,
+              710
+            ]
+          ]
+        },
+        {
+          "id": "T1",
+          "role": "standing-pair-visible",
+          "fromNode": "t1-out",
+          "toNode": "t1-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              365,
+              1070
+            ],
+            [
+              742,
+              728
+            ]
+          ]
+        },
+        {
+          "id": "B0",
+          "role": "bight-limb",
+          "fromNode": "b0-lock",
+          "toNode": "fold",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              880,
+              685
+            ],
+            [
+              1040,
+              735
+            ],
+            [
+              1080,
+              785
+            ],
+            [
+              1045,
+              828
+            ]
+          ]
+        },
+        {
+          "id": "B1",
+          "role": "bight-limb",
+          "fromNode": "fold",
+          "toNode": "b1-lock",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-24"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              1045,
+              828
+            ],
+            [
+              1010,
+              830
+            ],
+            [
+              960,
+              805
+            ],
+            [
+              900,
+              720
+            ]
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "c1-top",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c1-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c2-top",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c2-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c3-top",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c3-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c4-top",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "c4-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "t0-out",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "t0-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "t1-out",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "t1-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "b0-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "fold",
+          "kind": "fold"
+        },
+        {
+          "id": "b1-lock",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "E0",
+          "kind": "physical-end"
+        },
+        {
+          "id": "E1",
+          "kind": "physical-end"
+        }
+      ],
+      "endpoints": [
+        "E0",
+        "E1"
+      ],
+      "foldNode": "fold",
+      "orderedMaterialPath": null,
+      "crossingInventoryComplete": false
+    },
+    {
+      "id": "D8",
+      "kind": "construction",
+      "projectionId": "duchy-photo-front",
+      "evidence": [
+        "duchy-detail-8"
+      ],
+      "image": "duchy-detail-8",
+      "segments": [
+        {
+          "id": "D8.BR",
+          "role": "bight-right-visible",
+          "fromNode": "r0",
+          "toNode": "r1",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-8"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              550,
+              100
+            ],
+            [
+              700,
+              400
+            ],
+            [
+              840,
+              650
+            ]
+          ]
+        },
+        {
+          "id": "D8.BL",
+          "role": "bight-left-visible",
+          "fromNode": "l0",
+          "toNode": "l1",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-8"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              500,
+              180
+            ],
+            [
+              650,
+              470
+            ],
+            [
+              810,
+              670
+            ]
+          ]
+        },
+        {
+          "id": "D8.C1",
+          "role": "cuff-visible",
+          "fromNode": "d8c1a",
+          "toNode": "d8c1b",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-8"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              788,
+              460
+            ],
+            [
+              758,
+              650
+            ]
+          ]
+        },
+        {
+          "id": "D8.C2",
+          "role": "cuff-visible",
+          "fromNode": "d8c2a",
+          "toNode": "d8c2b",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-8"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              817,
+              460
+            ],
+            [
+              785,
+              650
+            ]
+          ]
+        },
+        {
+          "id": "D8.C3",
+          "role": "cuff-visible",
+          "fromNode": "d8c3a",
+          "toNode": "d8c3b",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-8"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              843,
+              460
+            ],
+            [
+              814,
+              650
+            ]
+          ]
+        },
+        {
+          "id": "D8.C4",
+          "role": "cuff-visible",
+          "fromNode": "d8c4a",
+          "toNode": "d8c4b",
+          "status": "OBSERVED",
+          "evidence": [
+            "duchy-detail-8"
+          ],
+          "materialOrdinal": null,
+          "polyline": [
+            [
+              875,
+              460
+            ],
+            [
+              845,
+              650
+            ]
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "r0",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "r1",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "l0",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "l1",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c1a",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c1b",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c2a",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c2b",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c3a",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c3b",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c4a",
+          "kind": "open-observation-port"
+        },
+        {
+          "id": "d8c4b",
+          "kind": "open-observation-port"
+        }
+      ],
+      "crossingInventoryComplete": false
+    }
+  ],
+  "crossings": [
+    {
+      "id": "D8-X01",
+      "stateId": "D8",
+      "projectionId": "duchy-photo-front",
+      "status": "OBSERVED",
+      "participants": [
+        "D8.BR",
+        "D8.C1"
+      ],
+      "over": "D8.BR",
+      "under": "D8.C1",
+      "point": [
+        776.0351906158357,
+        535.7771260997067
+      ],
+      "evidence": [
+        "duchy-detail-8"
+      ],
+      "reason": "At this visible intersection the right bight limb continues in front of the interrupted cuff run; no final-state identity transfer is asserted.",
+      "visits": [
+        {
+          "segmentId": "D8.BR",
+          "overUnder": "over",
+          "localOrder": 1,
+          "materialOrdinal": null
+        },
+        {
+          "segmentId": "D8.C1",
+          "overUnder": "under",
+          "localOrder": 1,
+          "materialOrdinal": null
+        }
+      ]
+    },
+    {
+      "id": "D8-X02",
+      "stateId": "D8",
+      "projectionId": "duchy-photo-front",
+      "status": "OBSERVED",
+      "participants": [
+        "D8.BR",
+        "D8.C2"
+      ],
+      "over": "D8.BR",
+      "under": "D8.C2",
+      "point": [
+        797.7167630057803,
+        574.4942196531792
+      ],
+      "evidence": [
+        "duchy-detail-8"
+      ],
+      "reason": "At this visible intersection the right bight limb continues in front of the interrupted cuff run; no final-state identity transfer is asserted.",
+      "visits": [
+        {
+          "segmentId": "D8.BR",
+          "overUnder": "over",
+          "localOrder": 2,
+          "materialOrdinal": null
+        },
+        {
+          "segmentId": "D8.C2",
+          "overUnder": "under",
+          "localOrder": 1,
+          "materialOrdinal": null
+        }
+      ]
+    }
+  ],
+  "crossingLocalOrders": [
+    {
+      "stateId": "D8",
+      "segmentId": "D8.BR",
+      "order": [
+        "D8-X01",
+        "D8-X02"
+      ],
+      "evidence": [
+        "duchy-detail-8"
+      ]
+    }
+  ],
+  "unknownConnections": [
+    {
+      "id": "rear-cuff",
+      "ports": [
+        "c1-top",
+        "c2-top",
+        "c3-top",
+        "c4-top"
+      ],
+      "reason": "Four front cuff lanes disappear behind the column.",
+      "requiredEvidence": "Continuous rear/underside view while each of four marked strands is followed back to the front; keep the wrist and elbow ends identifiable.",
+      "reviewed": [
+        "duchy-t22",
+        "duchy-t44",
+        "duchy-detail-21",
+        "duchy-untie-6"
+      ],
+      "interval": "Local TheDuchy 22–44 s; wrist underside remains hidden."
+    },
+    {
+      "id": "locking-core",
+      "ports": [
+        "c1-lock",
+        "c2-lock",
+        "c3-lock",
+        "c4-lock",
+        "t0-lock",
+        "t1-lock",
+        "b0-lock",
+        "b1-lock"
+      ],
+      "reason": "The knot core obscures the pairing between cuff, long-side loop and bight limbs.",
+      "requiredEvidence": "Stable oblique close-up of both sides of the loosened NON-SLIPPED loop, with both bundle limbs marked; record before and after bight return without hands covering the loop root.",
+      "reviewed": [
+        "duchy-t96",
+        "duchy-t114",
+        "duchy-t118",
+        "duchy-detail-21",
+        "duchy-untie-5",
+        "topologist-t168"
+      ],
+      "interval": "Local TheDuchy 96–118 s; local Topologist 114–180 s. Untying changes the configuration."
+    },
+    {
+      "id": "endpoint-binding",
+      "ports": [
+        "E0",
+        "E1",
+        "t0-out",
+        "t1-out"
+      ],
+      "reason": "The two physical free ends are outside the identifying view.",
+      "requiredEvidence": "Wide continuous shot from each labelled physical end E0/E1 to its long-side strand, followed by the cuff without a cut; establishes orientation for signed winding.",
+      "reviewed": [
+        "duchy-detail-1",
+        "duchy-t12"
+      ],
+      "interval": "TheDuchy start and detail step 1 show the fold and paired runs, not both free endpoints."
+    },
+    {
+      "id": "final-ledger",
+      "ports": [],
+      "reason": "Missing rear and core connections prevent final global crossing order.",
+      "requiredEvidence": "Resolve rear-cuff and locking-core gaps in the SAME state/projection; a different mirrored or slipped example cannot supply the missing permutation.",
+      "reviewed": [
+        "duchy-detail-24",
+        "100427-D0025"
+      ],
+      "interval": "Final states from the two references cannot yet be matched strand by strand."
+    }
+  ],
+  "legacyReview": [
+    {
+      "id": "R-tail-bight-crossing-order",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Long-side doubled bundle forms the locking loop; individual loop-root strand order remains hidden.",
+      "evidence": [
+        "100427-D0020",
+        "duchy-detail-15",
+        "duchy-t96"
+      ]
+    },
+    {
+      "id": "X2",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Old X2 was a bundle relation, not one proven physical-strand crossing. Do not assign a final single X2.",
+      "evidence": [
+        "duchy-detail-15",
+        "duchy-detail-24"
+      ]
+    },
+    {
+      "id": "X1:multiplicity",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Two visible strand-pair crossings are recorded only in construction state D8; no total or final multiplicity inferred.",
+      "evidence": [
+        "duchy-detail-8"
+      ]
+    },
+    {
+      "id": "traversal:X1",
+      "outcome": "UNRESOLVED",
+      "finding": "D8 crossings have local visits but no proven E0-to-E1 order.",
+      "evidence": [
+        "duchy-detail-8",
+        "duchy-detail-24"
+      ]
+    },
+    {
+      "id": "traversal:X2",
+      "outcome": "UNRESOLVED",
+      "finding": "The complete final locking-loop traversal is not visible.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-untie-5"
+      ]
+    },
+    {
+      "id": "P1:strand-level-crossings",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "The whole bight passes beneath the cuff before entering the loop; untying releases it from the loop before withdrawing it from beneath the cuff. Individual hidden crossings remain unassigned.",
+      "evidence": [
+        "duchy-detail-19",
+        "duchy-untie-4",
+        "duchy-untie-6",
+        "duchy-t114"
+      ]
+    },
+    {
+      "id": "tail-locking-arc",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Loop ownership belongs to the long-side doubled bundle; old singular tail wording did not identify a physical strand.",
+      "evidence": [
+        "100427-D0020",
+        "duchy-detail-15",
+        "duchy-untie-2"
+      ]
+    },
+    {
+      "id": "cuff-tail-arm",
+      "outcome": "UNRESOLVED",
+      "finding": "C1-C4 are front-face labels only; their rear continuation and endpoint assignment remain unknown.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-t38",
+        "duchy-t44"
+      ]
+    },
+    {
+      "id": "cuff-lead-arm",
+      "outcome": "UNRESOLVED",
+      "finding": "No supported permutation connects the visible cuff lanes through the hidden back to both bight limbs.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-untie-6"
+      ]
+    },
+    {
+      "id": "other-free",
+      "outcome": "UNRESOLVED",
+      "finding": "Both long ends extend beyond the useful frame; neither full endpoint-to-loop route is visually identified.",
+      "evidence": [
+        "duchy-detail-1",
+        "duchy-t12"
+      ]
+    },
+    {
+      "id": "other-end:name",
+      "outcome": "CORRECTED",
+      "finding": "Tail / standing / lead in these tutorials denotes the long-side paired bundle. It does not identify one of the two physical endpoints. Use neutral E0/E1, with binding pending.",
+      "evidence": [
+        "duchy-detail-1",
+        "duchy-detail-10",
+        "100427-D0018"
+      ]
+    },
+    {
+      "id": "column-winding-direction",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Detailed text specifies working-bight motion over the top and back underneath; video wraps with the long bundle. E0-to-E1 signed winding cannot be assigned until strand identity is bound.",
+      "evidence": [
+        "duchy-detail-2",
+        "duchy-detail-3",
+        "duchy-t24",
+        "duchy-t36"
+      ]
+    }
+  ],
+  "confirmedAudit": [
+    {
+      "legacy": "E-step-7",
+      "outcome": "CORRECTED",
+      "finding": "Old image URL is detailed image 13, not 7. v2 uses the actual image 7.",
+      "evidence": [
+        "duchy-detail-7",
+        "duchy-detail-13"
+      ]
+    },
+    {
+      "legacy": "X1",
+      "outcome": "DOWNGRADED_SCOPE",
+      "finding": "Bight-over-cuff describes construction step 8; not a complete final crossing inventory.",
+      "evidence": [
+        "duchy-detail-8"
+      ]
+    },
+    {
+      "legacy": "tail-end / other-end",
+      "outcome": "DOWNGRADED_BINDING",
+      "finding": "Two ends exist, but old labels bind no visibly tracked physical endpoints.",
+      "evidence": [
+        "duchy-detail-1"
+      ]
+    },
+    {
+      "legacy": "bight-fold / 2 wraps / non-slipped",
+      "outcome": "RETAINED_SEMANTICS",
+      "finding": "Fold, doubled wraps and full bight return are supported; spatial strand identities remain incomplete.",
+      "evidence": [
+        "duchy-detail-1",
+        "duchy-detail-3",
+        "duchy-detail-19"
+      ]
+    }
+  ],
+  "review": {
+    "decision": "PARTIAL",
+    "rounds": 2,
+    "reviewer": "Codex visual inspection, not automatic source certification",
+    "humanApproved": false,
+    "completeMaterialPathSupported": false,
+    "sourceEquivalenceSupported": false,
+    "log": [
+      {
+        "round": 1,
+        "inspected": [
+          "Original single-column photos D0018–D0029",
+          "Detailed 1–26 and untying 1–7",
+          "TheDuchy target interval sampled every 8 seconds",
+          "Topologist local video sampled every 12 seconds"
+        ],
+        "result": "Bundle operations and source-specific methods identified."
+      },
+      {
+        "round": 2,
+        "inspected": [
+          "Full-resolution D0020/D0023, D8/D24 and untying 5",
+          "TheDuchy 22–44 s every 2 seconds; 72–118 s selected 2–6 second frames",
+          "Topologist 90–180 s selected 6–12 second frames and alternative detailed 21/22 views"
+        ],
+        "result": "Rear cuff and loop-root individual bindings remain occluded. Stop bounded investigation; no arbitrary permutation selected."
+      }
+    ]
+  },
+  "views": [
+    {
+      "id": "completed",
+      "title": "Completed knot · observed fragments",
+      "stateId": "FINAL"
+    },
+    {
+      "id": "wrapping",
+      "title": "Cuff lanes · rear links unknown",
+      "stateId": "FINAL"
+    },
+    {
+      "id": "material",
+      "title": "Material ledger · incomplete",
+      "stateId": "FINAL"
+    },
+    {
+      "id": "construction",
+      "title": "Step 8 · local crossings only",
+      "stateId": "D8"
+    }
+  ]
+}

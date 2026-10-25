@@ -1,0 +1,357 @@
+{
+  "multiple-valid-A": {
+    "topology": {
+      "continuous": true,
+      "projectedCrossingCount": 2,
+      "expectedCrossingCount": 2,
+      "intendedCrossings": [
+        {
+          "id": "X1",
+          "found": true,
+          "projectedPoint": [
+            0,
+            0
+          ],
+          "expectedPoint": [
+            0,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.5,
+            10.5
+          ]
+        },
+        {
+          "id": "X2",
+          "found": true,
+          "projectedPoint": [
+            0.039999999999999994,
+            0
+          ],
+          "expectedPoint": [
+            0.04000000000000001,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.83333333,
+            6.6
+          ]
+        }
+      ],
+      "noUnintendedCrossings": true,
+      "crossingTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "requestedTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "traversalMatches": true,
+      "constraintInfluenceRadius": 0.055,
+      "interactingCrossingConstraints": [
+        {
+          "crossingA": "X1",
+          "crossingB": "X2",
+          "alongPathSeparation": 0.04000000000000001,
+          "supportOverlap": 0.06999999999999999
+        }
+      ],
+      "valid": true
+    },
+    "crossings": {
+      "crossingMeasurements": [
+        {
+          "id": "X1",
+          "overPortion": "A",
+          "overHeight": 0.021106253394492434,
+          "underHeight": 0,
+          "centerlineSeparation": 0.021106253394492434,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": 0.011106253394492433,
+          "valid": true
+        },
+        {
+          "id": "X2",
+          "overPortion": "A",
+          "overHeight": 0.021106253394492434,
+          "underHeight": 0,
+          "centerlineSeparation": 0.021106253394492434,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": 0.011106253394492433,
+          "valid": true
+        }
+      ],
+      "overUnderPreserved": true,
+      "clearanceSatisfied": true,
+      "valid": true
+    },
+    "collisions": {
+      "minimumNonlocalSeparation": 0.012649110640673516,
+      "minimumPair": [
+        40,
+        42
+      ],
+      "requiredMinimumSeparation": 0.012,
+      "globalSurfaceClearance": 0.0026491106406735156,
+      "penetrationCount": 0,
+      "failures": [],
+      "valid": true
+    },
+    "valid": true
+  },
+  "multiple-valid-B": {
+    "topology": {
+      "continuous": true,
+      "projectedCrossingCount": 2,
+      "expectedCrossingCount": 2,
+      "intendedCrossings": [
+        {
+          "id": "X1",
+          "found": true,
+          "projectedPoint": [
+            0,
+            0
+          ],
+          "expectedPoint": [
+            0,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.5,
+            10.5
+          ]
+        },
+        {
+          "id": "X2",
+          "found": true,
+          "projectedPoint": [
+            0.039999999999999994,
+            0
+          ],
+          "expectedPoint": [
+            0.04000000000000001,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.83333333,
+            6.6
+          ]
+        }
+      ],
+      "noUnintendedCrossings": true,
+      "crossingTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "requestedTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "traversalMatches": true,
+      "constraintInfluenceRadius": 0.055,
+      "interactingCrossingConstraints": [],
+      "valid": true
+    },
+    "crossings": {
+      "crossingMeasurements": [
+        {
+          "id": "X1",
+          "overPortion": "A",
+          "overHeight": 0.018,
+          "underHeight": 0,
+          "centerlineSeparation": 0.018,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": 0.007999999999999998,
+          "valid": true
+        },
+        {
+          "id": "X2",
+          "overPortion": "B",
+          "overHeight": 0.018,
+          "underHeight": 0.003106253394492435,
+          "centerlineSeparation": 0.014893746605507564,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": 0.004893746605507563,
+          "valid": true
+        }
+      ],
+      "overUnderPreserved": true,
+      "clearanceSatisfied": true,
+      "valid": true
+    },
+    "collisions": {
+      "minimumNonlocalSeparation": 0.012649115253683847,
+      "minimumPair": [
+        40,
+        42
+      ],
+      "requiredMinimumSeparation": 0.012,
+      "globalSurfaceClearance": 0.002649115253683847,
+      "penetrationCount": 0,
+      "failures": [],
+      "valid": true
+    },
+    "valid": true
+  },
+  "multiple-invalid": {
+    "topology": {
+      "continuous": true,
+      "projectedCrossingCount": 2,
+      "expectedCrossingCount": 2,
+      "intendedCrossings": [
+        {
+          "id": "X1",
+          "found": true,
+          "projectedPoint": [
+            0,
+            0
+          ],
+          "expectedPoint": [
+            0,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.5,
+            10.5
+          ]
+        },
+        {
+          "id": "X2",
+          "found": true,
+          "projectedPoint": [
+            0.039999999999999994,
+            0
+          ],
+          "expectedPoint": [
+            0.04000000000000001,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.83333333,
+            6.6
+          ]
+        }
+      ],
+      "noUnintendedCrossings": true,
+      "crossingTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "requestedTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "traversalMatches": true,
+      "constraintInfluenceRadius": 0.055,
+      "interactingCrossingConstraints": [
+        {
+          "crossingA": "X1",
+          "crossingB": "X2",
+          "alongPathSeparation": 0.04000000000000001,
+          "supportOverlap": 0.06999999999999999
+        }
+      ],
+      "valid": true
+    },
+    "crossings": {
+      "crossingMeasurements": [
+        {
+          "id": "X1",
+          "overPortion": "A",
+          "overHeight": 0.004643375746788336,
+          "underHeight": 0,
+          "centerlineSeparation": 0.004643375746788336,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": -0.005356624253211664,
+          "valid": false
+        },
+        {
+          "id": "X2",
+          "overPortion": "A",
+          "overHeight": 0.004643375746788336,
+          "underHeight": 0,
+          "centerlineSeparation": 0.004643375746788336,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": -0.005356624253211664,
+          "valid": false
+        }
+      ],
+      "overUnderPreserved": true,
+      "clearanceSatisfied": false,
+      "valid": false
+    },
+    "collisions": {
+      "minimumNonlocalSeparation": 0.0046238308339100484,
+      "minimumPair": [
+        2,
+        50
+      ],
+      "requiredMinimumSeparation": 0.012,
+      "globalSurfaceClearance": -0.005376169166089952,
+      "penetrationCount": 8,
+      "failures": [
+        {
+          "segmentA": "rope-p3:2",
+          "segmentB": "rope-p3:49",
+          "penetration": 0.005376169166089951
+        },
+        {
+          "segmentA": "rope-p3:2",
+          "segmentB": "rope-p3:50",
+          "penetration": 0.005376169166089952
+        },
+        {
+          "segmentA": "rope-p3:3",
+          "segmentB": "rope-p3:49",
+          "penetration": 0.005356624253211664
+        },
+        {
+          "segmentA": "rope-p3:3",
+          "segmentB": "rope-p3:50",
+          "penetration": 0.005356624253211664
+        },
+        {
+          "segmentA": "rope-p3:4",
+          "segmentB": "rope-p3:37",
+          "penetration": 0.005356624253211664
+        },
+        {
+          "segmentA": "rope-p3:4",
+          "segmentB": "rope-p3:38",
+          "penetration": 0.005356624253211664
+        },
+        {
+          "segmentA": "rope-p3:5",
+          "segmentB": "rope-p3:37",
+          "penetration": 0.005376169166089951
+        },
+        {
+          "segmentA": "rope-p3:5",
+          "segmentB": "rope-p3:38",
+          "penetration": 0.005376169166089951
+        }
+      ],
+      "valid": false
+    },
+    "valid": false
+  }
+}

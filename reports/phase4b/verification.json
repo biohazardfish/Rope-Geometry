@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-10-23T16:50:30.618013+00:00",
+  "tests": {
+    "command": "npm test",
+    "passed": 20,
+    "failed": 0,
+    "previousTests": 12,
+    "newTests": 8,
+    "log": "reports/phase4b/verification-tests.txt"
+  },
+  "build": {
+    "command": "npx vite build",
+    "exitCode": 0,
+    "warning": "One bundle exceeds 500 kB. Compilation verified; standalone deployment not tested.",
+    "log": "reports/phase4b/verification-build.txt"
+  },
+  "blender": {
+    "command": "npm run verify:blender",
+    "fixtures": 4,
+    "maximumCoordinateRadiusErrorM": 3.999999997894577e-09,
+    "toleranceM": 1e-07,
+    "scope": "Existing Phase 1\u20133 geometry only; no Phase 4B 3D knot exists.",
+    "log": "reports/phase4b/verification-blender.txt"
+  },
+  "viewer": {
+    "url": "http://127.0.0.1:4173",
+    "verified": [
+      "all four Phase 4B tabs",
+      "construction displays two recorded crossings",
+      "unknown trace overlaps explicitly masked",
+      "cached evidence link opens 1500x1500 source JPG",
+      "switch back to Phase 4, Phase 3, C, A and return",
+      "Phase 3 negative control still reports collisions FAIL",
+      "no browser console errors"
+    ],
+    "console": "reports/phase4b/viewer-console.txt"
+  },
+  "researchResult": "PARTIAL_REFERENCE_RECONSTRUCTION",
+  "fullMaterialPathEstablished": false,
+  "sourceEquivalenceEstablished": false,
+  "limitations": [
+    "Software tests do not verify visual interpretations.",
+    "Source comparison remains bundle-level; no individual strand bijection established.",
+    "No final crossing inventory or E0-to-E1 traversal is claimed.",
+    "Video inspection used sampled intervals and frames, not an exhaustive frame-by-frame or audio analysis."
+  ]
+}

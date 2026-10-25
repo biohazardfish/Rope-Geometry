@@ -1,0 +1,56 @@
+[
+  {
+    "file": "references/video/01-TheDuchy-RightHanded.mp4",
+    "bytes": 108354974,
+    "sha256": "406e48a340d44aa79047e73cdaaeebf9ab62759e7cac1f08a9b02152e0738671",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 1280,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "r_frame_rate": "0/0"
+        },
+        {
+          "r_frame_rate": "0/0"
+        },
+        {
+          "width": 2000,
+          "height": 2000,
+          "r_frame_rate": "90000/1"
+        }
+      ],
+      "format": {
+        "duration": "362.000000"
+      }
+    },
+    "remoteFileEqualityVerified": false
+  },
+  {
+    "file": "references/video/02-Topologist-SingleColumn.mp4",
+    "bytes": 109269901,
+    "sha256": "aab4449be968735a113203268ab139d0f88874c5cc6adc66cb701e719693bbee",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "199.933333"
+      }
+    },
+    "remoteFileEqualityVerified": false
+  }
+]

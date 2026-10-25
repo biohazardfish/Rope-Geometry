@@ -1,0 +1,1248 @@
+{
+  "status": "VALID_PARTIAL_CUFF",
+  "topologyInvalid": false,
+  "topologyVerified": false,
+  "continuity": true,
+  "segments": 151,
+  "minimumRopeGap": 0.0037070829911373185,
+  "minimumColumnGap": 0.029657522828257076,
+  "selfPenetrations": 0,
+  "columnPenetrations": 0,
+  "excludedAdjacentPairs": 150,
+  "pairs": [],
+  "column": [
+    {
+      "segment": "partial-cuff:0",
+      "u": 0.006622516556291391,
+      "distance": 0.09,
+      "gap": 0.029999999999999995,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:1",
+      "u": 0.009933774834437087,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:2",
+      "u": 0.016556291390728485,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:3",
+      "u": 0.02317880794701986,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:4",
+      "u": 0.02980132450331129,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:5",
+      "u": 0.03642384105960263,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:6",
+      "u": 0.043046357615894044,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:7",
+      "u": 0.049668874172185414,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:8",
+      "u": 0.056291390728476824,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:9",
+      "u": 0.06291390728476821,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:10",
+      "u": 0.0695364238410596,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:11",
+      "u": 0.07615894039735102,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:12",
+      "u": 0.08278145695364238,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:13",
+      "u": 0.08940397350993376,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:14",
+      "u": 0.09602649006622516,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:15",
+      "u": 0.10264900662251655,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:16",
+      "u": 0.10927152317880795,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:17",
+      "u": 0.11589403973509933,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:18",
+      "u": 0.12251655629139073,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:19",
+      "u": 0.1291390728476821,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:20",
+      "u": 0.1357615894039735,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:21",
+      "u": 0.1423841059602649,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:22",
+      "u": 0.14900662251655628,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:23",
+      "u": 0.15562913907284767,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:24",
+      "u": 0.16225165562913904,
+      "distance": 0.08965752282825712,
+      "gap": 0.029657522828257118,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:25",
+      "u": 0.16887417218543052,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:26",
+      "u": 0.17549668874172183,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:27",
+      "u": 0.18211920529801323,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:28",
+      "u": 0.18874172185430466,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:29",
+      "u": 0.195364238410596,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:30",
+      "u": 0.20198675496688745,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:31",
+      "u": 0.20860927152317882,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:32",
+      "u": 0.2152317880794702,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:33",
+      "u": 0.22185430463576158,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:34",
+      "u": 0.22847682119205298,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:35",
+      "u": 0.23509933774834438,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:36",
+      "u": 0.24172185430463577,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:37",
+      "u": 0.24834437086092714,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:38",
+      "u": 0.2549668874172185,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:39",
+      "u": 0.26158940397350994,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:40",
+      "u": 0.2682119205298013,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:41",
+      "u": 0.27483443708609273,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:42",
+      "u": 0.2814569536423841,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:43",
+      "u": 0.28807947019867547,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:44",
+      "u": 0.2947019867549669,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:45",
+      "u": 0.30132450331125826,
+      "distance": 0.08965752282825712,
+      "gap": 0.029657522828257118,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:46",
+      "u": 0.3079470198675497,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:47",
+      "u": 0.31456953642384106,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:48",
+      "u": 0.3211920529801324,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:49",
+      "u": 0.32781456953642385,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:50",
+      "u": 0.3344370860927152,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:51",
+      "u": 0.34105960264900664,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:52",
+      "u": 0.347682119205298,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:53",
+      "u": 0.3543046357615894,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:54",
+      "u": 0.3609271523178808,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:55",
+      "u": 0.3675496688741722,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:56",
+      "u": 0.3741721854304636,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:57",
+      "u": 0.38079470198675497,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:58",
+      "u": 0.38741721854304634,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:59",
+      "u": 0.39403973509933776,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:60",
+      "u": 0.4006622516556292,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:61",
+      "u": 0.40728476821192056,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:62",
+      "u": 0.4139072847682119,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:63",
+      "u": 0.4205298013245033,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:64",
+      "u": 0.4271523178807947,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:65",
+      "u": 0.4337748344370861,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:66",
+      "u": 0.44039735099337746,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:67",
+      "u": 0.4470198675496689,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:68",
+      "u": 0.45364238410596025,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:69",
+      "u": 0.4602649006622517,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:70",
+      "u": 0.46688741721854304,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:71",
+      "u": 0.4735099337748344,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:72",
+      "u": 0.48013245033112584,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:73",
+      "u": 0.48344370860927155,
+      "distance": 0.09,
+      "gap": 0.029999999999999995,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:74",
+      "u": 0.4900662251655629,
+      "distance": 0.13152946437965904,
+      "gap": 0.07152946437965904,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:75",
+      "u": 0.4966887417218543,
+      "distance": 0.18110770276274832,
+      "gap": 0.12110770276274832,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:76",
+      "u": 0.5099337748344371,
+      "distance": 0.13152946437965904,
+      "gap": 0.07152946437965904,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:77",
+      "u": 0.5165562913907285,
+      "distance": 0.09,
+      "gap": 0.029999999999999995,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:78",
+      "u": 0.5198675496688742,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:79",
+      "u": 0.5264900662251656,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:80",
+      "u": 0.5331125827814569,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:81",
+      "u": 0.5397350993377483,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:82",
+      "u": 0.5463576158940397,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:83",
+      "u": 0.5529801324503312,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:84",
+      "u": 0.5596026490066225,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:85",
+      "u": 0.5662251655629139,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:86",
+      "u": 0.5728476821192053,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:87",
+      "u": 0.5794701986754967,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:88",
+      "u": 0.5860927152317881,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:89",
+      "u": 0.5927152317880795,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:90",
+      "u": 0.5993377483443708,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:91",
+      "u": 0.6059602649006622,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:92",
+      "u": 0.6125827814569537,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:93",
+      "u": 0.6192052980132451,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:94",
+      "u": 0.6258278145695364,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:95",
+      "u": 0.6324503311258278,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:96",
+      "u": 0.6390728476821192,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:97",
+      "u": 0.6456953642384106,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:98",
+      "u": 0.652317880794702,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:99",
+      "u": 0.6589403973509934,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:100",
+      "u": 0.6655629139072847,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:101",
+      "u": 0.6721854304635762,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:102",
+      "u": 0.6788079470198676,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:103",
+      "u": 0.6854304635761589,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:104",
+      "u": 0.6920529801324503,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:105",
+      "u": 0.6986754966887417,
+      "distance": 0.08965752282825712,
+      "gap": 0.029657522828257118,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:106",
+      "u": 0.7052980132450332,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:107",
+      "u": 0.7119205298013245,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:108",
+      "u": 0.7185430463576159,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:109",
+      "u": 0.7251655629139073,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:110",
+      "u": 0.7317880794701986,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:111",
+      "u": 0.7384105960264901,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:112",
+      "u": 0.7450331125827815,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:113",
+      "u": 0.7516556291390728,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:114",
+      "u": 0.7582781456953642,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:115",
+      "u": 0.7649006622516556,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:116",
+      "u": 0.7715231788079471,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:117",
+      "u": 0.7781456953642384,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:118",
+      "u": 0.7847682119205298,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:119",
+      "u": 0.7913907284768212,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:120",
+      "u": 0.7980132450331126,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:121",
+      "u": 0.804635761589404,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:122",
+      "u": 0.8112582781456954,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:123",
+      "u": 0.8178807947019867,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:124",
+      "u": 0.8245033112582781,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:125",
+      "u": 0.8311258278145695,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:126",
+      "u": 0.8377483443708609,
+      "distance": 0.08965752282825712,
+      "gap": 0.029657522828257118,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:127",
+      "u": 0.8443708609271523,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:128",
+      "u": 0.8509933774834437,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:129",
+      "u": 0.8576158940397351,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:130",
+      "u": 0.8642384105960265,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:131",
+      "u": 0.8708609271523179,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:132",
+      "u": 0.8774834437086093,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:133",
+      "u": 0.8841059602649006,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:134",
+      "u": 0.890728476821192,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:135",
+      "u": 0.8973509933774835,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:136",
+      "u": 0.9039735099337748,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:137",
+      "u": 0.9105960264900662,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:138",
+      "u": 0.9172185430463576,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:139",
+      "u": 0.9238410596026491,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:140",
+      "u": 0.9304635761589404,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:141",
+      "u": 0.9370860927152318,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:142",
+      "u": 0.9437086092715232,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:143",
+      "u": 0.9503311258278145,
+      "distance": 0.08965752282825708,
+      "gap": 0.029657522828257076,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:144",
+      "u": 0.956953642384106,
+      "distance": 0.0896575228282571,
+      "gap": 0.029657522828257104,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:145",
+      "u": 0.9635761589403974,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:146",
+      "u": 0.9701986754966887,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:147",
+      "u": 0.9768211920529801,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:148",
+      "u": 0.9834437086092715,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:149",
+      "u": 0.9900662251655629,
+      "distance": 0.08965752282825709,
+      "gap": 0.02965752282825709,
+      "penetration": 0,
+      "classification": "separated"
+    },
+    {
+      "segment": "partial-cuff:150",
+      "u": 0.9933774834437086,
+      "distance": 0.09,
+      "gap": 0.029999999999999995,
+      "penetration": 0,
+      "classification": "separated"
+    }
+  ],
+  "structuralConstraints": [
+    {
+      "id": "two-wrap-four-run",
+      "satisfied": false,
+      "evidenceState": "OBSERVED",
+      "modelAssignment": "ASSUMED"
+    },
+    {
+      "id": "continuous-folded-rope",
+      "satisfied": true,
+      "evidenceState": "INFERRED"
+    },
+    {
+      "id": "under-entire-cuff",
+      "satisfied": false,
+      "evidenceState": "ASSUMED"
+    },
+    {
+      "id": "X-over-under-and-two-same-direction-loop-passages",
+      "satisfied": false,
+      "evidenceState": "UNRESOLVED",
+      "reason": "Waypoints alone do not establish signed crossing traversal. This construction is not accepted as the complete locking procedure."
+    }
+  ],
+  "limitation": "Capsules exclude only immediate topological neighbors. Column test uses an infinite X cylinder conservatively. No geometry failure proves topology invalid."
+}

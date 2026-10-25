@@ -1,0 +1,24 @@
+
+> rope-geometry-poc@1.0.0 test
+> node --test
+
+✔ A: parallel separated, penetrating, and tangent capsules (0.743208ms)
+✔ segment distance handles intersecting, skew, endpoints, parallel and degenerate segments (0.107667ms)
+✔ B: distant self-crossing detected; neighboring topology excluded only (0.217625ms)
+✔ C: fixed temporal samples find mid-animation collision; endpoints miss it (0.691208ms)
+✔ JSON round trip, strict validation, no input mutation, pair symmetry (0.26875ms)
+✔ unequal radii and epsilon contact band are explicit (0.069291ms)
+✔ Phase 2 generator is deterministic; valid and negative control are distinguished (2.368208ms)
+✔ Phase 3: multiple interacting crossing constraints, alternate assignment, and collision control (4.1075ms)
+✔ Phase 4 structure is one open rope path with one bight fold, two endpoints, two wraps, and five milestones (1.017709ms)
+✔ Phase 4 distinguishes structural consistency from incomplete reference verification (0.768792ms)
+✔ Phase 4 structural validator rejects branches, missing evidence, duplicate crossings, and wrap inconsistency (1.121209ms)
+✔ Phase 4 diagrams are generated from shared topology IDs and expose pending relationships (0.471916ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 75.110083

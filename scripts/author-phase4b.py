@@ -1,0 +1,72 @@
+"""Recorded visual findings from the two bounded review passes; no geometry inference."""
+import json,hashlib
+from pathlib import Path
+base=Path('references/phase4b'); manifest=json.loads((base/'image-manifest.json').read_text())
+evidence=[dict(id=r['id'],source=r['source'],locator=r['alt'] or r['id'],asset=r['path'],url=r['url'],sha256=r['sha256']) for r in manifest]
+for name,source,times in [('duchy','duchy',[22,24,26,28,30,32,34,36,38,40,42,44,72,78,84,90,96,102,108,110,112,114,116,118]),('topologist','topologist-video',[90,96,102,108,114,120,126,132,144,156,168,180])]:
+ for t in times:
+  group='wrap' if name=='duchy' and t<60 else 'lock';p=base/f'{name}-{group}-{t}.jpg'
+  evidence.append(dict(id=f'{name}-t{t}',source=source,locator=f'{t} seconds',timeSeconds=t,asset=str(p),sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+for t in [12,60,124,132,140,148,149,154,260,269,274]:
+ p=base/f'duchy-video-{t:03d}.jpg';evidence.append(dict(id=f'duchy-t{t}',source='duchy',locator=f'{t} seconds',timeSeconds=t,asset=str(p),sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+# All source-local positions below refer to visible fragments, not invented full material positions.
+def segment(id,role,a,b,ev,poly=None,status='OBSERVED'):
+ return dict(id=id,role=role,fromNode=a,toNode=b,status=status,evidence=ev,materialOrdinal=None,polyline=poly)
+final=[]
+for i,(a,b) in enumerate([([790,488],[762,610]),([817,488],[791,610]),([842,488],[818,610]),([867,488],[845,610])],1):final.append(segment(f'C{i}','cuff-visible',f'c{i}-top',f'c{i}-lock',['duchy-detail-24'],[a,b]))
+final += [segment('T0','standing-pair-visible','t0-out','t0-lock',['duchy-detail-24'],[[330,1050],[710,710]]),segment('T1','standing-pair-visible','t1-out','t1-lock',['duchy-detail-24'],[[365,1070],[742,728]]),segment('B0','bight-limb','b0-lock','fold',['duchy-detail-24'],[[880,685],[1040,735],[1080,785],[1045,828]]),segment('B1','bight-limb','fold','b1-lock',['duchy-detail-24'],[[1045,828],[1010,830],[960,805],[900,720]])]
+nodes=[dict(id=n,kind='fold' if n=='fold' else 'open-observation-port') for n in dict.fromkeys(v for s in final for v in [s['fromNode'],s['toNode']])]
+nodes += [dict(id='E0',kind='physical-end'),dict(id='E1',kind='physical-end')]
+construction=[segment('D8.BR','bight-right-visible','r0','r1',['duchy-detail-8'],[[550,100],[700,400],[840,650]]),segment('D8.BL','bight-left-visible','l0','l1',['duchy-detail-8'],[[500,180],[650,470],[810,670]])]
+for i,(a,b) in enumerate([([788,460],[758,650]),([817,460],[785,650]),([843,460],[814,650]),([875,460],[845,650])],1):construction.append(segment(f'D8.C{i}','cuff-visible',f'd8c{i}a',f'd8c{i}b',['duchy-detail-8'],[a,b]))
+# Intersections in the deliberately limited trace of two individually visible crossings.
+def intersect(a,b,c,d):
+ x,y=a;u,v=b[0]-x,b[1]-y;p,q=c;r,s=d[0]-p,d[1]-q;det=u*s-v*r
+ t=((p-x)*s-(q-y)*r)/det;w=((p-x)*v-(q-y)*u)/det
+ return [x+t*u,y+t*v],t,w
+crossings=[]
+for i in [1,2]:
+ pt,t,w=intersect([700,400],[840,650],construction[i+1]['polyline'][0],construction[i+1]['polyline'][1])
+ crossings.append(dict(id=f'D8-X{i:02}',stateId='D8',projectionId='duchy-photo-front',status='OBSERVED',participants=['D8.BR',f'D8.C{i}'],over='D8.BR',under=f'D8.C{i}',point=pt,evidence=['duchy-detail-8'],reason='At this visible intersection the right bight limb continues in front of the interrupted cuff run; no final-state identity transfer is asserted.',visits=[dict(segmentId='D8.BR',overUnder='over',localOrder=i,materialOrdinal=None),dict(segmentId=f'D8.C{i}',overUnder='under',localOrder=1,materialOrdinal=None)]))
+legacy=json.loads(Path('phase4-report.json').read_text())['unresolved']
+changes={
+'R-tail-bight-crossing-order':('PARTIALLY_RESOLVED','Long-side doubled bundle forms the locking loop; individual loop-root strand order remains hidden.',['100427-D0020','duchy-detail-15','duchy-t96']),
+'X2':('PARTIALLY_RESOLVED','Old X2 was a bundle relation, not one proven physical-strand crossing. Do not assign a final single X2.',['duchy-detail-15','duchy-detail-24']),
+'X1:multiplicity':('PARTIALLY_RESOLVED','Two visible strand-pair crossings are recorded only in construction state D8; no total or final multiplicity inferred.',['duchy-detail-8']),
+ 'traversal:X1':('UNRESOLVED','D8 crossings have local visits but no proven E0-to-E1 order.',['duchy-detail-8','duchy-detail-24']),
+ 'traversal:X2':('UNRESOLVED','The complete final locking-loop traversal is not visible.',['duchy-detail-24','duchy-untie-5']),
+ 'P1:strand-level-crossings':('PARTIALLY_RESOLVED','The whole bight passes beneath the cuff before entering the loop; untying releases it from the loop before withdrawing it from beneath the cuff. Individual hidden crossings remain unassigned.',['duchy-detail-19','duchy-untie-4','duchy-untie-6','duchy-t114']),
+ 'tail-locking-arc':('PARTIALLY_RESOLVED','Loop ownership belongs to the long-side doubled bundle; old singular tail wording did not identify a physical strand.',['100427-D0020','duchy-detail-15','duchy-untie-2']),
+ 'cuff-tail-arm':('UNRESOLVED','C1-C4 are front-face labels only; their rear continuation and endpoint assignment remain unknown.',['duchy-detail-24','duchy-t38','duchy-t44']),
+ 'cuff-lead-arm':('UNRESOLVED','No supported permutation connects the visible cuff lanes through the hidden back to both bight limbs.',['duchy-detail-24','duchy-untie-6']),
+ 'other-free':('UNRESOLVED','Both long ends extend beyond the useful frame; neither full endpoint-to-loop route is visually identified.',['duchy-detail-1','duchy-t12']),
+ 'other-end:name':('CORRECTED','Tail / standing / lead in these tutorials denotes the long-side paired bundle. It does not identify one of the two physical endpoints. Use neutral E0/E1, with binding pending.',['duchy-detail-1','duchy-detail-10','100427-D0018']),
+ 'column-winding-direction':('PARTIALLY_RESOLVED','Detailed text specifies working-bight motion over the top and back underneath; video wraps with the long bundle. E0-to-E1 signed winding cannot be assigned until strand identity is bound.',['duchy-detail-2','duchy-detail-3','duchy-t24','duchy-t36'])}
+claims=[
+('single-rope','SUPPORTED','One rope is doubled; the fold joins its two arms, not two rope objects.',['duchy-detail-1','100427-D0018']),
+('four-cuff-runs','SUPPORTED','The selected detailed example has two wraps of a doubled bundle, producing four visible cuff runs.',['duchy-detail-3','duchy-detail-24']),
+('loop-owner','SUPPORTED','The locking loop is in the long-side bundle; the working bight passes through it.',['100427-D0020','duchy-detail-15','duchy-untie-2']),
+('passage-order','SUPPORTED','Bight traverses beneath the cuff and returns through the loop; release images show loop exit before cuff withdrawal.',['duchy-detail-19','duchy-untie-4','duchy-untie-6']),
+('final-strand-route','PENDING_REVIEW','Bundle sequence does not bind individual lanes through the rear cuff and locking core.',['duchy-detail-24','duchy-t114','duchy-untie-5']),
+('source-equivalence','PENDING_REVIEW','The bundle-level operations correspond, but exact final physical-strand correspondence and winding parity are not established; no crossings transferred from original.',['100427-D0025','duchy-detail-24'])]
+unknowns=[
+ dict(id='rear-cuff',ports=[f'c{i}-top' for i in range(1,5)],reason='Four front cuff lanes disappear behind the column.',requiredEvidence='Continuous rear/underside view while each of four marked strands is followed back to the front; keep the wrist and elbow ends identifiable.',reviewed=['duchy-t22','duchy-t44','duchy-detail-21','duchy-untie-6'],interval='Local TheDuchy 22–44 s; wrist underside remains hidden.'),
+ dict(id='locking-core',ports=[f'c{i}-lock' for i in range(1,5)]+['t0-lock','t1-lock','b0-lock','b1-lock'],reason='The knot core obscures the pairing between cuff, long-side loop and bight limbs.',requiredEvidence='Stable oblique close-up of both sides of the loosened NON-SLIPPED loop, with both bundle limbs marked; record before and after bight return without hands covering the loop root.',reviewed=['duchy-t96','duchy-t114','duchy-t118','duchy-detail-21','duchy-untie-5','topologist-t168'],interval='Local TheDuchy 96–118 s; local Topologist 114–180 s. Untying changes the configuration.'),
+ dict(id='endpoint-binding',ports=['E0','E1','t0-out','t1-out'],reason='The two physical free ends are outside the identifying view.',requiredEvidence='Wide continuous shot from each labelled physical end E0/E1 to its long-side strand, followed by the cuff without a cut; establishes orientation for signed winding.',reviewed=['duchy-detail-1','duchy-t12'],interval='TheDuchy start and detail step 1 show the fold and paired runs, not both free endpoints.'),
+ dict(id='final-ledger',ports=[],reason='Missing rear and core connections prevent final global crossing order.',requiredEvidence='Resolve rear-cuff and locking-core gaps in the SAME state/projection; a different mirrored or slipped example cannot supply the missing permutation.',reviewed=['duchy-detail-24','100427-D0025'],interval='Final states from the two references cannot yet be matched strand by strand.')]
+t={
+'schemaVersion':2,'id':'somerville-phase4b','revisionOf':'data/somerville-bowline-topology.json','units':'ordinal-material-order; drawing pixels only','ropeDiameterMetres':0.01,
+ 'target':{'handedness':'right-handed','wrapCount':2,'slipped':False,'columnCount':1,'video':'references/video/01-TheDuchy-RightHanded.mp4','acceptedIntervalSeconds':[8,149],'endExclusive':True,'note':'149 s shows Slipped title. Later content is excluded; filename does not delimit a variant.'},
+ 'sources':[{'id':'original','url':'https://crash-restraint.com/blog/2010/04/27/the-somerville-bowline','author':'Topologist','published':'2010-04-27','colorMeaning':'Gray working bight vs orange long side; not two target ropes or an extra splice node.','sequence':['wrap cuff','working bundle around long bundle','transfer loop to long bundle','working end over X','beneath cuff','return through loop','dress'],'crossingTransferAllowed':False}, {'id':'duchy','url':'https://www.theduchy.com/courses/foundations-1/topics/somerville-bowline','sequence':['doubled bight wraps cuff','bight over cuff','long-side bundle loop','bight beneath cuff and through loop','dress'],'untying':['open loop','withdraw bight from loop','withdraw from beneath cuff','unwind'],'crossingTransferAllowed':False}, {'id':'topologist-video','file':'references/video/02-Topologist-SingleColumn.mp4','sourceIdentification':'On-screen crash-restraint.com/ties/66; remote-file identity not asserted.','sequence':['wraps','long-side loop around working bight','beneath cuff and return','dress','release demonstration'],'crossingTransferAllowed':False}],
+ 'evidence':evidence,
+ 'claims':[dict(id=i,status=s,reason=r,evidence=e) for i,s,r,e in claims],
+ 'column':{'id':'column','kind':'external-cylinder','partOfMaterialGraph':False,'axisConvention':'Photo wrist at screen left; elbow at screen right. Positive axis wrist to elbow. Do not mirror sources.','workingMotion':'Detailed tutorial: bight over top away from operator, underneath back toward operator.','materialWindingSign':None,'status':'PENDING_REVIEW','count':2,'cuffIds':['C1','C2','C3','C4'],'laneMeaning':'Screen-left to screen-right in completed photo D24; not material order.','evidence':['duchy-detail-2','duchy-detail-3','duchy-detail-24']},
+ 'states':[{'id':'FINAL','kind':'completed','projectionId':'duchy-photo-front','evidence':['duchy-detail-24'],'image':'duchy-detail-24','segments':final,'nodes':nodes,'endpoints':['E0','E1'],'foldNode':'fold','orderedMaterialPath':None,'crossingInventoryComplete':False}, {'id':'D8','kind':'construction','projectionId':'duchy-photo-front','evidence':['duchy-detail-8'],'image':'duchy-detail-8','segments':construction,'nodes':[dict(id=n,kind='open-observation-port') for n in dict.fromkeys(v for s in construction for v in [s['fromNode'],s['toNode']])],'crossingInventoryComplete':False}],
+ 'crossings':crossings,'crossingLocalOrders':[{'stateId':'D8','segmentId':'D8.BR','order':['D8-X01','D8-X02'],'evidence':['duchy-detail-8']}],
+ 'unknownConnections':unknowns,'legacyReview':[dict(id=i,outcome=changes[i][0],finding=changes[i][1],evidence=changes[i][2]) for i in legacy],
+ 'confirmedAudit':[{'legacy':'E-step-7','outcome':'CORRECTED','finding':'Old image URL is detailed image 13, not 7. v2 uses the actual image 7.','evidence':['duchy-detail-7','duchy-detail-13']},{'legacy':'X1','outcome':'DOWNGRADED_SCOPE','finding':'Bight-over-cuff describes construction step 8; not a complete final crossing inventory.','evidence':['duchy-detail-8']},{'legacy':'tail-end / other-end','outcome':'DOWNGRADED_BINDING','finding':'Two ends exist, but old labels bind no visibly tracked physical endpoints.','evidence':['duchy-detail-1']},{'legacy':'bight-fold / 2 wraps / non-slipped','outcome':'RETAINED_SEMANTICS','finding':'Fold, doubled wraps and full bight return are supported; spatial strand identities remain incomplete.','evidence':['duchy-detail-1','duchy-detail-3','duchy-detail-19']}],
+ 'review':{'decision':'PARTIAL','rounds':2,'reviewer':'Codex visual inspection, not automatic source certification','humanApproved':False,'completeMaterialPathSupported':False,'sourceEquivalenceSupported':False,'log':[{'round':1,'inspected':['Original single-column photos D0018–D0029','Detailed 1–26 and untying 1–7','TheDuchy target interval sampled every 8 seconds','Topologist local video sampled every 12 seconds'],'result':'Bundle operations and source-specific methods identified.'},{'round':2,'inspected':['Full-resolution D0020/D0023, D8/D24 and untying 5','TheDuchy 22–44 s every 2 seconds; 72–118 s selected 2–6 second frames','Topologist 90–180 s selected 6–12 second frames and alternative detailed 21/22 views'],'result':'Rear cuff and loop-root individual bindings remain occluded. Stop bounded investigation; no arbitrary permutation selected.'}]},
+ 'views':[{'id':'completed','title':'Completed knot · observed fragments','stateId':'FINAL'},{'id':'wrapping','title':'Cuff lanes · rear links unknown','stateId':'FINAL'},{'id':'material','title':'Material ledger · incomplete','stateId':'FINAL'},{'id':'construction','title':'Step 8 · local crossings only','stateId':'D8'}]
+}
+Path('data/somerville-bowline-topology-v2.json').write_text(json.dumps(t,indent=2,ensure_ascii=False)+'\n')
+print('v2 authored; evidence',len(evidence),'partial final material graph; no invented final route')

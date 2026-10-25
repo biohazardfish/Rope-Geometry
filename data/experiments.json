@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "units": "m",
+  "coordinateSystem": "right-handed Z-up",
+  "ropes": [{"id":"A1","diameter":0.01,"points":[[-0.05,0,0],[0.05,0,0]]},{"id":"A2","diameter":0.01,"points":[[-0.05,0.012,0],[0.05,0.012,0]]}]
+}

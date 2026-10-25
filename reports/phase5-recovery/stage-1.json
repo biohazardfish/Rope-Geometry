@@ -1,0 +1,171 @@
+{
+  "stage": 1,
+  "status": "LOCAL_FIXTURE_VALID_TOPOLOGY_UNVERIFIED",
+  "continuity": true,
+  "segments": 212,
+  "selfPenetrations": 0,
+  "minimumGap": 0.003287276776598378,
+  "maximumPenetration": 0,
+  "epsilon": 1e-9,
+  "excludedAdjacentPairs": 211,
+  "pairs": [],
+  "constraints": [
+    {
+      "id": "loop-X",
+      "satisfied": true,
+      "measurements": [
+        {
+          "segmentA": 30,
+          "segmentB": 7,
+          "s": 0.9999999999999993,
+          "t": 6.776263578034391e-16,
+          "point": [
+            -1.3877787807814457e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.05299999999999999,
+          "depthB": 0.0030000000000000027,
+          "depthDifference": 0.04999999999999999
+        },
+        {
+          "segmentA": 30,
+          "segmentB": 204,
+          "s": 0.9999999999999993,
+          "t": 0.9999999999999993,
+          "point": [
+            -1.3877787807814457e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.05299999999999999,
+          "depthB": -0.012999999999999998,
+          "depthDifference": 0.06599999999999999
+        },
+        {
+          "segmentA": 181,
+          "segmentB": 7,
+          "s": 6.938893903907222e-16,
+          "t": 6.938893903907222e-16,
+          "point": [
+            -1.3877787807814438e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.037000000000000005,
+          "depthB": 0.0030000000000000027,
+          "depthDifference": 0.034
+        },
+        {
+          "segmentA": 181,
+          "segmentB": 204,
+          "s": 6.776263578034391e-16,
+          "t": 0.9999999999999993,
+          "point": [
+            -1.3552527156068775e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.037000000000000005,
+          "depthB": -0.012999999999999998,
+          "depthDifference": 0.05
+        }
+      ],
+      "referenceStatus": "ASSUMED_ROOT_SIGN"
+    },
+    {
+      "id": "first-passage",
+      "satisfied": true,
+      "measurements": [
+        {
+          "segment": 95,
+          "materialPosition": 0.45085209981740715,
+          "limb": 0,
+          "point": [
+            -0.022,
+            0.020000000000000004,
+            0
+          ],
+          "materialDirection": 1,
+          "workingDirection": 1
+        },
+        {
+          "segment": 116,
+          "materialPosition": 0.5491479001825929,
+          "limb": 1,
+          "point": [
+            -0.038,
+            0.020000000000000004,
+            0
+          ],
+          "materialDirection": -1,
+          "workingDirection": 1
+        }
+      ],
+      "referenceStatus": "OBSERVED_PROCEDURE_ASSUMED_EMBEDDING"
+    },
+    {
+      "id": "over-X",
+      "satisfied": null,
+      "measurements": [],
+      "referenceStatus": "OBSERVED_PROCEDURE_ASSUMED_EMBEDDING"
+    },
+    {
+      "id": "under-entire-cuff",
+      "satisfied": null,
+      "reason": "Requires separate check against the immutable cuff arcs and then integrated single-rope validation."
+    },
+    {
+      "id": "same-direction-return",
+      "satisfied": null,
+      "measurements": []
+    },
+    {
+      "id": "material-operation-order",
+      "satisfied": true,
+      "measurements": [
+        {
+          "limb": 0,
+          "intervals": [
+            {
+              "role": "first-passage",
+              "indices": [
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100
+              ]
+            }
+          ],
+          "satisfied": true
+        },
+        {
+          "limb": 1,
+          "intervals": [
+            {
+              "role": "first-passage",
+              "indices": [
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117
+              ]
+            }
+          ],
+          "satisfied": true
+        }
+      ]
+    }
+  ],
+  "phase5Accepted": false,
+  "cuffIntegrated": false,
+  "column": {
+    "model": "Conservative infinite X-axis cylinder; saved radius 0.055 m",
+    "minimumGap": 0.008622153857191044,
+    "penetrations": []
+  },
+  "underCuff": null,
+  "stageGatePassed": true
+}

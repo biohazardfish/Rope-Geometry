@@ -1,0 +1,122 @@
+{
+  "id": "candidate-A",
+  "title": "Flat-cuff minimal-twist hypothesis",
+  "diameter": 0.01,
+  "column": {
+    "axis": "X",
+    "radius": 0.055,
+    "length": 0.36,
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  "parameters": {
+    "cuffRadius": 0.09,
+    "pitch": 0.032,
+    "limbOffset": 0.008,
+    "arcStep": 0.18
+  },
+  "evidenceLayer": "data/somerville-bowline-topology-v2.json",
+  "reference": "references/Documents/09 - The Somerville Bowline - A4 print friendly.pdf",
+  "claims": [
+    {
+      "id": "two-wrap",
+      "status": "OBSERVED",
+      "evidence": [
+        "duchy-detail-3",
+        "duchy-detail-24"
+      ],
+      "description": "Two doubled wraps; four cuff runs."
+    },
+    {
+      "id": "loop-transfer",
+      "status": "OBSERVED",
+      "evidence": [
+        "PDF p1–2"
+      ],
+      "description": "360 degree working-bight turn transfers to standing bundle; direct standing-loop construction is also described on p2."
+    },
+    {
+      "id": "underpass",
+      "status": "OBSERVED",
+      "evidence": [
+        "PDF p2–3"
+      ],
+      "description": "Over the X, beneath entire cuff, then through loop in the same direction."
+    },
+    {
+      "id": "rear-route",
+      "status": "ASSUMED",
+      "evidence": [
+        "duchy-detail-24"
+      ],
+      "description": "Two parallel helical limbs, no rear exchange.",
+      "affects": [
+        "cuff-0",
+        "cuff-1"
+      ],
+      "alternatives": [
+        "Rear limb exchange with compensating local twist"
+      ],
+      "resolution": "Marked limbs continuously visible behind column."
+    },
+    {
+      "id": "loop-route",
+      "status": "ASSUMED",
+      "evidence": [
+        "PDF p2–3"
+      ],
+      "description": "Open standing-loop embedding and working-return waypoints; handedness and two same-direction loop passages require further correspondence review.",
+      "affects": [
+        "standing",
+        "locking-loop",
+        "over-X",
+        "under-cuff",
+        "return-loop"
+      ],
+      "alternatives": [
+        "Opposite loop crossing sign or alternative loop-root attachment"
+      ],
+      "resolution": "Both roots and both bight limbs visible throughout transfer."
+    },
+    {
+      "id": "metric-layout",
+      "status": "ASSUMED",
+      "evidence": [],
+      "description": "All dimensions and offsets are engineering choices, not measurements from sources.",
+      "affects": [
+        "all"
+      ],
+      "alternatives": [
+        "Different column radius and dressing"
+      ],
+      "resolution": "Metric capture or manual measurements."
+    },
+    {
+      "id": "endpoint-map",
+      "status": "ASSUMED",
+      "evidence": [
+        "duchy-detail-24"
+      ],
+      "description": "E0 follows limb 0 to fold; limb 1 returns to E1.",
+      "affects": [
+        "all"
+      ],
+      "alternatives": [
+        "Swap endpoint names; alternative rear pairing"
+      ],
+      "resolution": "Trace marked E0 and E1 through the complete tie."
+    },
+    {
+      "id": "final-equivalence",
+      "status": "UNRESOLVED",
+      "evidence": [
+        "PDF p3",
+        "duchy-detail-24"
+      ],
+      "description": "No proof of final strand-by-strand equivalence or locking behavior."
+    }
+  ]
+}

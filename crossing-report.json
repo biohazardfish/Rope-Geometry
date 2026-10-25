@@ -1,0 +1,67 @@
+{
+  "valid": {
+    "projectedCrossingCount": 1,
+    "projectedCrossings": [
+      [
+        0,
+        0
+      ]
+    ],
+    "minimumNonlocalSegmentSeparation": 0.012857142857142859,
+    "requiredMinimumSeparation": 0.012,
+    "penetrationCount": 0,
+    "failures": [],
+    "crossingCenterlineSeparation": 0.013892965993998068,
+    "clearance": 0.003892965993998068,
+    "overUnderPreserved": true,
+    "valid": true
+  },
+  "invalid": {
+    "projectedCrossingCount": 1,
+    "projectedCrossings": [
+      [
+        0,
+        0
+      ]
+    ],
+    "minimumNonlocalSegmentSeparation": 0.0038600397831872035,
+    "requiredMinimumSeparation": 0.012,
+    "penetrationCount": 6,
+    "failures": [
+      {
+        "segmentA": "rope-1:1",
+        "segmentB": "rope-1:34",
+        "penetration": 0.0004708373799035149
+      },
+      {
+        "segmentA": "rope-1:2",
+        "segmentB": "rope-1:34",
+        "penetration": 0.00329278112688397
+      },
+      {
+        "segmentA": "rope-1:2",
+        "segmentB": "rope-1:35",
+        "penetration": 0.005092497519391797
+      },
+      {
+        "segmentA": "rope-1:3",
+        "segmentB": "rope-1:35",
+        "penetration": 0.006139960216812797
+      },
+      {
+        "segmentA": "rope-1:3",
+        "segmentB": "rope-1:36",
+        "penetration": 0.006139960216812797
+      },
+      {
+        "segmentA": "rope-1:4",
+        "segmentB": "rope-1:36",
+        "penetration": 0.0008277224007034664
+      }
+    ],
+    "crossingCenterlineSeparation": 0.0038600397831872035,
+    "clearance": -0.006139960216812797,
+    "overUnderPreserved": true,
+    "valid": false
+  }
+}

@@ -1,0 +1,2456 @@
+{
+  "stage": 4,
+  "status": "GEOMETRY_FAILED",
+  "continuity": true,
+  "segments": 380,
+  "selfPenetrations": 74,
+  "minimumGap": -0.009091543001762294,
+  "maximumPenetration": 0.009091543001762296,
+  "epsilon": 1e-9,
+  "excludedAdjacentPairs": 379,
+  "pairs": [
+    {
+      "segmentA": "recovery-integrated-trial:7",
+      "segmentB": "recovery-integrated-trial:130",
+      "s": 1,
+      "t": 0.7691822832068659,
+      "pointA": [
+        -0.02600000000000001,
+        -0.10300000000000001,
+        0.020000000000000018
+      ],
+      "pointB": [
+        -0.031195665349463025,
+        -0.10859014763994279,
+        0.02565856141967078
+      ],
+      "distance": 0.009500737150356015,
+      "gap": -0.0004992628496439857,
+      "penetration": 0.0004992628496439857,
+      "state": "penetrating",
+      "roles": [
+        "root-in/0",
+        "interface-out/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:8",
+      "segmentB": "recovery-integrated-trial:130",
+      "s": 0.3249626920872749,
+      "t": 0.7975433511482508,
+      "pointA": [
+        -0.029899552305047306,
+        -0.10300000000000001,
+        0.026499253841745514
+      ],
+      "pointB": [
+        -0.03173137441057807,
+        -0.10835380540709792,
+        0.02540016057842705
+      ],
+      "distance": 0.005764270167580112,
+      "gap": -0.004235729832419888,
+      "penetration": 0.004235729832419888,
+      "state": "penetrating",
+      "roles": [
+        "root-in/0",
+        "interface-out/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:8",
+      "segmentB": "recovery-integrated-trial:131",
+      "s": 0.3415032679738556,
+      "t": 0,
+      "pointA": [
+        -0.030098039215686274,
+        -0.10300000000000001,
+        0.026830065359477125
+      ],
+      "pointB": [
+        -0.035555555555555556,
+        -0.10666666666666667,
+        0.02355555555555556
+      ],
+      "distance": 0.007345157826783784,
+      "gap": -0.002654842173216216,
+      "penetration": 0.002654842173216216,
+      "state": "penetrating",
+      "roles": [
+        "root-in/0",
+        "interface-out/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:35",
+      "segmentB": "recovery-integrated-trial:39",
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        0.046,
+        -0.153,
+        0.10000000000000003
+      ],
+      "pointB": [
+        0.051199999999999996,
+        -0.15839999999999999,
+        0.1
+      ],
+      "distance": 0.007496665925596514,
+      "gap": -0.0025033340744034863,
+      "penetration": 0.0025033340744034863,
+      "state": "penetrating",
+      "roles": [
+        "root-out/0",
+        "interface-in/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:35",
+      "segmentB": "recovery-integrated-trial:40",
+      "s": 1,
+      "t": 0.06920205790376173,
+      "pointA": [
+        0.046,
+        -0.153,
+        0.10000000000000003
+      ],
+      "pointB": [
+        0.050549500655704634,
+        -0.15858684555634014,
+        0.09861595884192477
+      ],
+      "distance": 0.0073366456513791695,
+      "gap": -0.0026633543486208307,
+      "penetration": 0.0026633543486208307,
+      "state": "penetrating",
+      "roles": [
+        "root-out/0",
+        "interface-in/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:36",
+      "segmentB": "recovery-integrated-trial:38",
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        0.05799999999999998,
+        -0.153,
+        0.12000000000000002
+      ],
+      "pointB": [
+        0.060599999999999994,
+        -0.1557,
+        0.12000000000000001
+      ],
+      "distance": 0.0037483329627982765,
+      "gap": -0.006251667037201723,
+      "penetration": 0.006251667037201723,
+      "state": "penetrating",
+      "roles": [
+        "root-out/0",
+        "interface-in/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:36",
+      "segmentB": "recovery-integrated-trial:39",
+      "s": 1,
+      "t": 0.03460102895188106,
+      "pointA": [
+        0.05799999999999998,
+        -0.153,
+        0.12000000000000002
+      ],
+      "pointB": [
+        0.06027475032785231,
+        -0.15579342277817007,
+        0.11930797942096238
+      ],
+      "distance": 0.0036683228256895926,
+      "gap": -0.006331677174310407,
+      "penetration": 0.006331677174310407,
+      "state": "penetrating",
+      "roles": [
+        "root-out/0",
+        "interface-in/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:36",
+      "segmentB": "recovery-integrated-trial:40",
+      "s": 0.11470588235294009,
+      "t": 0,
+      "pointA": [
+        0.04737647058823528,
+        -0.153,
+        0.10229411764705884
+      ],
+      "pointB": [
+        0.051199999999999996,
+        -0.15839999999999999,
+        0.1
+      ],
+      "distance": 0.007003024556659536,
+      "gap": -0.002996975443340464,
+      "penetration": 0.002996975443340464,
+      "state": "penetrating",
+      "roles": [
+        "root-out/0",
+        "interface-in/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:37",
+      "segmentB": "recovery-integrated-trial:39",
+      "s": 0.05735294117647041,
+      "t": 0,
+      "pointA": [
+        0.058688235294117624,
+        -0.153,
+        0.12114705882352943
+      ],
+      "pointB": [
+        0.060599999999999994,
+        -0.1557,
+        0.12000000000000001
+      ],
+      "distance": 0.0035015122783297846,
+      "gap": -0.006498487721670216,
+      "penetration": 0.006498487721670216,
+      "state": "penetrating",
+      "roles": [
+        "root-out/0",
+        "interface-in/0"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:42",
+      "segmentB": "recovery-integrated-trial:253",
+      "s": 0.5797148459961967,
+      "t": 0.6881323444849096,
+      "pointA": [
+        0.026950680447635742,
+        -0.1653652300841897,
+        0.048405703080076065
+      ],
+      "pointB": [
+        0.024,
+        -0.16451702224908954,
+        0.049678014832726346
+      ],
+      "distance": 0.0033233640835029212,
+      "gap": -0.006676635916497079,
+      "penetration": 0.006676635916497079,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "interface-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:42",
+      "segmentB": "recovery-integrated-trial:254",
+      "s": 0.7302532028649259,
+      "t": 0,
+      "pointA": [
+        0.02553561989306969,
+        -0.16577168364773529,
+        0.045394935942701484
+      ],
+      "pointB": [
+        0.024,
+        -0.1575,
+        0.044999999999999984
+      ],
+      "distance": 0.008422283136005354,
+      "gap": -0.0015777168639946465,
+      "penetration": 0.0015777168639946465,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "interface-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:43",
+      "segmentB": "recovery-integrated-trial:253",
+      "s": 0,
+      "t": 0.825641025641026,
+      "pointA": [
+        0.022999999999999993,
+        -0.16649999999999998,
+        0.04000000000000001
+      ],
+      "pointB": [
+        0.024,
+        -0.16142307692307692,
+        0.047615384615384594
+      ],
+      "distance": 0.009207020732529617,
+      "gap": -0.0007929792674703836,
+      "penetration": 0.0007929792674703836,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "interface-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:49",
+      "segmentB": "recovery-integrated-trial:332",
+      "s": 0.6502564102564098,
+      "t": 1,
+      "pointA": [
+        -0.024,
+        -0.14286923076923078,
+        -0.03524615384615385
+      ],
+      "pointB": [
+        -0.029,
+        -0.13970000000000002,
+        -0.039999999999999994
+      ],
+      "distance": 0.007592303795494274,
+      "gap": -0.0024076962045057266,
+      "penetration": 0.0024076962045057266,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "interface-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:49",
+      "segmentB": "recovery-integrated-trial:333",
+      "s": 0.8096716692542114,
+      "t": 0.3800241504226317,
+      "pointA": [
+        -0.024,
+        -0.13928238744178026,
+        -0.032854924961186825
+      ],
+      "pointB": [
+        -0.024819734345351053,
+        -0.13958599275487324,
+        -0.03239951699154736
+      ],
+      "distance": 0.0009856657658139213,
+      "gap": -0.009014334234186079,
+      "penetration": 0.009014334234186079,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "interface-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:49",
+      "segmentB": "recovery-integrated-trial:350",
+      "s": 1,
+      "t": 0.323529411764706,
+      "pointA": [
+        -0.024,
+        -0.135,
+        -0.03
+      ],
+      "pointB": [
+        -0.02988235294117648,
+        -0.137,
+        -0.02647058823529411
+      ],
+      "distance": 0.007145545712498937,
+      "gap": -0.002854454287501063,
+      "penetration": 0.002854454287501063,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:50",
+      "segmentB": "recovery-integrated-trial:333",
+      "s": 0,
+      "t": 0.4920647105106599,
+      "pointA": [
+        -0.024,
+        -0.135,
+        -0.03
+      ],
+      "pointB": [
+        -0.023587288184382743,
+        -0.13955238058684682,
+        -0.030158705789786792
+      ],
+      "distance": 0.004573804497129463,
+      "gap": -0.005426195502870537,
+      "penetration": 0.005426195502870537,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "interface-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:50",
+      "segmentB": "recovery-integrated-trial:349",
+      "s": 0.14358974358974347,
+      "t": 1,
+      "pointA": [
+        -0.024,
+        -0.13176923076923078,
+        -0.027846153846153847
+      ],
+      "pointB": [
+        -0.02600000000000001,
+        -0.137,
+        -0.01999999999999999
+      ],
+      "distance": 0.009639661660197267,
+      "gap": -0.0003603383398027328,
+      "penetration": 0.0003603383398027328,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:50",
+      "segmentB": "recovery-integrated-trial:350",
+      "s": 0.014035087719298203,
+      "t": 0.3157894736842108,
+      "pointA": [
+        -0.024,
+        -0.1346842105263158,
+        -0.029789473684210525
+      ],
+      "pointB": [
+        -0.02978947368421054,
+        -0.137,
+        -0.02631578947368421
+      ],
+      "distance": 0.007137742529753564,
+      "gap": -0.0028622574702464364,
+      "penetration": 0.0028622574702464364,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:51",
+      "segmentB": "recovery-integrated-trial:372",
+      "s": 1,
+      "t": 0.779411764705882,
+      "pointA": [
+        -0.024,
+        -0.09,
+        0
+      ],
+      "pointB": [
+        -0.016647058823529418,
+        -0.08700000000000001,
+        0.0044117647058823425
+      ],
+      "distance": 0.009084569982377022,
+      "gap": -0.0009154300176229778,
+      "penetration": 0.0009154300176229778,
+      "state": "penetrating",
+      "roles": [
+        "interface-in/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:52",
+      "segmentB": "recovery-integrated-trial:371",
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        -0.02311111111111111,
+        -0.08863269777109872,
+        0.01562833599002373
+      ],
+      "pointB": [
+        -0.02600000000000001,
+        -0.08700000000000001,
+        0.020000000000000018
+      ],
+      "distance": 0.00548842666346362,
+      "gap": -0.00451157333653638,
+      "penetration": 0.00451157333653638,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:52",
+      "segmentB": "recovery-integrated-trial:372",
+      "s": 1,
+      "t": 0.22444843173932413,
+      "pointA": [
+        -0.02311111111111111,
+        -0.08863269777109872,
+        0.01562833599002373
+      ],
+      "pointB": [
+        -0.023306618819128117,
+        -0.08700000000000001,
+        0.015511031365213524
+      ],
+      "distance": 0.0016485404607247706,
+      "gap": -0.00835145953927523,
+      "penetration": 0.00835145953927523,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:53",
+      "segmentB": "recovery-integrated-trial:371",
+      "s": 0.28475521992740177,
+      "t": 1,
+      "pointA": [
+        -0.022857995360064533,
+        -0.08747648852517488,
+        0.0199433676399924
+      ],
+      "pointB": [
+        -0.02600000000000001,
+        -0.08700000000000001,
+        0.020000000000000018
+      ],
+      "distance": 0.003178433843294433,
+      "gap": -0.006821566156705567,
+      "penetration": 0.006821566156705567,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:53",
+      "segmentB": "recovery-integrated-trial:372",
+      "s": 0.05213028718932239,
+      "t": 0.19642812720389918,
+      "pointA": [
+        -0.023064773078053935,
+        -0.08842102993914001,
+        0.0164182910932216
+      ],
+      "pointB": [
+        -0.023642862473553218,
+        -0.08700000000000001,
+        0.016071437455922023
+      ],
+      "distance": 0.0015728384795740855,
+      "gap": -0.008427161520425915,
+      "penetration": 0.008427161520425915,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:54",
+      "segmentB": "recovery-integrated-trial:371",
+      "s": 0,
+      "t": 0.6869431532116361,
+      "pointA": [
+        -0.022222222222222223,
+        -0.08457233587073175,
+        0.030781812899310184
+      ],
+      "pointB": [
+        -0.029756682161460372,
+        -0.08700000000000001,
+        0.026261136935767294
+      ],
+      "distance": 0.009115818716268704,
+      "gap": -0.0008841812837312966,
+      "penetration": 0.0008841812837312966,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:85",
+      "segmentB": "recovery-integrated-trial:374",
+      "s": 1,
+      "t": 0.5777627291413052,
+      "pointA": [
+        0.006222222222222223,
+        -0.08457233587073175,
+        -0.030781812899310174
+      ],
+      "pointB": [
+        0.004933152749695659,
+        -0.08700000000000001,
+        -0.03155525458282612
+      ],
+      "distance": 0.0028554273353275346,
+      "gap": -0.007144572664672466,
+      "penetration": 0.007144572664672466,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:85",
+      "segmentB": "recovery-integrated-trial:375",
+      "s": 0.5479534003275934,
+      "t": 0,
+      "pointA": [
+        0.005820403022513417,
+        -0.08157524452497583,
+        -0.03720909603168307
+      ],
+      "pointB": [
+        0.009999999999999995,
+        -0.08700000000000001,
+        -0.04000000000000001
+      ],
+      "distance": 0.007395008304145909,
+      "gap": -0.0026049916958540914,
+      "penetration": 0.0026049916958540914,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:86",
+      "segmentB": "recovery-integrated-trial:373",
+      "s": 0.6720431956488312,
+      "t": 1,
+      "pointA": [
+        0.0068195939516878515,
+        -0.08730107445774513,
+        -0.02059802185200254
+      ],
+      "pointB": [
+        -0.0020000000000000018,
+        -0.08700000000000001,
+        -0.020000000000000018
+      ],
+      "distance": 0.008844971081763242,
+      "gap": -0.0011550289182367581,
+      "penetration": 0.0011550289182367581,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:86",
+      "segmentB": "recovery-integrated-trial:374",
+      "s": 0,
+      "t": 0.5777627291413051,
+      "pointA": [
+        0.006222222222222223,
+        -0.08457233587073175,
+        -0.030781812899310174
+      ],
+      "pointB": [
+        0.004933152749695658,
+        -0.08700000000000001,
+        -0.03155525458282611
+      ],
+      "distance": 0.0028554273353275333,
+      "gap": -0.0071445726646724664,
+      "penetration": 0.0071445726646724664,
+      "state": "penetrating",
+      "roles": [
+        "cuff/0",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:127",
+      "segmentB": "recovery-integrated-trial:337",
+      "s": 0.7477825818270349,
+      "t": 0.7384218648257,
+      "pointA": [
+        0.025875217898822675,
+        -0.13376847848477472,
+        0.05318686981002035
+      ],
+      "pointB": [
+        0.02312264051308269,
+        -0.1382784734405523,
+        0.054768437296514
+      ],
+      "distance": 0.005515259964857529,
+      "gap": -0.0044847400351424715,
+      "penetration": 0.0044847400351424715,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/0",
+        "interface-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:127",
+      "segmentB": "recovery-integrated-trial:338",
+      "s": 0.5487405755291042,
+      "t": 0,
+      "pointA": [
+        0.029634900240005813,
+        -0.1354271618705908,
+        0.05500036364517927
+      ],
+      "pointB": [
+        0.02599999999999999,
+        -0.13820000000000002,
+        0.06
+      ],
+      "distance": 0.006774768979614365,
+      "gap": -0.0032252310203856353,
+      "penetration": 0.0032252310203856353,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/0",
+        "interface-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:127",
+      "segmentB": "recovery-integrated-trial:345",
+      "s": 0.7167446483551116,
+      "t": 1,
+      "pointA": [
+        0.02646148997551456,
+        -0.13402712793037408,
+        0.053469659870542315
+      ],
+      "pointB": [
+        0.022000000000000006,
+        -0.137,
+        0.06
+      ],
+      "distance": 0.00844915400205158,
+      "gap": -0.0015508459979484204,
+      "penetration": 0.0015508459979484204,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/0",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:127",
+      "segmentB": "recovery-integrated-trial:346",
+      "s": 1,
+      "t": 0.3545751633986929,
+      "pointA": [
+        0.021111111111111112,
+        -0.13166666666666668,
+        0.050888888888888886
+      ],
+      "pointB": [
+        0.017745098039215687,
+        -0.137,
+        0.05290849673202615
+      ],
+      "distance": 0.006622182743225742,
+      "gap": -0.003377817256774258,
+      "penetration": 0.003377817256774258,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/0",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:128",
+      "segmentB": "recovery-integrated-trial:337",
+      "s": 0,
+      "t": 0.5508645339576658,
+      "pointA": [
+        0.021111111111111112,
+        -0.13166666666666668,
+        0.050888888888888886
+      ],
+      "pointB": [
+        0.021059509873534315,
+        -0.13833474063981271,
+        0.05101729067915332
+      ],
+      "distance": 0.006669509743512643,
+      "gap": -0.0033304902564873576,
+      "penetration": 0.0033304902564873576,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/0",
+        "interface-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:128",
+      "segmentB": "recovery-integrated-trial:346",
+      "s": 0.0036398557005825486,
+      "t": 0.35731100265076476,
+      "pointA": [
+        0.021042358281211218,
+        -0.1316363345358285,
+        0.050855725759172465
+      ],
+      "pointB": [
+        0.017712267968190823,
+        -0.137,
+        0.0528537799469847
+      ],
+      "distance": 0.0066219807642315465,
+      "gap": -0.0033780192357684537,
+      "penetration": 0.0033780192357684537,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/0",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:292",
+      "segmentB": "recovery-integrated-trial:372",
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        -0.008,
+        -0.09,
+        -2.0816681711721685e-17
+      ],
+      "pointB": [
+        -0.013999999999999999,
+        -0.08700000000000001,
+        -2.7755575615628914e-17
+      ],
+      "distance": 0.006708203932499363,
+      "gap": -0.0032917960675006375,
+      "penetration": 0.0032917960675006375,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:292",
+      "segmentB": "recovery-integrated-trial:373",
+      "s": 1,
+      "t": 0.1323529411764703,
+      "pointA": [
+        -0.008,
+        -0.09,
+        -2.0816681711721685e-17
+      ],
+      "pointB": [
+        -0.012411764705882355,
+        -0.08700000000000001,
+        -0.002647058823529433
+      ],
+      "distance": 0.005955718952006891,
+      "gap": -0.004044281047993109,
+      "penetration": 0.004044281047993109,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:293",
+      "segmentB": "recovery-integrated-trial:372",
+      "s": 0.038214123589138456,
+      "t": 1,
+      "pointA": [
+        -0.008033968109857011,
+        -0.08994774974364106,
+        -0.0005972231630153687
+      ],
+      "pointB": [
+        -0.013999999999999999,
+        -0.08700000000000001,
+        -2.7755575615628914e-17
+      ],
+      "distance": 0.0066812753701506,
+      "gap": -0.0033187246298494004,
+      "penetration": 0.0033187246298494004,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:293",
+      "segmentB": "recovery-integrated-trial:373",
+      "s": 0.6223782408326841,
+      "t": 0.47775004407484,
+      "pointA": [
+        -0.008553225102962385,
+        -0.08914902084408981,
+        -0.009726736260613105
+      ],
+      "pointB": [
+        -0.00826699947110192,
+        -0.08700000000000001,
+        -0.009555000881496823
+      ],
+      "distance": 0.0021747893555713782,
+      "gap": -0.007825210644428622,
+      "penetration": 0.007825210644428622,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:293",
+      "segmentB": "recovery-integrated-trial:374",
+      "s": 1,
+      "t": 0,
+      "pointA": [
+        -0.008888888888888887,
+        -0.08863269777109872,
+        -0.015628335990023733
+      ],
+      "pointB": [
+        -0.0020000000000000018,
+        -0.08700000000000001,
+        -0.020000000000000018
+      ],
+      "distance": 0.008320693381643707,
+      "gap": -0.0016793066183562935,
+      "penetration": 0.0016793066183562935,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:294",
+      "segmentB": "recovery-integrated-trial:373",
+      "s": 0,
+      "t": 0.6873162741430286,
+      "pointA": [
+        -0.008888888888888887,
+        -0.08863269777109872,
+        -0.015628335990023733
+      ],
+      "pointB": [
+        -0.005752204710283657,
+        -0.08700000000000001,
+        -0.013746325482860594
+      ],
+      "distance": 0.0040058024411016,
+      "gap": -0.0059941975588984,
+      "penetration": 0.0059941975588984,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:294",
+      "segmentB": "recovery-integrated-trial:374",
+      "s": 0.2703546917861461,
+      "t": 0,
+      "pointA": [
+        -0.009129204170476572,
+        -0.0875349598809848,
+        -0.01972514956932235
+      ],
+      "pointB": [
+        -0.0020000000000000018,
+        -0.08700000000000001,
+        -0.020000000000000018
+      ],
+      "distance": 0.0071545284217653,
+      "gap": -0.0028454715782347,
+      "penetration": 0.0028454715782347,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:325",
+      "segmentB": "recovery-integrated-trial:370",
+      "s": 1,
+      "t": 0.8308823529411772,
+      "pointA": [
+        -0.03733333333333333,
+        -0.07794228634059948,
+        0.04499999999999999
+      ],
+      "pointB": [
+        -0.04002941176470588,
+        -0.08700000000000001,
+        0.04338235294117646
+      ],
+      "distance": 0.009587898500230571,
+      "gap": -0.00041210149976942875,
+      "penetration": 0.00041210149976942875,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:326",
+      "segmentB": "recovery-integrated-trial:370",
+      "s": 0.5335528721863392,
+      "t": 1,
+      "pointA": [
+        -0.03780760255305452,
+        -0.08147976831013924,
+        0.037413845435144186
+      ],
+      "pointB": [
+        -0.038000000000000006,
+        -0.08700000000000001,
+        0.04000000000000001
+      ],
+      "distance": 0.006099030260677414,
+      "gap": -0.0039009697393225864,
+      "penetration": 0.0039009697393225864,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:326",
+      "segmentB": "recovery-integrated-trial:371",
+      "s": 0.7824901700809366,
+      "t": 0.2245685129393946,
+      "pointA": [
+        -0.03802888015118306,
+        -0.0831302349250777,
+        0.033874408357338646
+      ],
+      "pointB": [
+        -0.035305177844727274,
+        -0.08700000000000001,
+        0.03550862974121212
+      ],
+      "distance": 0.0050064274209050815,
+      "gap": -0.004993572579094919,
+      "penetration": 0.004993572579094919,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:327",
+      "segmentB": "recovery-integrated-trial:370",
+      "s": 0,
+      "t": 1,
+      "pointA": [
+        -0.03822222222222223,
+        -0.08457233587073175,
+        0.030781812899310184
+      ],
+      "pointB": [
+        -0.038000000000000006,
+        -0.08700000000000001,
+        0.04000000000000001
+      ],
+      "distance": 0.009535088319670116,
+      "gap": -0.0004649116803298846,
+      "penetration": 0.0004649116803298846,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:327",
+      "segmentB": "recovery-integrated-trial:371",
+      "s": 0,
+      "t": 0.33400197674104753,
+      "pointA": [
+        -0.03822222222222223,
+        -0.08457233587073175,
+        0.030781812899310184
+      ],
+      "pointB": [
+        -0.03399197627910744,
+        -0.08700000000000001,
+        0.03331996046517906
+      ],
+      "distance": 0.0054982476235525286,
+      "gap": -0.004501752376447472,
+      "penetration": 0.004501752376447472,
+      "state": "penetrating",
+      "roles": [
+        "cuff/1",
+        "root-in/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:331",
+      "segmentB": "recovery-integrated-trial:351",
+      "s": 0.6396933560477003,
+      "t": 0.5144804088586032,
+      "pointA": [
+        -0.04,
+        -0.13399488926746167,
+        -0.052793867120954005
+      ],
+      "pointB": [
+        -0.044173764906303245,
+        -0.137,
+        -0.05028960817717206
+      ],
+      "distance": 0.005720342373094246,
+      "gap": -0.004279657626905754,
+      "penetration": 0.004279657626905754,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:332",
+      "segmentB": "recovery-integrated-trial:350",
+      "s": 1,
+      "t": 0.8014705882352942,
+      "pointA": [
+        -0.029,
+        -0.13970000000000002,
+        -0.039999999999999994
+      ],
+      "pointB": [
+        -0.03561764705882354,
+        -0.137,
+        -0.03602941176470588
+      ],
+      "distance": 0.008176112984139339,
+      "gap": -0.0018238870158606615,
+      "penetration": 0.0018238870158606615,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:332",
+      "segmentB": "recovery-integrated-trial:351",
+      "s": 0.8115680592603963,
+      "t": 0,
+      "pointA": [
+        -0.03107275134813564,
+        -0.1397565295822219,
+        -0.043768638814792066
+      ],
+      "pointB": [
+        -0.038000000000000006,
+        -0.137,
+        -0.039999999999999994
+      ],
+      "distance": 0.008353913318845153,
+      "gap": -0.0016460866811548475,
+      "penetration": 0.0016460866811548475,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:333",
+      "segmentB": "recovery-integrated-trial:349",
+      "s": 1,
+      "t": 0.823529411764706,
+      "pointA": [
+        -0.018000000000000002,
+        -0.13940000000000002,
+        -0.01999999999999999
+      ],
+      "pointB": [
+        -0.02388235294117648,
+        -0.137,
+        -0.016470588235294112
+      ],
+      "distance": 0.007267655985901636,
+      "gap": -0.0027323440140983642,
+      "penetration": 0.0027323440140983642,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:333",
+      "segmentB": "recovery-integrated-trial:350",
+      "s": 0.8325049415647967,
+      "t": 0,
+      "pointA": [
+        -0.01984244564278724,
+        -0.13945024851753057,
+        -0.023349901168704057
+      ],
+      "pointB": [
+        -0.02600000000000001,
+        -0.137,
+        -0.01999999999999999
+      ],
+      "distance": 0.0074257007278623575,
+      "gap": -0.0025742992721376427,
+      "penetration": 0.0025742992721376427,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:333",
+      "segmentB": "recovery-integrated-trial:351",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        -0.029,
+        -0.13970000000000002,
+        -0.039999999999999994
+      ],
+      "pointB": [
+        -0.038000000000000006,
+        -0.137,
+        -0.039999999999999994
+      ],
+      "distance": 0.009396275858019502,
+      "gap": -0.0006037241419804985,
+      "penetration": 0.0006037241419804985,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:334",
+      "segmentB": "recovery-integrated-trial:348",
+      "s": 1,
+      "t": 0.8455882352941181,
+      "pointA": [
+        -0.007000000000000006,
+        -0.1391,
+        0
+      ],
+      "pointB": [
+        -0.012147058823529415,
+        -0.137,
+        0.0030882352941176416
+      ],
+      "distance": 0.006359198987663917,
+      "gap": -0.0036408010123360835,
+      "penetration": 0.0036408010123360835,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:334",
+      "segmentB": "recovery-integrated-trial:349",
+      "s": 0.8534418238691975,
+      "t": 0,
+      "pointA": [
+        -0.008612139937438833,
+        -0.13914396745283925,
+        -0.002931163522616048
+      ],
+      "pointB": [
+        -0.013999999999999999,
+        -0.137,
+        0
+      ],
+      "distance": 0.00649748813687955,
+      "gap": -0.00350251186312045,
+      "penetration": 0.00350251186312045,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:334",
+      "segmentB": "recovery-integrated-trial:350",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        -0.018000000000000002,
+        -0.13940000000000002,
+        -0.01999999999999999
+      ],
+      "pointB": [
+        -0.02600000000000001,
+        -0.137,
+        -0.01999999999999999
+      ],
+      "distance": 0.008352245207128451,
+      "gap": -0.0016477547928715492,
+      "penetration": 0.0016477547928715492,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:335",
+      "segmentB": "recovery-integrated-trial:347",
+      "s": 1,
+      "t": 0.8676470588235293,
+      "pointA": [
+        0.003999999999999997,
+        -0.1388,
+        0.020000000000000018
+      ],
+      "pointB": [
+        -0.00041176470588235453,
+        -0.137,
+        0.02264705882352943
+      ],
+      "distance": 0.005450741989426218,
+      "gap": -0.004549258010573782,
+      "penetration": 0.004549258010573782,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:335",
+      "segmentB": "recovery-integrated-trial:348",
+      "s": 0.8743787061735978,
+      "t": 0,
+      "pointA": [
+        0.0026181657679095714,
+        -0.13883768638814792,
+        0.01748757412347197
+      ],
+      "pointB": [
+        -0.0020000000000000018,
+        -0.137,
+        0.020000000000000018
+      ],
+      "distance": 0.0055692755458967595,
+      "gap": -0.004430724454103241,
+      "penetration": 0.004430724454103241,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:335",
+      "segmentB": "recovery-integrated-trial:349",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        -0.007000000000000006,
+        -0.1391,
+        0
+      ],
+      "pointB": [
+        -0.013999999999999999,
+        -0.137,
+        0
+      ],
+      "distance": 0.007308214556237375,
+      "gap": -0.002691785443762625,
+      "penetration": 0.002691785443762625,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:336",
+      "segmentB": "recovery-integrated-trial:346",
+      "s": 1,
+      "t": 0.8897058823529412,
+      "pointA": [
+        0.014999999999999993,
+        -0.1385,
+        0.04000000000000001
+      ],
+      "pointB": [
+        0.011323529411764701,
+        -0.137,
+        0.04220588235294118
+      ],
+      "distance": 0.0045422849911885155,
+      "gap": -0.005457715008811485,
+      "penetration": 0.005457715008811485,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:336",
+      "segmentB": "recovery-integrated-trial:347",
+      "s": 0.8953155884779982,
+      "t": 0,
+      "pointA": [
+        0.013848471473257974,
+        -0.13853140532345662,
+        0.03790631176955997
+      ],
+      "pointB": [
+        0.009999999999999995,
+        -0.137,
+        0.04000000000000001
+      ],
+      "distance": 0.004641062954913973,
+      "gap": -0.005358937045086027,
+      "penetration": 0.005358937045086027,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:336",
+      "segmentB": "recovery-integrated-trial:348",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.003999999999999997,
+        -0.1388,
+        0.020000000000000018
+      ],
+      "pointB": [
+        -0.0020000000000000018,
+        -0.137,
+        0.020000000000000018
+      ],
+      "distance": 0.006264183905346328,
+      "gap": -0.0037358160946536724,
+      "penetration": 0.0037358160946536724,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:337",
+      "segmentB": "recovery-integrated-trial:345",
+      "s": 1,
+      "t": 0.9117647058823533,
+      "pointA": [
+        0.02599999999999999,
+        -0.13820000000000002,
+        0.06
+      ],
+      "pointB": [
+        0.023058823529411764,
+        -0.137,
+        0.06176470588235293
+      ],
+      "distance": 0.0036338279929508032,
+      "gap": -0.006366172007049197,
+      "penetration": 0.006366172007049197,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:337",
+      "segmentB": "recovery-integrated-trial:346",
+      "s": 0.9162524707823988,
+      "t": 0,
+      "pointA": [
+        0.025078777178606376,
+        -0.1382251242587653,
+        0.05832504941564798
+      ],
+      "pointB": [
+        0.022000000000000006,
+        -0.137,
+        0.06
+      ],
+      "distance": 0.003712850363931161,
+      "gap": -0.006287149636068839,
+      "penetration": 0.006287149636068839,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:337",
+      "segmentB": "recovery-integrated-trial:347",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.014999999999999993,
+        -0.1385,
+        0.04000000000000001
+      ],
+      "pointB": [
+        0.009999999999999995,
+        -0.137,
+        0.04000000000000001
+      ],
+      "distance": 0.005220153254455273,
+      "gap": -0.0047798467455447274,
+      "penetration": 0.0047798467455447274,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:338",
+      "segmentB": "recovery-integrated-trial:344",
+      "s": 1,
+      "t": 0.9338235294117652,
+      "pointA": [
+        0.036999999999999984,
+        -0.13790000000000002,
+        0.07999999999999999
+      ],
+      "pointB": [
+        0.03479411764705881,
+        -0.137,
+        0.08132352941176468
+      ],
+      "distance": 0.0027253709947131087,
+      "gap": -0.007274629005286892,
+      "penetration": 0.007274629005286892,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:338",
+      "segmentB": "recovery-integrated-trial:345",
+      "s": 0.937189353086799,
+      "t": 0,
+      "pointA": [
+        0.03630908288395478,
+        -0.137918843194074,
+        0.07874378706173596
+      ],
+      "pointB": [
+        0.03399999999999999,
+        -0.137,
+        0.07999999999999999
+      ],
+      "distance": 0.0027846377729483923,
+      "gap": -0.007215362227051608,
+      "penetration": 0.007215362227051608,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:338",
+      "segmentB": "recovery-integrated-trial:346",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.02599999999999999,
+        -0.13820000000000002,
+        0.06
+      ],
+      "pointB": [
+        0.022000000000000006,
+        -0.137,
+        0.06
+      ],
+      "distance": 0.0041761226035642056,
+      "gap": -0.005823877396435795,
+      "penetration": 0.005823877396435795,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:339",
+      "segmentB": "recovery-integrated-trial:343",
+      "s": 1,
+      "t": 0.9558823529411767,
+      "pointA": [
+        0.047999999999999994,
+        -0.1376,
+        0.10000000000000003
+      ],
+      "pointB": [
+        0.046529411764705875,
+        -0.137,
+        0.1008823529411765
+      ],
+      "distance": 0.001816913996475406,
+      "gap": -0.008183086003524595,
+      "penetration": 0.008183086003524595,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:339",
+      "segmentB": "recovery-integrated-trial:344",
+      "s": 0.9581262353911995,
+      "t": 0,
+      "pointA": [
+        0.04753938858930319,
+        -0.13761256212938264,
+        0.09916252470782402
+      ],
+      "pointB": [
+        0.046,
+        -0.137,
+        0.10000000000000003
+      ],
+      "distance": 0.0018564251819655816,
+      "gap": -0.008143574818034419,
+      "penetration": 0.008143574818034419,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:339",
+      "segmentB": "recovery-integrated-trial:345",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.036999999999999984,
+        -0.13790000000000002,
+        0.07999999999999999
+      ],
+      "pointB": [
+        0.03399999999999999,
+        -0.137,
+        0.07999999999999999
+      ],
+      "distance": 0.0031320919526731644,
+      "gap": -0.006867908047326836,
+      "penetration": 0.006867908047326836,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:340",
+      "segmentB": "recovery-integrated-trial:342",
+      "s": 1,
+      "t": 0.9779411764705881,
+      "pointA": [
+        0.05899999999999999,
+        -0.1373,
+        0.12000000000000002
+      ],
+      "pointB": [
+        0.05826470588235293,
+        -0.137,
+        0.12044117647058826
+      ],
+      "distance": 0.0009084569982377058,
+      "gap": -0.009091543001762296,
+      "penetration": 0.009091543001762296,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:340",
+      "segmentB": "recovery-integrated-trial:343",
+      "s": 0.9790631176955995,
+      "t": 0,
+      "pointA": [
+        0.058769694294651585,
+        -0.13730628106469134,
+        0.11958126235391202
+      ],
+      "pointB": [
+        0.05799999999999998,
+        -0.137,
+        0.12000000000000002
+      ],
+      "distance": 0.0009282125909828011,
+      "gap": -0.0090717874090172,
+      "penetration": 0.0090717874090172,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:340",
+      "segmentB": "recovery-integrated-trial:344",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.047999999999999994,
+        -0.1376,
+        0.10000000000000003
+      ],
+      "pointB": [
+        0.046,
+        -0.137,
+        0.10000000000000003
+      ],
+      "distance": 0.002088061301782102,
+      "gap": -0.007911938698217899,
+      "penetration": 0.007911938698217899,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    },
+    {
+      "segmentA": "recovery-integrated-trial:341",
+      "segmentB": "recovery-integrated-trial:343",
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.05899999999999999,
+        -0.1373,
+        0.12000000000000002
+      ],
+      "pointB": [
+        0.05799999999999998,
+        -0.137,
+        0.12000000000000002
+      ],
+      "distance": 0.001044030650891061,
+      "gap": -0.008955969349108939,
+      "penetration": 0.008955969349108939,
+      "state": "penetrating",
+      "roles": [
+        "interface-out/1",
+        "root-out/1"
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "id": "loop-X",
+      "satisfied": true,
+      "measurements": [
+        {
+          "segmentA": 30,
+          "segmentB": 7,
+          "s": 0.9999999999999993,
+          "t": 6.776263578034391e-16,
+          "point": [
+            -1.3877787807814457e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.05299999999999999,
+          "depthB": 0.0030000000000000027,
+          "depthDifference": 0.04999999999999999
+        },
+        {
+          "segmentA": 30,
+          "segmentB": 372,
+          "s": 0.9999999999999993,
+          "t": 0.9999999999999993,
+          "point": [
+            -1.3877787807814457e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.05299999999999999,
+          "depthB": -0.012999999999999998,
+          "depthDifference": 0.06599999999999999
+        },
+        {
+          "segmentA": 349,
+          "segmentB": 7,
+          "s": 6.938893903907222e-16,
+          "t": 6.938893903907222e-16,
+          "point": [
+            -1.3877787807814438e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.037000000000000005,
+          "depthB": 0.0030000000000000027,
+          "depthDifference": 0.034
+        },
+        {
+          "segmentA": 349,
+          "segmentB": 372,
+          "s": 6.776263578034391e-16,
+          "t": 0.9999999999999993,
+          "point": [
+            -1.3552527156068775e-17,
+            -0.09599999999999999
+          ],
+          "depthA": 0.037000000000000005,
+          "depthB": -0.012999999999999998,
+          "depthDifference": 0.05
+        }
+      ],
+      "referenceStatus": "ASSUMED_ROOT_SIGN"
+    },
+    {
+      "id": "first-passage",
+      "satisfied": true,
+      "measurements": [
+        {
+          "segment": 137,
+          "materialPosition": 0.3620543293718167,
+          "limb": 0,
+          "point": [
+            -0.022,
+            0.020000000000000004,
+            0
+          ],
+          "materialDirection": 1,
+          "workingDirection": 1
+        },
+        {
+          "segment": 242,
+          "materialPosition": 0.6379456706281833,
+          "limb": 1,
+          "point": [
+            -0.038,
+            0.020000000000000004,
+            0
+          ],
+          "materialDirection": -1,
+          "workingDirection": 1
+        }
+      ],
+      "referenceStatus": "OBSERVED_PROCEDURE_ASSUMED_EMBEDDING"
+    },
+    {
+      "id": "over-X",
+      "satisfied": true,
+      "measurements": [
+        {
+          "segmentA": 148,
+          "segmentB": 5,
+          "s": 0.8140000000000008,
+          "t": 0.9000000000000009,
+          "point": [
+            -0.022,
+            -0.10919999999999999
+          ],
+          "depthA": 0.12,
+          "depthB": 0.0030000000000000027,
+          "depthDifference": 0.11699999999999999
+        },
+        {
+          "segmentA": 148,
+          "segmentB": 374,
+          "s": 0.8140000000000007,
+          "t": 0.09999999999999909,
+          "point": [
+            -0.022,
+            -0.10919999999999999
+          ],
+          "depthA": 0.12,
+          "depthB": -0.012999999999999998,
+          "depthDifference": 0.133
+        },
+        {
+          "segmentA": 230,
+          "segmentB": 5,
+          "s": 0.7539999999999994,
+          "t": 0.10000000000000049,
+          "point": [
+            -0.038,
+            -0.11879999999999999
+          ],
+          "depthA": 0.12,
+          "depthB": 0.0030000000000000027,
+          "depthDifference": 0.11699999999999999
+        },
+        {
+          "segmentA": 230,
+          "segmentB": 374,
+          "s": 0.7539999999999996,
+          "t": 0.8999999999999996,
+          "point": [
+            -0.038,
+            -0.11879999999999999
+          ],
+          "depthA": 0.12,
+          "depthB": -0.012999999999999998,
+          "depthDifference": 0.133
+        },
+        {
+          "segmentA": 147,
+          "segmentB": 29,
+          "s": 0.6259999999999999,
+          "t": 0.8999999999999996,
+          "point": [
+            -0.022,
+            -0.08279999999999998
+          ],
+          "depthA": 0.12,
+          "depthB": 0.05299999999999999,
+          "depthDifference": 0.067
+        },
+        {
+          "segmentA": 147,
+          "segmentB": 350,
+          "s": 0.6259999999999999,
+          "t": 0.10000000000000042,
+          "point": [
+            -0.022,
+            -0.08279999999999998
+          ],
+          "depthA": 0.12,
+          "depthB": 0.037000000000000005,
+          "depthDifference": 0.08299999999999999
+        },
+        {
+          "segmentA": 232,
+          "segmentB": 29,
+          "s": 0.8059999999999998,
+          "t": 0.09999999999999971,
+          "point": [
+            -0.038,
+            -0.07319999999999999
+          ],
+          "depthA": 0.12,
+          "depthB": 0.05299999999999999,
+          "depthDifference": 0.067
+        },
+        {
+          "segmentA": 232,
+          "segmentB": 350,
+          "s": 0.8059999999999997,
+          "t": 0.9000000000000002,
+          "point": [
+            -0.038,
+            -0.07319999999999999
+          ],
+          "depthA": 0.12,
+          "depthB": 0.037000000000000005,
+          "depthDifference": 0.08299999999999999
+        }
+      ],
+      "referenceStatus": "OBSERVED_PROCEDURE_ASSUMED_EMBEDDING"
+    },
+    {
+      "id": "under-entire-cuff",
+      "satisfied": null,
+      "reason": "Requires separate check against the immutable cuff arcs and then integrated single-rope validation."
+    },
+    {
+      "id": "same-direction-return",
+      "satisfied": true,
+      "measurements": [
+        {
+          "segment": 179,
+          "materialPosition": 0.4731968810916179,
+          "limb": 0,
+          "point": [
+            0.048,
+            0.020000000000000004,
+            0
+          ],
+          "materialDirection": 1,
+          "workingDirection": 1
+        },
+        {
+          "segment": 200,
+          "materialPosition": 0.526803118908382,
+          "limb": 1,
+          "point": [
+            0.032,
+            0.020000000000000004,
+            0
+          ],
+          "materialDirection": -1,
+          "workingDirection": 1
+        }
+      ]
+    },
+    {
+      "id": "material-operation-order",
+      "satisfied": true,
+      "measurements": [
+        {
+          "limb": 0,
+          "intervals": [
+            {
+              "role": "first-passage",
+              "indices": [
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142
+              ]
+            },
+            {
+              "role": "over-X",
+              "indices": [
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151
+              ]
+            },
+            {
+              "role": "under-cuff",
+              "indices": [
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177
+              ]
+            },
+            {
+              "role": "return-passage",
+              "indices": [
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184
+              ]
+            }
+          ],
+          "satisfied": true
+        },
+        {
+          "limb": 1,
+          "intervals": [
+            {
+              "role": "first-passage",
+              "indices": [
+                237,
+                238,
+                239,
+                240,
+                241,
+                242,
+                243
+              ]
+            },
+            {
+              "role": "over-X",
+              "indices": [
+                228,
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+              ]
+            },
+            {
+              "role": "under-cuff",
+              "indices": [
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209,
+                210,
+                211,
+                212
+              ]
+            },
+            {
+              "role": "return-passage",
+              "indices": [
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201
+              ]
+            }
+          ],
+          "satisfied": true
+        }
+      ]
+    }
+  ],
+  "phase5Accepted": false,
+  "cuffIntegrated": true,
+  "column": {
+    "model": "Conservative infinite X-axis cylinder; saved radius 0.055 m",
+    "minimumGap": 0.006241980646716769,
+    "penetrations": []
+  },
+  "underCuff": {
+    "satisfied": true,
+    "projection": "world XZ, outward normal -Y; front cuff intersections only",
+    "crossings": [
+      {
+        "workingSegment": 172,
+        "limb": 0,
+        "originalCuffSegment": 40,
+        "cuffLane": "arm0-wrap1",
+        "s": 0.0399387468228176,
+        "t": 0.23344695948416225,
+        "point": [
+          0.01087417507509703,
+          0.048
+        ],
+        "depthA": 0.057999999999999996,
+        "depthB": 0.07584166372597033,
+        "depthDifference": -0.017841663725970333
+      },
+      {
+        "workingSegment": 172,
+        "limb": 0,
+        "originalCuffSegment": 110,
+        "cuffLane": "arm1-wrap1",
+        "s": 0.7168618237458945,
+        "t": 0.7665530405158377,
+        "point": [
+          -0.005125824924902968,
+          0.048
+        ],
+        "depthA": 0.058,
+        "depthB": 0.07584166372597033,
+        "depthDifference": -0.017841663725970326
+      },
+      {
+        "workingSegment": 173,
+        "limb": 0,
+        "originalCuffSegment": 4,
+        "cuffLane": "arm0-wrap0",
+        "s": 0.39378490066897126,
+        "t": 0.23344695948415894,
+        "point": [
+          -0.021125824924902968,
+          0.048
+        ],
+        "depthA": 0.058,
+        "depthB": 0.07584166372597034,
+        "depthDifference": -0.01784166372597034
+      },
+      {
+        "workingSegment": 174,
+        "limb": 0,
+        "originalCuffSegment": 146,
+        "cuffLane": "arm1-wrap0",
+        "s": 0.07070797759204771,
+        "t": 0.766553040515841,
+        "point": [
+          -0.03712582492490297,
+          0.048
+        ],
+        "depthA": 0.058,
+        "depthB": 0.07584166372597034,
+        "depthDifference": -0.01784166372597034
+      },
+      {
+        "workingSegment": 205,
+        "limb": 1,
+        "originalCuffSegment": 147,
+        "cuffLane": "arm1-wrap0",
+        "s": 0.886128064887741,
+        "t": 0.9143219109396362,
+        "point": [
+          -0.038146063920835235,
+          0.032
+        ],
+        "depthA": 0.058,
+        "depthB": 0.08400428589661445,
+        "depthDifference": -0.026004285896614444
+      },
+      {
+        "workingSegment": 206,
+        "limb": 1,
+        "originalCuffSegment": 3,
+        "cuffLane": "arm0-wrap0",
+        "s": 0.5630511418108176,
+        "t": 0.08567808906036378,
+        "point": [
+          -0.022146063920835235,
+          0.032
+        ],
+        "depthA": 0.058,
+        "depthB": 0.08400428589661445,
+        "depthDifference": -0.026004285896614444
+      },
+      {
+        "workingSegment": 207,
+        "limb": 1,
+        "originalCuffSegment": 39,
+        "cuffLane": "arm0-wrap1",
+        "s": 0.9168972956569712,
+        "t": 0.08567808906036767,
+        "point": [
+          0.009853936079164766,
+          0.032
+        ],
+        "depthA": 0.057999999999999996,
+        "depthB": 0.08400428589661446,
+        "depthDifference": -0.026004285896614465
+      },
+      {
+        "workingSegment": 207,
+        "limb": 1,
+        "originalCuffSegment": 111,
+        "cuffLane": "arm1-wrap1",
+        "s": 0.2399742187338943,
+        "t": 0.9143219109396323,
+        "point": [
+          -0.006146063920835233,
+          0.032
+        ],
+        "depthA": 0.058,
+        "depthB": 0.08400428589661446,
+        "depthDifference": -0.02600428589661446
+      }
+    ],
+    "laneCoverage": [
+      4,
+      4
+    ],
+    "minimumGap": 0.0046150353146453375,
+    "penetrations": [],
+    "source": "data/phase5-partial-cuff.json",
+    "arcSegments": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149
+    ],
+    "scope": "Underpass versus unchanged cuff arcs only; not integrated-rope acceptance."
+  },
+  "collisionLocations": {
+    "interface-out/0 × root-in/0": 3,
+    "interface-in/0 × root-out/0": 6,
+    "interface-in/0 × interface-in/1": 3,
+    "interface-in/0 × interface-out/1": 3,
+    "interface-in/0 × root-out/1": 3,
+    "interface-in/0 × root-in/1": 1,
+    "cuff/0 × root-in/1": 9,
+    "interface-out/0 × interface-out/1": 3,
+    "interface-out/0 × root-out/1": 3,
+    "cuff/1 × root-in/1": 12,
+    "interface-out/1 × root-out/1": 28
+  },
+  "topologyInvalid": false,
+  "topologyVerified": false,
+  "reason": "The unchanged core and cuff conflict at roots and at four new interface connectors. This is a failed embedding, not a demonstrated contradiction in the source topology."
+}

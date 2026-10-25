@@ -1,0 +1,309 @@
+{
+  "variant": {
+    "handedness": {
+      "value": "right-handed",
+      "status": "CONFIRMED",
+      "evidence": [
+        "E-video-right"
+      ]
+    },
+    "wrapCount": {
+      "value": 2,
+      "status": "CONFIRMED",
+      "evidence": [
+        "E-detailed-intro",
+        "E-step-3",
+        "E-step-7"
+      ]
+    },
+    "slipped": {
+      "value": false,
+      "status": "CONFIRMED",
+      "evidence": [
+        "E-step-16-19",
+        "E-step-20",
+        "E-step-26"
+      ]
+    },
+    "columnCount": {
+      "value": 1,
+      "status": "CONFIRMED",
+      "evidence": [
+        "E-detailed-intro"
+      ]
+    }
+  },
+  "structural": {
+    "valid": true,
+    "errors": [],
+    "pathSegmentCount": 6,
+    "physicalEndpointCount": 2,
+    "crossingRecordCount": 2,
+    "crossingTraversalRecordCount": 2,
+    "confirmedCrossingRecordCount": 1,
+    "pendingCrossingRecordCount": 1,
+    "passageCount": 2,
+    "columnWrapCount": 2,
+    "cuffStrandCount": 4,
+    "diagramCount": 3,
+    "milestoneCount": 5
+  },
+  "reference": {
+    "evidenceCoverageValid": true,
+    "unsupported": [],
+    "pendingReview": [
+      "R-tail-bight-crossing-order",
+      "X2",
+      "X1:multiplicity",
+      "traversal:X1",
+      "traversal:X2",
+      "P1:strand-level-crossings",
+      "tail-locking-arc",
+      "cuff-tail-arm",
+      "cuff-lead-arm",
+      "other-free",
+      "other-end:name",
+      "column-winding-direction"
+    ],
+    "evidencedClaims": 33,
+    "confirmedClaims": 21,
+    "topologyVerified": false,
+    "status": "PARTIAL_REFERENCE_RECONSTRUCTION"
+  },
+  "crossings": [
+    {
+      "id": "X1",
+      "relationshipId": "R-bight-over-cuff",
+      "participants": [
+        "bight",
+        "cuff-stack"
+      ],
+      "ropePortions": [
+        {
+          "objectId": "bight",
+          "segmentIds": [
+            "bight-fold"
+          ],
+          "status": "CONFIRMED"
+        },
+        {
+          "objectId": "cuff-stack",
+          "segmentIds": [
+            "cuff-tail-arm",
+            "cuff-lead-arm"
+          ],
+          "status": "PENDING_REVIEW"
+        }
+      ],
+      "over": "bight",
+      "under": "cuff-stack",
+      "status": "CONFIRMED",
+      "multiplicityStatus": "PENDING_REVIEW",
+      "tutorialStep": 8,
+      "evidence": [
+        "E-step-8"
+      ]
+    },
+    {
+      "id": "X2",
+      "relationshipId": "R-tail-bight-crossing-order",
+      "participants": [
+        "tail-loop",
+        "bight"
+      ],
+      "ropePortions": [
+        {
+          "objectId": "tail-loop",
+          "segmentIds": [
+            "tail-locking-arc"
+          ],
+          "status": "PENDING_REVIEW"
+        },
+        {
+          "objectId": "bight",
+          "segmentIds": [
+            "bight-fold"
+          ],
+          "status": "CONFIRMED"
+        }
+      ],
+      "over": null,
+      "under": null,
+      "status": "PENDING_REVIEW",
+      "tutorialSteps": [
+        10,
+        12,
+        15
+      ],
+      "evidence": [
+        "E-step-9-15"
+      ]
+    }
+  ],
+  "crossingTraversalOrder": [
+    {
+      "crossingId": "X1",
+      "status": "PENDING_REVIEW",
+      "reason": "The material-path position of the bight-over-cuff event cannot be assigned until the cuff-arm routing is reviewed.",
+      "evidence": [
+        "E-step-8"
+      ]
+    },
+    {
+      "crossingId": "X2",
+      "status": "PENDING_REVIEW",
+      "reason": "The tail-loop/bight crossing event sequence is obscured in the stills.",
+      "evidence": [
+        "E-step-9-15"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "P1",
+      "relationshipId": "R-bight-under-cuff",
+      "participants": [
+        "bight",
+        "cuff-stack"
+      ],
+      "kind": "under-all-cuff-strands",
+      "status": "CONFIRMED",
+      "strandLevelCrossings": "PENDING_REVIEW",
+      "tutorialSteps": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "evidence": [
+        "E-step-16-19"
+      ]
+    },
+    {
+      "id": "P2",
+      "relationshipId": "R-bight-through-tail-loop",
+      "participants": [
+        "bight",
+        "tail-loop"
+      ],
+      "kind": "through-loop",
+      "status": "CONFIRMED",
+      "tutorialSteps": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "evidence": [
+        "E-step-16-19"
+      ]
+    }
+  ],
+  "columnWrapping": {
+    "objectId": "column",
+    "windingCount": 2,
+    "strandCountAtCuff": 4,
+    "strandRuns": [
+      "cuff-strand-1",
+      "cuff-strand-2",
+      "cuff-strand-3",
+      "cuff-strand-4"
+    ],
+    "direction": {
+      "value": null,
+      "status": "PENDING_REVIEW",
+      "reason": "The detailed text and still photographs do not label a winding direction relative to a fixed column view."
+    },
+    "ropeContact": "CONFIRMED_VISUAL",
+    "evidence": [
+      "E-detailed-intro",
+      "E-step-2",
+      "E-step-3",
+      "E-step-7",
+      "E-step-26"
+    ]
+  },
+  "geometryGeneratorAssessment": "Phase 3 accepts structured segment-position crossing constraints and deterministic clearance construction, but Phase 4 does not yet provide a confirmed strand-level crossing ledger or unambiguous material-route positions. Do not feed this provisional topology into the generator until reference review resolves those assignments.",
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "Fold and identify the rope",
+      "sourceSteps": [
+        1
+      ],
+      "status": "REFERENCE_GROUNDED"
+    },
+    {
+      "id": "M2",
+      "title": "Build the two-wrap cuff",
+      "sourceSteps": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "REFERENCE_GROUNDED"
+    },
+    {
+      "id": "M3",
+      "title": "Lay the bight over the cuff",
+      "sourceSteps": [
+        8
+      ],
+      "status": "REFERENCE_GROUNDED"
+    },
+    {
+      "id": "M4",
+      "title": "Form the tail loop around the bight",
+      "sourceSteps": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "status": "REFERENCE_GROUNDED_WITH_PENDING_CROSSING_ORDER"
+    },
+    {
+      "id": "M5",
+      "title": "Pass the bight under the cuff and through the loop",
+      "sourceSteps": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "status": "REFERENCE_GROUNDED_WITH_PENDING_CROSSING_ORDER"
+    }
+  ],
+  "unresolved": [
+    "R-tail-bight-crossing-order",
+    "X2",
+    "X1:multiplicity",
+    "traversal:X1",
+    "traversal:X2",
+    "P1:strand-level-crossings",
+    "tail-locking-arc",
+    "cuff-tail-arm",
+    "cuff-lead-arm",
+    "other-free",
+    "other-end:name",
+    "column-winding-direction"
+  ],
+  "generatedDiagrams": [
+    "diagrams/somerville-structure.svg",
+    "diagrams/somerville-column-wrap.svg",
+    "diagrams/somerville-continuous-path.svg"
+  ]
+}

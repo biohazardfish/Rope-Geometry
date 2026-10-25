@@ -1,0 +1,912 @@
+{
+  "target": {
+    "handedness": "right-handed",
+    "wrapCount": 2,
+    "slipped": false,
+    "columnCount": 1,
+    "video": "references/video/01-TheDuchy-RightHanded.mp4",
+    "acceptedIntervalSeconds": [
+      8,
+      149
+    ],
+    "endExclusive": true,
+    "note": "149 s shows Slipped title. Later content is excluded; filename does not delimit a variant."
+  },
+  "validation": {
+    "inventoryValid": true,
+    "errors": [],
+    "observedGraph": {
+      "complete": false,
+      "components": 9,
+      "physicalEnds": [
+        "E0",
+        "E1"
+      ],
+      "openPorts": [
+        "c1-top",
+        "c1-lock",
+        "c2-top",
+        "c2-lock",
+        "c3-top",
+        "c3-lock",
+        "c4-top",
+        "c4-lock",
+        "t0-out",
+        "t0-lock",
+        "t1-out",
+        "t1-lock",
+        "b0-lock",
+        "b1-lock"
+      ],
+      "branches": [],
+      "connectivityValid": true,
+      "endpointsValid": true,
+      "portsValid": true,
+      "degreeValid": false,
+      "foldValid": true,
+      "orderValid": false,
+      "meaning": "Graph of observed material fragments; disconnected components are unresolved evidence, not a claim that the physical rope is cut."
+    },
+    "completeMaterialPath": false,
+    "finalCrossingInventoryComplete": false,
+    "finalCrossingsRecorded": 0,
+    "constructionCrossingsRecorded": 2,
+    "referenceStatus": "INCOMPLETE",
+    "topologyVerified": false,
+    "humanApproved": false,
+    "unresolved": [
+      "final-strand-route",
+      "source-equivalence"
+    ],
+    "reviewRounds": 2
+  },
+  "outcomeCounts": {
+    "PARTIALLY_RESOLVED": 6,
+    "UNRESOLVED": 5,
+    "CORRECTED": 1
+  },
+  "legacyReview": [
+    {
+      "id": "R-tail-bight-crossing-order",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Long-side doubled bundle forms the locking loop; individual loop-root strand order remains hidden.",
+      "evidence": [
+        "100427-D0020",
+        "duchy-detail-15",
+        "duchy-t96"
+      ]
+    },
+    {
+      "id": "X2",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Old X2 was a bundle relation, not one proven physical-strand crossing. Do not assign a final single X2.",
+      "evidence": [
+        "duchy-detail-15",
+        "duchy-detail-24"
+      ]
+    },
+    {
+      "id": "X1:multiplicity",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Two visible strand-pair crossings are recorded only in construction state D8; no total or final multiplicity inferred.",
+      "evidence": [
+        "duchy-detail-8"
+      ]
+    },
+    {
+      "id": "traversal:X1",
+      "outcome": "UNRESOLVED",
+      "finding": "D8 crossings have local visits but no proven E0-to-E1 order.",
+      "evidence": [
+        "duchy-detail-8",
+        "duchy-detail-24"
+      ]
+    },
+    {
+      "id": "traversal:X2",
+      "outcome": "UNRESOLVED",
+      "finding": "The complete final locking-loop traversal is not visible.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-untie-5"
+      ]
+    },
+    {
+      "id": "P1:strand-level-crossings",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "The whole bight passes beneath the cuff before entering the loop; untying releases it from the loop before withdrawing it from beneath the cuff. Individual hidden crossings remain unassigned.",
+      "evidence": [
+        "duchy-detail-19",
+        "duchy-untie-4",
+        "duchy-untie-6",
+        "duchy-t114"
+      ]
+    },
+    {
+      "id": "tail-locking-arc",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Loop ownership belongs to the long-side doubled bundle; old singular tail wording did not identify a physical strand.",
+      "evidence": [
+        "100427-D0020",
+        "duchy-detail-15",
+        "duchy-untie-2"
+      ]
+    },
+    {
+      "id": "cuff-tail-arm",
+      "outcome": "UNRESOLVED",
+      "finding": "C1-C4 are front-face labels only; their rear continuation and endpoint assignment remain unknown.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-t38",
+        "duchy-t44"
+      ]
+    },
+    {
+      "id": "cuff-lead-arm",
+      "outcome": "UNRESOLVED",
+      "finding": "No supported permutation connects the visible cuff lanes through the hidden back to both bight limbs.",
+      "evidence": [
+        "duchy-detail-24",
+        "duchy-untie-6"
+      ]
+    },
+    {
+      "id": "other-free",
+      "outcome": "UNRESOLVED",
+      "finding": "Both long ends extend beyond the useful frame; neither full endpoint-to-loop route is visually identified.",
+      "evidence": [
+        "duchy-detail-1",
+        "duchy-t12"
+      ]
+    },
+    {
+      "id": "other-end:name",
+      "outcome": "CORRECTED",
+      "finding": "Tail / standing / lead in these tutorials denotes the long-side paired bundle. It does not identify one of the two physical endpoints. Use neutral E0/E1, with binding pending.",
+      "evidence": [
+        "duchy-detail-1",
+        "duchy-detail-10",
+        "100427-D0018"
+      ]
+    },
+    {
+      "id": "column-winding-direction",
+      "outcome": "PARTIALLY_RESOLVED",
+      "finding": "Detailed text specifies working-bight motion over the top and back underneath; video wraps with the long bundle. E0-to-E1 signed winding cannot be assigned until strand identity is bound.",
+      "evidence": [
+        "duchy-detail-2",
+        "duchy-detail-3",
+        "duchy-t24",
+        "duchy-t36"
+      ]
+    }
+  ],
+  "confirmedAudit": [
+    {
+      "legacy": "E-step-7",
+      "outcome": "CORRECTED",
+      "finding": "Old image URL is detailed image 13, not 7. v2 uses the actual image 7.",
+      "evidence": [
+        "duchy-detail-7",
+        "duchy-detail-13"
+      ]
+    },
+    {
+      "legacy": "X1",
+      "outcome": "DOWNGRADED_SCOPE",
+      "finding": "Bight-over-cuff describes construction step 8; not a complete final crossing inventory.",
+      "evidence": [
+        "duchy-detail-8"
+      ]
+    },
+    {
+      "legacy": "tail-end / other-end",
+      "outcome": "DOWNGRADED_BINDING",
+      "finding": "Two ends exist, but old labels bind no visibly tracked physical endpoints.",
+      "evidence": [
+        "duchy-detail-1"
+      ]
+    },
+    {
+      "legacy": "bight-fold / 2 wraps / non-slipped",
+      "outcome": "RETAINED_SEMANTICS",
+      "finding": "Fold, doubled wraps and full bight return are supported; spatial strand identities remain incomplete.",
+      "evidence": [
+        "duchy-detail-1",
+        "duchy-detail-3",
+        "duchy-detail-19"
+      ]
+    }
+  ],
+  "unknownConnections": [
+    {
+      "id": "rear-cuff",
+      "ports": [
+        "c1-top",
+        "c2-top",
+        "c3-top",
+        "c4-top"
+      ],
+      "reason": "Four front cuff lanes disappear behind the column.",
+      "requiredEvidence": "Continuous rear/underside view while each of four marked strands is followed back to the front; keep the wrist and elbow ends identifiable.",
+      "reviewed": [
+        "duchy-t22",
+        "duchy-t44",
+        "duchy-detail-21",
+        "duchy-untie-6"
+      ],
+      "interval": "Local TheDuchy 22–44 s; wrist underside remains hidden."
+    },
+    {
+      "id": "locking-core",
+      "ports": [
+        "c1-lock",
+        "c2-lock",
+        "c3-lock",
+        "c4-lock",
+        "t0-lock",
+        "t1-lock",
+        "b0-lock",
+        "b1-lock"
+      ],
+      "reason": "The knot core obscures the pairing between cuff, long-side loop and bight limbs.",
+      "requiredEvidence": "Stable oblique close-up of both sides of the loosened NON-SLIPPED loop, with both bundle limbs marked; record before and after bight return without hands covering the loop root.",
+      "reviewed": [
+        "duchy-t96",
+        "duchy-t114",
+        "duchy-t118",
+        "duchy-detail-21",
+        "duchy-untie-5",
+        "topologist-t168"
+      ],
+      "interval": "Local TheDuchy 96–118 s; local Topologist 114–180 s. Untying changes the configuration."
+    },
+    {
+      "id": "endpoint-binding",
+      "ports": [
+        "E0",
+        "E1",
+        "t0-out",
+        "t1-out"
+      ],
+      "reason": "The two physical free ends are outside the identifying view.",
+      "requiredEvidence": "Wide continuous shot from each labelled physical end E0/E1 to its long-side strand, followed by the cuff without a cut; establishes orientation for signed winding.",
+      "reviewed": [
+        "duchy-detail-1",
+        "duchy-t12"
+      ],
+      "interval": "TheDuchy start and detail step 1 show the fold and paired runs, not both free endpoints."
+    },
+    {
+      "id": "final-ledger",
+      "ports": [],
+      "reason": "Missing rear and core connections prevent final global crossing order.",
+      "requiredEvidence": "Resolve rear-cuff and locking-core gaps in the SAME state/projection; a different mirrored or slipped example cannot supply the missing permutation.",
+      "reviewed": [
+        "duchy-detail-24",
+        "100427-D0025"
+      ],
+      "interval": "Final states from the two references cannot yet be matched strand by strand."
+    }
+  ],
+  "sourceComparison": {
+    "id": "source-equivalence",
+    "status": "PENDING_REVIEW",
+    "reason": "The bundle-level operations correspond, but exact final physical-strand correspondence and winding parity are not established; no crossings transferred from original.",
+    "evidence": [
+      "100427-D0025",
+      "duchy-detail-24"
+    ]
+  },
+  "review": {
+    "decision": "PARTIAL",
+    "rounds": 2,
+    "reviewer": "Codex visual inspection, not automatic source certification",
+    "humanApproved": false,
+    "completeMaterialPathSupported": false,
+    "sourceEquivalenceSupported": false,
+    "log": [
+      {
+        "round": 1,
+        "inspected": [
+          "Original single-column photos D0018–D0029",
+          "Detailed 1–26 and untying 1–7",
+          "TheDuchy target interval sampled every 8 seconds",
+          "Topologist local video sampled every 12 seconds"
+        ],
+        "result": "Bundle operations and source-specific methods identified."
+      },
+      {
+        "round": 2,
+        "inspected": [
+          "Full-resolution D0020/D0023, D8/D24 and untying 5",
+          "TheDuchy 22–44 s every 2 seconds; 72–118 s selected 2–6 second frames",
+          "Topologist 90–180 s selected 6–12 second frames and alternative detailed 21/22 views"
+        ],
+        "result": "Rear cuff and loop-root individual bindings remain occluded. Stop bounded investigation; no arbitrary permutation selected."
+      }
+    ]
+  },
+  "evidenceAssets": [
+    {
+      "id": "100427-D0018",
+      "path": "references/phase4b/100427-D0018.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0019",
+      "path": "references/phase4b/100427-D0019.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0020",
+      "path": "references/phase4b/100427-D0020.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0021",
+      "path": "references/phase4b/100427-D0021.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0023",
+      "path": "references/phase4b/100427-D0023.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0024",
+      "path": "references/phase4b/100427-D0024.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0025",
+      "path": "references/phase4b/100427-D0025.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0026",
+      "path": "references/phase4b/100427-D0026.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0027",
+      "path": "references/phase4b/100427-D0027.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0028",
+      "path": "references/phase4b/100427-D0028.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "100427-D0029",
+      "path": "references/phase4b/100427-D0029.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-1",
+      "path": "references/phase4b/duchy-detail-1.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-2",
+      "path": "references/phase4b/duchy-detail-2.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-3",
+      "path": "references/phase4b/duchy-detail-3.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-4",
+      "path": "references/phase4b/duchy-detail-4.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-5",
+      "path": "references/phase4b/duchy-detail-5.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-6",
+      "path": "references/phase4b/duchy-detail-6.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-7",
+      "path": "references/phase4b/duchy-detail-7.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-8",
+      "path": "references/phase4b/duchy-detail-8.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-9",
+      "path": "references/phase4b/duchy-detail-9.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-10",
+      "path": "references/phase4b/duchy-detail-10.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-11",
+      "path": "references/phase4b/duchy-detail-11.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-12",
+      "path": "references/phase4b/duchy-detail-12.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-13",
+      "path": "references/phase4b/duchy-detail-13.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-14",
+      "path": "references/phase4b/duchy-detail-14.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-15",
+      "path": "references/phase4b/duchy-detail-15.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-16",
+      "path": "references/phase4b/duchy-detail-16.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-17",
+      "path": "references/phase4b/duchy-detail-17.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-18",
+      "path": "references/phase4b/duchy-detail-18.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-19",
+      "path": "references/phase4b/duchy-detail-19.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-20",
+      "path": "references/phase4b/duchy-detail-20.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-21",
+      "path": "references/phase4b/duchy-detail-21.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-22",
+      "path": "references/phase4b/duchy-detail-22.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-23",
+      "path": "references/phase4b/duchy-detail-23.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-24",
+      "path": "references/phase4b/duchy-detail-24.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-1",
+      "path": "references/phase4b/duchy-untie-1.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-detail-26",
+      "path": "references/phase4b/duchy-detail-26.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-2",
+      "path": "references/phase4b/duchy-untie-2.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-3",
+      "path": "references/phase4b/duchy-untie-3.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-4",
+      "path": "references/phase4b/duchy-untie-4.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-5",
+      "path": "references/phase4b/duchy-untie-5.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-6",
+      "path": "references/phase4b/duchy-untie-6.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-untie-7",
+      "path": "references/phase4b/duchy-untie-7.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t22",
+      "path": "references/phase4b/duchy-wrap-22.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t24",
+      "path": "references/phase4b/duchy-wrap-24.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t26",
+      "path": "references/phase4b/duchy-wrap-26.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t28",
+      "path": "references/phase4b/duchy-wrap-28.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t30",
+      "path": "references/phase4b/duchy-wrap-30.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t32",
+      "path": "references/phase4b/duchy-wrap-32.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t34",
+      "path": "references/phase4b/duchy-wrap-34.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t36",
+      "path": "references/phase4b/duchy-wrap-36.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t38",
+      "path": "references/phase4b/duchy-wrap-38.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t40",
+      "path": "references/phase4b/duchy-wrap-40.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t42",
+      "path": "references/phase4b/duchy-wrap-42.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t44",
+      "path": "references/phase4b/duchy-wrap-44.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t72",
+      "path": "references/phase4b/duchy-lock-72.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t78",
+      "path": "references/phase4b/duchy-lock-78.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t84",
+      "path": "references/phase4b/duchy-lock-84.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t90",
+      "path": "references/phase4b/duchy-lock-90.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t96",
+      "path": "references/phase4b/duchy-lock-96.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t102",
+      "path": "references/phase4b/duchy-lock-102.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t108",
+      "path": "references/phase4b/duchy-lock-108.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t110",
+      "path": "references/phase4b/duchy-lock-110.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t112",
+      "path": "references/phase4b/duchy-lock-112.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t114",
+      "path": "references/phase4b/duchy-lock-114.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t116",
+      "path": "references/phase4b/duchy-lock-116.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t118",
+      "path": "references/phase4b/duchy-lock-118.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t90",
+      "path": "references/phase4b/topologist-lock-90.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t96",
+      "path": "references/phase4b/topologist-lock-96.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t102",
+      "path": "references/phase4b/topologist-lock-102.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t108",
+      "path": "references/phase4b/topologist-lock-108.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t114",
+      "path": "references/phase4b/topologist-lock-114.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t120",
+      "path": "references/phase4b/topologist-lock-120.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t126",
+      "path": "references/phase4b/topologist-lock-126.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t132",
+      "path": "references/phase4b/topologist-lock-132.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t144",
+      "path": "references/phase4b/topologist-lock-144.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t156",
+      "path": "references/phase4b/topologist-lock-156.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t168",
+      "path": "references/phase4b/topologist-lock-168.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "topologist-t180",
+      "path": "references/phase4b/topologist-lock-180.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t12",
+      "path": "references/phase4b/duchy-video-012.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t60",
+      "path": "references/phase4b/duchy-video-060.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t124",
+      "path": "references/phase4b/duchy-video-124.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t132",
+      "path": "references/phase4b/duchy-video-132.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t140",
+      "path": "references/phase4b/duchy-video-140.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t148",
+      "path": "references/phase4b/duchy-video-148.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t149",
+      "path": "references/phase4b/duchy-video-149.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t154",
+      "path": "references/phase4b/duchy-video-154.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t260",
+      "path": "references/phase4b/duchy-video-260.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t269",
+      "path": "references/phase4b/duchy-video-269.jpg",
+      "hashMatches": true
+    },
+    {
+      "id": "duchy-t274",
+      "path": "references/phase4b/duchy-video-274.jpg",
+      "hashMatches": true
+    }
+  ],
+  "preservation": [
+    {
+      "path": "src/somerville-topology.js",
+      "unchanged": true
+    },
+    {
+      "path": "src/schema.js",
+      "unchanged": true
+    },
+    {
+      "path": "src/topology.js",
+      "unchanged": true
+    },
+    {
+      "path": "src/geometry.js",
+      "unchanged": true
+    },
+    {
+      "path": "data/multiple-invalid.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/multiple-valid-A.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/crossing-topology.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/experiments.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/crossing-valid.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/multiple-crossings-topology.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/C.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/B-clear.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/crossing-invalid.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/multiple-valid-B.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/somerville-bowline-topology.json",
+      "unchanged": true
+    },
+    {
+      "path": "data/B.json",
+      "unchanged": true
+    },
+    {
+      "path": "test/somerville.test.js",
+      "unchanged": true
+    },
+    {
+      "path": "test/geometry.test.js",
+      "unchanged": true
+    },
+    {
+      "path": "diagrams/somerville-structure.svg",
+      "unchanged": true
+    },
+    {
+      "path": "diagrams/somerville-continuous-path.svg",
+      "unchanged": true
+    },
+    {
+      "path": "diagrams/somerville-column-wrap.svg",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/report-phase4.js",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/verify-blender.js",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/blender_import.py",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/generate-crossing.js",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/report.js",
+      "unchanged": true
+    },
+    {
+      "path": "report.json",
+      "unchanged": true
+    },
+    {
+      "path": "crossing-report.json",
+      "unchanged": true
+    },
+    {
+      "path": "phase3-report.json",
+      "unchanged": true
+    },
+    {
+      "path": "phase4-report.json",
+      "unchanged": true
+    }
+  ],
+  "artifacts": [
+    "diagrams/phase4b/completed.svg",
+    "diagrams/phase4b/wrapping.svg",
+    "diagrams/phase4b/material.svg",
+    "diagrams/phase4b/construction.svg"
+  ],
+  "assessment": "The old metric crossing generator cannot consume this partial ledger. No final metric positions, complete traversal, or permitted inter-source crossing transfer is available."
+}

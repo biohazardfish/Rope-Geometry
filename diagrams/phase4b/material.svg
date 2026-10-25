@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-label="Material ledger · incomplete"><rect width="1000" height="720" fill="white"/><style>text{font:14px system-ui;fill:#263e4a}.heading{font-size:23px;font-weight:650}.minor{font-size:12px}.pending{fill:#965900}.rope{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.box{fill:#fff6df;stroke:#b57825;stroke-dasharray:7 5}</style><text x="24" y="34" class="heading">Material ledger · incomplete</text><text x="24" y="58" class="pending">PARTIAL EVIDENCE — no complete E0 → E1 route established</text>
+<text x="30" y="104" class="">E0 · unbound</text>
+<text x="570" y="104" class="">E1 · unbound</text>
+<text x="30" y="134" class="pending">Endpoints exist; their individual bindings to photographed strands are not established.</text>
+<path data-segment="C1" d="M235 185 H530" stroke="#147a92" stroke-width="3"/>
+<circle data-open-port="c1-top" cx="235" cy="185" r="4" fill="white" stroke="#965900"/>
+<circle data-open-port="c1-lock" cx="530" cy="185" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="190" class="">C1</text>
+<text x="570" y="190" class="">c1-top → c1-lock</text>
+<path data-segment="C2" d="M235 238 H530" stroke="#147a92" stroke-width="3"/>
+<circle data-open-port="c2-top" cx="235" cy="238" r="4" fill="white" stroke="#965900"/>
+<circle data-open-port="c2-lock" cx="530" cy="238" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="243" class="">C2</text>
+<text x="570" y="243" class="">c2-top → c2-lock</text>
+<path data-segment="C3" d="M235 291 H530" stroke="#147a92" stroke-width="3"/>
+<circle data-open-port="c3-top" cx="235" cy="291" r="4" fill="white" stroke="#965900"/>
+<circle data-open-port="c3-lock" cx="530" cy="291" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="296" class="">C3</text>
+<text x="570" y="296" class="">c3-top → c3-lock</text>
+<path data-segment="C4" d="M235 344 H530" stroke="#147a92" stroke-width="3"/>
+<circle data-open-port="c4-top" cx="235" cy="344" r="4" fill="white" stroke="#965900"/>
+<circle data-open-port="c4-lock" cx="530" cy="344" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="349" class="">C4</text>
+<text x="570" y="349" class="">c4-top → c4-lock</text>
+<path data-segment="T0" d="M235 397 H530" stroke="#147a92" stroke-width="3"/>
+<circle data-open-port="t0-out" cx="235" cy="397" r="4" fill="white" stroke="#965900"/>
+<circle data-open-port="t0-lock" cx="530" cy="397" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="402" class="">T0</text>
+<text x="570" y="402" class="">t0-out → t0-lock</text>
+<path data-segment="T1" d="M235 450 H530" stroke="#147a92" stroke-width="3"/>
+<circle data-open-port="t1-out" cx="235" cy="450" r="4" fill="white" stroke="#965900"/>
+<circle data-open-port="t1-lock" cx="530" cy="450" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="455" class="">T1</text>
+<text x="570" y="455" class="">t1-out → t1-lock</text>
+<path data-segment="B0" d="M235 503 H530" stroke="#b35f24" stroke-width="3"/>
+<circle data-open-port="b0-lock" cx="235" cy="503" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="508" class="">B0</text>
+<text x="570" y="508" class="">b0-lock → fold</text>
+<path data-segment="B1" d="M235 556 H530" stroke="#b35f24" stroke-width="3"/>
+<circle data-open-port="b1-lock" cx="235" cy="556" r="4" fill="white" stroke="#965900"/>
+<text x="32" y="561" class="">B1</text>
+<text x="570" y="561" class="">b1-lock ← fold</text>
+<path data-fold="fold" d="M530 503 H550 V556 H530" fill="none" stroke="#b35f24" stroke-width="2"/>
+<text x="32" y="658" class="pending">Rows are a fragment inventory, NOT an end-to-end material sequence.</text>
+<text x="32" y="687" class="">Global ordinals and final crossing traversal remain null rather than guessed.</text>
+</svg>

@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "units": "m",
+  "coordinateSystem": "right-handed Z-up",
+  "ropes": [
+    {
+      "id": "rope-p3",
+      "diameter": 0.01,
+      "points": [
+        [
+          -0.06,
+          0,
+          0
+        ],
+        [
+          -0.04,
+          0,
+          0.003106253394492435
+        ],
+        [
+          -0.020000000000000004,
+          0,
+          0.012738735117016979
+        ],
+        [
+          0,
+          0,
+          0.021106253394492434
+        ],
+        [
+          0.01999999999999999,
+          0,
+          0.02547747023403395
+        ],
+        [
+          0.04000000000000001,
+          0,
+          0.021106253394492434
+        ],
+        [
+          0.06,
+          0,
+          0.012738735117016982
+        ],
+        [
+          0.07333333333333333,
+          0.013333333333333332,
+          0.003562902672742608
+        ],
+        [
+          0.08666666666666667,
+          0.026666666666666665,
+          0
+        ],
+        [
+          0.1,
+          0.04,
+          0
+        ],
+        [
+          0.1,
+          0.06,
+          0
+        ],
+        [
+          0.1,
+          0.08,
+          0
+        ],
+        [
+          0.1,
+          0.1,
+          0
+        ],
+        [
+          0.08000000000000002,
+          0.1,
+          0
+        ],
+        [
+          0.06000000000000001,
+          0.1,
+          0
+        ],
+        [
+          0.04000000000000001,
+          0.1,
+          0
+        ],
+        [
+          0.020000000000000018,
+          0.1,
+          0
+        ],
+        [
+          0,
+          0.1,
+          0
+        ],
+        [
+          -0.01999999999999999,
+          0.1,
+          0
+        ],
+        [
+          -0.03999999999999998,
+          0.1,
+          0
+        ],
+        [
+          -0.05999999999999997,
+          0.1,
+          0
+        ],
+        [
+          -0.08,
+          0.1,
+          0
+        ],
+        [
+          -0.08,
+          0.08,
+          0
+        ],
+        [
+          -0.08,
+          0.060000000000000005,
+          0
+        ],
+        [
+          -0.08,
+          0.04000000000000001,
+          0
+        ],
+        [
+          -0.08,
+          0.020000000000000004,
+          0
+        ],
+        [
+          -0.08,
+          0,
+          0
+        ],
+        [
+          -0.08,
+          -0.01999999999999999,
+          0
+        ],
+        [
+          -0.08,
+          -0.04000000000000001,
+          0
+        ],
+        [
+          -0.08,
+          -0.06,
+          0
+        ],
+        [
+          -0.060000000000000005,
+          -0.06,
+          0
+        ],
+        [
+          -0.04000000000000001,
+          -0.06,
+          0
+        ],
+        [
+          -0.020000000000000004,
+          -0.06,
+          0
+        ],
+        [
+          -1.3877787807814457e-17,
+          -0.06,
+          0
+        ],
+        [
+          0.020000000000000004,
+          -0.06,
+          0
+        ],
+        [
+          0.04,
+          -0.06,
+          0
+        ],
+        [
+          0.04,
+          -0.039999999999999994,
+          0
+        ],
+        [
+          0.04,
+          -0.01999999999999999,
+          0
+        ],
+        [
+          0.04,
+          0,
+          0
+        ],
+        [
+          0.04,
+          0.020000000000000018,
+          0
+        ],
+        [
+          0.04,
+          0.04,
+          0
+        ],
+        [
+          0.05,
+          0.05,
+          0
+        ],
+        [
+          0.06,
+          0.06,
+          0
+        ],
+        [
+          0.045,
+          0.065,
+          0
+        ],
+        [
+          0.03,
+          0.07,
+          0
+        ],
+        [
+          0.015,
+          0.075,
+          0
+        ],
+        [
+          0,
+          0.08,
+          0
+        ],
+        [
+          0,
+          0.06,
+          0
+        ],
+        [
+          0,
+          0.04,
+          0
+        ],
+        [
+          0,
+          0.02,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -0.019999999999999997,
+          0
+        ],
+        [
+          0,
+          -0.04,
+          0
+        ],
+        [
+          -0.019999999999999997,
+          -0.04,
+          0
+        ],
+        [
+          -0.039999999999999994,
+          -0.04,
+          0
+        ],
+        [
+          -0.06,
+          -0.04,
+          0
+        ]
+      ]
+    }
+  ],
+  "topology": {
+    "id": "close-two-crossings",
+    "crossings": [
+      {
+        "id": "X1",
+        "portions": [
+          {
+            "segment": 0,
+            "t": 0.5
+          },
+          {
+            "segment": 10,
+            "t": 0.5
+          }
+        ],
+        "over": "A",
+        "clearance": 0.002
+      },
+      {
+        "id": "X2",
+        "portions": [
+          {
+            "segment": 0,
+            "t": 0.8333333333333334
+          },
+          {
+            "segment": 6,
+            "t": 0.6
+          }
+        ],
+        "over": "A",
+        "clearance": 0.002
+      }
+    ],
+    "pathRanges": [
+      {
+        "start": 0,
+        "end": 6
+      },
+      {
+        "start": 6,
+        "end": 9
+      },
+      {
+        "start": 9,
+        "end": 12
+      },
+      {
+        "start": 12,
+        "end": 21
+      },
+      {
+        "start": 21,
+        "end": 29
+      },
+      {
+        "start": 29,
+        "end": 35
+      },
+      {
+        "start": 35,
+        "end": 40
+      },
+      {
+        "start": 40,
+        "end": 42
+      },
+      {
+        "start": 42,
+        "end": 46
+      },
+      {
+        "start": 46,
+        "end": 48
+      },
+      {
+        "start": 48,
+        "end": 52
+      },
+      {
+        "start": 52,
+        "end": 55
+      }
+    ],
+    "requiredClearance": 0.002,
+    "generatedLift": 0.018,
+    "transitionRadius": 0.055,
+    "sampleSpacing": 0.02
+  },
+  "constraintEvents": [
+    {
+      "id": "X1",
+      "portions": [
+        {
+          "segment": 0,
+          "t": 0.5
+        },
+        {
+          "segment": 10,
+          "t": 0.5
+        }
+      ],
+      "over": "A",
+      "clearance": 0.002,
+      "positions": [
+        0.06,
+        0.9680983669457534
+      ],
+      "overPosition": 0.06,
+      "underPosition": 0.9680983669457534,
+      "requiredSeparation": 0.012,
+      "elevations": [
+        0.021106253394492434,
+        0
+      ]
+    },
+    {
+      "id": "X2",
+      "portions": [
+        {
+          "segment": 0,
+          "t": 0.8333333333333334
+        },
+        {
+          "segment": 6,
+          "t": 0.6
+        }
+      ],
+      "over": "A",
+      "clearance": 0.002,
+      "positions": [
+        0.1,
+        0.7565685424949238
+      ],
+      "overPosition": 0.1,
+      "underPosition": 0.7565685424949238,
+      "requiredSeparation": 0.012,
+      "elevations": [
+        0.021106253394492434,
+        0
+      ]
+    }
+  ],
+  "validation": {
+    "topology": {
+      "continuous": true,
+      "projectedCrossingCount": 2,
+      "expectedCrossingCount": 2,
+      "intendedCrossings": [
+        {
+          "id": "X1",
+          "found": true,
+          "projectedPoint": [
+            0,
+            0
+          ],
+          "expectedPoint": [
+            0,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.5,
+            10.5
+          ]
+        },
+        {
+          "id": "X2",
+          "found": true,
+          "projectedPoint": [
+            0.039999999999999994,
+            0
+          ],
+          "expectedPoint": [
+            0.04000000000000001,
+            0
+          ],
+          "portionMatches": true,
+          "traversals": [
+            0.83333333,
+            6.6
+          ]
+        }
+      ],
+      "noUnintendedCrossings": true,
+      "crossingTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "requestedTraversalOrder": [
+        "X1-A",
+        "X2-A",
+        "X2-B",
+        "X1-B"
+      ],
+      "traversalMatches": true,
+      "constraintInfluenceRadius": 0.055,
+      "interactingCrossingConstraints": [
+        {
+          "crossingA": "X1",
+          "crossingB": "X2",
+          "alongPathSeparation": 0.04000000000000001,
+          "supportOverlap": 0.06999999999999999
+        }
+      ],
+      "valid": true
+    },
+    "crossings": {
+      "crossingMeasurements": [
+        {
+          "id": "X1",
+          "overPortion": "A",
+          "overHeight": 0.021106253394492434,
+          "underHeight": 0,
+          "centerlineSeparation": 0.021106253394492434,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": 0.011106253394492433,
+          "valid": true
+        },
+        {
+          "id": "X2",
+          "overPortion": "A",
+          "overHeight": 0.021106253394492434,
+          "underHeight": 0,
+          "centerlineSeparation": 0.021106253394492434,
+          "requiredCenterlineSeparation": 0.012,
+          "surfaceClearance": 0.011106253394492433,
+          "valid": true
+        }
+      ],
+      "overUnderPreserved": true,
+      "clearanceSatisfied": true,
+      "valid": true
+    },
+    "collisions": {
+      "minimumNonlocalSeparation": 0.012649110640673516,
+      "minimumPair": [
+        40,
+        42
+      ],
+      "requiredMinimumSeparation": 0.012,
+      "globalSurfaceClearance": 0.0026491106406735156,
+      "penetrationCount": 0,
+      "failures": [],
+      "valid": true
+    },
+    "valid": true
+  }
+}

@@ -1,0 +1,16 @@
+# Local dependencies and generated browser output
+node_modules/
+dist/
+.playwright-mcp/
+tmp/
+
+# Local operating-system metadata
+.DS_Store
+
+# Source videos are retained locally for reference only. They exceed GitHub's
+# regular-file limit and are not required to reproduce the project.
+references/video/*.mp4
+
+# Downloaded source pages are reproducible from the URLs recorded in the
+# evidence ledger. Avoid versioning third-party page bundles and trackers.
+references/phase4b/*.html

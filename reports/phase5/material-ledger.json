@@ -1,0 +1,275 @@
+[
+  {
+    "id": "standing/0",
+    "start": 0,
+    "end": 7,
+    "u0": 0,
+    "u1": 0.028225806451612902,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "locking-loop/0",
+    "start": 8,
+    "end": 23,
+    "u0": 0.03225806451612903,
+    "u1": 0.09274193548387097,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "loop-root/0",
+    "start": 24,
+    "end": 26,
+    "u0": 0.0967741935483871,
+    "u1": 0.10483870967741936,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "cuff-0/0",
+    "start": 27,
+    "end": 61,
+    "u0": 0.10887096774193548,
+    "u1": 0.24596774193548387,
+    "status": "ASSUMED",
+    "dependencies": [
+      "rear-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "cuff-1/0",
+    "start": 62,
+    "end": 96,
+    "u0": 0.25,
+    "u1": 0.3870967741935484,
+    "status": "ASSUMED",
+    "dependencies": [
+      "rear-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "over-X/0",
+    "start": 97,
+    "end": 100,
+    "u0": 0.3911290322580645,
+    "u1": 0.4032258064516129,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "under-entry/0",
+    "start": 101,
+    "end": 104,
+    "u0": 0.40725806451612906,
+    "u1": 0.41935483870967744,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "under-cuff/0",
+    "start": 105,
+    "end": 111,
+    "u0": 0.42338709677419356,
+    "u1": 0.4475806451612903,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "return-loop/0",
+    "start": 112,
+    "end": 118,
+    "u0": 0.45161290322580644,
+    "u1": 0.47580645161290325,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "working-bight/0",
+    "start": 119,
+    "end": 122,
+    "u0": 0.4798387096774194,
+    "u1": 0.49193548387096775,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "fold",
+    "start": 123,
+    "end": 125,
+    "u0": 0.4959677419354839,
+    "u1": 0.5040322580645161,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "working-bight/1",
+    "start": 126,
+    "end": 129,
+    "u0": 0.5080645161290323,
+    "u1": 0.5201612903225806,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "return-loop/1",
+    "start": 130,
+    "end": 136,
+    "u0": 0.5241935483870968,
+    "u1": 0.5483870967741935,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "under-cuff/1",
+    "start": 137,
+    "end": 143,
+    "u0": 0.5524193548387096,
+    "u1": 0.5766129032258065,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "under-entry/1",
+    "start": 144,
+    "end": 147,
+    "u0": 0.5806451612903226,
+    "u1": 0.592741935483871,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "over-X/1",
+    "start": 148,
+    "end": 151,
+    "u0": 0.5967741935483871,
+    "u1": 0.6088709677419355,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "cuff-1/1",
+    "start": 152,
+    "end": 186,
+    "u0": 0.6129032258064516,
+    "u1": 0.75,
+    "status": "ASSUMED",
+    "dependencies": [
+      "rear-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "cuff-0/1",
+    "start": 187,
+    "end": 221,
+    "u0": 0.7540322580645161,
+    "u1": 0.8911290322580645,
+    "status": "ASSUMED",
+    "dependencies": [
+      "rear-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "loop-root/1",
+    "start": 222,
+    "end": 224,
+    "u0": 0.8951612903225806,
+    "u1": 0.9032258064516129,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "locking-loop/1",
+    "start": 225,
+    "end": 240,
+    "u0": 0.907258064516129,
+    "u1": 0.967741935483871,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  },
+  {
+    "id": "standing/1",
+    "start": 241,
+    "end": 248,
+    "u0": 0.9717741935483871,
+    "u1": 1,
+    "status": "ASSUMED",
+    "dependencies": [
+      "loop-route",
+      "metric-layout",
+      "endpoint-map"
+    ]
+  }
+]

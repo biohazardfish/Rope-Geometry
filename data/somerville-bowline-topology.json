@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "somerville-bowline-right-handed-two-wrap-single-column",
+  "name": "Somerville Bowline",
+  "crossingInventoryStatus": "PARTIAL_PENDING_STRAND_LEVEL_REVIEW",
+  "variant": {
+    "handedness": { "value": "right-handed", "status": "CONFIRMED", "evidence": ["E-video-right"] },
+    "wrapCount": { "value": 2, "status": "CONFIRMED", "evidence": ["E-detailed-intro", "E-step-3", "E-step-7"] },
+    "slipped": { "value": false, "status": "CONFIRMED", "evidence": ["E-step-16-19", "E-step-20", "E-step-26"] },
+    "columnCount": { "value": 1, "status": "CONFIRMED", "evidence": ["E-detailed-intro"] }
+  },
+  "units": "m",
+  "ropeDiameter": 0.01,
+  "reference": {
+    "title": "TheDuchy — Somerville Bowline Core Technique — Detailed Version",
+    "url": "https://www.theduchy.com/courses/foundations-1/topics/somerville-bowline",
+    "inspected": ["complete detailed-step text", "all 25 accompanying detailed-step photographs (numbered images 1-25 across tutorial steps 1-26)"],
+    "limitations": ["The photos do not label a clockwise/counterclockwise winding convention or a fixed viewpoint for winding direction.", "The hand-occluded loop crossings do not support a complete unambiguous pairwise crossing table from these stills alone."]
+  },
+  "evidence": [
+    { "id": "E-video-right", "kind": "tutorial-index", "steps": ["Video Contents: Somerville Bowline - Right-Handed (0:08)"], "url": "https://www.theduchy.com/courses/foundations-1/topics/somerville-bowline", "note": "The reference distinguishes the right-handed demonstration from the left-handed one." },
+    { "id": "E-detailed-intro", "kind": "tutorial-text", "steps": ["Detailed Version introduction"], "url": "https://www.theduchy.com/courses/foundations-1/topics/somerville-bowline", "note": "The demonstrated version uses two wraps, producing four strands, and is a single-column tie." },
+    { "id": "E-step-1", "kind": "tutorial-text+photo", "steps": [1], "image": "https://cdn.sanity.io/images/vedbawa9/production/3bdca9ec9521483babc6d0c26394f81183910417-1500x1500.jpg", "note": "Start with the rope folded in half; the fold is held as the bight." },
+    { "id": "E-step-2", "kind": "tutorial-text+photo", "steps": [2], "image": "https://cdn.sanity.io/images/vedbawa9/production/cc09378af992a01e0f0d630fcd460964f519c5bd-1500x1500.jpg", "note": "The bight is placed over the column and taken underneath it." },
+    { "id": "E-step-3", "kind": "tutorial-text+photo", "steps": [3], "image": "https://cdn.sanity.io/images/vedbawa9/production/0c00d307c18002a5ee1f8bdc568238c39ce3f357-1500x1500.jpg", "note": "The bight is pulled under and back to make the first wrap; more bight is drawn for the second." },
+    { "id": "E-step-7", "kind": "tutorial-text+photo", "steps": [7], "image": "https://cdn.sanity.io/images/vedbawa9/production/3f88e2a6e8205391705fd26169b618576b1438d8-1500x1500.jpg", "note": "The cuff is completed with a 4–6 inch bight remaining." },
+    { "id": "E-step-8", "kind": "tutorial-text+photo", "steps": [8], "image": "https://cdn.sanity.io/images/vedbawa9/production/8f0d441ea9b913255ae69eb211d0585c08c3e02b-1500x1500.jpg", "note": "The bight is laid across the top of the cuff wraps." },
+    { "id": "E-step-9-15", "kind": "tutorial-text+photo", "steps": [9, 10, 11, 12, 13, 14, 15], "images": ["https://cdn.sanity.io/images/vedbawa9/production/659f6feda3b9373fd6010b65add2fca49d698abf-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/534b21d1f890cea1df69cd6f44e88958ab64b771-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/ae9209bc19a9fd772bd905742ff02d7983f45bc3-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/3cb97361f638b3d6f21832068dfa79b4873ca552-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/3f88e2a6e8205391705fd26169b618576b1438d8-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/b2b328dd8efaad2e1ff71f9e7a7f81460d910e29-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/3c14eaa1d21d165fdb2793bbc94088c7361ba49b-1500x1500.jpg"], "note": "The tail is routed around the bight to make a loop; the bight is flipped across the tail. Exact pairwise over/under at the occluded crossings is not stated." },
+    { "id": "E-step-16-19", "kind": "tutorial-text+photo", "steps": [16, 17, 18, 19], "images": ["https://cdn.sanity.io/images/vedbawa9/production/ef3bf317ad6e8769852dc08cdb1dc55dc02ae91b-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/1eb4467867ce4910fe46c25eec57540d81205330-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/6f52327a7baa995c05bc9d7daad6902ac5141827-1500x1500.jpg", "https://cdn.sanity.io/images/vedbawa9/production/1ac3b80eb33965aa0b772ff6298bf2a73184f635-1500x1500.jpg"], "note": "The bight is drawn beneath all cuff strands and through the loop formed by the tail." },
+    { "id": "E-step-20", "kind": "tutorial-text+photo", "steps": [20], "image": "https://cdn.sanity.io/images/vedbawa9/production/98c39c695924861cc216b1b29870d6fd04153b48-1500x1500.jpg", "note": "Tension on the bight holds the cuff together; the grip then transfers to the tail." },
+    { "id": "E-step-26", "kind": "tutorial-text+photo", "steps": [26], "image": "https://cdn.sanity.io/images/vedbawa9/production/5afc520fefa3fee9d386de120240cea44a18738b-1500x1500.jpg", "note": "The completed non-slipped cuff shows four close parallel strands and the locking structure." }
+  ],
+  "objects": [
+    { "id": "rope", "type": "single-continuous-rope", "connectivityGraph": "rope-path" },
+    { "id": "column", "type": "external-cylinder", "axis": "Z", "partOfRopeConnectivity": false },
+    { "id": "tail-end", "type": "physical-end", "label": "Tail", "status": "CONFIRMED", "evidence": ["E-step-9-15"] },
+    { "id": "other-end", "type": "physical-end", "label": "Other free end", "status": "CONFIRMED", "nameStatus": "PENDING_REVIEW", "evidence": ["E-step-1"] },
+    { "id": "bight", "type": "folded-bight", "status": "CONFIRMED", "evidence": ["E-step-1"] },
+    { "id": "cuff-stack", "type": "four-parallel-strands", "status": "CONFIRMED", "evidence": ["E-detailed-intro", "E-step-7", "E-step-26"] },
+    { "id": "tail-loop", "type": "locking-loop", "status": "CONFIRMED", "evidence": ["E-step-9-15", "E-step-16-19"] }
+  ],
+  "ropePath": {
+    "id": "rope-path",
+    "status": "STRUCTURALLY_CONNECTED_REFERENCE_DETAILS_PARTIAL",
+    "orderedSegments": ["tail-free", "tail-locking-arc", "cuff-tail-arm", "bight-fold", "cuff-lead-arm", "other-free"],
+    "nodes": [
+      { "id": "tail-end", "kind": "endpoint" },
+      { "id": "tail-loop-entry", "kind": "route-station" },
+      { "id": "cuff-tail-exit", "kind": "route-station" },
+      { "id": "bight-fold-in", "kind": "fold-entry" },
+      { "id": "bight-fold-out", "kind": "fold-exit" },
+      { "id": "cuff-lead-exit", "kind": "route-station" },
+      { "id": "other-end", "kind": "endpoint" }
+    ],
+    "segments": [
+      { "id": "tail-free", "from": "tail-end", "to": "tail-loop-entry", "role": "tail", "referenceStatus": "CONFIRMED", "evidence": ["E-step-9-15"] },
+      { "id": "tail-locking-arc", "from": "tail-loop-entry", "to": "cuff-tail-exit", "role": "tail-around-bight-lock", "referenceStatus": "PENDING_REVIEW", "evidence": ["E-step-9-15"] },
+      { "id": "cuff-tail-arm", "from": "cuff-tail-exit", "to": "bight-fold-in", "role": "wrapped-rope-arm", "referenceStatus": "PENDING_REVIEW", "evidence": ["E-step-2", "E-step-3", "E-step-7"] },
+      { "id": "bight-fold", "from": "bight-fold-in", "to": "bight-fold-out", "role": "continuous-fold", "referenceStatus": "CONFIRMED", "evidence": ["E-step-1"] },
+      { "id": "cuff-lead-arm", "from": "bight-fold-out", "to": "cuff-lead-exit", "role": "wrapped-rope-arm", "referenceStatus": "PENDING_REVIEW", "evidence": ["E-step-2", "E-step-3", "E-step-7"] },
+      { "id": "other-free", "from": "cuff-lead-exit", "to": "other-end", "role": "other-rope-end", "referenceStatus": "PENDING_REVIEW", "evidence": ["E-step-1"] }
+    ],
+    "note": "This is a provisional material-route chain used to prevent treating the bight arms as separate ropes. Exact assignment of the two arms through the two windings and locking loop still needs reference review. The bight is a fold in this rope, never a connector between rope objects."
+  },
+  "columnWrapping": {
+    "objectId": "column",
+    "windingCount": 2,
+    "strandCountAtCuff": 4,
+    "strandRuns": ["cuff-strand-1", "cuff-strand-2", "cuff-strand-3", "cuff-strand-4"],
+    "direction": { "value": null, "status": "PENDING_REVIEW", "reason": "The detailed text and still photographs do not label a winding direction relative to a fixed column view." },
+    "ropeContact": "CONFIRMED_VISUAL",
+    "evidence": ["E-detailed-intro", "E-step-2", "E-step-3", "E-step-7", "E-step-26"]
+  },
+  "relationships": [
+    { "id": "R-bight-fold-continuity", "kind": "material-continuity", "from": "cuff-tail-arm", "to": "cuff-lead-arm", "status": "CONFIRMED", "evidence": ["E-step-1"] },
+    { "id": "R-two-column-wraps", "kind": "wraps-around-column", "from": "cuff-stack", "to": "column", "turns": 2, "status": "CONFIRMED", "evidence": ["E-detailed-intro", "E-step-2", "E-step-3", "E-step-7"] },
+    { "id": "R-bight-over-cuff", "kind": "over-under", "over": "bight", "under": "cuff-stack", "status": "CONFIRMED", "evidence": ["E-step-8"], "note": "Confirmed as bight-over-cuff-stack; strand-by-strand crossing multiplicity remains pending." },
+    { "id": "R-tail-loop-around-bight", "kind": "loop-around", "from": "tail-loop", "around": "bight", "status": "CONFIRMED", "evidence": ["E-step-9-15"] },
+    { "id": "R-tail-bight-crossing-order", "kind": "over-under", "participants": ["tail-loop", "bight"], "order": "PENDING_REVIEW", "status": "PENDING_REVIEW", "evidence": ["E-step-9-15"] },
+    { "id": "R-bight-under-cuff", "kind": "underpass", "moving": "bight", "beneath": "cuff-stack", "scope": "all four cuff strands", "status": "CONFIRMED", "strandLevelCrossings": "PENDING_REVIEW", "evidence": ["E-step-16-19"] },
+    { "id": "R-bight-through-tail-loop", "kind": "through-loop", "moving": "bight", "through": "tail-loop", "status": "CONFIRMED", "evidence": ["E-step-16-19"] },
+    { "id": "R-cuff-rope-contact", "kind": "rope-rope-contact", "participants": ["cuff-stack"], "status": "CONFIRMED_VISUAL", "evidence": ["E-step-8", "E-step-26"], "note": "The completed cuff strands are close/contacting; no pairwise contact map or penetration geometry is asserted." }
+  ],
+  "crossings": [
+    { "id": "X1", "relationshipId": "R-bight-over-cuff", "participants": ["bight", "cuff-stack"], "ropePortions": [{ "objectId": "bight", "segmentIds": ["bight-fold"], "status": "CONFIRMED" }, { "objectId": "cuff-stack", "segmentIds": ["cuff-tail-arm", "cuff-lead-arm"], "status": "PENDING_REVIEW" }], "over": "bight", "under": "cuff-stack", "status": "CONFIRMED", "multiplicityStatus": "PENDING_REVIEW", "tutorialStep": 8, "evidence": ["E-step-8"] },
+    { "id": "X2", "relationshipId": "R-tail-bight-crossing-order", "participants": ["tail-loop", "bight"], "ropePortions": [{ "objectId": "tail-loop", "segmentIds": ["tail-locking-arc"], "status": "PENDING_REVIEW" }, { "objectId": "bight", "segmentIds": ["bight-fold"], "status": "CONFIRMED" }], "over": null, "under": null, "status": "PENDING_REVIEW", "tutorialSteps": [10, 12, 15], "evidence": ["E-step-9-15"] }
+  ],
+  "crossingTraversalOrder": [
+    { "crossingId": "X1", "status": "PENDING_REVIEW", "reason": "The material-path position of the bight-over-cuff event cannot be assigned until the cuff-arm routing is reviewed.", "evidence": ["E-step-8"] },
+    { "crossingId": "X2", "status": "PENDING_REVIEW", "reason": "The tail-loop/bight crossing event sequence is obscured in the stills.", "evidence": ["E-step-9-15"] }
+  ],
+  "passages": [
+    { "id": "P1", "relationshipId": "R-bight-under-cuff", "participants": ["bight", "cuff-stack"], "kind": "under-all-cuff-strands", "status": "CONFIRMED", "strandLevelCrossings": "PENDING_REVIEW", "tutorialSteps": [16, 17, 18, 19], "evidence": ["E-step-16-19"] },
+    { "id": "P2", "relationshipId": "R-bight-through-tail-loop", "participants": ["bight", "tail-loop"], "kind": "through-loop", "status": "CONFIRMED", "tutorialSteps": [16, 17, 18, 19], "evidence": ["E-step-16-19"] }
+  ],
+  "tutorialMilestones": [
+    { "id": "M1", "title": "Fold and identify the rope", "sourceSteps": [1], "existingRelationships": [], "newRelationships": ["R-bight-fold-continuity"], "manipulated": ["bight"], "unchanged": ["tail-end", "other-end"], "status": "REFERENCE_GROUNDED" },
+    { "id": "M2", "title": "Build the two-wrap cuff", "sourceSteps": [2, 3, 4, 5, 6, 7], "existingRelationships": ["R-bight-fold-continuity"], "newRelationships": ["R-two-column-wraps"], "manipulated": ["bight", "cuff-stack", "column"], "unchanged": ["tail-loop"], "status": "REFERENCE_GROUNDED" },
+    { "id": "M3", "title": "Lay the bight over the cuff", "sourceSteps": [8], "existingRelationships": ["R-bight-fold-continuity", "R-two-column-wraps"], "newRelationships": ["R-bight-over-cuff"], "manipulated": ["bight"], "unchanged": ["cuff-stack", "column"] , "status": "REFERENCE_GROUNDED" },
+    { "id": "M4", "title": "Form the tail loop around the bight", "sourceSteps": [9, 10, 11, 12, 13, 14, 15], "existingRelationships": ["R-bight-fold-continuity", "R-two-column-wraps", "R-bight-over-cuff"], "newRelationships": ["R-tail-loop-around-bight", "R-tail-bight-crossing-order"], "manipulated": ["tail-end", "tail-loop", "bight"], "unchanged": ["cuff-stack", "column"], "status": "REFERENCE_GROUNDED_WITH_PENDING_CROSSING_ORDER" },
+    { "id": "M5", "title": "Pass the bight under the cuff and through the loop", "sourceSteps": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], "existingRelationships": ["R-bight-fold-continuity", "R-two-column-wraps", "R-bight-over-cuff", "R-tail-loop-around-bight"], "newRelationships": ["R-bight-under-cuff", "R-bight-through-tail-loop"], "manipulated": ["bight", "tail-loop", "tail-end"], "unchanged": ["column", "cuff-stack"], "status": "REFERENCE_GROUNDED_WITH_PENDING_CROSSING_ORDER" }
+  ],
+  "views": [
+    {
+      "id": "structure", "title": "A · Knot structure", "description": "Topological relationships around the cuff; schematic, not to scale.", "width": 640, "height": 360,
+      "elements": [
+        { "type": "column", "entityId": "column", "x": 245, "y": 72, "width": 150, "height": 220 },
+        { "type": "strand-stack", "entityId": "cuff-stack", "x": 255, "y": 164, "width": 130, "gap": 14, "count": 4 },
+        { "type": "path", "entityId": "bight", "d": "M210 160 C205 98 270 86 320 116 C362 142 350 156 331 164 M331 164 C356 190 344 230 300 236", "class": "bight-line", "label": "BIGHT" },
+        { "type": "path", "entityId": "tail-loop", "d": "M330 238 C395 246 425 195 385 176 C365 166 347 171 333 188 M333 188 C311 215 276 253 220 270", "class": "tail-line", "label": "TAIL / LOCKING LOOP" },
+        { "type": "crossing-label", "crossingId": "X1", "x": 340, "y": 142 },
+        { "type": "crossing-label", "crossingId": "X2", "x": 460, "y": 195 },
+        { "type": "passage-label", "passageId": "P1", "x": 390, "y": 250 },
+        { "type": "text", "entityId": "column", "x": 320, "y": 58, "text": "COLUMN" },
+        { "type": "text", "entityId": "cuff-stack", "x": 320, "y": 315, "text": "2 wraps · 4 parallel strands" }
+      ]
+    },
+    {
+      "id": "column-wrap", "title": "B · Column wrapping", "description": "Unwrapped cylinder view: two winding passes produce four cuff strands. Direction awaits a fixed-view reference check.", "width": 640, "height": 360,
+      "elements": [
+        { "type": "cylinder-strip", "entityId": "column", "x": 115, "y": 84, "width": 410, "height": 192 },
+        { "type": "wrap-pass", "entityId": "cuff-stack", "strandIds": ["cuff-strand-1", "cuff-strand-2"], "x": 150, "y": 146, "width": 340, "gap": 18, "label": "WRAP 1" },
+        { "type": "wrap-pass", "entityId": "cuff-stack", "strandIds": ["cuff-strand-3", "cuff-strand-4"], "x": 150, "y": 202, "width": 340, "gap": 18, "label": "WRAP 2" },
+        { "type": "text", "entityId": "column", "x": 320, "y": 55, "text": "UNWRAPPED CYLINDER · winding direction PENDING REVIEW" },
+        { "type": "text", "entityId": "cuff-stack", "x": 320, "y": 310, "text": "4 strand runs · one physical rope" }
+      ]
+    },
+    {
+      "id": "continuous-path", "title": "C · Continuous rope path", "description": "Material-order schematic from one physical end to the other. Dashed links are provisional route assignments.", "width": 640, "height": 360,
+      "elements": [
+        { "type": "route-segment", "segmentId": "tail-free", "points": [[74, 184], [144, 184]], "label": "TAIL END" },
+        { "type": "route-segment", "segmentId": "tail-locking-arc", "points": [[144, 184], [178, 139], [212, 184]], "label": "TAIL LOOP" },
+        { "type": "route-segment", "segmentId": "cuff-tail-arm", "points": [[212, 184], [272, 184]], "label": "CUFF ARM" },
+        { "type": "route-segment", "segmentId": "bight-fold", "points": [[272, 184], [304, 150], [336, 184]], "label": "BIGHT FOLD" },
+        { "type": "route-segment", "segmentId": "cuff-lead-arm", "points": [[336, 184], [396, 184]], "label": "CUFF ARM" },
+        { "type": "route-segment", "segmentId": "other-free", "points": [[396, 184], [466, 184]], "label": "OTHER END · NAME PENDING" },
+        { "type": "route-arrow", "entityId": "rope", "x1": 86, "y1": 220, "x2": 455, "y2": 220 },
+        { "type": "text", "entityId": "rope", "x": 310, "y": 270, "text": "single connected material path · schematic order pending review at dashed joins" }
+      ]
+    }
+  ]
+}

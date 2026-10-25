@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="B · Column wrapping">
+<text x="24" y="32" class="diagram-title">B · Column wrapping</text>
+<style>.diagram-title{font:600 19px system-ui;fill:#172c37}.diagram-description{font:12px system-ui;fill:#526675}.diagram-label{font:600 13px system-ui;fill:#253a45}.diagram-small-label{font:11px system-ui;fill:#344955}.diagram-column,.diagram-cylinder-strip{fill:#e8edef;stroke:#728591;stroke-width:2}.diagram-axis,.diagram-seam{stroke:#abb7bd;stroke-width:1;stroke-dasharray:5 5}.diagram-strand{fill:none;stroke:#4c8292;stroke-width:7;stroke-linecap:round}.diagram-rope{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}.bight-line{stroke:#1e7895}.tail-line{stroke:#d88945}.diagram-pending circle{fill:#fff4d6;stroke:#a75f00;stroke-width:2;stroke-dasharray:4 3}.diagram-confirmed circle{fill:#e5f4ed;stroke:#27815b;stroke-width:2}.diagram-pending text,.diagram-confirmed text{font:700 11px system-ui;fill:#172c37}.diagram-route{fill:none;stroke:#357d91;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.diagram-route.is-pending{stroke:#c88935;stroke-dasharray:9 7}.diagram-arrow{stroke:#324d5a;stroke-width:2}.diagram-arrowhead{fill:#324d5a}</style>
+<rect x="115" y="84" width="410" height="192" rx="18" class="diagram-cylinder-strip"/>
+<line x1="115" y1="84" x2="115" y2="276" class="diagram-seam"/>
+<line x1="525" y1="84" x2="525" y2="276" class="diagram-seam"/>
+<path d="M 150 146 H 490" class="diagram-strand" data-strand="cuff-strand-1"/>
+<path d="M 150 164 H 490" class="diagram-strand" data-strand="cuff-strand-2"/>
+<text x="320" y="137" text-anchor="middle" class="diagram-small-label">WRAP 1</text>
+<path d="M 150 202 H 490" class="diagram-strand" data-strand="cuff-strand-3"/>
+<path d="M 150 220 H 490" class="diagram-strand" data-strand="cuff-strand-4"/>
+<text x="320" y="193" text-anchor="middle" class="diagram-small-label">WRAP 2</text>
+<text x="320" y="55" text-anchor="middle" class="diagram-label">UNWRAPPED CYLINDER · winding direction PENDING REVIEW</text>
+<text x="320" y="310" text-anchor="middle" class="diagram-label">4 strand runs · one physical rope</text>
+<text x="24" y="346" class="diagram-description">Unwrapped cylinder view: two winding passes produce four cuff strands. Direction awaits a fixed-view reference check.</text></svg>

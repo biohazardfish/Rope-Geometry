@@ -1,0 +1,1343 @@
+{
+  "epsilonM": 1e-9,
+  "diameterM": 0.01,
+  "method": "Exact linear subdivision of unchanged saved polyline, no smoothing or curve regeneration. Engine closestSegments and original EPSILON; only immediate refined-segment adjacency is omitted. Parent aggregation is diagnostic attribution only, never acceptance filtering.",
+  "hashes": {
+    "data/phase5-candidate-A.json": "162c77d2e0a443a32cb577b100d9e06a5f3d577a8f62787d10abe33b076618b0",
+    "data/phase5-partial-cuff.json": "3629614328585c505d9b461095ad699f698c7699478ed3ff17f87b0e4801c23a",
+    "data/somerville-bowline-topology-v2.json": "34f6370e448d1ac629707e291470d66e3e347f36f1b9a1c3996f91b4895fb897",
+    "src/geometry.js": "c77b3459356f7da1517cf48a26a1b9082fd071e982bab8e6fd20594542bef1ef",
+    "src/phase5.js": "fefe7e7787037f21a8b7a3814a1e2a6f15960dd6b200c492fe9687332eac532e",
+    "reports/phase5/validation.json": "17262f13ea0646893ac0bb9cf3a71f9374dfabe0aa41d4a6f9842432d1754e59"
+  },
+  "classification": [
+    {
+      "segmentA": "candidate-A:6",
+      "segmentB": "candidate-A:224",
+      "uA": 0.028225806451612902,
+      "uB": 0.907258064516129,
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        -0.08,
+        -0.132,
+        -0.020000000000000004
+      ],
+      "pointB": [
+        -0.08000000000000002,
+        -0.12600000000000003,
+        -0.019999999999999997
+      ],
+      "distance": 0.005999999999999978,
+      "gap": -0.004000000000000023,
+      "penetration": 0.004000000000000023,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "standing/0 → standing/0",
+        "loop-root/1 → locking-loop/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        6,
+        224
+      ]
+    },
+    {
+      "segmentA": "candidate-A:6",
+      "segmentB": "candidate-A:225",
+      "uA": 0.028225806451612902,
+      "uB": 0.9073653128491581,
+      "s": 1,
+      "t": 0.026597586591220145,
+      "pointA": [
+        -0.08,
+        -0.132,
+        -0.020000000000000004
+      ],
+      "pointB": [
+        -0.08045803050782102,
+        -0.12603657168156296,
+        -0.01990889206735721
+      ],
+      "distance": 0.005981686209642072,
+      "gap": -0.004018313790357928,
+      "penetration": 0.004018313790357928,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "standing/0 → standing/0",
+        "locking-loop/1 → locking-loop/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        6,
+        225
+      ]
+    },
+    {
+      "segmentA": "candidate-A:7",
+      "segmentB": "candidate-A:224",
+      "uA": 0.028333054784642014,
+      "uB": 0.907258064516129,
+      "s": 0.02659758659122019,
+      "t": 1,
+      "pointA": [
+        -0.079541969492179,
+        -0.13196342831843708,
+        -0.019908892067357218
+      ],
+      "pointB": [
+        -0.08000000000000002,
+        -0.12600000000000003,
+        -0.019999999999999997
+      ],
+      "distance": 0.005981686209642072,
+      "gap": -0.004018313790357928,
+      "penetration": 0.004018313790357928,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "standing/0 → locking-loop/0",
+        "loop-root/1 → locking-loop/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        7,
+        224
+      ]
+    },
+    {
+      "segmentA": "candidate-A:7",
+      "segmentB": "candidate-A:225",
+      "uA": 0.02828153887806276,
+      "uB": 0.9073137969425789,
+      "s": 0.013821641759565025,
+      "t": 0.013821641759562691,
+      "pointA": [
+        -0.07976198090107381,
+        -0.1319809952425806,
+        -0.019952655057551023
+      ],
+      "pointB": [
+        -0.08023801909892617,
+        -0.12601900475741942,
+        -0.019952655057551023
+      ],
+      "distance": 0.0059809650484655965,
+      "gap": -0.004019034951534404,
+      "penetration": 0.004019034951534404,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "standing/0 → locking-loop/0",
+        "locking-loop/1 → locking-loop/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        7,
+        225
+      ]
+    },
+    {
+      "segmentA": "candidate-A:23",
+      "segmentB": "candidate-A:223",
+      "uA": 0.0967741935483871,
+      "uB": 0.9010335108048857,
+      "s": 1,
+      "t": 0.4563106796116509,
+      "pointA": [
+        -0.06133333333333335,
+        -0.10333333333333335,
+        -0.013333333333333332
+      ],
+      "pointB": [
+        -0.05941747572815536,
+        -0.10747572815533982,
+        -0.009708737864077673
+      ],
+      "distance": 0.005828176176168066,
+      "gap": -0.004171823823831934,
+      "penetration": 0.004171823823831934,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "locking-loop/0 → loop-root/0",
+        "loop-root/1 → loop-root/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        23,
+        223
+      ]
+    },
+    {
+      "segmentA": "candidate-A:23",
+      "segmentB": "candidate-A:224",
+      "uA": 0.0952006294256491,
+      "uB": 0.9032258064516129,
+      "s": 0.6097560975609759,
+      "t": 0,
+      "pointA": [
+        -0.0686178861788618,
+        -0.1059349593495935,
+        -0.01593495934959349
+      ],
+      "pointB": [
+        -0.06666666666666668,
+        -0.114,
+        -0.013333333333333332
+      ],
+      "distance": 0.008696010361422186,
+      "gap": -0.001303989638577814,
+      "penetration": 0.001303989638577814,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "locking-loop/0 → loop-root/0",
+        "loop-root/1 → locking-loop/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        23,
+        224
+      ]
+    },
+    {
+      "segmentA": "candidate-A:24",
+      "segmentB": "candidate-A:221",
+      "uA": 0.10080645161290322,
+      "uB": 0.8951612903225806,
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        -0.04266666666666667,
+        -0.09666666666666668,
+        -0.006666666666666666
+      ],
+      "pointB": [
+        -0.04,
+        -0.09,
+        0
+      ],
+      "distance": 0.009797958971132724,
+      "gap": -0.00020204102886727665,
+      "penetration": 0.00020204102886727665,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "loop-root/0 → loop-root/0",
+        "cuff-0/1 → loop-root/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        24,
+        221
+      ]
+    },
+    {
+      "segmentA": "candidate-A:24",
+      "segmentB": "candidate-A:222",
+      "uA": 0.09906993171650576,
+      "uB": 0.8986931951966094,
+      "s": 0.5693430656934286,
+      "t": 0.8759124087591256,
+      "pointA": [
+        -0.05070559610705601,
+        -0.09953771289537716,
+        -0.00953771289537714
+      ],
+      "pointB": [
+        -0.05167883211678835,
+        -0.10051094890510952,
+        -0.00583941605839417
+      ],
+      "distance": 0.003946108989335918,
+      "gap": -0.006053891010664082,
+      "penetration": 0.006053891010664082,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "loop-root/0 → loop-root/0",
+        "loop-root/1 → loop-root/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        24,
+        222
+      ]
+    },
+    {
+      "segmentA": "candidate-A:24",
+      "segmentB": "candidate-A:223",
+      "uA": 0.09864280094413848,
+      "uB": 0.8991935483870968,
+      "s": 0.4634146341463416,
+      "t": 0,
+      "pointA": [
+        -0.0526829268292683,
+        -0.1002439024390244,
+        -0.010243902439024389
+      ],
+      "pointB": [
+        -0.053333333333333344,
+        -0.10200000000000001,
+        -0.006666666666666666
+      ],
+      "distance": 0.004037762132076425,
+      "gap": -0.0059622378679235755,
+      "penetration": 0.0059622378679235755,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "loop-root/0 → loop-root/0",
+        "loop-root/1 → loop-root/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        24,
+        223
+      ]
+    },
+    {
+      "segmentA": "candidate-A:25",
+      "segmentB": "candidate-A:221",
+      "uA": 0.10208497246262785,
+      "uB": 0.8951612903225806,
+      "s": 0.3170731707317078,
+      "t": 1,
+      "pointA": [
+        -0.03674796747967479,
+        -0.09455284552845529,
+        -0.004552845528455281
+      ],
+      "pointB": [
+        -0.04,
+        -0.09,
+        0
+      ],
+      "distance": 0.007213357077339463,
+      "gap": -0.002786642922660537,
+      "penetration": 0.002786642922660537,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "loop-root/0 → loop-root/0",
+        "cuff-0/1 → loop-root/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        25,
+        221
+      ]
+    },
+    {
+      "segmentA": "candidate-A:25",
+      "segmentB": "candidate-A:222",
+      "uA": 0.10080645161290322,
+      "uB": 0.8969229564672722,
+      "s": 0,
+      "t": 0.4368932038834955,
+      "pointA": [
+        -0.04266666666666667,
+        -0.09666666666666668,
+        -0.006666666666666666
+      ],
+      "pointB": [
+        -0.04582524271844661,
+        -0.09524271844660195,
+        -0.0029126213592233032
+      ],
+      "distance": 0.005108530843465739,
+      "gap": -0.004891469156534261,
+      "penetration": 0.004891469156534261,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "loop-root/0 → loop-root/0",
+        "loop-root/1 → loop-root/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        25,
+        222
+      ]
+    },
+    {
+      "segmentA": "candidate-A:97",
+      "segmentB": "candidate-A:145",
+      "uA": 0.3935472464297121,
+      "uB": 0.5887096774193549,
+      "s": 0.5997171145685997,
+      "t": 1,
+      "pointA": [
+        0.053597595473833096,
+        -0.11399575671852899,
+        -0.01199787835926451
+      ],
+      "pointB": [
+        0.058,
+        -0.11,
+        -0.015
+      ],
+      "distance": 0.006660328198479169,
+      "gap": -0.0033396718015208313,
+      "penetration": 0.0033396718015208313,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/1 → under-entry/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        97,
+        145
+      ]
+    },
+    {
+      "segmentA": "candidate-A:97",
+      "segmentB": "candidate-A:146",
+      "uA": 0.3951612903225806,
+      "uB": 0.5904772425983208,
+      "s": 1,
+      "t": 0.43835616438356156,
+      "pointA": [
+        0.057,
+        -0.12,
+        -0.015000000000000012
+      ],
+      "pointB": [
+        0.058,
+        -0.11876712328767124,
+        -0.01828767123287671
+      ],
+      "distance": 0.003650858409098819,
+      "gap": -0.006349141590901181,
+      "penetration": 0.006349141590901181,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/1 → under-entry/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        97,
+        146
+      ]
+    },
+    {
+      "segmentA": "candidate-A:98",
+      "segmentB": "candidate-A:100",
+      "uA": 0.39919354838709675,
+      "uB": 0.4063742819266461,
+      "s": 1,
+      "t": 0.7808219178082187,
+      "pointA": [
+        0.0655,
+        -0.135,
+        -0.022500000000000006
+      ],
+      "pointB": [
+        0.07400000000000001,
+        -0.13438356164383564,
+        -0.024143835616438358
+      ],
+      "distance": 0.008679411949021778,
+      "gap": -0.0013205880509782227,
+      "penetration": 0.0013205880509782227,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "over-X/0 → under-entry/0"
+      ],
+      "primary": "SHARP_LOCAL_RETURN",
+      "reason": "Same material arm returns towards its previous segments; intervening bend angle is measured below. Exact polyline distance, not a floating-point contact.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [
+        0,
+        152.5075538117359
+      ],
+      "parentSegments": [
+        98,
+        100
+      ]
+    },
+    {
+      "segmentA": "candidate-A:98",
+      "segmentB": "candidate-A:101",
+      "uA": 0.3991621800428891,
+      "uB": 0.40725806451612906,
+      "s": 0.9922206506364918,
+      "t": 0,
+      "pointA": [
+        0.06543387553041019,
+        -0.13488330975954738,
+        -0.022441654879773693
+      ],
+      "pointB": [
+        0.07400000000000001,
+        -0.13,
+        -0.0225
+      ],
+      "distance": 0.009860456723156911,
+      "gap": -0.00013954327684308904,
+      "penetration": 0.00013954327684308904,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/0 → under-entry/0"
+      ],
+      "primary": "SHARP_LOCAL_RETURN",
+      "reason": "Same material arm returns towards its previous segments; intervening bend angle is measured below. Exact polyline distance, not a floating-point contact.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [
+        0,
+        152.5075538117359,
+        0.0000012074182697257333
+      ],
+      "parentSegments": [
+        98,
+        101
+      ]
+    },
+    {
+      "segmentA": "candidate-A:98",
+      "segmentB": "candidate-A:146",
+      "uA": 0.3959462214055582,
+      "uB": 0.5910901339918787,
+      "s": 0.1946629085784412,
+      "t": 0.5903532299859059,
+      "pointA": [
+        0.05865463472291675,
+        -0.12291994362867661,
+        -0.01645997181433832
+      ],
+      "pointB": [
+        0.058,
+        -0.12180706459971812,
+        -0.019427649224894292
+      ],
+      "distance": 0.0032363800096200236,
+      "gap": -0.006763619990379976,
+      "penetration": 0.006763619990379976,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/1 → under-entry/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        98,
+        146
+      ]
+    },
+    {
+      "segmentA": "candidate-A:98",
+      "segmentB": "candidate-A:147",
+      "uA": 0.39761087283843594,
+      "uB": 0.592741935483871,
+      "s": 0.6074964639321073,
+      "t": 0,
+      "pointA": [
+        0.062163719943422915,
+        -0.1291124469589816,
+        -0.019556223479490813
+      ],
+      "pointB": [
+        0.058,
+        -0.13,
+        -0.0225
+      ],
+      "distance": 0.005175918698219658,
+      "gap": -0.004824081301780342,
+      "penetration": 0.004824081301780342,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/1 → over-X/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        98,
+        147
+      ]
+    },
+    {
+      "segmentA": "candidate-A:99",
+      "segmentB": "candidate-A:101",
+      "uA": 0.39919354838709675,
+      "uB": 0.40725806451612906,
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.0655,
+        -0.135,
+        -0.022500000000000006
+      ],
+      "pointB": [
+        0.07400000000000001,
+        -0.13,
+        -0.0225
+      ],
+      "distance": 0.009861541461658019,
+      "gap": -0.0001384585383419814,
+      "penetration": 0.0001384585383419814,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/0 → under-entry/0"
+      ],
+      "primary": "SHARP_LOCAL_RETURN",
+      "reason": "Same material arm returns towards its previous segments; intervening bend angle is measured below. Exact polyline distance, not a floating-point contact.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [
+        152.5075538117359,
+        0.0000012074182697257333
+      ],
+      "parentSegments": [
+        99,
+        101
+      ]
+    },
+    {
+      "segmentA": "candidate-A:99",
+      "segmentB": "candidate-A:146",
+      "uA": 0.39919354838709675,
+      "uB": 0.592741935483871,
+      "s": 0,
+      "t": 1,
+      "pointA": [
+        0.0655,
+        -0.135,
+        -0.022500000000000006
+      ],
+      "pointB": [
+        0.058,
+        -0.13,
+        -0.0225
+      ],
+      "distance": 0.009013878188659976,
+      "gap": -0.0009861218113400242,
+      "penetration": 0.0009861218113400242,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/1 → under-entry/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        99,
+        146
+      ]
+    },
+    {
+      "segmentA": "candidate-A:99",
+      "segmentB": "candidate-A:147",
+      "uA": 0.39919354838709675,
+      "uB": 0.593625718073354,
+      "s": 0,
+      "t": 0.21917808219178125,
+      "pointA": [
+        0.0655,
+        -0.135,
+        -0.022500000000000006
+      ],
+      "pointB": [
+        0.058,
+        -0.13438356164383564,
+        -0.024143835616438358
+      ],
+      "distance": 0.007702739238791736,
+      "gap": -0.0022972607612082646,
+      "penetration": 0.0022972607612082646,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "over-X/0 → over-X/0",
+        "under-entry/1 → over-X/1"
+      ],
+      "primary": "INSUFFICIENT_CLEARANCE",
+      "reason": "Separate material intervals are closer than the 10 mm diameter in the exact saved polyline. Loop-root and opposing return placements are unverified hypotheses, so geometry alone cannot attribute this to incorrect knot topology.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        99,
+        147
+      ]
+    },
+    {
+      "segmentA": "candidate-A:104",
+      "segmentB": "candidate-A:143",
+      "uA": 0.4226640711902114,
+      "uB": 0.5806451612903226,
+      "s": 0.8206896551724142,
+      "t": 1,
+      "pointA": [
+        0.058055172413793106,
+        -0.07,
+        0.000937931034482759
+      ],
+      "pointB": [
+        0.058,
+        -0.07,
+        0
+      ],
+      "distance": 0.0009395523512235259,
+      "gap": -0.009060447648776475,
+      "penetration": 0.009060447648776475,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-entry/0 → under-cuff/0",
+        "under-cuff/1 → under-entry/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        104,
+        143
+      ]
+    },
+    {
+      "segmentA": "candidate-A:104",
+      "segmentB": "candidate-A:144",
+      "uA": 0.4226640711902114,
+      "uB": 0.5806451612903226,
+      "s": 0.8206896551724143,
+      "t": 0,
+      "pointA": [
+        0.058055172413793106,
+        -0.07,
+        0.0009379310344827591
+      ],
+      "pointB": [
+        0.058,
+        -0.07,
+        0
+      ],
+      "distance": 0.000939552351223526,
+      "gap": -0.009060447648776475,
+      "penetration": 0.009060447648776475,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-entry/0 → under-cuff/0",
+        "under-entry/1 → under-entry/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        104,
+        144
+      ]
+    },
+    {
+      "segmentA": "candidate-A:105",
+      "segmentB": "candidate-A:142",
+      "uA": 0.4261957730812013,
+      "uB": 0.5766129032258065,
+      "s": 0.6965517241379313,
+      "t": 1,
+      "pointA": [
+        0.0410384236453202,
+        -0.07,
+        0.0019389162561576356
+      ],
+      "pointB": [
+        0.04085714285714286,
+        -0.07,
+        -0.0011428571428571427
+      ],
+      "distance": 0.0030871005825915837,
+      "gap": -0.006912899417408417,
+      "penetration": 0.006912899417408417,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        105,
+        142
+      ]
+    },
+    {
+      "segmentA": "candidate-A:105",
+      "segmentB": "candidate-A:143",
+      "uA": 0.42338709677419356,
+      "uB": 0.579860119897231,
+      "s": 0,
+      "t": 0.8053097345132749,
+      "pointA": [
+        0.05457142857142858,
+        -0.07,
+        0.0011428571428571427
+      ],
+      "pointB": [
+        0.05466245259165614,
+        -0.07,
+        -0.00022250316055625718
+      ],
+      "distance": 0.0013683910736319196,
+      "gap": -0.00863160892636808,
+      "penetration": 0.00863160892636808,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-entry/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        105,
+        143
+      ]
+    },
+    {
+      "segmentA": "candidate-A:105",
+      "segmentB": "candidate-A:144",
+      "uA": 0.42338709677419356,
+      "uB": 0.5806451612903226,
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.05457142857142858,
+        -0.07,
+        0.0011428571428571427
+      ],
+      "pointB": [
+        0.058,
+        -0.07,
+        0
+      ],
+      "distance": 0.0036140316116209962,
+      "gap": -0.006385968388379004,
+      "penetration": 0.006385968388379004,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-entry/1 → under-entry/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        105,
+        144
+      ]
+    },
+    {
+      "segmentA": "candidate-A:106",
+      "segmentB": "candidate-A:141",
+      "uA": 0.4297274749721913,
+      "uB": 0.5725806451612904,
+      "s": 0.5724137931034485,
+      "t": 1,
+      "pointA": [
+        0.024021674876847292,
+        -0.07,
+        0.0029399014778325122
+      ],
+      "pointB": [
+        0.023714285714285722,
+        -0.07,
+        -0.0022857142857142855
+      ],
+      "distance": 0.0052346488139596425,
+      "gap": -0.004765351186040358,
+      "penetration": 0.004765351186040358,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        106,
+        141
+      ]
+    },
+    {
+      "segmentA": "candidate-A:106",
+      "segmentB": "candidate-A:142",
+      "uA": 0.4274193548387097,
+      "uB": 0.5753282900371111,
+      "s": 0,
+      "t": 0.6814159292035398,
+      "pointA": [
+        0.03514285714285715,
+        -0.07,
+        0.0022857142857142855
+      ],
+      "pointB": [
+        0.035395701643489264,
+        -0.07,
+        -0.001506953223767383
+      ],
+      "distance": 0.0038010863156442243,
+      "gap": -0.0061989136843557755,
+      "penetration": 0.0061989136843557755,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        106,
+        142
+      ]
+    },
+    {
+      "segmentA": "candidate-A:106",
+      "segmentB": "candidate-A:143",
+      "uA": 0.4274193548387097,
+      "uB": 0.5766129032258065,
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.03514285714285715,
+        -0.07,
+        0.0022857142857142855
+      ],
+      "pointB": [
+        0.04085714285714286,
+        -0.07,
+        -0.0011428571428571427
+      ],
+      "distance": 0.006663945022680343,
+      "gap": -0.0033360549773196572,
+      "penetration": 0.0033360549773196572,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-entry/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        106,
+        143
+      ]
+    },
+    {
+      "segmentA": "candidate-A:107",
+      "segmentB": "candidate-A:140",
+      "uA": 0.43325917686318133,
+      "uB": 0.5685483870967742,
+      "s": 0.44827586206896547,
+      "t": 1,
+      "pointA": [
+        0.007004926108374396,
+        -0.07,
+        0.003940886699507389
+      ],
+      "pointB": [
+        0.006571428571428579,
+        -0.07,
+        -0.0034285714285714284
+      ],
+      "distance": 0.007382197045327701,
+      "gap": -0.0026178029546722993,
+      "penetration": 0.0026178029546722993,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        107,
+        140
+      ]
+    },
+    {
+      "segmentA": "candidate-A:107",
+      "segmentB": "candidate-A:141",
+      "uA": 0.4314516129032258,
+      "uB": 0.5707964601769911,
+      "s": 0,
+      "t": 0.5575221238938053,
+      "pointA": [
+        0.015714285714285722,
+        -0.07,
+        0.0034285714285714284
+      ],
+      "pointB": [
+        0.016128950695322386,
+        -0.07,
+        -0.0027914032869785083
+      ],
+      "distance": 0.0062337815576565285,
+      "gap": -0.0037662184423434717,
+      "penetration": 0.0037662184423434717,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        107,
+        141
+      ]
+    },
+    {
+      "segmentA": "candidate-A:107",
+      "segmentB": "candidate-A:142",
+      "uA": 0.4314516129032258,
+      "uB": 0.5725806451612904,
+      "s": 0,
+      "t": 0,
+      "pointA": [
+        0.015714285714285722,
+        -0.07,
+        0.0034285714285714284
+      ],
+      "pointB": [
+        0.023714285714285722,
+        -0.07,
+        -0.0022857142857142855
+      ],
+      "distance": 0.009831228876620145,
+      "gap": -0.0001687711233798548,
+      "penetration": 0.0001687711233798548,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        107,
+        142
+      ]
+    },
+    {
+      "segmentA": "candidate-A:108",
+      "segmentB": "candidate-A:139",
+      "uA": 0.43679087875417133,
+      "uB": 0.5645161290322581,
+      "s": 0.3241379310344827,
+      "t": 1,
+      "pointA": [
+        -0.01001182266009851,
+        -0.07,
+        0.0049418719211822655
+      ],
+      "pointB": [
+        -0.010571428571428561,
+        -0.07,
+        -0.004571428571428571
+      ],
+      "distance": 0.009529745276695758,
+      "gap": -0.0004702547233042427,
+      "penetration": 0.0004702547233042427,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        108,
+        139
+      ]
+    },
+    {
+      "segmentA": "candidate-A:108",
+      "segmentB": "candidate-A:140",
+      "uA": 0.43548387096774194,
+      "uB": 0.5662646303168714,
+      "s": 0,
+      "t": 0.433628318584071,
+      "pointA": [
+        -0.003714285714285702,
+        -0.07,
+        0.004571428571428571
+      ],
+      "pointB": [
+        -0.003137800252844488,
+        -0.07,
+        -0.0040758533501896324
+      ],
+      "distance": 0.00866647679966883,
+      "gap": -0.0013335232003311697,
+      "penetration": 0.0013335232003311697,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-cuff/0 → under-cuff/0",
+        "under-cuff/1 → under-cuff/1"
+      ],
+      "primary": "OFFSET_ROUTING_DEFECT",
+      "reason": "The doubled-arm offset interpolates from X to Z while the underpass tangent follows X. Its normal component collapses; 16 mm nominal offset does not mean 16 mm normal separation.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [],
+      "parentSegments": [
+        108,
+        140
+      ]
+    },
+    {
+      "segmentA": "candidate-A:146",
+      "segmentB": "candidate-A:148",
+      "uA": 0.592741935483871,
+      "uB": 0.6008064516129032,
+      "s": 1,
+      "t": 1,
+      "pointA": [
+        0.058,
+        -0.13,
+        -0.0225
+      ],
+      "pointB": [
+        0.0495,
+        -0.135,
+        -0.022500000000000006
+      ],
+      "distance": 0.009861541461658014,
+      "gap": -0.0001384585383419866,
+      "penetration": 0.0001384585383419866,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-entry/1 → under-entry/1",
+        "over-X/1 → over-X/1"
+      ],
+      "primary": "SHARP_LOCAL_RETURN",
+      "reason": "Same material arm returns towards its previous segments; intervening bend angle is measured below. Exact polyline distance, not a floating-point contact.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [
+        0.0000012074182697257333,
+        152.50755381173593
+      ],
+      "parentSegments": [
+        146,
+        148
+      ]
+    },
+    {
+      "segmentA": "candidate-A:146",
+      "segmentB": "candidate-A:149",
+      "uA": 0.592741935483871,
+      "uB": 0.6008378199571109,
+      "s": 1,
+      "t": 0.007779349363508497,
+      "pointA": [
+        0.058,
+        -0.13,
+        -0.0225
+      ],
+      "pointB": [
+        0.04943387553041018,
+        -0.13488330975954738,
+        -0.022441654879773693
+      ],
+      "distance": 0.009860456723156911,
+      "gap": -0.00013954327684308904,
+      "penetration": 0.00013954327684308904,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-entry/1 → under-entry/1",
+        "over-X/1 → over-X/1"
+      ],
+      "primary": "SHARP_LOCAL_RETURN",
+      "reason": "Same material arm returns towards its previous segments; intervening bend angle is measured below. Exact polyline distance, not a floating-point contact.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [
+        0.0000012074182697257333,
+        152.50755381173593,
+        8.537736462515939e-7
+      ],
+      "parentSegments": [
+        146,
+        149
+      ]
+    },
+    {
+      "segmentA": "candidate-A:147",
+      "segmentB": "candidate-A:149",
+      "uA": 0.593625718073354,
+      "uB": 0.6008064516129032,
+      "s": 0.21917808219178125,
+      "t": 0,
+      "pointA": [
+        0.058,
+        -0.13438356164383564,
+        -0.024143835616438358
+      ],
+      "pointB": [
+        0.0495,
+        -0.135,
+        -0.022500000000000006
+      ],
+      "distance": 0.00867941194902177,
+      "gap": -0.0013205880509782296,
+      "penetration": 0.0013205880509782296,
+      "classification": "unintended-penetration",
+      "structuralLocation": [
+        "under-entry/1 → over-X/1",
+        "over-X/1 → over-X/1"
+      ],
+      "primary": "SHARP_LOCAL_RETURN",
+      "reason": "Same material arm returns towards its previous segments; intervening bend angle is measured below. Exact polyline distance, not a floating-point contact.",
+      "topologyCause": "UNPROVEN; signed X and loop traversal are missing globally",
+      "discretizationOnly": false,
+      "interveningBendDegrees": [
+        152.50755381173593,
+        8.537736462515939e-7
+      ],
+      "parentSegments": [
+        147,
+        149
+      ]
+    }
+  ],
+  "counts": {
+    "INSUFFICIENT_CLEARANCE": 17,
+    "SHARP_LOCAL_RETURN": 6,
+    "OFFSET_ROUTING_DEFECT": 13
+  },
+  "sampling": [
+    {
+      "factor": 1,
+      "segments": 248,
+      "rawPenetratingPairs": 36,
+      "newPairsWithinSameOrAdjacentOriginalSegments": 0,
+      "originalNonadjacentPairCount": 36,
+      "rawMaximumPenetrationM": 0.009060447648776475,
+      "originalPairMaximumPenetrationM": 0.009060447648776475,
+      "maxDistanceDifferenceOnOriginal36M": 0
+    },
+    {
+      "factor": 2,
+      "segments": 496,
+      "rawPenetratingPairs": 494,
+      "newPairsWithinSameOrAdjacentOriginalSegments": 417,
+      "originalNonadjacentPairCount": 36,
+      "rawMaximumPenetrationM": 0.009060447648776475,
+      "originalPairMaximumPenetrationM": 0.009060447648776475,
+      "maxDistanceDifferenceOnOriginal36M": 2.7755575615628914e-17
+    },
+    {
+      "factor": 4,
+      "segments": 992,
+      "rawPenetratingPairs": 2056,
+      "newPairsWithinSameOrAdjacentOriginalSegments": 1846,
+      "originalNonadjacentPairCount": 36,
+      "rawMaximumPenetrationM": 0.009060447648776475,
+      "originalPairMaximumPenetrationM": 0.009060447648776475,
+      "maxDistanceDifferenceOnOriginal36M": 8.673617379884035e-18
+    },
+    {
+      "factor": 8,
+      "segments": 1984,
+      "rawPenetratingPairs": 8364,
+      "newPairsWithinSameOrAdjacentOriginalSegments": 7712,
+      "originalNonadjacentPairCount": 36,
+      "rawMaximumPenetrationM": 0.009060447648776475,
+      "originalPairMaximumPenetrationM": 0.009060447648776475,
+      "maxDistanceDifferenceOnOriginal36M": 1.0408340855860843e-17
+    }
+  ],
+  "conclusion": "All 36 original nonadjacent pair distances converge (in fact remain invariant) under subdivision. Raw capsule reports are not sampling-invariant because additional nearby material pairs become nonadjacent. Coarsening alone cannot establish physical improvement."
+}

@@ -1,0 +1,150 @@
+{
+  "A": {
+    "separated": {
+      "collisions": [],
+      "excluded": [],
+      "epsilon": 1e-9
+    },
+    "penetrating": {
+      "collisions": [
+        {
+          "segmentA": "left:0",
+          "segmentB": "right:0",
+          "s": 0,
+          "t": 0,
+          "pointA": [
+            -0.05,
+            0,
+            0
+          ],
+          "pointB": [
+            -0.05,
+            0.008,
+            0
+          ],
+          "distance": 0.008,
+          "gap": -0.002,
+          "penetration": 0.002,
+          "state": "penetrating"
+        }
+      ],
+      "excluded": [],
+      "epsilon": 1e-9
+    },
+    "contact": {
+      "collisions": [
+        {
+          "segmentA": "left:0",
+          "segmentB": "right:0",
+          "s": 0,
+          "t": 0,
+          "pointA": [
+            -0.05,
+            0,
+            0
+          ],
+          "pointB": [
+            -0.05,
+            0.01,
+            0
+          ],
+          "distance": 0.01,
+          "gap": 0,
+          "penetration": 0,
+          "state": "contact"
+        }
+      ],
+      "excluded": [],
+      "epsilon": 1e-9
+    }
+  },
+  "B": {
+    "collisions": [
+      {
+        "segmentA": "B:0",
+        "segmentB": "B:2",
+        "s": 0.5,
+        "t": 0.5,
+        "pointA": [
+          0,
+          0,
+          0
+        ],
+        "pointB": [
+          0,
+          0,
+          0
+        ],
+        "distance": 0,
+        "gap": -0.01,
+        "penetration": 0.01,
+        "state": "penetrating"
+      }
+    ],
+    "excluded": [
+      {
+        "segmentA": "B:0",
+        "segmentB": "B:1",
+        "reason": "share-topological-vertex"
+      },
+      {
+        "segmentA": "B:1",
+        "segmentB": "B:2",
+        "reason": "share-topological-vertex"
+      }
+    ],
+    "epsilon": 1e-9
+  },
+  "C": {
+    "start": {
+      "time": 0,
+      "collisions": [],
+      "excluded": [],
+      "epsilon": 1e-9
+    },
+    "end": {
+      "time": 1,
+      "collisions": [],
+      "excluded": [],
+      "epsilon": 1e-9
+    },
+    "analyticMid": {
+      "time": 0.4,
+      "collisions": [
+        {
+          "segmentA": "fixed:0",
+          "segmentB": "moving:0",
+          "s": 0.5,
+          "t": 0.5,
+          "pointA": [
+            0,
+            0,
+            0
+          ],
+          "pointB": [
+            0,
+            0,
+            -6.938893903907228e-18
+          ],
+          "distance": 6.938893903907228e-18,
+          "gap": -0.009999999999999993,
+          "penetration": 0.009999999999999993,
+          "state": "penetrating"
+        }
+      ],
+      "excluded": [],
+      "epsilon": 1e-9
+    },
+    "sampledMax": {
+      "time": 0.375,
+      "penetration": 0.007500000000000005
+    },
+    "endpointOnlyMisses": true
+  },
+  "D": {
+    "fixture": [
+      "A1",
+      "A2"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="C · Continuous rope path">
+<text x="24" y="32" class="diagram-title">C · Continuous rope path</text>
+<style>.diagram-title{font:600 19px system-ui;fill:#172c37}.diagram-description{font:12px system-ui;fill:#526675}.diagram-label{font:600 13px system-ui;fill:#253a45}.diagram-small-label{font:11px system-ui;fill:#344955}.diagram-column,.diagram-cylinder-strip{fill:#e8edef;stroke:#728591;stroke-width:2}.diagram-axis,.diagram-seam{stroke:#abb7bd;stroke-width:1;stroke-dasharray:5 5}.diagram-strand{fill:none;stroke:#4c8292;stroke-width:7;stroke-linecap:round}.diagram-rope{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}.bight-line{stroke:#1e7895}.tail-line{stroke:#d88945}.diagram-pending circle{fill:#fff4d6;stroke:#a75f00;stroke-width:2;stroke-dasharray:4 3}.diagram-confirmed circle{fill:#e5f4ed;stroke:#27815b;stroke-width:2}.diagram-pending text,.diagram-confirmed text{font:700 11px system-ui;fill:#172c37}.diagram-route{fill:none;stroke:#357d91;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.diagram-route.is-pending{stroke:#c88935;stroke-dasharray:9 7}.diagram-arrow{stroke:#324d5a;stroke-width:2}.diagram-arrowhead{fill:#324d5a}</style>
+<polyline points="74,184 144,184" class="diagram-route " data-segment="tail-free"/>
+<text x="144" y="170" text-anchor="middle" class="diagram-small-label">TAIL END</text>
+<polyline points="144,184 178,139 212,184" class="diagram-route is-pending" data-segment="tail-locking-arc"/>
+<text x="178" y="125" text-anchor="middle" class="diagram-small-label">TAIL LOOP</text>
+<polyline points="212,184 272,184" class="diagram-route is-pending" data-segment="cuff-tail-arm"/>
+<text x="272" y="170" text-anchor="middle" class="diagram-small-label">CUFF ARM</text>
+<polyline points="272,184 304,150 336,184" class="diagram-route " data-segment="bight-fold"/>
+<text x="304" y="136" text-anchor="middle" class="diagram-small-label">BIGHT FOLD</text>
+<polyline points="336,184 396,184" class="diagram-route is-pending" data-segment="cuff-lead-arm"/>
+<text x="396" y="170" text-anchor="middle" class="diagram-small-label">CUFF ARM</text>
+<polyline points="396,184 466,184" class="diagram-route is-pending" data-segment="other-free"/>
+<text x="466" y="170" text-anchor="middle" class="diagram-small-label">OTHER END · NAME PENDING</text>
+<defs><marker id="phase4-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" class="diagram-arrowhead"/></marker></defs>
+<line x1="86" y1="220" x2="455" y2="220" class="diagram-arrow" marker-end="url(#phase4-arrow)"/>
+<text x="310" y="270" text-anchor="middle" class="diagram-label">single connected material path · schematic order pending review at dashed joins</text>
+<text x="24" y="346" class="diagram-description">Material-order schematic from one physical end to the other. Dashed links are provisional route assignments.</text></svg>

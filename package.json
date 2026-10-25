@@ -1,0 +1,24 @@
+{
+  "name": "rope-geometry-poc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "report": "node scripts/report.js && node scripts/generate-crossing.js",
+    "report:phase4": "node scripts/report-phase4.js",
+    "generate:crossing": "node scripts/generate-crossing.js",
+    "dev": "vite --host 127.0.0.1",
+    "verify:blender": "node scripts/verify-blender.js",
+    "report:phase4b": "node scripts/report-phase4b.js",
+    "report:phase5": "node scripts/phase5-report.js",
+    "verify:blender:phase5": "node scripts/phase5-verify-blender.js",
+    "report:recovery": "node scripts/recovery-diagnose.js && node scripts/recovery-report.js"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}

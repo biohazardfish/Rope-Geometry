@@ -1,0 +1,8 @@
+
+> rope-geometry-poc@1.0.0 verify:blender
+> node scripts/verify-blender.js
+
+B.json: Blender round-trip verified; max coordinate/radius error 9.999999994736442e-10 m
+crossing-valid.json: Blender round-trip verified; max coordinate/radius error 3.999999997894577e-9 m
+multiple-valid-A.json: Blender round-trip verified; max coordinate/radius error 3.333333331578814e-9 m
+multiple-valid-B.json: Blender round-trip verified; max coordinate/radius error 3.333333331578814e-9 m

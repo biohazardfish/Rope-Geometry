@@ -1,0 +1,80 @@
+{
+  "method": "Exact subdivision of saved polylines at factors 1,2,4,8; no smoothing, no altered epsilon or adjacency rule. Original-parent attribution NEVER removes collisions from raw results.",
+  "localCore": [
+    {
+      "factor": 1,
+      "segments": 296,
+      "rawPenetratingPairs": 0,
+      "withinSameOrAdjacentOriginalSegments": 0,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0,
+      "maximumOriginalPairDistanceErrorM": 0
+    },
+    {
+      "factor": 2,
+      "segments": 592,
+      "rawPenetratingPairs": 12,
+      "withinSameOrAdjacentOriginalSegments": 12,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.0022354286469244266,
+      "maximumOriginalPairDistanceErrorM": 1.1102230246251565e-16
+    },
+    {
+      "factor": 4,
+      "segments": 1184,
+      "rawPenetratingPairs": 1215,
+      "withinSameOrAdjacentOriginalSegments": 1215,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.0061177143234622125,
+      "maximumOriginalPairDistanceErrorM": 1.1102230246251565e-16
+    },
+    {
+      "factor": 8,
+      "segments": 2368,
+      "rawPenetratingPairs": 7026,
+      "withinSameOrAdjacentOriginalSegments": 7026,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.008058857161731133,
+      "maximumOriginalPairDistanceErrorM": 1.1102230246251565e-16
+    }
+  ],
+  "preservedPartialCuff": [
+    {
+      "factor": 1,
+      "segments": 151,
+      "rawPenetratingPairs": 0,
+      "withinSameOrAdjacentOriginalSegments": 0,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0,
+      "maximumOriginalPairDistanceErrorM": 0
+    },
+    {
+      "factor": 2,
+      "segments": 302,
+      "rawPenetratingPairs": 288,
+      "withinSameOrAdjacentOriginalSegments": 288,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.002143402061658403,
+      "maximumOriginalPairDistanceErrorM": 5.551115123125783e-17
+    },
+    {
+      "factor": 4,
+      "segments": 604,
+      "rawPenetratingPairs": 1150,
+      "withinSameOrAdjacentOriginalSegments": 1150,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.006071701030829204,
+      "maximumOriginalPairDistanceErrorM": 5.551115123125783e-17
+    },
+    {
+      "factor": 8,
+      "segments": 1208,
+      "rawPenetratingPairs": 5784,
+      "withinSameOrAdjacentOriginalSegments": 5784,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.008035850515414611,
+      "maximumOriginalPairDistanceErrorM": 5.551115123125783e-17
+    }
+  ],
+  "interpretation": "Base-resolution local core and cuff have zero reports. Refinement introduces same/adjacent-original-segment capsule overlaps under the unchanged index-based adjacency rule. They are not sampling-independent physical certificates. All original nonadjacent distances are compared, not only penetrations."
+}

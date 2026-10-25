@@ -1,0 +1,10 @@
+{
+  "hashes": {
+    "data/phase5-candidate-A.json": "162c77d2e0a443a32cb577b100d9e06a5f3d577a8f62787d10abe33b076618b0",
+    "data/phase5-partial-cuff.json": "3629614328585c505d9b461095ad699f698c7699478ed3ff17f87b0e4801c23a",
+    "data/somerville-bowline-topology-v2.json": "34f6370e448d1ac629707e291470d66e3e347f36f1b9a1c3996f91b4895fb897",
+    "src/geometry.js": "c77b3459356f7da1517cf48a26a1b9082fd071e982bab8e6fd20594542bef1ef",
+    "src/phase5.js": "fefe7e7787037f21a8b7a3814a1e2a6f15960dd6b200c492fe9687332eac532e",
+    "reports/phase5/validation.json": "17262f13ea0646893ac0bb9cf3a71f9374dfabe0aa41d4a6f9842432d1754e59"
+  }
+}

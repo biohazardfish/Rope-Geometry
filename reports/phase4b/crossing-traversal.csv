@@ -1,0 +1,5 @@
+crossing,state,projection,fragment,over_under,local_order,global_ordinal,evidence
+"D8-X01","D8","duchy-photo-front","D8.BR","over","1","PENDING","duchy-detail-8"
+"D8-X01","D8","duchy-photo-front","D8.C1","under","1","PENDING","duchy-detail-8"
+"D8-X02","D8","duchy-photo-front","D8.BR","over","2","PENDING","duchy-detail-8"
+"D8-X02","D8","duchy-photo-front","D8.C2","under","1","PENDING","duchy-detail-8"

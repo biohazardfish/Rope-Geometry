@@ -1,0 +1,8 @@
+{
+  "id": "single-crossing",
+  "ropeId": "rope-1",
+  "diameter": 0.01,
+  "path": [[-0.06,-0.03,0],[0.06,0.03,0],[0.09,0.09,0],[-0.09,0.09,0],[-0.09,-0.09,0],[0,0,0],[0.09,-0.06,0]],
+  "crossings": [{"id":"X1","overSegment":0,"underSegments":[4,5],"order":"over-then-under"}],
+  "generation": {"clearance":0.002,"lift":0.015,"transitionRadius":0.08,"sampleSpacing":0.02}
+}

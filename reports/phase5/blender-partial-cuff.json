@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "maxCoordinateRadiusColumnErrorM": 1.4305114759416426e-08,
+  "columnAxisError": 4.3711388277709795e-08,
+  "source": "/Users/taichengwong/Projects/Rope Geometry/data/phase5-partial-cuff.json",
+  "blend": "/Users/taichengwong/Projects/Rope Geometry/reports/phase5/partial-cuff.blend",
+  "scope": "Interchange fidelity only; not knot correctness"
+}

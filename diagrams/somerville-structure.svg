@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A · Knot structure">
+<text x="24" y="32" class="diagram-title">A · Knot structure</text>
+<style>.diagram-title{font:600 19px system-ui;fill:#172c37}.diagram-description{font:12px system-ui;fill:#526675}.diagram-label{font:600 13px system-ui;fill:#253a45}.diagram-small-label{font:11px system-ui;fill:#344955}.diagram-column,.diagram-cylinder-strip{fill:#e8edef;stroke:#728591;stroke-width:2}.diagram-axis,.diagram-seam{stroke:#abb7bd;stroke-width:1;stroke-dasharray:5 5}.diagram-strand{fill:none;stroke:#4c8292;stroke-width:7;stroke-linecap:round}.diagram-rope{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}.bight-line{stroke:#1e7895}.tail-line{stroke:#d88945}.diagram-pending circle{fill:#fff4d6;stroke:#a75f00;stroke-width:2;stroke-dasharray:4 3}.diagram-confirmed circle{fill:#e5f4ed;stroke:#27815b;stroke-width:2}.diagram-pending text,.diagram-confirmed text{font:700 11px system-ui;fill:#172c37}.diagram-route{fill:none;stroke:#357d91;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.diagram-route.is-pending{stroke:#c88935;stroke-dasharray:9 7}.diagram-arrow{stroke:#324d5a;stroke-width:2}.diagram-arrowhead{fill:#324d5a}</style>
+<rect x="245" y="72" width="150" height="220" rx="56" class="diagram-column"/>
+<line x1="320" y1="72" x2="320" y2="292" class="diagram-axis"/>
+<path d="M 255 164 H 385" class="diagram-strand"/>
+<path d="M 255 178 H 385" class="diagram-strand"/>
+<path d="M 255 192 H 385" class="diagram-strand"/>
+<path d="M 255 206 H 385" class="diagram-strand"/>
+<path d="M210 160 C205 98 270 86 320 116 C362 142 350 156 331 164 M331 164 C356 190 344 230 300 236" class="diagram-rope bight-line" data-entity="bight"/>
+<text x="92" y="104" class="diagram-label">BIGHT</text>
+<path d="M330 238 C395 246 425 195 385 176 C365 166 347 171 333 188 M333 188 C311 215 276 253 220 270" class="diagram-rope tail-line" data-entity="tail-loop"/>
+<text x="92" y="294" class="diagram-label">TAIL / LOCKING LOOP</text>
+<g class="diagram-confirmed"><circle cx="340" cy="142" r="17"/><text x="340" y="146" text-anchor="middle">X1</text></g>
+<text x="363" y="146" class="diagram-small-label">BIGHT OVER · COUNT PENDING</text>
+<g class="diagram-pending"><circle cx="460" cy="195" r="17"/><text x="460" y="199" text-anchor="middle">X2</text></g>
+<text x="483" y="199" class="diagram-small-label">O/U PENDING</text>
+<g class="diagram-pending"><circle cx="390" cy="250" r="17"/><text x="390" y="254" text-anchor="middle">P1</text></g>
+<text x="413" y="254" class="diagram-small-label">UNDER CUFF · STRAND ORDER PENDING</text>
+<text x="320" y="58" text-anchor="middle" class="diagram-label">COLUMN</text>
+<text x="320" y="315" text-anchor="middle" class="diagram-label">2 wraps · 4 parallel strands</text>
+<text x="24" y="346" class="diagram-description">Topological relationships around the cuff; schematic, not to scale.</text></svg>

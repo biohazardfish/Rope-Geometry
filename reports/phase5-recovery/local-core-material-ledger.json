@@ -1,0 +1,167 @@
+{
+  "order": "E0 → standing limb 0 → fixture substitute → working limb 0 → fold → working limb 1 reversed → fixture substitute → standing limb 1 reversed → E1",
+  "ledger": [
+    {
+      "role": "root-in/0",
+      "firstSegment": 0,
+      "lastSegment": 9,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "loop-rim/0",
+      "firstSegment": 10,
+      "lastSegment": 27,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "root-out/0",
+      "firstSegment": 28,
+      "lastSegment": 37,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fixture-connector/0",
+      "firstSegment": 38,
+      "lastSegment": 54,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fixture-frame-turn/0",
+      "firstSegment": 55,
+      "lastSegment": 63,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fixture-connector/0",
+      "firstSegment": 64,
+      "lastSegment": 93,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "first-passage/0",
+      "firstSegment": 94,
+      "lastSegment": 100,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "over-X/0",
+      "firstSegment": 101,
+      "lastSegment": 109,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "outside-turn/0",
+      "firstSegment": 110,
+      "lastSegment": 117,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "descent-outside-cuff/0",
+      "firstSegment": 118,
+      "lastSegment": 124,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "under-cuff/0",
+      "firstSegment": 125,
+      "lastSegment": 135,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "return-passage/0",
+      "firstSegment": 136,
+      "lastSegment": 142,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fold-approach/0",
+      "firstSegment": 143,
+      "lastSegment": 144,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fold",
+      "firstSegment": 145,
+      "lastSegment": 150,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fold-approach/1",
+      "firstSegment": 151,
+      "lastSegment": 152,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "return-passage/1",
+      "firstSegment": 153,
+      "lastSegment": 159,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "under-cuff/1",
+      "firstSegment": 160,
+      "lastSegment": 170,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "descent-outside-cuff/1",
+      "firstSegment": 171,
+      "lastSegment": 177,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "outside-turn/1",
+      "firstSegment": 178,
+      "lastSegment": 185,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "over-X/1",
+      "firstSegment": 186,
+      "lastSegment": 194,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "first-passage/1",
+      "firstSegment": 195,
+      "lastSegment": 201,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fixture-connector/1",
+      "firstSegment": 202,
+      "lastSegment": 231,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fixture-frame-turn/1",
+      "firstSegment": 232,
+      "lastSegment": 240,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "fixture-connector/1",
+      "firstSegment": 241,
+      "lastSegment": 257,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "root-out/1",
+      "firstSegment": 258,
+      "lastSegment": 267,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "loop-rim/1",
+      "firstSegment": 268,
+      "lastSegment": 285,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    },
+    {
+      "role": "root-in/1",
+      "firstSegment": 286,
+      "lastSegment": 295,
+      "evidenceState": "ASSUMED_EMBEDDING"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+
+> rope-geometry-poc@1.0.0 test
+> node --test
+
+✔ A: parallel separated, penetrating, and tangent capsules (0.741625ms)
+✔ segment distance handles intersecting, skew, endpoints, parallel and degenerate segments (0.104917ms)
+✔ B: distant self-crossing detected; neighboring topology excluded only (0.243709ms)
+✔ C: fixed temporal samples find mid-animation collision; endpoints miss it (0.735375ms)
+✔ JSON round trip, strict validation, no input mutation, pair symmetry (0.28375ms)
+✔ unequal radii and epsilon contact band are explicit (0.076833ms)
+✔ Phase 2 generator is deterministic; valid and negative control are distinguished (2.751625ms)
+✔ Phase 3: multiple interacting crossing constraints, alternate assignment, and collision control (4.1565ms)
+✔ Phase 4B records consistent partial evidence without certifying a complete rope (1.735209ms)
+✔ Phase 4B independent graph check accepts a single path and rejects lost fold, branches, disconnected fragments, and changed order (0.166792ms)
+✔ Phase 4B catches missing fold and structurally misconnected cuff fragments (1.259417ms)
+✔ Phase 4B rejects changed crossing order, lost visits, and wrong O/U (1.212667ms)
+✔ Phase 4B rejects construction crossing contamination of the completed state (0.654583ms)
+✔ Phase 4B rejects missing evidence, invalid statuses, and unsupported winding sign (1.410417ms)
+✔ Phase 4B approval flags cannot turn an incomplete observation graph into a verified path (0.226959ms)
+✔ Phase 4B diagrams share fragment and crossing IDs without inventing a final traversal (0.954875ms)
+✔ Phase 4 structure is one open rope path with one bight fold, two endpoints, two wraps, and five milestones (1.046875ms)
+✔ Phase 4 distinguishes structural consistency from incomplete reference verification (0.748459ms)
+✔ Phase 4 structural validator rejects branches, missing evidence, duplicate crossings, and wrap inconsistency (1.148916ms)
+✔ Phase 4 diagrams are generated from shared topology IDs and expose pending relationships (0.455125ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83.29725
