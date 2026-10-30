@@ -82,3 +82,11 @@ failed geometric construction, not treated as proof of a topology contradiction.
 See `reports/phase5-recovery/README.md` for numerical results, failed local
 attempts, and remaining constraints. The Phase 5 viewer includes the four local
 recovery stages and the failed integration for inspection.
+
+## Somerville topology restart (experimental)
+
+The `feature/somerville-egc-knoto-id` branch adds an evidence-gated Extended
+Gauss Code / Knoto-ID export path and a nominal homogenized 6 mm hemp-rope
+material record. Run `npm run audit:somerville` to see what the original
+Phase 4B evidence **does not yet establish**. The historical Phase 5 geometry
+remains failed. See [the integration notes](docs/somerville-egc-integration.md).
