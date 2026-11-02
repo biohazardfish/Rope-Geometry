@@ -1,0 +1,358 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "tubeGeometry": false,
+    "operations": true,
+    "centerlinePose": false,
+    "noUnexplainedVisibleRope": false,
+    "materialLength": false,
+    "positiveClearance": true
+  },
+  "crossingPose": {
+    "status": "UNVERIFIED",
+    "reason": "annotation contains no explicit crossing targets; camera fit cannot certify topology"
+  },
+  "pose": {
+    "camera": {
+      "projection": "orthographic",
+      "pixelsPerMetre": 5070.254104027812,
+      "originPixel": [
+        453.50699271255974,
+        549.2857681284369
+      ],
+      "rollRadians": 0.0008615949912880339
+    },
+    "rmsPx": 14.6173476991061,
+    "rmsInDiameters": 0.48724492330353664,
+    "maxPx": 101.00922542878389,
+    "perRole": {
+      "cuff-left": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 5.569606032621792,
+        "maxPx": 13.939755287630652,
+        "rmsInDiameters": 0.18565353442072638
+      },
+      "cuff-mid-left": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 4.8295071691977425,
+        "maxPx": 18.210840181778927,
+        "rmsInDiameters": 0.1609835723065914
+      },
+      "cuff-mid-right": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 5.861642466308532,
+        "maxPx": 14.369298202768865,
+        "rmsInDiameters": 0.1953880822102844
+      },
+      "cuff-right": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 4.019500893727121,
+        "maxPx": 9.84801281509687,
+        "rmsInDiameters": 0.13398336312423736
+      },
+      "bight-upper-leg": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 8.230493272088118,
+        "maxPx": 45.766691129968926,
+        "rmsInDiameters": 0.2743497757362706
+      },
+      "bight-fold": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 23.588348661282073,
+        "maxPx": 87.15756175500357,
+        "rmsInDiameters": 0.7862782887094024
+      },
+      "bight-lower-leg": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 32.8528472917407,
+        "maxPx": 101.00922542878389,
+        "rmsInDiameters": 1.09509490972469
+      },
+      "tail-left": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 7.884437598032905,
+        "maxPx": 8.559186806278055,
+        "rmsInDiameters": 0.26281458660109686
+      },
+      "tail-right": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 7.24683721604139,
+        "maxPx": 8.119320490797726,
+        "rmsInDiameters": 0.241561240534713
+      }
+    },
+    "cameraScaleVsRopeDiameter": 1.0140508208055623
+  },
+  "unexplainedVisible": {
+    "count": 314,
+    "maxDistancePx": 182.58683907484314,
+    "byRole": {
+      "loop-rim/0": 16,
+      "over-root/0": 15,
+      "outside-cuff/0": 43,
+      "under-cuff/0": 6,
+      "return-approach/0": 83,
+      "return-passage/1": 18,
+      "return-approach/1": 78,
+      "outside-cuff/1": 36,
+      "loop-rim/1": 19
+    }
+  },
+  "tube": {
+    "valid": false,
+    "status": "TUBE_GEOMETRY_FAIL",
+    "selfIntersections": 4082,
+    "foldedFaces": 1251,
+    "columnPenetrations": 0,
+    "minimumColumnGap": 0.00014730199582437334,
+    "testedPairs": 342590,
+    "triangles": 45912,
+    "epsilon": 0.000001,
+    "topologyVerified": false
+  },
+  "operations": {
+    "singleMaterialPath": true,
+    "twoTurns": true,
+    "pairedCuffOrder": true,
+    "loopAperture": true,
+    "firstPassage": true,
+    "secondSameDirection": true,
+    "underAllFour": true
+  },
+  "cuffTurns": [
+    {
+      "limb": 0,
+      "turns": 2.004363368469419
+    },
+    {
+      "limb": 1,
+      "turns": 2.016267347483444
+    }
+  ],
+  "clearance": {
+    "minimumNonlocalGap": 0.00007985328683386955,
+    "minimumColumnGap": 0.00013977309102922077,
+    "penetratingPairs": 0,
+    "closest": {
+      "i": 35,
+      "j": 40,
+      "roles": [
+        "tail/0",
+        "tail/0"
+      ],
+      "gap": 0.00007985328683386955
+    },
+    "targetGap": 0.0002
+  },
+  "material": {
+    "seedLength": 3.876173337072079,
+    "finalLength": 3.932055410886785,
+    "lengthChange": 0.055882073814706335,
+    "maxSegmentStretch": 0.0076067948124134595
+  },
+  "solver": {
+    "preset": "poseSeed",
+    "blocks": [
+      {
+        "block": 0,
+        "transferred": 0.09478129118962934,
+        "maxStretch": 0.0017315232509738398,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 1,
+        "transferred": 0.06778166525436827,
+        "maxStretch": 0.0021501499055635413,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 2,
+        "transferred": 0.05865921971548056,
+        "maxStretch": 0.002201279193938965,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 3,
+        "transferred": 0.05072009293483611,
+        "maxStretch": 0.002260103585406657,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 4,
+        "transferred": 0.04419876748573464,
+        "maxStretch": 0.002262497748980736,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 5,
+        "transferred": 0.04158143887967166,
+        "maxStretch": 0.002296286512414539,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 6,
+        "transferred": 0.034219284411039746,
+        "maxStretch": 0.0023071782112620144,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 7,
+        "transferred": 0.03220092760299222,
+        "maxStretch": 0.002324422101019652,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 8,
+        "transferred": 0.028052074566318294,
+        "maxStretch": 0.0025897169023354014,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 9,
+        "transferred": 0.023758511180469247,
+        "maxStretch": 0.0028663599249344916,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 10,
+        "transferred": 0.02018619159183703,
+        "maxStretch": 0.0031014070208703623,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 11,
+        "transferred": 0.017749954248402533,
+        "maxStretch": 0.0033080866800869156,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 12,
+        "transferred": 0.016350625420485276,
+        "maxStretch": 0.0034984726181344567,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 13,
+        "transferred": 0.014218969421947272,
+        "maxStretch": 0.00366403765077685,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 14,
+        "transferred": 0.013137276661046138,
+        "maxStretch": 0.0038170075021544524,
+        "rejected": 0,
+        "minPairGap": null
+      },
+      {
+        "block": 15,
+        "transferred": 0.012050275356738267,
+        "maxStretch": 0.003957320359829506,
+        "rejected": 0,
+        "minPairGap": null
+      }
+    ],
+    "blockIterations": 100,
+    "poseWeight": 0.05,
+    "slideWeight": 0.05,
+    "coreWeight": 0.004,
+    "coreCenter": [
+      0.0024,
+      -0.04,
+      -0.028
+    ],
+    "endPull": 0.03,
+    "endWeight": 0.05,
+    "polishIterations": 300,
+    "polishPoseWeight": 0.01,
+    "polishStretchSweeps": 8,
+    "stretchSweeps": 3,
+    "gap": 0.0002,
+    "shrinkRate": 0.04,
+    "shrinkFollow": 1.02,
+    "minRest": 0.0008,
+    "keepRoles": [
+      "cuff/",
+      "tail/",
+      "bight-leg/",
+      "fold"
+    ],
+    "camera": {
+      "projection": "orthographic",
+      "pixelsPerMetre": 5000,
+      "originPixel": [
+        460,
+        555
+      ],
+      "rollRadians": 0
+    },
+    "transferredToLongEnds": 0.5696465659209966,
+    "sliding": {
+      "tail/1": [
+        "tail-left"
+      ],
+      "tail/0": [
+        "tail-right"
+      ],
+      "bight-leg/0": [
+        "bight-upper-leg",
+        "bight-fold"
+      ],
+      "fold": [
+        "bight-fold"
+      ],
+      "bight-leg/1": [
+        "bight-fold",
+        "bight-lower-leg"
+      ]
+    },
+    "scoringWindows": {
+      "tail-left": [
+        "tail/1"
+      ],
+      "tail-right": [
+        "tail/0"
+      ],
+      "bight-upper-leg": [
+        "bight-leg/0"
+      ],
+      "bight-fold": [
+        "fold",
+        "bight-leg/0",
+        "bight-leg/1"
+      ],
+      "bight-lower-leg": [
+        "bight-leg/1"
+      ]
+    },
+    "rejectedSteps": 0
+  },
+  "limitations": [
+    "Pose score uses only traced visible spans; the locking core has no crossing targets, so crossing-position acceptance is UNVERIFIED.",
+    "Span correspondence is a modelling assumption (POSE_CORRESPONDENCE), not identification of physical rope ends.",
+    "Operation checks are numerical realisations of the declared route, not an isotopy certificate."
+  ]
+}

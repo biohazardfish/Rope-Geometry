@@ -13,7 +13,9 @@
     "report:phase4b": "node scripts/report-phase4b.js",
     "report:phase5": "node scripts/phase5-report.js",
     "verify:blender:phase5": "node scripts/phase5-verify-blender.js",
-    "report:recovery": "node scripts/recovery-diagnose.js && node scripts/recovery-report.js"
+    "report:recovery": "node scripts/recovery-diagnose.js && node scripts/recovery-report.js",
+    "audit:somerville": "node scripts/audit-somerville.js",
+    "export:knoto": "node scripts/export-knoto-id.js"
   },
   "dependencies": {
     "three": "^0.180.0"
