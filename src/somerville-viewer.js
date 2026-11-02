@@ -326,7 +326,7 @@ function updateAlignmentBadge() {
 function acceptanceLabel(document) {
   const acceptance = document?.somerville?.acceptance;
   if (acceptance?.staticReconstruction || acceptance?.motionContinuity) {
-    return `靜態${acceptance.staticReconstruction?.status ?? '未記載'} · 運動${acceptance.motionContinuity?.status ?? '未驗證'}`;
+    return `靜態${acceptance.staticReconstruction?.status ?? '未驗證'} · 運動${acceptance.motionContinuity?.status ?? '未驗證'}`;
   }
   return acceptance?.status ?? document?.knot?.acceptance?.status ?? '候選';
 }
