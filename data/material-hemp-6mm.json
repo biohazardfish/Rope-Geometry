@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "nominal-hemp-three-strand-6mm",
+  "model": "homogenized_cosserat_rod",
+  "nominalDiameterM": 0.006,
+  "physicalStructure": {
+    "laidStrandCount": 3,
+    "strandGeometryExplicit": false,
+    "layPitchM": null,
+    "layDirection": null
+  },
+  "effectiveMechanicalParameters": {
+    "axialStiffnessN": null,
+    "bendingStiffnessNm2": null,
+    "torsionalStiffnessNm2": null,
+    "linearDensityKgPerM": null,
+    "tensionTorsionCoupling": null,
+    "ropeRopeFrictionCoefficient": null,
+    "ropeColumnFrictionCoefficient": null
+  },
+  "parameterStatus": "UNMEASURED",
+  "analysisStatus": "NOT_ENABLED",
+  "notes": "Nominal 6 mm, three-strand structure identified from user photographs. Material identity and constitutive properties are unverified. This metadata does not change existing 10 mm PoC geometry fixtures."
+}
