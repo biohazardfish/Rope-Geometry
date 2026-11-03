@@ -14,3 +14,17 @@ references/video/*.mp4
 # Downloaded source pages are reproducible from the URLs recorded in the
 # evidence ledger. Avoid versioning third-party page bundles and trackers.
 references/phase4b/*.html
+
+# Local browser verification artifacts
+.playwright-cli/
+output/playwright/
+
+# Extracted review frames are reproducible from the local source videos and
+# work/somerville/frames/dressed-frame-manifest.json. Contact sheets stay tracked.
+work/somerville/frames/dressed-duchy/
+work/somerville/frames/dressed-topologist/
+
+# Unpacked or archived copies of files already in the tree.
+at-70-source/
+at-70-source.zip
+somerville_topology_geometry_v1.zip

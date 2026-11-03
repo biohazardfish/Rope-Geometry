@@ -23,3 +23,5 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run audit:somerville
+      - run: npm run verify:geometry
+      - run: npm run build

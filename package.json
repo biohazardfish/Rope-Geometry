@@ -15,7 +15,9 @@
     "verify:blender:phase5": "node scripts/phase5-verify-blender.js",
     "report:recovery": "node scripts/recovery-diagnose.js && node scripts/recovery-report.js",
     "audit:somerville": "node scripts/audit-somerville.js",
-    "export:knoto": "node scripts/export-knoto-id.js"
+    "export:knoto": "node scripts/export-knoto-id.js",
+    "verify:geometry": "node scripts/verify-geometry.js",
+    "build": "vite build"
   },
   "dependencies": {
     "three": "^0.180.0"

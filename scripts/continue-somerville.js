@@ -1,0 +1,41 @@
+// Bounded experiment from the frozen loose material, never from a shorter seed.
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {buildSomerville,SOMERVILLE_PRESETS,seedClearance} from '../src/somerville-build.js';
+import {createRopeState,withPositions,materialResiduals} from '../src/rope-state.js';
+import {targetAtMaterialStations} from '../src/rope-targets.js';
+import {relaxRope} from '../src/rope-relax.js';
+import {makeTube,checkTube,checkTubeLocal} from '../src/rope-tube.js';
+import {validateOperations} from '../src/somerville-verify.js';
+const source=readFileSync('data/somerville-final/loose-v2.json'),base=JSON.parse(source),rope=base.ropes[0];
+const referenceId=createHash('sha256').update(source).digest('hex');
+const reference=createRopeState(rope.points,{diameter:rope.diameter,column:base.somerville.column,labels:rope.segmentLabels,referenceId});
+let state=reference;
+const requested={...SOMERVILLE_PRESETS.looseVideo,cuffWidth:.028,spread:.0068,cuffLift:.0038,frontLift:.014,loopRadius:.025,coreX:.008,coreZ:-.036,coreDepth:.065,bightReach:.12,bightSlope:.55,foldRadius:.013};
+const blocks=Number(process.argv[2]||8),iterations=Number(process.argv[3]||20),log=[];
+if(!Number.isInteger(blocks)||blocks<1||!Number.isInteger(iterations)||iterations<1)throw Error('Positive block/iteration counts required');
+let bestDoc=structuredClone(base),bestTube=checkTube(makeTube(state.points,state.diameter/2),{column:state.column}),lastMaterial=materialResiduals(state),accepted=0;
+const started=Date.now();
+const surfaceGuard=points=>checkTubeLocal(makeTube(points,reference.diameter/2)).valid;
+for(let block=0;block<blocks;block++){
+ const fraction=(block+1)/blocks,config={...base.somerville.config};
+ for(const [key,value]of Object.entries(requested))config[key]=typeof value==='number'?config[key]+fraction*(value-config[key]):value;
+ const targetDoc=buildSomerville(config),target=targetAtMaterialStations(reference,targetDoc.ropes[0].points,{labels:targetDoc.ropes[0].segmentLabels});
+ const r=relaxRope(state.points,{diameter:state.diameter,columnRadius:state.column.radius,restLengths:reference.restLengths,coupledLengths:true,surfaceGuard,iterations,stretchSweeps:8,bendSmoothing:.005,gap:.0002,maxStep:.0005,targets:[{indices:state.points.map((_,i)=>i),positions:target.state.points,weight:.06}]});
+ const polish=relaxRope(r.points,{diameter:state.diameter,columnRadius:state.column.radius,restLengths:reference.restLengths,coupledLengths:true,surfaceGuard,iterations:12,stretchSweeps:12,bendSmoothing:0,gap:.0002,maxStep:.0005,targets:[]});
+ const next=withPositions(reference,polish.points),mesh=checkTube(makeTube(next.points,state.diameter/2),{column:state.column}),material=materialResiduals(next);
+ const candidate=structuredClone(base);candidate.ropes[0].points=next.points;candidate.somerville.materialArc=[...reference.s0];candidate.somerville.geometryArc=next.geometryArc;
+ const clearance=seedClearance(candidate);const ok=mesh.valid&&clearance.penetratingPairs===0&&Math.abs(material.lengthChange)<=1e-6&&material.maxSegmentStretch<=1e-6;
+ const targetRms=Math.sqrt(next.points.reduce((sum,p,i)=>sum+p.reduce((a,v,k)=>a+(v-target.state.points[i][k])**2,0),0)/next.points.length);
+ const record={block,fraction,targetRms,targetReached:targetRms<=1e-6,accepted:ok,tube:mesh.valid,lengthChange:material.lengthChange,maxSegmentStretch:material.maxSegmentStretch,minGap:clearance.minimumNonlocalGap,displacement:Math.max(...next.points.map((p,i)=>Math.hypot(...p.map((v,k)=>v-reference.points[i][k])))),targetReleasedLength:target.releasedLength,surfaceRejects:r.surfaceRejects+polish.surfaceRejects,tubeResidual:{selfIntersections:mesh.selfIntersections,foldedFaces:mesh.foldedFaces,columnPenetrations:mesh.columnPenetrations},rejected:r.rejected+polish.rejected};
+ log.push(record);console.log(JSON.stringify(record));
+ if(!ok)break;
+ state=next;bestDoc=candidate;bestTube=mesh;lastMaterial=material;accepted++;
+}
+bestDoc.somerville.stage='material-continuation-candidate';
+bestDoc.somerville.material={s0:reference.s0,referenceId,referenceLength:reference.s0.at(-1)};
+bestDoc.somerville.lineage={referenceId,status:'REFERENCE_PRESERVED',continuousMotion:'UNVERIFIED',reason:'Nonlocal centreline CCD and per-block surface checks do not certify full swept tube motion'};
+bestDoc.somerville.acceptance={status:'FAIL',geometry:bestTube.valid?'PASS':'FAIL',pose:'UNVERIFIED',operations:'UNVERIFIED'};
+bestDoc.somerville.pose={camera:{projection:'orthographic',pixelsPerMetre:5000,originPixel:[460,555],rollRadians:0}};
+const report={status:'FAIL',stage:'bounded material continuation',targetReached:log.at(-1)?.targetReached===true,referenceId,acceptedBlocks:accepted,requestedBlocks:blocks,iterationsPerBlock:iterations,material:lastMaterial,tube:bestTube,operations:validateOperations(bestDoc),finalOperations:validateOperations(bestDoc,{scope:'final'}),log,limitations:['Full swept surface motion remains unverified','Role boundaries retain baseline material intervals; sliding operation correspondences are not certified','Not a final video-aligned knot']};
+mkdirSync('reports',{recursive:true});writeFileSync('data/somerville-final/continuation.json',JSON.stringify(bestDoc)+'\n');writeFileSync('reports/somerville-continuation.json',JSON.stringify(report,null,2)+'\n');writeFileSync('reports/somerville-continuation-timing.json',JSON.stringify({milliseconds:Date.now()-started})+'\n');

@@ -5,13 +5,31 @@ A small finite-thickness segment collision demonstrator. Geometry is an engine-i
 ## Run
 
 ```sh
-npm install
+npm ci
 npm test
-npm run report
-npm run generate:crossing
-npm run verify:blender
+npm run verify:geometry
+npm run build
 npm run dev
 ```
+
+Current takeover status: **Somerville is not complete**. The current verification
+path fixes the source acceptance gate, checks the loaded polygonal capsule
+geometry with a stable distance kernel, and computes Phase 5 viewer measurements
+live. `npm run verify:geometry` writes `reports/verification/current.json` with
+source SHA-256 hashes, clearance, smoothness limits, subdivision sensitivity and
+an integration diagnosis. Its successful exit means the regression controls
+match; it does **not** mean the failed Somerville candidate is accepted.
+
+The fixed integration has 74 penetrating pairs: **21 cuff/core pairs and 53
+interface pairs**. Re-routing only the interfaces cannot fix the 21 unchanged
+cuff/core overlaps. No new complete knot or source-equivalent topology is
+claimed. See [the independent CLI review](docs/cli-review.md).
+
+`npm run build` includes runtime JSON, reports, diagrams and cached reference
+images/PDF for both viewers. Preview with `npx vite preview`; optional local
+videos remain excluded. No Blender installation is needed for these checks.
+Historical Blender commands/results below describe earlier experiments only.
+
 
 The local source videos under `references/video/` are intentionally excluded
 from Git because each exceeds GitHub's regular-file limit. The evidence ledger

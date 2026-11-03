@@ -1,6 +1,105 @@
-# Somerville handoff（Cursor → Codex，2026-11-02）
+# Somerville handoff（目前接手狀態：Codex，2026-11-02）
+
+## 2026-11-03 dressed 實作進行中（本輪）
+
+- 本輪先做完整 dressed 靜態模型，靜態未通過前不啟動 march；舊 loose-v2 / final 不代表新的交付。
+- 新來源帳本：`docs/somerville-dressed-core-ledger.md`。已抽取 TheDuchy 118–149 s 每 0.25 s、Topologist 160–200 s 每 1 s；實際檢視範圍、人工像素量測及未確定股線寫在帳本。影格及精確選取時間在 `work/somerville/frames/dressed-frame-manifest.json`。
+- 已加入 `data/somerville-pose148.json` 尺度校準 4250–5750 px/m、核心觀察與兩個可見接觸位置；兩個接觸的材料綁定仍 UNVERIFIED，不能據此宣稱 crossingPose PASS。
+- 實作前重跑現有測試：100/100 通過，記錄 `work/somerville/dressed/baseline-tests.log`。
+- 已啟動兩個指定 Cursor CLI / grok-4.7-high 工作：生成器/操作驗證，以及姿態/驗收/檢視器，分開檔案所有權。執行紀錄 `work/somerville/dressed/cursor-implementation.log` 與 `cursor-pose.log`。本段是進行中紀錄，結束後須以實際結果補記，不可把啟動當完成。
+
+## 最新：共用核心、固定材料與守長試跑（優先閱讀）
+
+2026-11-03 續查：`npm test`、`npm run build` 通過；最新 `reports/somerville-final-report.json` 仍為 **FAIL**。材料參考長 7.138936637394829 m，總長殘差約 `2.66e-15 m`；幾何、材料及正間隙通過，最終操作、影片輪廓、交叉位置、未解釋可見繩路與完整運動未通過。`final.json` 仍是候選，勿標成完成。
+
+**整個任務仍未完成。** 已抽取並測試共用核心；Somerville 最終 148 秒姿態、核心來源對應與完整掃掠管面連續碰撞仍未通過。下面 Cursor 的 `videoTight` 數字屬於歷史候選，不能再當成目前 `final.json` 的數字。
+
+### 本輪完成與保留
+
+- 工作只在 `/Users/taichengwong/Projects/RopeGeometry`。未新增 npm 依賴、未 commit／push。此工作樹接手時已有大量變更，請保留。
+- 按政策呼叫 Cursor CLI／`grok-4.7-high`，等候期間沒有輸出或檔案變更，已中止該次程序並向使用者說明，後續由 Codex 實作。
+- `src/rope-frames.js` 合併框架傳輸；Somerville 生成器和管體都使用它。抽取前後的完整中心線、雙股框架及管體 JSON hash 完全一致。
+- `src/rope-state.js` 分開固定材料座標 `s0` 與目前 `geometryArc`，提供材料取樣、重新取樣、殘差與剛體座標轉換。
+- `src/rope-curves.js` 提供共用曲線與最小配方編譯。Somerville 已共用 Hermite 與框架；**Somerville 的操作規格還沒有完全編譯成配方**。不要宣稱通用操作編譯器已完成。
+- `src/rope-relax.js` 是共用求解器；`src/somerville-relax.js` 只保留相容匯出。距離計算改用既有穩健核心。`src/rope-lengths.js` 以三對角聯立投影維持全鏈段長，修正逐點縮步破壞投影結果的問題。
+- 最終位移在彎曲調整後重新做非局部中心線／柱體連續檢查；可加 `surfaceGuard` 檢查提案終點的真實管面折疊。**這仍不是完整掃掠管面的連續認證**。
+- `src/rope-targets.js` 只生成同一材料站位的目標：目標本體釋出的長度加到自由尾端，不能用目標取代目前材料狀態。
+- `src/rope-acceptance.js` 要求交叉位置、0.2 mm 間隙、總長／段長各 1 µm、材料來源及運動檢查。缺失項不會 PASS。
+- 影像視窗不再按投影位置排序或拼接不連續材料；未解釋可見繩路不再整段略過 cuff。失敗候選在檢視器中明確標為候選。
+
+### 目前模型與數字
+
+- 凍結基準 `data/somerville-final/loose-v2.json`，SHA-256：`60c3548a7feb7c8d8f3b9bba74ecc29134baf35c937aee019884c1c726ccd601`；材料總長 **7.138936637394829 m**。不要改寫它作為新基準。
+- `node scripts/continue-somerville.js 8 20` 從該基準實際移動，產生 `continuation.json` 與 `reports/somerville-continuation.json`。
+- 試跑保留八批有效提案，但**不表示到達八個目標構型**。全程最大點位移只有約 **3.119 mm**，核心仍很鬆。完整管體零自交、零折疊、零穿柱；中心線非局部間隙約 **3.538 mm**；總長殘差約 `2.66e-15 m`、最大段長殘差約 `8.88e-16 m`。
+- 同一輸入已連跑兩次；候選及數值報告 SHA-256 相同，時間另存。見 `reports/rope-reuse-reproducibility.json`。之後新增目標 RMS 診斷欄位，重新產生時需連同該欄位再檢查報告 hash。
+- `scripts/solve-somerville-pose.js` 已改為從原鬆結呼叫守長流程，再執行 `scripts/evaluate-somerville-candidate.js`。未完成的總體驗收會回傳 exit code 2。
+- `final.json` 現為上述守長候選，總體 **FAIL**；歷史較貼近描線但換過短種子的模型保存在 `pose-videoTight-history.json`，其報告在 `reports/somerville-videoTight-history.json`。
+- 現在幾何、材料、正間隙可通過；最終操作、影像輪廓、交叉位置、未解釋繩路與完整運動仍不通過／未驗證。不能只把幾何 PASS 當成成品。
+
+### 遷移範例與驗證
+
+- `src/overhand-recipe.js` 與 `scripts/generate-overhand.js` 產生單股單結解析範例，使用同一曲線、材料、求解器、管體及檢視器，沒有第二套引擎。它是解析範例，不是另一份影片重建。
+- 6 mm 鬆結加密至 335,952 個三角面後仍零自交、零折疊、零穿柱。
+- 原佈局改 10 mm 繩徑：40 組管面相交、2 個折疊面，**FAIL**。這是參數敏感度結果，不能套用 6 mm 的通過結論。見 `reports/rope-reuse-geometry.json`。
+- 已增加近乎平行距離、步中穿越、終點管面守門、固定材料尾端分配、整體剛體變換、不等取樣雙股及錯誤穿環方向測試。最後完整測試／build 和瀏覽器驗收結果應以下方後續補記為準。
+- 可遷移性報告與使用邊界：`docs/rope-core-migration.md`。
+
+### 尚未解決，接手時先做這些
+
+1. **先處理核心路由，勿盲目增加迭代。** 管面守門已拒絕許多局部折疊提案，模型只移動數毫米。僅壓縮原有大繞路仍無法得到影片姿態。
+2. 新增 `validateOperations(doc,{scope:'final'})`，不再要求最終仍保留施工用斜跨投影；另量測 working bundle 越過所宣告根部分支。當前根部分支對應未通過，必須核對來源與局部框架；不能靠角色名 `over-root` 宣稱它成立。該根部鄰域的幾何定義仍是建模選擇，尚未完成來源對應審核。
+3. 有嘗試縮短手側繞路、縮小出口彎曲及改變 cuff 的材料遍歷方向；均有碰撞且來源對應未確認。已從正式生成器移除，保存在 `work/somerville/reuse/compact-route-prototype.js`、`core-route-experiments.json`。**不要採用或把其股序當成已知事實。**
+4. 完整管面連續碰撞、操作檢查點隨材料滑動的對應、148 秒核心／交叉標註、獨立 bight 輪廓求解仍待完成。
+5. 通用配方目前用於 overhand；Somerville 還有專用生成器及角色適配。下一階段應把核心路由表達為局部框架中的操作區段，保留原有材料身份及來源紀錄。
+
+---
+
+## 以下為 Cursor 的歷史交接，保留供追溯
 
 工作目錄是 `/Users/taichengwong/Projects/RopeGeometry`（計畫寫的 `RopeGeometry2` 沒有任何 Somerville 新檔，不要切過去）。未 commit、未 push、未新增 npm 依賴。`npm test` 82/82、`npm run build` 通過。
+
+## 2026-11-02 續：審查回應與影片路線（這一輪的結果）
+
+GPT 三點都接受，並且第 3 點比他寫的更強：v1 路線有兩處和 68–124 秒影格相反。
+
+1. **鬆結可重現**：同意。`buildSomerville()` 預設仍是 `route:'v1'`，`data/somerville-final/loose.json` 保留。v1 的中心線非局部最小間隙現在是 **3.97905026639391 mm**，最近的一對是 `over-root/0 ↔ over-root/1`。這和 GPT 重算的 3.9791 mm 一致。它仍是中心線距離減去 6 mm 標稱直徑，不是管面間距。
+2. **預篩過嚴**：`seedClearance` 不再用固定的一個繩徑當盒子餘裕。盒子在某一軸分開超過一個繩徑、而且分開量減去繩徑已經不小於目前最佳間隙時才跳過。負間隙的線段對不會被跳過。
+3. **七項 PASS 不是影片拓樸證明**：同意。帳本在 [`docs/somerville-core-route-ledger.md`](docs/somerville-core-route-ledger.md)，觀察、推論、建模假設分開寫。Codex 可以否決。
+
+**採取的路線不是交換兩次穿環的左右。** 新的 `route:'video'`（`loose-v2.json`，預設 `SOMERVILLE_PRESETS.looseVideo`）：
+
+- 工作束離開 cuff 底部後，經柱下方轉到前方，斜跨四股的前方。
+- 第一次穿環由環後到環前，再向 −X 跨過核心。
+- 下穿由手側（−X）進、臂側（+X）出，走在四股和柱之間。角色名是 `under-approach`，v1 仍叫 `outside-cuff`。
+- 右側短回程，第二次穿環仍由後向前，bight 向 +X。
+
+`validateOperations` 新增 `diagonalOverFrontCuff` 和 `underCuffDirection`。v1 這兩項是 false，原有七項仍是 true。`loose-v2` 九項都是 true。管體：84,000 個三角面，自交 0、折疊 0、穿柱 0。瀏覽器載入後的檢查面板是同一組數字（最小柱間隙 0.702 mm）。
+
+### 收緊到影片核心：沒有做到
+
+把鎖環推進 148 秒標註框（約 x −15…+20 mm、z −13…−43 mm、貼在 cuff 前方）時，斜跨段會切進 cuff，或回程會切進環口。`work/somerville/diag/march.mjs` 能走到的最緊、而且每步都通過管體和九項檢查的預設是 `SOMERVILLE_PRESETS.videoTight`：環半徑 28 mm、環心 z=−46 mm、環仍在柱前 110 mm。它不在標註框裡。再往前推會穿透，所以沒有把那個狀態存成完成。
+
+### 姿態求解：FAIL，但管體還在
+
+`scripts/solve-somerville-pose.js` 從 `videoTight` 出發，段長固定為種子長度，不再縮短隱藏段。彎曲半徑若會小於繩半徑，該步會縮短（`src/somerville-relax.js`）。摺彎不再被拉向影片裡那個很緊的小勾，否則半圓會折回 bight 腿。
+
+`reports/somerville-final-report.json` 的狀態是 **FAIL**。連續兩次執行，`final.json` 與報告的 SHA-1 相同（`fb0b8fca…`、`9002c232…`）。執行時間只寫在 `reports/somerville-final-timing.json`。
+
+| 檢查 | 結果 |
+| --- | --- |
+| 管體 | PASS（自交 0、折疊 0、穿柱 0）。瀏覽器載入 final 時面板同樣是 0 |
+| 九項操作 | PASS |
+| 已描線段 | cuff 2.2–12.6 px、長端約 13 px、bight 腿 8–13 px，都低於 30 px。摺彎 **42.7 px**，所以整體 FAIL |
+| 畫面上多出來的繩 | **1213** 點。主要是還沒收進核心的 `cuff-to-first`、`loop-to-cuff`、`return-approach` |
+| 中心線間隙 | 0.188 mm，低於 0.2 mm 目標 |
+| 材料長度 | 比種子短 3.14 mm。單段最大偏差約 1 µm，偏差攤在整條繩上 |
+
+檢視器不會把管體通過顯示成「已對齊影片」。徽章仍是「尚未完成影片姿態對齊」。`crossingPose` 仍是 UNVERIFIED：`data/somerville-pose148.json` 沒有交叉點標註。
+
+畫面：`work/somerville/diag/view-loose-v2-front.png`、`view-loose-v2-rear.png`、`view-loose-v2-side.png`、`view-final-front.png`、`view-final-oblique.png`、`overlay-video.png`。`npm test` 85/85。
+
+下面第 1–6 節是 v1 與上一輪把段長縮短的 PBD 紀錄。不要用那些數字描述 `route:'video'`。
 
 ## 一句話現況
 

@@ -1,5 +1,6 @@
 // Material-arc correspondence between model sections and the 148 s annotation.
 // Spans are fixed in material arc so they survive resampling and relaxation.
+import {geometryArc} from './rope-state.js';
 
 export const POSE_CORRESPONDENCE = Object.freeze({
   version: 1,
@@ -100,33 +101,301 @@ export function poseTargets(materialArc, spans, annotation, camera, weight = 0.0
   });
 }
 
+function segmentRoleAt(labels, index) {
+  if (!Array.isArray(labels) || labels.length === 0) return '';
+  const value = labels[index] ?? labels[Math.min(index, labels.length - 1)];
+  return value == null ? '' : String(value);
+}
+
+function projectXZ(point, camera) {
+  const c = Math.cos(camera.rollRadians);
+  const s = Math.sin(camera.rollRadians);
+  const ppm = camera.pixelsPerMetre;
+  const [u0, v0] = camera.originPixel;
+  return [u0 + ppm * (c * point[0] + s * point[2]), v0 + ppm * (s * point[0] - c * point[2])];
+}
+
+function lerp(a, b, t) {
+  const out = new Array(a.length);
+  for (let k = 0; k < a.length; k++) out[k] = a[k] + t * (b[k] - a[k]);
+  return out;
+}
+
+function dist2Segment(p, a, b) {
+  const vx = b[0] - a[0];
+  const vy = b[1] - a[1];
+  const q = vx * vx + vy * vy;
+  const t = q ? Math.max(0, Math.min(1, ((p[0] - a[0]) * vx + (p[1] - a[1]) * vy) / q)) : 0;
+  return { distance: Math.hypot(p[0] - a[0] - t * vx, p[1] - a[1] - t * vy), t };
+}
+
+function distanceToTraced(uv, polylines) {
+  let best = Infinity;
+  for (const pl of polylines) {
+    const pts = pl?.points;
+    if (!pts || pts.length < 2) continue;
+    for (let k = 1; k < pts.length; k++) best = Math.min(best, dist2Segment(uv, pts[k - 1], pts[k]).distance);
+  }
+  return best;
+}
+
+function clipSegmentToRect(a, b, width, height) {
+  let t0 = 0;
+  let t1 = 1;
+  const dx = b[0] - a[0];
+  const dy = b[1] - a[1];
+  const p = [-dx, dx, -dy, dy];
+  const q = [a[0], width - a[0], a[1], height - a[1]];
+  for (let i = 0; i < 4; i++) {
+    if (p[i] === 0) {
+      if (q[i] < 0) return null;
+    } else {
+      const r = q[i] / p[i];
+      if (p[i] < 0) {
+        if (r > t1) return null;
+        if (r > t0) t0 = r;
+      } else {
+        if (r < t0) return null;
+        if (r < t1) t1 = r;
+      }
+    }
+  }
+  return t0 <= t1 ? [t0, t1] : null;
+}
+
+function subtractIntervals(source, cuts) {
+  let intervals = source;
+  for (const cut of cuts) {
+    const next = [];
+    for (const [a, b] of intervals) {
+      if (cut[1] <= a || cut[0] >= b) next.push([a, b]);
+      else {
+        if (cut[0] > a) next.push([a, Math.min(cut[0], b)]);
+        if (cut[1] < b) next.push([Math.max(cut[1], a), b]);
+      }
+    }
+    intervals = next;
+  }
+  return intervals.filter((iv) => iv[1] > iv[0]);
+}
+
+function predicateIntervals(t0, t1, predicate, pixelLength, resolutionPx) {
+  const span = t1 - t0;
+  if (!(span > 0)) return [];
+  const steps = Math.max(1, Math.ceil(Math.max(pixelLength, resolutionPx) / resolutionPx));
+  const ts = [];
+  const values = [];
+  for (let i = 0; i <= steps; i++) {
+    const t = t0 + span * (i / steps);
+    ts.push(t);
+    values.push(!!predicate(t));
+  }
+  const edges = [];
+  for (let i = 1; i < ts.length; i++) {
+    if (values[i] === values[i - 1]) continue;
+    let lo = ts[i - 1];
+    let hi = ts[i];
+    const left = values[i - 1];
+    for (let k = 0; k < 24; k++) {
+      const mid = (lo + hi) / 2;
+      if (predicate(mid) === left) lo = mid;
+      else hi = mid;
+    }
+    edges.push((lo + hi) / 2);
+  }
+  const intervals = [];
+  let cursor = t0;
+  let on = values[0];
+  for (const edge of edges) {
+    if (on) intervals.push([cursor, edge]);
+    on = !on;
+    cursor = edge;
+  }
+  if (on) intervals.push([cursor, t1]);
+  return intervals;
+}
+
+function pointInPolygon(p, polygon) {
+  let inside = false;
+  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+    const xi = polygon[i][0];
+    const yi = polygon[i][1];
+    const xj = polygon[j][0];
+    const yj = polygon[j][1];
+    const crosses = (yi > p[1]) !== (yj > p[1]) && p[0] < ((xj - xi) * (p[1] - yi)) / (yj - yi) + xi;
+    if (crosses) inside = !inside;
+  }
+  return inside;
+}
+
+function handMaskPolygons(annotation) {
+  if (!Array.isArray(annotation?.handMasks)) return [];
+  const polygons = [];
+  for (const mask of annotation.handMasks) {
+    const polygon = Array.isArray(mask?.polygon) ? mask.polygon : mask;
+    if (Array.isArray(polygon) && polygon.length >= 3 && polygon.every((pt) => Array.isArray(pt) && pt.length >= 2 && Number.isFinite(pt[0]) && Number.isFinite(pt[1]))) {
+      polygons.push(polygon);
+    }
+  }
+  return polygons;
+}
+
+function columnOccludes(point, radius, center) {
+  if (!(radius > 0)) return false;
+  const y = point[1] - center[1];
+  const z = point[2] - center[2];
+  const behind = radius * radius - z * z;
+  if (behind < 0) return false;
+  return y > -Math.sqrt(behind);
+}
+
+function buildImageGrid(records, cell) {
+  const grid = new Map();
+  const size = Math.max(cell, 1e-6);
+  for (const record of records) {
+    const minU = Math.min(record.a2[0], record.b2[0]);
+    const maxU = Math.max(record.a2[0], record.b2[0]);
+    const minV = Math.min(record.a2[1], record.b2[1]);
+    const maxV = Math.max(record.a2[1], record.b2[1]);
+    const i0 = Math.floor(minU / size);
+    const i1 = Math.floor(maxU / size);
+    const j0 = Math.floor(minV / size);
+    const j1 = Math.floor(maxV / size);
+    for (let ix = i0; ix <= i1; ix++) {
+      for (let iy = j0; iy <= j1; iy++) {
+        const key = `${ix}:${iy}`;
+        let bucket = grid.get(key);
+        if (!bucket) grid.set(key, bucket = []);
+        bucket.push(record);
+      }
+    }
+  }
+  return { grid, size };
+}
+
 /**
- * Model points that would be visible in the source frame but are not explained by a traced span.
- * Explained: inside a traced span, within one rope diameter of a traced polyline, inside the
- * annotated locking-core box, on the cuff band, hidden behind the column, or outside the frame.
+ * Visible extra rope, measured as projected length.
+ * A correspondence span index and the locking-core box do not remove length.
+ * Only the frame boundary, proximity to a traced centerline, physical column occlusion,
+ * rope occlusion, or an explicit hand mask may exclude a portion.
  */
-export function unexplainedVisible(points, labels, spans, annotation, camera, { columnRadius = 0.0275 } = {}) {
-  const inSpan = new Set(Object.values(spans).flatMap((s) => s.ids));
-  const c = Math.cos(camera.rollRadians), s = Math.sin(camera.rollRadians), ppm = camera.pixelsPerMetre, [u0, v0] = camera.originPixel;
-  const project = (q) => [u0 + ppm * (c * q[0] + s * q[2]), v0 + ppm * (s * q[0] - c * q[2])];
-  const D = annotation.nominalVisibleRopeDiameterPx, [w, h] = annotation.imageSize, box = annotation.lockingCoreRegion;
-  const segDist = (p, a, b) => { const vx = b[0] - a[0], vy = b[1] - a[1], q = vx * vx + vy * vy, t = q ? Math.max(0, Math.min(1, ((p[0] - a[0]) * vx + (p[1] - a[1]) * vy) / q)) : 0; return Math.hypot(p[0] - a[0] - t * vx, p[1] - a[1] - t * vy); };
-  const nearest = (uv) => Math.min(...annotation.visiblePolylines.flatMap((pl) => pl.points.slice(1).map((b, k) => segDist(uv, pl.points[k], b))));
-  const offenders = [];
-  points.forEach((q, i) => {
-    if (inSpan.has(i)) return;
-    const role = labels[Math.min(i, labels.length - 1)] ?? '';
-    if (role.startsWith('cuff/')) return;
-    if (q[1] > 0 && Math.abs(q[2]) < columnRadius && q[1] > Math.sqrt(columnRadius ** 2 - q[2] ** 2)) return;
-    const uv = project(q);
-    if (uv[0] < 0 || uv[1] < 0 || uv[0] > w || uv[1] > h) return;
-    if (box && uv[0] >= box[0] - D / 2 && uv[0] <= box[2] + D / 2 && uv[1] >= box[1] - D / 2 && uv[1] <= box[3] + D / 2) return;
-    const distance = nearest(uv);
-    if (distance > D) offenders.push({ index: i, role, uv, distance });
-  });
+export function unexplainedVisible(points, labels, spans, annotation, camera, options = {}) {
+  const {
+    columnRadius = 0.0275,
+    columnCenter = [0, 0, 0],
+    samplingResolutionPx = 1,
+    ropeDiameterMetres = null,
+    materialArc = null,
+  } = options;
+  if (!Array.isArray(annotation?.imageSize) || annotation.imageSize.length < 2) {
+    throw new Error('annotation.imageSize must be [width, height]');
+  }
+  const resolutionPx = samplingResolutionPx > 0 ? samplingResolutionPx : 1;
+  const [width, height] = annotation.imageSize;
+  const diameterPx = annotation.nominalVisibleRopeDiameterPx;
+  const traced = (annotation.visiblePolylines ?? []).filter((pl) => pl?.kind !== 'crossing');
+  const masks = handMaskPolygons(annotation);
+  const ropeDiameter = ropeDiameterMetres
+    ?? annotation.scaleCalibration?.diameterMetres
+    ?? (Number.isFinite(diameterPx) && camera.pixelsPerMetre > 0 ? diameterPx / camera.pixelsPerMetre : 0.006);
+  const radiusPx = (ropeDiameter / 2) * camera.pixelsPerMetre;
+  const spanIndices = new Set();
+  if (spans && typeof spans === 'object') {
+    for (const span of Object.values(spans)) {
+      if (Array.isArray(span?.ids)) for (const id of span.ids) spanIndices.add(id);
+    }
+  }
+  const records = [];
+  // Visibility must not depend on index density. This is a geometric neighbourhood,
+  // not an assertion that current arclength replaces fixed material identity.
+  const visibilityArc=geometryArc(points);
+  for (let i = 0; i < points.length - 1; i++) {
+    const a3 = points[i];
+    const b3 = points[i + 1];
+    const a2 = projectXZ(a3, camera);
+    const b2 = projectXZ(b3, camera);
+    records.push({
+      i,
+      role: segmentRoleAt(labels, i),
+      a3,
+      b3,
+      a2,
+      b2,
+      imageLength: Math.hypot(b2[0] - a2[0], b2[1] - a2[1]),
+      s: visibilityArc[i],
+    });
+  }
+  const grid = buildImageGrid(records, Math.max(radiusPx, resolutionPx));
+  const lengthByRole = {};
   const byRole = {};
-  for (const o of offenders) byRole[o.role] = (byRole[o.role] ?? 0) + 1;
-  return { count: offenders.length, maxDistancePx: offenders.reduce((m, o) => Math.max(m, o.distance), 0), byRole, offenders };
+  const pieces = [];
+  let lengthPx = 0;
+  let lengthInsideKnownSpansPx = 0;
+  let maxDistancePx = 0;
+
+  const ropeOccludes = (record, uv, point) => {
+    const ix = Math.floor(uv[0] / grid.size);
+    const iy = Math.floor(uv[1] / grid.size);
+    for (let dx = -1; dx <= 1; dx++) {
+      for (let dy = -1; dy <= 1; dy++) {
+        const bucket = grid.grid.get(`${ix + dx}:${iy + dy}`);
+        if (!bucket) continue;
+        for (const other of bucket) {
+          if (Math.abs(other.i - record.i) <= 1) continue;
+          if (Number.isFinite(record.s) && Number.isFinite(other.s) && Math.abs(other.s - record.s) < 4 * ropeDiameter) continue;
+          const closest = dist2Segment(uv, other.a2, other.b2);
+          if (closest.distance > radiusPx) continue;
+          const y = other.a3[1] + closest.t * (other.b3[1] - other.a3[1]);
+          if (y < point[1] - 1e-9) return true;
+        }
+      }
+    }
+    return false;
+  };
+
+  for (const record of records) {
+    if (!(record.imageLength > 0)) continue;
+    const visible = clipSegmentToRect(record.a2, record.b2, width, height);
+    if (!visible) continue;
+    const at2 = (t) => lerp(record.a2, record.b2, t);
+    const at3 = (t) => lerp(record.a3, record.b3, t);
+    const visiblePixels = (visible[1] - visible[0]) * record.imageLength;
+    let intervals = [visible];
+    intervals = subtractIntervals(intervals, predicateIntervals(visible[0], visible[1], (t) => distanceToTraced(at2(t), traced) <= diameterPx, visiblePixels, resolutionPx));
+    if (masks.length) {
+      intervals = subtractIntervals(intervals, predicateIntervals(visible[0], visible[1], (t) => masks.some((polygon) => pointInPolygon(at2(t), polygon)), visiblePixels, resolutionPx));
+    }
+    if (columnRadius > 0) {
+      intervals = subtractIntervals(intervals, predicateIntervals(visible[0], visible[1], (t) => columnOccludes(at3(t), columnRadius, columnCenter), visiblePixels, resolutionPx));
+    }
+    intervals = subtractIntervals(intervals, predicateIntervals(visible[0], visible[1], (t) => ropeOccludes(record, at2(t), at3(t)), visiblePixels, resolutionPx));
+    const knownSpan = spanIndices.has(record.i) || spanIndices.has(record.i + 1);
+    for (const [t0, t1] of intervals) {
+      const pieceLength = (t1 - t0) * record.imageLength;
+      if (!(pieceLength > 1e-6)) continue;
+      lengthPx += pieceLength;
+      if (knownSpan) lengthInsideKnownSpansPx += pieceLength;
+      lengthByRole[record.role] = (lengthByRole[record.role] ?? 0) + pieceLength;
+      byRole[record.role] = (byRole[record.role] ?? 0) + 1;
+      const mid = at2((t0 + t1) / 2);
+      const distance = distanceToTraced(mid, traced);
+      if (distance > maxDistancePx) maxDistancePx = distance;
+      pieces.push({ index: record.i, role: record.role, lengthPx: pieceLength, midpoint: mid, distance });
+    }
+  }
+  return {
+    count: pieces.length,
+    lengthPx,
+    lengthInsideKnownSpansPx,
+    samplingResolutionPx: resolutionPx,
+    maxDistancePx: pieces.length ? maxDistancePx : 0,
+    byRole,
+    lengthByRole,
+    pieces,
+    coreBoxExempt: false,
+    spanExempt: false,
+    exclusions: ['outside-frame', 'traced-centerline', 'column', 'rope', 'hand-mask'],
+  };
 }
 
 function unprojector(camera) {
@@ -178,7 +447,14 @@ export function windowSpans(points, labels, annotation, camera, assignment, fixe
       if (a >= 0 && a <= len && Math.hypot(q[0] - near[0], q[2] - near[2]) < 3 * D) ids.push(i);
     });
     if (ids.length < 2) throw new Error(`window span ${id} is empty`);
-    ids.sort((i, j) => along(points[i]) - along(points[j]));
+    // Keep the actual material polyline: never stitch disjoint near-image pieces.
+    if (ids.some((id, k) => k && id !== ids[k - 1] + 1)) {
+      const error = new Error(`window span ${id} is disjoint in material order`);
+      error.code = 'UNVERIFIED_CORRESPONDENCE'; throw error;
+    }
+    const p0 = points[ids[0]], p1 = points[ids.at(-1)];
+    const d = (p, q) => Math.hypot(p[0] - q[0], p[2] - q[1]);
+    if (d(p0, first) + d(p1, last) > d(p1, first) + d(p0, last)) ids.reverse();
     spans[id] = { role: roles.join('+'), window: true, ids };
   }
   return spans;

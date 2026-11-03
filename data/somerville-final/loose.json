@@ -21542,6 +21542,7 @@
   "somerville": {
     "stage": "loose-candidate",
     "config": {
+      "route": "v1",
       "cuffExitX": 1,
       "firstApproachMode": 0,
       "passBack": 0.8,
@@ -21554,6 +21555,7 @@
       "cuffWidth": 0.06,
       "cuffLift": 0.03,
       "frontLift": 0,
+      "frontClear": 0.016,
       "outerReach": 0,
       "connectorDepth": 2.8,
       "returnDepth": 2,
@@ -21641,14 +21643,28 @@
           "basis": "observed"
         }
       ],
+      "routeFacts": [
+        {
+          "id": "diagonalFront",
+          "relation": "working bundle crosses the front of the four cuff runs before the first passage",
+          "basis": "observed (Cursor frame review, 68–96 s); see docs/somerville-core-route-ledger.md"
+        },
+        {
+          "id": "underCuffDirection",
+          "relation": "under-cuff bundle travels -X to +X, hand side to arm side, between cuff and column",
+          "basis": "observed entry and exit (108 s, 118 s); hidden middle inferred"
+        }
+      ],
       "derived": [
         "Paired rear cuff continuation without an added exchange operation",
-        "E0/E1 are internal material labels, not identification of physical ends in the video"
+        "E0/E1 are internal material labels, not identification of physical ends in the video",
+        "Second passage stays on the right of the core; the frames do not support swapping the two passages left/right"
       ],
       "geometryAssumptions": [
         "Cylinder and circular rope cross sections",
         "Metric dimensions and unobserved shapes are engineering parameters",
-        "Loose layout is an expanded operation realization, not the final source pose"
+        "Loose layout is an expanded operation realization, not the final source pose",
+        "route v1 predates the ledger and contradicts diagonalFront and underCuffDirection"
       ]
     },
     "sections": [

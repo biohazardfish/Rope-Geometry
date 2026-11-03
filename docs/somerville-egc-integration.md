@@ -62,8 +62,7 @@ not Somerville. A **planar knotoid** requires exterior-arc data and
 2. **Geometry**: from that topology, produce one metric centerline with a
    realistic 6 mm nominal rope diameter and an independently modeled column.
    Require exact crossing matches, zero rope–rope and rope–column *unintended*
-   penetrations, measured minimum clearances, sampling sensitivity, and Blender
-   round-trip validation. **Contact** for a subsequently loaded rope is not a
+   penetrations, measured minimum clearances, sampling sensitivity, and reproducible independent numerical checks. **Contact** for a subsequently loaded rope is not a
    violation per se; penetration means an invalid material overlap.
 3. **Mechanics** (later): optional homogenized Cosserat rod and external column
    contact. Strands are represented by effective parameters, not explicitly
@@ -71,5 +70,21 @@ not Somerville. A **planar knotoid** requires exterior-arc data and
    and boundary conditions are supplied.
 
 There is no physics simulation, verified Somerville geometry, or Knoto-ID
-executable bundled in this branch. The independent mathematical checker must
+executable bundled in this branch. An independent mathematical checker would still need to
 run separately when a supported diagram becomes available.
+
+## Current CLI acceptance gate
+
+All `gauss` CLI exports consult this repository’s authoritative Phase 4B ledger;
+renaming a review cannot bypass it. The gate checks the actual material graph,
+recorded source approval, FINAL crossing inventory, material-order over/under
+visits, evidence IDs, and matching explicit `writhe: +1|-1` on each FINAL crossing.
+The current ledger has no complete FINAL crossings and remains blocked. Synthetic
+positive tests demonstrate data consistency only; their manufactured records are
+never written into the source ledger. Generic serialization remains available
+through `toKnotoIdExtendedGauss`, which is not a source-certification API.
+
+Use `npm run verify:geometry` and `npm run build` without Blender. The Phase 5
+viewer recomputes its metrics from the loaded geometry rather than loading a
+precomputed validation report. Its capsule surfaces are tessellated visualization
+of the declared straight centerline segments and radii, not the source of truth.

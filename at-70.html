@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1:10 checkpoint — rear hypotheses</title>
+<style>
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #e9e7e0; background: #101b1d; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button { font: inherit; color: inherit; cursor: pointer; }
+header { height: 56px; padding: 0 22px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #334245; }
+header strong { letter-spacing: .04em; }
+header a { color: #9bb6b8; text-decoration: none; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 420px; height: calc(100vh - 56px); min-height: 680px; }
+.viewer { position: relative; min-width: 0; background: radial-gradient(circle at 50% 45%, #263638, #172427 58%, #101b1d); }
+#stage { position: absolute; inset: 0; }
+#stage canvas { display: block; width: 100%; height: 100%; }
+.view-controls, .modes { position: absolute; left: 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+.view-controls { bottom: 18px; }
+.modes { top: 18px; }
+.view-controls button, .modes button, .choices button { border: 1px solid #668081; background: #1c2d2f; border-radius: 5px; padding: 8px 12px; }
+button[aria-pressed="true"] { border-color: #67d2bc; background: #24433e; }
+.sidebar { overflow: auto; padding: 22px 24px 32px; border-left: 1px solid #334245; background: #152124; }
+.time { color: #89d9cb; font-size: 12px; letter-spacing: .12em; }
+h1 { font-size: 28px; line-height: 1.15; margin: 8px 0 12px; }
+h2 { margin: 22px 0 8px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #a8bcba; }
+p, li { font-size: 14px; line-height: 1.55; color: #d5dfd8; }
+.legend { display: flex; gap: 14px; font-size: 13px; }
+.swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+.check { display: flex; gap: 8px; align-items: center; margin: 10px 0; }
+.question, .note { background: #213538; border-left: 3px solid #68d1bb; padding: 12px 14px; margin-top: 14px; }
+.note { border-left-color: #c7a97b; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { border-bottom: 1px solid #355055; padding: 6px 4px; text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+#reference { position: absolute; right: 16px; bottom: 16px; width: min(280px, 34vw); margin: 0; background: #101b1d; border: 1px solid #668081; }
+#reference img { display: block; width: 100%; height: auto; }
+#reference figcaption { padding: 8px; font-size: 12px; line-height: 1.4; color: #d5dfd8; }
+@media (max-width: 900px) {
+  main { display: flex; flex-direction: column; height: auto; }
+  .viewer { height: 70vh; min-height: 420px; }
+  .sidebar { border-left: 0; border-top: 1px solid #334245; }
+}
+</style>
+</head>
+<body>
+<header>
+  <strong>RopeGeometry · 1:10 checkpoint</strong>
+  <a href="/phase5.html">Existing models</a>
+</header>
+<main>
+  <section class="viewer">
+    <div id="stage"></div>
+    <div class="modes">
+      <button type="button" data-mode="cleared" aria-pressed="true">Cleared embedding</button>
+      <button type="button" data-mode="schematic" aria-pressed="false">Schematic route</button>
+    </div>
+    <div class="view-controls">
+      <button type="button" id="front" aria-pressed="true">Front</button>
+      <button type="button" id="orbit">Orbit</button>
+      <button type="button" id="rear">Rear</button>
+      <button type="button" id="top">Top</button>
+    </div>
+    <figure id="reference" hidden>
+      <img src="/references/phase4b/duchy-video-068.jpg" alt="Local TheDuchy frame at 68 seconds">
+      <figcaption>Optional reference: local frame at 68 s, before 70 s. Compare only the four front cuff lanes and the doubled bight crossing in front. This frame does not show the rear route.</figcaption>
+    </figure>
+  </section>
+  <aside class="sidebar">
+    <div class="time">THEDUCHY · AT OR BEFORE 1:10</div>
+    <h1>Three rear hypotheses</h1>
+    <p>The front is held fixed: four cuff lanes, and a doubled working bight crossing diagonally in front of them. Blue is the E0 side of this path and orange is the E1 side. E0 and E1 are the two ends of one ordered rope. Which physical tail is which is not known from the pre-70 view.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:#3d8fd1"></i>E0 limb</span>
+      <span><i class="swatch" style="background:#e08a3c"></i>E1 limb</span>
+      <span><i class="swatch" style="background:#f0c14d"></i>fold</span>
+    </div>
+    <h2>REAR HYPOTHESIS A · parallel limbs</h2>
+    <h2>REAR HYPOTHESIS B · an exchange during the first rear wrap</h2>
+    <h2>REAR HYPOTHESIS C · an exchange during the second rear wrap</h2>
+    <div id="routing"></div>
+    <label class="check"><input id="show-rear" type="checkbox">Show rear paths</label>
+    <label class="check"><input id="show-reference" type="checkbox">Show 68 s frame as reference</label>
+    <div class="question"><p id="question"></p></div>
+    <h2>Schematic route and clearance</h2>
+    <div id="numbers"></div>
+    <p class="note" id="disclaimer">These are representative hypotheses, not exhaustive and not verified.</p>
+    <p>No post-70 locking loop is drawn. Other rear routes, including an exchange on both passes, are not shown. Dimensions are the existing display fixtures, not measurements from the frame.</p>
+  </aside>
+</main>
+<script type="module" src="/src/at-70-viewer.js"></script>
+</body>
+</html>

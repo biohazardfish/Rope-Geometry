@@ -2,6 +2,7 @@
 //        node scripts/export-knoto-id.js xyz   INPUT.json [OUTPUT.xyz]
 import { readFileSync, writeFileSync } from 'node:fs';
 import { inspectGaussReview, toKnotoIdExtendedGauss, toKnotoIdXyz } from '../src/extended-gauss.js';
+import { auditSomervilleReadiness } from '../src/gauss-evidence.js';
 
 const [kind, input, output] = process.argv.slice(2);
 if (!['gauss','xyz'].includes(kind) || !input) {
@@ -11,6 +12,14 @@ if (!['gauss','xyz'].includes(kind) || !input) {
   try {
     const document = JSON.parse(readFileSync(input, 'utf8'));
     if (kind === 'gauss') {
+      // This repository's CLI is the Somerville acceptance path. Generic
+      // serialization remains available through the library, without a claim
+      // of source verification. Renaming a review must not bypass this gate.
+      {
+        const source = JSON.parse(readFileSync(new URL('../data/somerville-bowline-topology-v2.json', import.meta.url), 'utf8'));
+        const audit = auditSomervilleReadiness(source, document);
+        if (!audit.ready) throw new Error('Somerville source evidence blocks export: ' + audit.problems.join('; '));
+      }
       const report = inspectGaussReview(document);
       if (!report.exportable) throw new Error(
         'Reference topology NOT verified: ' + [...report.errors, ...report.blockers].join('; '));

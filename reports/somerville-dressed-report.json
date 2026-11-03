@@ -1,0 +1,304 @@
+{
+  "stage": "dressed-candidate",
+  "frozenLooseV3": false,
+  "constructionCorrespondence": "UNVERIFIED",
+  "pose": "UNVERIFIED",
+  "numericStaticOperations": "PASS",
+  "selectedOptions": {},
+  "trials": [
+    {
+      "options": {},
+      "finalValid": true,
+      "penetratingPairs": 39,
+      "minimumNonlocalGap": -0.002776731689420133,
+      "minimumColumnGap": 0.0011002476571543634
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.09,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "penetratingPairs": 39,
+      "minimumNonlocalGap": -0.002776731689420133,
+      "minimumColumnGap": 0.0011002476571543634
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.09,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "penetratingPairs": 39,
+      "minimumNonlocalGap": -0.0029682250981640707,
+      "minimumColumnGap": 0.002056602722947324
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.104,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "penetratingPairs": 39,
+      "minimumNonlocalGap": -0.002776731689420129,
+      "minimumColumnGap": 0.0011002476571543634
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.104,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "penetratingPairs": 39,
+      "minimumNonlocalGap": -0.0029682250981640716,
+      "minimumColumnGap": 0.00205660272294731
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.09,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "penetratingPairs": 45,
+      "minimumNonlocalGap": -0.002776731689420158,
+      "minimumColumnGap": 0.0011002476571543634
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.09,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "penetratingPairs": 41,
+      "minimumNonlocalGap": -0.002968225098164077,
+      "minimumColumnGap": 0.002056602722947317
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.104,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "penetratingPairs": 45,
+      "minimumNonlocalGap": -0.0027767316894201253,
+      "minimumColumnGap": 0.0011002476571543634
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.104,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "penetratingPairs": 41,
+      "minimumNonlocalGap": -0.0029682250981640738,
+      "minimumColumnGap": 0.0011002476571543634
+    }
+  ],
+  "gates": {
+    "finalOperations": true,
+    "constructionDiagonalAbsent": true,
+    "penetratingPairs": false,
+    "minimumNonlocalGap": false,
+    "minimumColumnGap": true,
+    "tube": false,
+    "lengthResidual": true,
+    "spread": true
+  },
+  "finalChecks": {
+    "singleMaterialPath": true,
+    "twoTurns": true,
+    "pairedCuffOrder": true,
+    "loopAperture": true,
+    "firstPassage": true,
+    "secondSameDirection": true,
+    "underAllFour": true,
+    "underCuffDirection": true,
+    "overRootBranches": true
+  },
+  "constructionChecks": {
+    "singleMaterialPath": true,
+    "twoTurns": true,
+    "pairedCuffOrder": true,
+    "loopAperture": true,
+    "firstPassage": true,
+    "secondSameDirection": true,
+    "underAllFour": true,
+    "diagonalOverFrontCuff": false,
+    "underCuffDirection": true
+  },
+  "clearance": {
+    "minimumNonlocalGap": -0.002776731689420133,
+    "minimumColumnGap": 0.0011002476571543634,
+    "penetratingPairs": 39,
+    "closest": {
+      "i": 1572,
+      "j": 1586,
+      "roles": [
+        "over-root/1",
+        "over-root/1"
+      ],
+      "gap": -0.002776731689420133
+    },
+    "groups": {
+      "loop-to-cuff/0 | loop-to-cuff/1": 12,
+      "over-root/0 | over-root/1": 5,
+      "over-root/1 | over-root/1": 22
+    },
+    "limitation": "Seed diagnostic only: excludes local material neighborhoods; actual tube validation still required"
+  },
+  "tube": {
+    "valid": false,
+    "status": "TUBE_GEOMETRY_FAIL",
+    "selfIntersections": 16620,
+    "foldedFaces": 733,
+    "columnPenetrations": 2001,
+    "minimumColumnGap": -0.0018650703473611502,
+    "triangles": 58512,
+    "testedPairs": 503161,
+    "intersectionSample": 50,
+    "rolePairsInSample": {
+      "tail/0 | tail/1": 15,
+      "cap | tail/0": 12,
+      "cap | tail/1": 11,
+      "cap | cap": 12
+    }
+  },
+  "material": {
+    "origin": "E0",
+    "totalLength": 7.138936637394829,
+    "spare": "both-tails",
+    "staticSeed": true,
+    "lineage": null,
+    "coreMaterial": 3.792570571680963,
+    "tailMaterial": 3.346366065713866,
+    "lengthResidual": 0
+  },
+  "sections": [
+    {
+      "role": "tail/0",
+      "length": 1.6738061328126423
+    },
+    {
+      "role": "loop-rim/0",
+      "length": 0.13413673324478914
+    },
+    {
+      "role": "loop-to-cuff/0",
+      "length": 0.1679783485233428
+    },
+    {
+      "role": "cuff/0",
+      "length": 0.4426515077127482
+    },
+    {
+      "role": "cuff-to-first/0",
+      "length": 0.3079582621275567
+    },
+    {
+      "role": "first-passage/0",
+      "length": 0.018084490423611488
+    },
+    {
+      "role": "over-root/0",
+      "length": 0.15838346900999323
+    },
+    {
+      "role": "under-approach/0",
+      "length": 0.20922568791024476
+    },
+    {
+      "role": "under-cuff/0",
+      "length": 0.06580213245122613
+    },
+    {
+      "role": "return-approach/0",
+      "length": 0.33836108599447323
+    },
+    {
+      "role": "return-passage/0",
+      "length": 0.018084490423611488
+    },
+    {
+      "role": "bight-leg/0",
+      "length": 0.022203701005966803
+    },
+    {
+      "role": "fold",
+      "length": 0.03765618153538064
+    },
+    {
+      "role": "bight-leg/1",
+      "length": 0.02041538005520316
+    },
+    {
+      "role": "return-passage/1",
+      "length": 0.01778832095076277
+    },
+    {
+      "role": "return-approach/1",
+      "length": 0.338445187476216
+    },
+    {
+      "role": "under-cuff/1",
+      "length": 0.06580644954792492
+    },
+    {
+      "role": "under-approach/1",
+      "length": 0.20926183818017474
+    },
+    {
+      "role": "over-root/1",
+      "length": 0.15054224405120564
+    },
+    {
+      "role": "first-passage/1",
+      "length": 0.01800625679640877
+    },
+    {
+      "role": "cuff-to-first/1",
+      "length": 0.3056068676687511
+    },
+    {
+      "role": "cuff/1",
+      "length": 0.44264433280594595
+    },
+    {
+      "role": "loop-to-cuff/1",
+      "length": 0.16939251374160147
+    },
+    {
+      "role": "loop-rim/1",
+      "length": 0.13413509004382362
+    },
+    {
+      "role": "tail/1",
+      "length": 1.6725599329012235
+    }
+  ],
+  "silhouette": {
+    "width": 0.13699984031787227,
+    "height": 0.18772779469287204,
+    "target": [
+      0.034,
+      0.028
+    ],
+    "residual": [
+      0.10299984031787227,
+      0.15972779469287204
+    ]
+  },
+  "pointsSha256": "cd6661f83009c04b4ce7d120807bbc39aa7086369f16fed4df346f1f6317ea23",
+  "blockers": [
+    "nonlocal centerline penetrations remain (39), closest over-root/1 | over-root/1",
+    "tube self-intersection, fold, or column check failed",
+    "construction correspondence and pose remain UNVERIFIED"
+  ]
+}
