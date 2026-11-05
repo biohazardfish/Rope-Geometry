@@ -12,18 +12,22 @@ npm run build
 npm run dev
 ```
 
-Current takeover status: **Somerville is not complete**. The current verification
-path fixes the source acceptance gate, checks the loaded polygonal capsule
-geometry with a stable distance kernel, and computes Phase 5 viewer measurements
-live. `npm run verify:geometry` writes `reports/verification/current.json` with
-source SHA-256 hashes, clearance, smoothness limits, subdivision sensitivity and
-an integration diagnosis. Its successful exit means the regression controls
-match; it does **not** mean the failed Somerville candidate is accepted.
+Current status (2026-11-05): **Somerville is not complete**. The current
+deliverable is the dressed static seed `data/somerville-final/loose-v3.json`
+(6 mm rope, 3 mm tube radius): zero nonlocal centerline penetrations, +0.317 mm
+minimum nonlocal surface gap, tube self-intersection/fold/column checks 0/0/0 at
+8/12/16/24 radial segments, nine final operation checks PASS, total length
+7.138936637394829 m. The video pose is **not** passed: `staticReconstruction`
+FAIL (centerline RMS 109 px against a 30 px gate), `crossingPose` and
+`motionContinuity` UNVERIFIED. `npm run generate:dressed` regenerates the seed
+and the pose report; see the top of `handoff.md` for which files are current and
+which are historical.
 
-The fixed integration has 74 penetrating pairs: **21 cuff/core pairs and 53
-interface pairs**. Re-routing only the interfaces cannot fix the 21 unchanged
-cuff/core overlaps. No new complete knot or source-equivalent topology is
-claimed. See [the independent CLI review](docs/cli-review.md).
+`npm run verify:geometry` still checks the historical Phase 5 integration
+candidate (74 penetrating pairs: 21 cuff/core, 53 interface) with a stable
+distance kernel and writes `reports/verification/current.json`. Its successful
+exit means the regression controls match; it does **not** accept that
+historical candidate. See [the independent CLI review](docs/cli-review.md).
 
 `npm run build` includes runtime JSON, reports, diagrams and cached reference
 images/PDF for both viewers. Preview with `npx vite preview`; optional local

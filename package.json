@@ -17,6 +17,7 @@
     "audit:somerville": "node scripts/audit-somerville.js",
     "export:knoto": "node scripts/export-knoto-id.js",
     "verify:geometry": "node scripts/verify-geometry.js",
+    "generate:dressed": "node scripts/dressed-pipeline.js",
     "build": "vite build"
   },
   "dependencies": {

@@ -81,7 +81,8 @@ test('oversized model is clamped, translation is recomputed, and the fit is not 
   const world = lineWorld();
   const annotation = annotationFrom(world, SOURCE_CAMERA, { scaleCalibration: CALIBRATION });
   const fit = fitPoseCamera(lineWorld(4), annotation);
-  assert.equal(fit.scale.status, 'FAIL');
+  assert.equal(fit.scale.status, 'PASS');
+  assert.equal(fit.scale.unconstrainedScaleStatus, 'OUTSIDE_RANGE');
   assert.equal(fit.scale.clamped, true);
   assert.equal(fit.camera.pixelsPerMetre, 4250);
   assert.ok(fit.scale.unconstrainedPixelsPerMetre < 4250);
@@ -98,7 +99,8 @@ test('oversized model is clamped, translation is recomputed, and the fit is not 
     unexplainedVisible: { count: 0, lengthPx: 0, samplingResolutionPx: 1 },
   });
   assert.notEqual(accepted.staticReconstruction.status, 'PASS');
-  assert.equal(accepted.staticReconstruction.scale.status, 'FAIL');
+  assert.equal(accepted.staticReconstruction.scale.status, 'PASS');
+  assert.equal(accepted.staticReconstruction.scale.clamped, true);
 });
 
 test('in-range calibration keeps the unconstrained camera and passes the independent scale check', () => {
@@ -285,7 +287,7 @@ test('static reconstruction, motion, and construction stay separate', () => {
   const dressed = {
     ...legacyInput(),
     unexplainedVisible: { count: 9, lengthPx: 0, samplingResolutionPx: 1 },
-    scale: { status: 'PASS', unconstrainedPixelsPerMetre: 5000, minPixelsPerMetre: 4250, maxPixelsPerMetre: 5750, diameterMetres: 0.006 },
+    scale: { status: 'PASS', unconstrainedPixelsPerMetre: 5000, constrainedPixelsPerMetre: 5000, minPixelsPerMetre: 4250, maxPixelsPerMetre: 5750, diameterMetres: 0.006 },
     construction: { reviewed: true, status: 'PASS', claims: [claim] },
     motion: { status: 'PASS', verified: true, basis: 'endpoints', samples: [{ t: 0 }, { t: 1 }] },
   };
@@ -297,7 +299,7 @@ test('static reconstruction, motion, and construction stay separate', () => {
 
   const forged = evaluateAcceptance({
     ...dressed,
-    scale: { status: 'PASS', unconstrainedPixelsPerMetre: 1000, minPixelsPerMetre: 4250, maxPixelsPerMetre: 5750, diameterMetres: 0.006 },
+    scale: { status: 'PASS', unconstrainedPixelsPerMetre: 1000, constrainedPixelsPerMetre: 1000, minPixelsPerMetre: 4250, maxPixelsPerMetre: 5750, diameterMetres: 0.006 },
   });
   assert.equal(forged.staticReconstruction.status, 'FAIL');
 
@@ -400,8 +402,8 @@ test('dressed evaluator keeps an independent candidate report and does not treat
     metadataPath,
   });
   assert.equal(retained.finishedKnot, false);
-  assert.equal(retained.bestResidual.source, 'previous-report');
-  assert.equal(retained.bestResidual.rmsPx, 4);
+  assert.equal(retained.bestResidual.source, 'none');
+  assert.equal(retained.bestResidual.rmsPx, null);
   assert.equal(preferResidual({ rmsPx: 4 }, { rmsPx: 2.5 }).source, 'current-candidate');
   assert.throws(() => evaluateSomervilleDressed({ reportPath: 'reports/somerville-final-report.json' }), /refusing to overwrite/);
 });

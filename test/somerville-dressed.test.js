@@ -1,8 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {buildSomerville,SOMERVILLE_PRESETS,seedClearance} from '../src/somerville-build.js';
+import {dressedTube} from '../src/somerville-dressed.js';
+import {checkTube} from '../src/rope-tube.js';
 import {validateOperations} from '../src/somerville-verify.js';
-import {toWorld} from '../src/rope-state.js';
+import {toLocal,toWorld} from '../src/rope-state.js';
 
 const TOTAL=7.138936637394829;
 const frame={origin:[0.3,-0.2,0.4],axes:[[0,1,0],[0,0,1],[1,0,0]]};
@@ -81,17 +83,89 @@ test('reversing a dressed passage or sinking the root overpass fails that check 
   assert.equal(validateOperations(sunk,{scope:'final'}).checks.overRootBranches,false);
 });
 
+function circumradius(a,b,c){
+  const ab=b.map((v,k)=>v-a[k]),bc=c.map((v,k)=>v-b[k]),ac=c.map((v,k)=>v-a[k]);
+  const area=Math.hypot(ab[1]*bc[2]-ab[2]*bc[1],ab[2]*bc[0]-ab[0]*bc[2],ab[0]*bc[1]-ab[1]*bc[0]);
+  return area<1e-12?Infinity:Math.hypot(...ab)*Math.hypot(...bc)*Math.hypot(...ac)/(2*area);
+}
+
+function turnDegrees(a,b,c){
+  const incoming=b.map((value,axis)=>value-a[axis]);
+  const outgoing=c.map((value,axis)=>value-b[axis]);
+  const incomingLength=Math.hypot(...incoming),outgoingLength=Math.hypot(...outgoing);
+  const cosine=incoming.reduce((sum,value,axis)=>sum+value*outgoing[axis],0)/(incomingLength*outgoingLength);
+  return Math.acos(Math.max(-1,Math.min(1,cosine)))*180/Math.PI;
+}
+
+test('dressed tube section radius is half the rope diameter',()=>{
+  const doc=buildSomerville(SOMERVILLE_PRESETS.dressedTight);
+  const mesh=dressedTube(doc),rope=doc.ropes[0],i=Math.floor(rope.points.length/2);
+  for(let j=0;j<mesh.radialSegments;j++){
+    const vertex=mesh.vertices[i*mesh.radialSegments+j];
+    const distance=Math.hypot(...vertex.map((value,axis)=>value-rope.points[i][axis]));
+    assert.ok(Math.abs(distance-rope.diameter/2)<1e-9,`section radius ${distance}`);
+  }
+});
+
+test('over-root sweep is monotonic across both root hits',()=>{
+  const doc=buildSomerville(SOMERVILLE_PRESETS.dressedTight);
+  const sweep=doc.somerville.overRootSweep,frame=doc.somerville.aperture.frame,points=doc.ropes[0].points;
+  for(const range of [sweep.limb0,sweep.limb1]){
+    const xs=[];
+    for(let i=range[0];i<=range[1];i++)xs.push(toLocal(points[i],frame)[0]);
+    const sign=Math.sign(xs.at(-1)-xs[0]);
+    assert.notEqual(sign,0);
+    for(let i=1;i<xs.length;i++)assert.ok((xs[i]-xs[i-1])*sign>=-1e-8);
+    const lo=Math.min(...xs),hi=Math.max(...xs);
+    for(const hit of sweep.hitLocalX)assert.ok(lo<=hit&&hit<=hi);
+  }
+  const gap=seedClearance(doc);
+  assert.equal(gap.groups['over-root/0 | over-root/0'],undefined);
+  assert.equal(gap.groups['over-root/1 | over-root/1'],undefined);
+  assert.equal(validateOperations(doc,{scope:'final'}).checks.overRootBranches,true);
+});
+
+test('requested dressed fillets generate an arc rather than a sharp corner',()=>{
+  const doc=buildSomerville(SOMERVILLE_PRESETS.dressedTight);
+  const spine=doc.somerville.spine;
+  assert.ok(doc.somerville.fillets.some(fillet=>fillet.role==='over-root'));
+  assert.ok(doc.somerville.fillets.some(fillet=>fillet.role==='under-approach'));
+  assert.ok(doc.somerville.fillets.some(fillet=>fillet.role==='return-approach'));
+  for(const fillet of doc.somerville.fillets){
+    let radius=Infinity;
+    for(let i=fillet.spine[0]+1;i<fillet.spine[1];i++)radius=Math.min(radius,circumradius(spine[i-1],spine[i],spine[i+1]));
+    assert.ok(radius>=fillet.radius*0.85&&radius<=fillet.radius*1.15,`${fillet.role} radius ${radius} vs ${fillet.radius}`);
+    for(const i of [fillet.spine[0]-1,fillet.spine[0],fillet.spine[1],fillet.spine[1]+1]){
+      if(i<=0||i>=spine.length-1)continue;
+      assert.ok(turnDegrees(spine[i-1],spine[i],spine[i+1])<10,`${fillet.role} has a sharp fillet join at ${i}`);
+    }
+  }
+});
+
+test('dressed tight seed clears the complete static geometry gates',()=>{
+  const doc=buildSomerville(SOMERVILLE_PRESETS.dressedTight);
+  const clearance=seedClearance(doc);
+  const tube=checkTube(dressedTube(doc),{column:doc.somerville.column});
+  assert.equal(clearance.penetratingPairs,0);
+  assert.ok(clearance.minimumNonlocalGap>=0.0002);
+  assert.ok(clearance.minimumColumnGap>=0.0002);
+  assert.equal(tube.selfIntersections,0);
+  assert.equal(tube.foldedFaces,0);
+  assert.equal(tube.columnPenetrations,0);
+  assert.equal(tube.valid,true);
+  assert.equal(validateOperations(doc,{scope:'final'}).valid,true);
+  assert.ok(Math.abs(doc.somerville.material.lengthResidual)<1e-9);
+});
+
 test('dressed static clearance is reported without treating a penetrating seed as accepted',()=>{
   const doc=buildSomerville(SOMERVILLE_PRESETS.dressedTight);
   const gap=seedClearance(doc);
   assert.ok(gap.minimumColumnGap>=0.0002);
   assert.equal(doc.somerville.acceptance.geometry,'UNVERIFIED');
-  if(gap.penetratingPairs===0&&gap.minimumNonlocalGap>=0.0002){
-    assert.ok(gap.minimumNonlocalGap>=0.0002);
-  }else{
+  assert.equal(doc.somerville.stage,'dressed-candidate');
+  if(gap.penetratingPairs===0&&gap.minimumNonlocalGap>=0.0002)assert.ok(gap.minimumNonlocalGap>=0.0002);
+  else{
     assert.ok(gap.penetratingPairs>0);
     assert.ok(gap.minimumNonlocalGap<0.0002);
-    assert.ok(gap.groups['over-root/1 | over-root/1']>0);
-    assert.ok(gap.groups['loop-to-cuff/0 | loop-to-cuff/1']>0);
   }
 });

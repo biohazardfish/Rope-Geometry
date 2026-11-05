@@ -1,5 +1,78 @@
 # Somerville handoff（目前接手狀態：Codex，2026-11-02）
 
+## 現況索引（2026-11-05）
+
+下面的段落按時間倒序，含多代互相矛盾的數字。接手只需先看這一段。
+
+- 現行交付：`data/somerville-final/loose-v3.json`（dressed 靜態種子，SHA-256 `ea7676ee…`，點位 `3db0782f…`）。重現：`npm run generate:dressed`。它是靜態種子，不是影片姿態完成模型。
+- 現行報告：`reports/somerville-dressed-seed.json`（種子閘門、`tube.radialSweep`、網格試驗）與 `reports/somerville-dressed-report.json`（姿態評估：static FAIL、motion UNVERIFIED）。
+- 現行生成器：`src/somerville-dressed.js`（`buildSomerville({route:'dressed'})`）、`scripts/generate-somerville-dressed.js`、`scripts/dressed-pipeline.js`、`scripts/evaluate-somerville-dressed.js`。
+- 歷史、不代表現況：`data/somerville-final/final.json`、`continuation*.json`、`videoTight-history*`、`loose.json`、`loose-v2.json`；`reports/somerville-final-report.json`；Phase 5 recovery 的 74 對穿透；README 內 Phase 1–5 段落。
+- 人工判斷待辦：`data/somerville-pose148.json` 兩個接觸的 `over.role`／`under.role`／`bindingStatus` 仍為 `unverified`，由審核者看影格後填寫，程式不預填。
+- pipeline exit code：0 = 種子凍結（姿態可仍 FAIL／UNVERIFIED）；2 = 種子未凍結；1 = 執行錯誤。目前 exit 0；評估器單獨執行時 static ≠ PASS 回 2。
+
+## 2026-11-05 管體檢查器假陽性修正（Cursor）
+
+Codex 上一段記錄的 8/16/24 徑向分段自交（1／62／177，全在筆直尾端）是 `src/rope-tube.js` `triangleIntersection` 的假陽性，不是 loose-v3 的幾何問題。以傾斜直管（`[0.6,0.5,0.6]·11 mm·i`，120 點，r = 3 mm）重現：修正前 12/16/24 分段 0／31／28 自交，軸對齊直管全為 0。
+
+觸發分支是邊穿越平面的判定，不是共面分支也不是 `legitimate()`：相鄰共一頂點的兩個三角形中，一條沿管體母線的邊在對方平面上的兩端距離分別是 −2.7e-20 與 +3.5e-17 m（都遠小於 epsilon 1e-6），`ds[i]*ds[j]<0` 仍被當成穿越，合成的交點距共用頂點約 8.6 µm（超過 `legitimate` 的 2 µm），且因三角形在該頂點的夾角只有約 6°，交點落在對方邊線 0.9 µm 內、被 `inside` 容差接受。修正：只有兩端都在平面外超過 epsilon 的邊才算穿越；端點在 epsilon 內的已由同一迴圈的「頂點在平面上」分支處理。遠端三角形判定沒有放寬。
+
+回歸：`test/rope-tube.test.js` 新增傾斜直管 8/12/16/24/32 分段均 0 自交、0 折疊，以及一對合成三角形（共頂點、沿母線延伸的邊不算穿越；真正穿過平面的邊仍算）。兩個新測試對修正前的檢查器都失敗；既有負控（緊彎失敗、遠端交叉偵測、超出共邊的重疊被拒、柱體內部）維持通過。`npm test` 122/122。
+
+loose-v3 重跑 8/12/16/24 分段：自交／折疊／穿柱全部 0／0／0，管面最小柱間隙 1.866／1.701／1.658／1.672 mm。`reports/somerville-dressed-seed.json` 新增 `tube.radialSweep`（8/16/24，標明只是資訊、閘門仍是 12 分段）。
+
+副作用與處置：檢查器修正後，網格候選 `{rootDepth 0.104, rimPitch −0.016}` 在 12 分段也通過全部閘門且非局部間隙 0.487 mm 較大，若沿用「全過者取間隙最大」會把 loose-v3 換成另一組點位（點位 SHA `030a1139…`）。已改為固定 preset 全過即為交付、網格只作救援搜尋（報告 `selectionPolicy`、`gridBest`），loose-v3 與點位 SHA 不變（`ea7676ee…`、`3db0782f…`）。種子報告 SHA 因新增欄位而改變（`5d36fda9…`）。
+
+## 2026-11-05 dressed 靜態種子：已按固定閘門凍結 loose-v3
+
+`npm run generate:dressed` 現在先產生種子、再執行獨立姿態評估。種子階段通過並寫出 `data/somerville-final/loose-v3.json`；姿態仍是 FAIL、運動仍是 UNVERIFIED，不能把 loose-v3 稱為影片完成模型。
+
+固定 `dressedTight`、6 mm 繩徑、3 mm 管半徑、12 徑向分段的結果：
+
+| 檢查 | 本輪起點 | loose-v3 |
+| --- | ---: | ---: |
+| 非局部中心線穿透 | 24 對 | 0 對 |
+| 最小非局部表面間隙 | −1.077 mm | +0.317 mm |
+| 管面自交／折疊／穿柱 | 977／335／0 | 0／0／0 |
+| 管面最小柱間隙 | +2.139 mm | +1.701 mm |
+| 最終操作 | PASS | PASS（九項全過） |
+| 總長 | 7.138936637394829 m | 7.138936637394829 m，殘差 0 |
+
+幾何修正包括：`over-root` 改為單向掃過兩個根部並以局部孔徑 X 單調測試鎖定；尾端、under-approach、return-approach 使用可驗證圓角；高曲率接頭只在 12 mm 鄰域內做局部平滑；bundle roll 依脊線弧長插值並在同一鄰域低通；股距由 7.2 mm 增至 8.5 mm。`tailStep` 11 mm 只控制畫面外直線自由尾端的取樣，不改路由或材料總長。
+
+第一次與第二次完整 pipeline 的三個 SHA-256 均一致：
+
+- `dressed-candidate.json` / `loose-v3.json`: `ea7676ee9fbebbc537fe5a7d097f5b53f20c48c968659f8f3fb12a7ceabf85f7`
+- 點位 JSON：`3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59`
+- `somerville-dressed-seed.json`: `20fdd13ca637e15eda4b7e4d2e0e2f1b350bb7012f078c63404a26bed2925e72`
+
+獨立重算確認候選、種子報告與姿態報告引用同一幾何。`npm test` 120/120 通過，`npm run build` 通過。基準與最後逐段診斷分別在 `work/somerville/dressed/join-baseline.json` 和 `join-final.json`。本輪按 AGENTS 政策先呼叫 Cursor CLI / grok-4.7-high；Cursor 寫出診斷工具與基準後連線中斷，重連未恢復，Codex 接手修正並獨立驗證。未 commit、未 push。
+
+已知邊界：固定的 12 邊實際顯示網格通過。改用 8、16、24 徑向分段時，現有 triangle checker 分別在完全筆直的自由尾端回報 1、62、177 個同股局部交點，沒有核心角色或柱體交點。這表示本次凍結符合既定靜態閘門，尚未構成取樣無關的連續管體證明。下一階段若需要提高該證明強度，應先處理局部相鄰三角形的數值判定或改用解析 swept-tube 檢查。
+
+姿態評估結果保持誠實分離：`staticReconstruction: FAIL`，`motionContinuity: UNVERIFIED`，固定尺度最佳殘差約 109.44 px。148 秒輪廓、已審核 crossing 綁定、PBD/march 與連續運動仍屬後續工作。
+
+## 2026-11-04 dressed 靜態種子：未凍結
+
+`loose-v3` 沒有寫出。命名候選仍是 `data/somerville-final/dressed-candidate.json`。重現：`npm run generate:dressed`（先種子、再姿態評估）。exit 0 才是種子已凍結；exit 2 是種子未凍結、姿態可以仍為 UNVERIFIED；exit 1 才是執行錯誤。本輪 exit 2。
+
+固定 `dressedTight`、管體半徑 3 mm、12 徑向分段：
+
+| | 修正前（正確半徑） | 本輪 |
+| --- | --- | --- |
+| 中心線穿透 | 39（over-root/1 自交 22、loop-to-cuff 雙股 12、over-root 雙股 5） | 24（loop-to-cuff/0\|1 12、over-root/0\|1 12） |
+| 最近對 | over-root/1 自交，間隙 −2.777 mm | over-root/0 段 859 與 over-root/1 段 1565，間隙 −1.077 mm |
+| 管體 | 自交 1,099、折疊 409、穿柱 0、柱間隙 +1.116 mm | 自交 977、折疊 335、穿柱 0、柱間隙 +2.139 mm |
+| 最終操作 | PASS | PASS |
+
+先前報告裡的 16,620 自交和 2,001 穿柱是把直徑當成半徑。`dressedTube` 現在固定傳 `diameter/2`，截面頂點到軸線的距離由測試鎖在 3 mm。
+
+留下的兩組都過了材料排除（中心距約 4.9 mm，門檻 6.2 mm）。over-root 同肢髮夾已不在群組裡；掃過兩個根部的那一段在孔徑局部 X 單調，`overRootBranches` 仍 PASS。把 loop-to-cuff 滑移段的側向量改成徑向後，該組從 12 對增到 45 對，已退回。把尾端根部支臂和穿環彎道加長到能放 12 mm 圓角後，新出現 cuff-to-first 與 tail 的穿透，也已退回。under-approach 與 return-approach 的圓角有留下：中心線對數沒有再增加，管體自交和折疊比正確半徑的起點少。網格沒有挑出另一組參數；`selectedOptions` 是空的，與固定 preset 相同。
+
+兩個外框都不是通過條件。`allNonTail`（含 cuff 與 bight）137 × 187 mm。`lockingCore`（loop-rim、first-passage、over-root、return-passage、bight-leg、fold；角色集合是建模選擇）54 × 106 mm。影片 34 × 28 mm 只框可見結心，不能拿來和這兩個框相減。
+
+姿態評估仍是 static FAIL、motion UNVERIFIED。這不是種子凍結。
+
 ## 2026-11-03 dressed 實作進行中（本輪）
 
 - 本輪先做完整 dressed 靜態模型，靜態未通過前不啟動 march；舊 loose-v2 / final 不代表新的交付。

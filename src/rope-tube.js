@@ -33,7 +33,11 @@ export function triangleIntersection(a,b,{epsilon=1e-6,shared=[]}={}){
  const separate=d=>d.every(v=>v>epsilon)||d.every(v=>v< -epsilon);if(separate(da)||separate(db))return false;
  if(norm(cross(na,nb))<1e-8&&Math.max(...da.map(Math.abs))<=epsilon)return coplanarArea(a,b,na)>epsilon*epsilon;
  const legitimate=p=>shared.some(q=>norm(sub(p,q))<=epsilon*2)||(shared.length===2&&pointSegmentDistance(p,shared[0],shared[1])<=epsilon*2);
- const intersects=(tri,other,n,ds)=>{for(let i=0;i<3;i++){const j=(i+1)%3,p=tri[i],q=tri[j];if(Math.abs(ds[i])<=epsilon&&inside(p,other,n,epsilon)&&!legitimate(p))return true;if(ds[i]*ds[j]<0){let t=ds[i]/(ds[i]-ds[j]),hit=add(p,mul(sub(q,p),t));if(inside(hit,other,n,epsilon)&&!legitimate(hit))return true;}}return false;};
+ // An edge only "crosses" the plane when both endpoints are clearly on opposite sides.
+ // Endpoints within epsilon of the plane are tested as on-plane points; otherwise two
+ // near-zero distances of opposite sign (shared vertex plus a generator edge lying in
+ // the plane) would synthesize a crossing a few microns from the shared vertex.
+ const intersects=(tri,other,n,ds)=>{for(let i=0;i<3;i++){const j=(i+1)%3,p=tri[i],q=tri[j];if(Math.abs(ds[i])<=epsilon&&inside(p,other,n,epsilon)&&!legitimate(p))return true;if(ds[i]*ds[j]<0&&Math.abs(ds[i])>epsilon&&Math.abs(ds[j])>epsilon){let t=ds[i]/(ds[i]-ds[j]),hit=add(p,mul(sub(q,p),t));if(inside(hit,other,n,epsilon)&&!legitimate(hit))return true;}}return false;};
  return intersects(a,b,nb,db)||intersects(b,a,na,da);
 }
 function triangleColumnGap(tri,column){if(column.frame){tri=tri.map(p=>toLocal(p,column.frame));column={...column,center:toLocal(column.center,column.frame),frame:null};}const axis='XYZ'.indexOf(column.axis),ks=[0,1,2].filter(k=>k!==axis),p=tri.map(v=>ks.map(k=>v[k]-column.center[k]));const o=[0,0],signs=p.map((v,i)=>orient2(v,p[(i+1)%3],o));if(Math.abs(orient2(...p))>1e-16&&(signs.every(x=>x>=0)||signs.every(x=>x<=0)))return -column.radius;
