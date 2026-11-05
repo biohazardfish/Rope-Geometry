@@ -18,6 +18,8 @@
     "export:knoto": "node scripts/export-knoto-id.js",
     "verify:geometry": "node scripts/verify-geometry.js",
     "generate:dressed": "node scripts/dressed-pipeline.js",
+    "march:dressed": "node scripts/march-dressed.js",
+    "overlay:dressed": "node scripts/overlay-dressed.js",
     "build": "vite build"
   },
   "dependencies": {

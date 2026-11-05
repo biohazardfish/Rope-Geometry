@@ -7,9 +7,29 @@
 - 現行交付：`data/somerville-final/loose-v3.json`（dressed 靜態種子，SHA-256 `ea7676ee…`，點位 `3db0782f…`）。重現：`npm run generate:dressed`。它是靜態種子，不是影片姿態完成模型。
 - 現行報告：`reports/somerville-dressed-seed.json`（種子閘門、`tube.radialSweep`、網格試驗）與 `reports/somerville-dressed-report.json`（姿態評估：static FAIL、motion UNVERIFIED）。
 - 現行生成器：`src/somerville-dressed.js`（`buildSomerville({route:'dressed'})`）、`scripts/generate-somerville-dressed.js`、`scripts/dressed-pipeline.js`、`scripts/evaluate-somerville-dressed.js`。
+- 姿態推進工具：`npm run march:dressed`（`scripts/march-dressed.js`，參數延拓，輸出 `reports/somerville-dressed-march.json`；`--emit-docs` 才把到達幾何寫到 `work/somerville/dressed/march/`）、`npm run overlay:dressed`（`scripts/overlay-dressed.js`，148 秒影格疊圖與綁定候選表，輸出 `reports/somerville-dressed-overlay.{png,svg,json}`）。兩者都不改 loose-v3、不改 `pose148`。
 - 歷史、不代表現況：`data/somerville-final/final.json`、`continuation*.json`、`videoTight-history*`、`loose.json`、`loose-v2.json`；`reports/somerville-final-report.json`；Phase 5 recovery 的 74 對穿透；README 內 Phase 1–5 段落。
 - 人工判斷待辦：`data/somerville-pose148.json` 兩個接觸的 `over.role`／`under.role`／`bindingStatus` 仍為 `unverified`，由審核者看影格後填寫，程式不預填。
 - pipeline exit code：0 = 種子凍結（姿態可仍 FAIL／UNVERIFIED）；2 = 種子未凍結；1 = 執行錯誤。目前 exit 0；評估器單獨執行時 static ≠ PASS 回 2。
+
+## 2026-11-05 姿態推進：參數延拓停滯點與疊圖審核輔助（Cursor）
+
+`scripts/march-dressed.js` 從 `dressedTight` 出發做自適應延拓（步長 1 → 1/64），每步同時要求穿透 0、非局部間隙 ≥ 0.2 mm、柱間隙 ≥ 0.2 mm、九項最終操作 PASS、12 分段管體 valid、總長殘差 < 1e-9。四條路線各自獨立從基底出發，再把四條串接（前一條到達值作為下一條起點）。結果在 `reports/somerville-dressed-march.json`。
+
+| 路線 | 目標 | 到達 | 停滯閘門 | 阻擋線段對 |
+| --- | ---: | ---: | --- | --- |
+| `loopRadius` | 20 → 14 mm | **20 mm（動不了）** | tube | 19.91 mm 起 `loop-to-cuff/0` 自身管面自交 8、折疊 2 |
+| `coreOffset` | 36 → 20 mm | 24.9 mm | minimumNonlocalGap | `loop-to-cuff/0 \| cuff-to-first/0` 間隙 0.135 mm；24.1 mm 起穿透 |
+| `rootDepth` | 90 → 50 mm | **90 mm（動不了）** | penetratingPairs | 89.4 mm 即 `over-root/0 \| fold` 4 對穿透；≤ 70 mm 生成器丟 `Antiparallel spine`（first-passage／over-root） |
+| `cuffWidth` | 34 → 28 mm | 29.5 mm | minimumNonlocalGap | `cuff/0 \| cuff/1` 間隙 0.161 mm（四股 × 8.5 mm 股距的幾何下限） |
+
+串接結果與獨立結果相同（loopRadius、rootDepth 零進展，coreOffset 24.9 mm、cuffWidth 29.5 mm）。四條路線到達點的結心角色外框都是 70.7 × 107.3 mm，與 loose-v3 完全相同：`coreOffset` 與 `cuffWidth` 只平移或壓窄袖口，不縮結心；能縮結心的 `loopRadius` 與 `rootDepth` 在起點就被 `loop-to-cuff` 管面與 `over-root | fold` 擋住。結論同計畫預期：單純參數延拓到不了 34 × 28 mm，下一輪要改生成器路由（`loop-to-cuff` 的彎道、`over-root` 掃掠深度與 `fold` 的相對位置），不是調參。另注意 loose-v3 在 `loopRadius` 上處於刀鋒：減 0.09 mm 即出現 `loop-to-cuff/0` 管面折疊，表示該接頭的圓角／平滑餘裕接近零。
+
+`scripts/overlay-dressed.js` 用姿態報告的擬合相機（正交、5750 px/m、roll −29.7°）把 loose-v3 投影到 `references/phase4b/duchy-video-148.jpg`，依角色著色，並在兩個接觸點附近列出經過的角色、材料弧長區間、深度（世界 Y，越小越靠近相機）與投影交叉候選。PNG 由 macOS `sips` 解碼 JPEG 後以純 Node 寫出；SVG 帶文字圖例；JSON 是候選表。
+
+疊圖結果：擬合相機把模型結心（loop-rim 等）放在影格可見結心黃框右側約 150–250 px，與 RMS 109 px 一致。兩個接觸點 [431,667]、[437,700] 在投影裡只落在 `cuff/1`（9／17 px）與 `under-cuff/1`（27 px）附近；唯一的投影交叉候選是 `under-cuff/1` 在 `cuff/1` 之上（殘差 29.7 px，深度差 65.6 mm）。這是目前幾何與相機下的巧合，不是來源判斷：影格上這兩個接觸明顯位於結心，不在袖口。審核者不應從這張疊圖抄綁定；疊圖的用途是顯示模型與影格的錯位量與方向。`data/somerville-pose148.json` 未改動，`bindingStatus` 仍為 `unverified`。
+
+重新評估路徑已驗證可用：在 /tmp 複製 `pose148` 並填入一組假設綁定（`over: under-cuff/1`、`under: cuff/1`、`reviewed`）後，`evaluateSomervilleDressed({annotationPath, write:false})` 會把該接觸評為 PASS（殘差 29.65 px，門檻 30 px）、另一接觸維持 UNVERIFIED、整體 `crossingPose` UNVERIFIED、static 仍 FAIL。這證明審核者寫入綁定後 `npm run generate:dressed` 會真的消費它；該假設綁定沒有寫回 repo。
 
 ## 2026-11-05 管體檢查器假陽性修正（Cursor）
 

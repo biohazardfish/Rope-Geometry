@@ -1,0 +1,1248 @@
+{
+  "generatedAt": "2026-11-05T12:56:43.921Z",
+  "base": "SOMERVILLE_PRESETS.dressedTight",
+  "gates": {
+    "penetratingPairs": 0,
+    "minimumNonlocalGap": 0.0002,
+    "minimumColumnGap": 0.0002,
+    "finalOperations": "all nine PASS",
+    "tube": "dressedTube 12 radial segments valid",
+    "lengthResidual": "<1e-9"
+  },
+  "imageTarget": {
+    "lockingCore": [
+      0.034,
+      0.028
+    ],
+    "meaning": "visible locking core on the 148 s frame; informational, not a gate"
+  },
+  "independent": [
+    {
+      "route": "loopRadius",
+      "from": 0.02,
+      "to": 0.014,
+      "target": 0.014,
+      "reached": 0.02,
+      "s": 0,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.036,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.034,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00031703142349089053,
+        "columnGap": 0.0016545350845564915,
+        "closest": [
+          "over-root/0",
+          "fold"
+        ],
+        "tubeColumnGap": 0.0017005967045297873,
+        "lockingCore": {
+          "width": 0.07068083494855634,
+          "height": 0.1072969666433172
+        },
+        "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+      },
+      "stall": {
+        "nextTried": 0.019906,
+        "gate": "tube",
+        "why": "self 8 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0",
+        "closest": null,
+        "tube": {
+          "selfIntersections": 8,
+          "foldedFaces": 2,
+          "columnPenetrations": 0,
+          "selfRoles": {
+            "loop-to-cuff/0 | loop-to-cuff/0": 8
+          },
+          "foldRoles": {
+            "loop-to-cuff/0": 2
+          }
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.014,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "278 pairs, closest loop-rim/0 | return-passage/0 gap -4.307 mm"
+        },
+        {
+          "s": 0.5,
+          "value": 0.017,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "94 pairs, closest loop-rim/0 | return-passage/0 gap -1.299 mm"
+        },
+        {
+          "s": 0.25,
+          "value": 0.0185,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.018 mm at over-root/0 | fold"
+        },
+        {
+          "s": 0.125,
+          "value": 0.01925,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.169 mm at over-root/0 | fold"
+        },
+        {
+          "s": 0.0625,
+          "value": 0.019625,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 16 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        },
+        {
+          "s": 0.03125,
+          "value": 0.019813,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 8 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        },
+        {
+          "s": 0.01563,
+          "value": 0.019906,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 8 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        }
+      ]
+    },
+    {
+      "route": "coreOffset",
+      "from": 0.036,
+      "to": 0.02,
+      "target": 0.02,
+      "reached": 0.024938,
+      "s": 0.69141,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.0249375,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.034,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00031703142349089573,
+        "columnGap": 0.001654535084556561,
+        "closest": [
+          "over-root/0",
+          "fold"
+        ],
+        "tubeColumnGap": 0.0016836144256657422,
+        "lockingCore": {
+          "width": 0.07068083494855636,
+          "height": 0.10729696664331721
+        },
+        "pointsSha256": "3bb172e08b8aa39a61ee36b41b39a2ebcb4b1dd43fb5b1cbbd9ab2bdd070f1cd"
+      },
+      "stall": {
+        "nextTried": 0.024516,
+        "gate": "minimumNonlocalGap",
+        "why": "gap 0.135 mm at loop-to-cuff/0 | cuff-to-first/0",
+        "closest": {
+          "roles": [
+            "loop-to-cuff/0",
+            "cuff-to-first/0"
+          ],
+          "gap": 0.000134539768319248
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.02,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "240 pairs, closest cuff/0 | return-approach/0 gap -3.177 mm"
+        },
+        {
+          "s": 0.5,
+          "value": 0.028,
+          "ok": true,
+          "gap": 0.00031703142349087665,
+          "columnGap": 0.0016545350845564846,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.1072969666433172
+          }
+        },
+        {
+          "s": 1,
+          "value": 0.02,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "240 pairs, closest cuff/0 | return-approach/0 gap -3.177 mm"
+        },
+        {
+          "s": 0.75,
+          "value": 0.024,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "12 pairs, closest loop-to-cuff/0 | cuff-to-first/0 gap -0.154 mm"
+        },
+        {
+          "s": 0.625,
+          "value": 0.026,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 9 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        },
+        {
+          "s": 0.5625,
+          "value": 0.027,
+          "ok": true,
+          "gap": 0.0003170314234908992,
+          "columnGap": 0.0016545350845564915,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855634,
+            "height": 0.10729696664331721
+          }
+        },
+        {
+          "s": 0.65625,
+          "value": 0.0255,
+          "ok": true,
+          "gap": 0.00031703142349087925,
+          "columnGap": 0.0004528642551422128,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.1072969666433172
+          }
+        },
+        {
+          "s": 0.79688,
+          "value": 0.02325,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "29 pairs, closest loop-to-cuff/0 | cuff-to-first/0 gap -0.574 mm"
+        },
+        {
+          "s": 0.72656,
+          "value": 0.024375,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.056 mm at loop-to-cuff/0 | cuff-to-first/0"
+        },
+        {
+          "s": 0.69141,
+          "value": 0.024938,
+          "ok": true,
+          "gap": 0.00031703142349089573,
+          "columnGap": 0.001654535084556561,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.10729696664331721
+          }
+        },
+        {
+          "s": 0.74414,
+          "value": 0.024094,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "10 pairs, closest loop-to-cuff/0 | cuff-to-first/0 gap -0.101 mm"
+        },
+        {
+          "s": 0.71777,
+          "value": 0.024516,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.135 mm at loop-to-cuff/0 | cuff-to-first/0"
+        }
+      ]
+    },
+    {
+      "route": "rootDepth",
+      "from": 0.09,
+      "to": 0.05,
+      "target": 0.05,
+      "reached": 0.09,
+      "s": 0,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.036,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.034,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00031703142349089053,
+        "columnGap": 0.0016545350845564915,
+        "closest": [
+          "over-root/0",
+          "fold"
+        ],
+        "tubeColumnGap": 0.0017005967045297873,
+        "lockingCore": {
+          "width": 0.07068083494855634,
+          "height": 0.1072969666433172
+        },
+        "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+      },
+      "stall": {
+        "nextTried": 0.089375,
+        "gate": "penetratingPairs",
+        "why": "4 pairs, closest over-root/0 | fold gap -0.068 mm",
+        "closest": {
+          "roles": [
+            "over-root/0",
+            "fold"
+          ],
+          "gap": -0.00006794888230660708
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.05,
+          "ok": false,
+          "gate": "build",
+          "why": "Antiparallel spine at 651 first-passage | first-passage | over-root | over-root | over-root [[-0.00800477156631874,-0.037141094730563665,-0.06047054587369809],[-0.008001752359615737,-0.037813292215737815,-0.061564971042322905],[-0.008,-0.038467397416996243,-0.06262993961327817],[-0.008,-0.03742066551449294,-0.06092572356937945],[-0.008,-0.036373933611989644,-0.05922150752548072]]"
+        },
+        {
+          "s": 0.5,
+          "value": 0.07,
+          "ok": false,
+          "gate": "build",
+          "why": "Antiparallel spine at 651 first-passage | first-passage | over-root | over-root | over-root [[-0.00800477156631874,-0.037141094730563665,-0.06047054587369809],[-0.008001752359615737,-0.037813292215737815,-0.061564971042322905],[-0.008,-0.038467397416996243,-0.06262993961327817],[-0.008,-0.03742066551449294,-0.06092572356937945],[-0.008,-0.036373933611989644,-0.05922150752548073]]"
+        },
+        {
+          "s": 0.25,
+          "value": 0.08,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "99 pairs, closest over-root/0 | fold gap -4.801 mm"
+        },
+        {
+          "s": 0.125,
+          "value": 0.085,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "45 pairs, closest over-root/0 | fold gap -2.696 mm"
+        },
+        {
+          "s": 0.0625,
+          "value": 0.0875,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "22 pairs, closest over-root/0 | fold gap -1.256 mm"
+        },
+        {
+          "s": 0.03125,
+          "value": 0.08875,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "11 pairs, closest over-root/0 | fold gap -0.466 mm"
+        },
+        {
+          "s": 0.01563,
+          "value": 0.089375,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "4 pairs, closest over-root/0 | fold gap -0.068 mm"
+        }
+      ]
+    },
+    {
+      "route": "cuffWidth",
+      "from": 0.034,
+      "to": 0.028,
+      "target": 0.028,
+      "reached": 0.0295,
+      "s": 0.75,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.036,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.029500000000000002,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.000207317165935539,
+        "columnGap": 0.001654574465345524,
+        "closest": [
+          "cuff/0",
+          "cuff/1"
+        ],
+        "tubeColumnGap": 0.0017092235540639537,
+        "lockingCore": {
+          "width": 0.07068083494855634,
+          "height": 0.1072969666433172
+        },
+        "pointsSha256": "36354c98327a91ab553881e6a3cde25666c4bd04adebd7928e9414f3126385cf"
+      },
+      "stall": {
+        "nextTried": 0.029406,
+        "gate": "minimumNonlocalGap",
+        "why": "gap 0.161 mm at cuff/0 | cuff/1",
+        "closest": {
+          "roles": [
+            "cuff/0",
+            "cuff/1"
+          ],
+          "gap": 0.00016081022027207657
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.028,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "683 pairs, closest cuff/0 | cuff/1 gap -0.537 mm"
+        },
+        {
+          "s": 0.5,
+          "value": 0.031,
+          "ok": true,
+          "gap": 0.0003170314234908888,
+          "columnGap": 0.001654468233674474,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855634,
+            "height": 0.1072969666433172
+          }
+        },
+        {
+          "s": 1,
+          "value": 0.028,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "683 pairs, closest cuff/0 | cuff/1 gap -0.537 mm"
+        },
+        {
+          "s": 0.75,
+          "value": 0.0295,
+          "ok": true,
+          "gap": 0.000207317165935539,
+          "columnGap": 0.001654574465345524,
+          "closest": [
+            "cuff/0",
+            "cuff/1"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855634,
+            "height": 0.1072969666433172
+          }
+        },
+        {
+          "s": 1,
+          "value": 0.028,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "683 pairs, closest cuff/0 | cuff/1 gap -0.537 mm"
+        },
+        {
+          "s": 0.875,
+          "value": 0.02875,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "500 pairs, closest cuff/0 | cuff/1 gap -0.165 mm"
+        },
+        {
+          "s": 0.8125,
+          "value": 0.029125,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.021 mm at cuff/0 | cuff/1"
+        },
+        {
+          "s": 0.78125,
+          "value": 0.029313,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.114 mm at cuff/0 | cuff/1"
+        },
+        {
+          "s": 0.76563,
+          "value": 0.029406,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.161 mm at cuff/0 | cuff/1"
+        }
+      ]
+    }
+  ],
+  "chained": [
+    {
+      "route": "loopRadius",
+      "from": 0.02,
+      "to": 0.014,
+      "target": 0.014,
+      "reached": 0.02,
+      "s": 0,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.036,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.034,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00031703142349089053,
+        "columnGap": 0.0016545350845564915,
+        "closest": [
+          "over-root/0",
+          "fold"
+        ],
+        "tubeColumnGap": 0.0017005967045297873,
+        "lockingCore": {
+          "width": 0.07068083494855634,
+          "height": 0.1072969666433172
+        },
+        "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+      },
+      "stall": {
+        "nextTried": 0.019906,
+        "gate": "tube",
+        "why": "self 8 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0",
+        "closest": null,
+        "tube": {
+          "selfIntersections": 8,
+          "foldedFaces": 2,
+          "columnPenetrations": 0,
+          "selfRoles": {
+            "loop-to-cuff/0 | loop-to-cuff/0": 8
+          },
+          "foldRoles": {
+            "loop-to-cuff/0": 2
+          }
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.014,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "278 pairs, closest loop-rim/0 | return-passage/0 gap -4.307 mm"
+        },
+        {
+          "s": 0.5,
+          "value": 0.017,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "94 pairs, closest loop-rim/0 | return-passage/0 gap -1.299 mm"
+        },
+        {
+          "s": 0.25,
+          "value": 0.0185,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.018 mm at over-root/0 | fold"
+        },
+        {
+          "s": 0.125,
+          "value": 0.01925,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.169 mm at over-root/0 | fold"
+        },
+        {
+          "s": 0.0625,
+          "value": 0.019625,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 16 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        },
+        {
+          "s": 0.03125,
+          "value": 0.019813,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 8 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        },
+        {
+          "s": 0.01563,
+          "value": 0.019906,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 8 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        }
+      ]
+    },
+    {
+      "route": "coreOffset",
+      "from": 0.036,
+      "to": 0.02,
+      "target": 0.02,
+      "reached": 0.024938,
+      "s": 0.69141,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.0249375,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.034,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00031703142349089573,
+        "columnGap": 0.001654535084556561,
+        "closest": [
+          "over-root/0",
+          "fold"
+        ],
+        "tubeColumnGap": 0.0016836144256657422,
+        "lockingCore": {
+          "width": 0.07068083494855636,
+          "height": 0.10729696664331721
+        },
+        "pointsSha256": "3bb172e08b8aa39a61ee36b41b39a2ebcb4b1dd43fb5b1cbbd9ab2bdd070f1cd"
+      },
+      "stall": {
+        "nextTried": 0.024516,
+        "gate": "minimumNonlocalGap",
+        "why": "gap 0.135 mm at loop-to-cuff/0 | cuff-to-first/0",
+        "closest": {
+          "roles": [
+            "loop-to-cuff/0",
+            "cuff-to-first/0"
+          ],
+          "gap": 0.000134539768319248
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.02,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "240 pairs, closest cuff/0 | return-approach/0 gap -3.177 mm"
+        },
+        {
+          "s": 0.5,
+          "value": 0.028,
+          "ok": true,
+          "gap": 0.00031703142349087665,
+          "columnGap": 0.0016545350845564846,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.1072969666433172
+          }
+        },
+        {
+          "s": 1,
+          "value": 0.02,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "240 pairs, closest cuff/0 | return-approach/0 gap -3.177 mm"
+        },
+        {
+          "s": 0.75,
+          "value": 0.024,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "12 pairs, closest loop-to-cuff/0 | cuff-to-first/0 gap -0.154 mm"
+        },
+        {
+          "s": 0.625,
+          "value": 0.026,
+          "ok": false,
+          "gate": "tube",
+          "why": "self 9 fold 2 column 0 at loop-to-cuff/0 | loop-to-cuff/0, fold:loop-to-cuff/0"
+        },
+        {
+          "s": 0.5625,
+          "value": 0.027,
+          "ok": true,
+          "gap": 0.0003170314234908992,
+          "columnGap": 0.0016545350845564915,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855634,
+            "height": 0.10729696664331721
+          }
+        },
+        {
+          "s": 0.65625,
+          "value": 0.0255,
+          "ok": true,
+          "gap": 0.00031703142349087925,
+          "columnGap": 0.0004528642551422128,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.1072969666433172
+          }
+        },
+        {
+          "s": 0.79688,
+          "value": 0.02325,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "29 pairs, closest loop-to-cuff/0 | cuff-to-first/0 gap -0.574 mm"
+        },
+        {
+          "s": 0.72656,
+          "value": 0.024375,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.056 mm at loop-to-cuff/0 | cuff-to-first/0"
+        },
+        {
+          "s": 0.69141,
+          "value": 0.024938,
+          "ok": true,
+          "gap": 0.00031703142349089573,
+          "columnGap": 0.001654535084556561,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.10729696664331721
+          }
+        },
+        {
+          "s": 0.74414,
+          "value": 0.024094,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "10 pairs, closest loop-to-cuff/0 | cuff-to-first/0 gap -0.101 mm"
+        },
+        {
+          "s": 0.71777,
+          "value": 0.024516,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.135 mm at loop-to-cuff/0 | cuff-to-first/0"
+        }
+      ]
+    },
+    {
+      "route": "rootDepth",
+      "from": 0.09,
+      "to": 0.05,
+      "target": 0.05,
+      "reached": 0.09,
+      "s": 0,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.0249375,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.034,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00031703142349089573,
+        "columnGap": 0.001654535084556561,
+        "closest": [
+          "over-root/0",
+          "fold"
+        ],
+        "tubeColumnGap": 0.0016836144256657422,
+        "lockingCore": {
+          "width": 0.07068083494855636,
+          "height": 0.10729696664331721
+        },
+        "pointsSha256": "3bb172e08b8aa39a61ee36b41b39a2ebcb4b1dd43fb5b1cbbd9ab2bdd070f1cd"
+      },
+      "stall": {
+        "nextTried": 0.089375,
+        "gate": "penetratingPairs",
+        "why": "4 pairs, closest over-root/0 | fold gap -0.068 mm",
+        "closest": {
+          "roles": [
+            "over-root/0",
+            "fold"
+          ],
+          "gap": -0.00006794888230660882
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.05,
+          "ok": false,
+          "gate": "build",
+          "why": "Antiparallel spine at 635 first-passage | first-passage | over-root | over-root | over-root [[-0.00800477156631874,-0.03139322640011763,-0.05111226663950552],[-0.008001752359615737,-0.0320768822175988,-0.05222534746743264],[-0.008,-0.032743082325181326,-0.05331000812320702],[-0.008,-0.03176177116658448,-0.05171230558205196],[-0.008,-0.03078046000798764,-0.05011460304089691]]"
+        },
+        {
+          "s": 0.5,
+          "value": 0.07,
+          "ok": false,
+          "gate": "build",
+          "why": "Antiparallel spine at 635 first-passage | first-passage | over-root | over-root | over-root [[-0.00800477156631874,-0.03146300557557652,-0.05122587623720927],[-0.008001752359615737,-0.032165758613569406,-0.052370049830640246],[-0.008,-0.03285211689835875,-0.053487530627779806],[-0.008,-0.03197984031293934,-0.052067350591197534],[-0.008,-0.03110756372751992,-0.05064717055461526]]"
+        },
+        {
+          "s": 0.25,
+          "value": 0.08,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "95 pairs, closest over-root/0 | fold gap -4.801 mm"
+        },
+        {
+          "s": 0.125,
+          "value": 0.085,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "37 pairs, closest over-root/0 | fold gap -2.696 mm"
+        },
+        {
+          "s": 0.0625,
+          "value": 0.0875,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "22 pairs, closest over-root/0 | fold gap -1.256 mm"
+        },
+        {
+          "s": 0.03125,
+          "value": 0.08875,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "11 pairs, closest over-root/0 | fold gap -0.466 mm"
+        },
+        {
+          "s": 0.01563,
+          "value": 0.089375,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "4 pairs, closest over-root/0 | fold gap -0.068 mm"
+        }
+      ]
+    },
+    {
+      "route": "cuffWidth",
+      "from": 0.034,
+      "to": 0.028,
+      "target": 0.028,
+      "reached": 0.0295,
+      "s": 0.75,
+      "completed": false,
+      "reachedOptions": {
+        "route": "dressed",
+        "columnRadius": 0.0275,
+        "diameter": 0.006,
+        "clearance": 0.0002,
+        "step": 0.002,
+        "tailStep": 0.011,
+        "spread": 0.0085,
+        "totalLength": 7.138936637394829,
+        "loopRadius": 0.02,
+        "loopTurns": 1.06,
+        "neckAngle": -2.35,
+        "rimPitch": -0.016,
+        "coreAngle": 1.02,
+        "coreOffset": 0.0249375,
+        "coreX": 0,
+        "planeTilt": 0,
+        "underAngle": 0.16,
+        "cuffWidth": 0.029500000000000002,
+        "cuffLift": 0.0055,
+        "frontBulge": 0.011,
+        "bulgeWidth": 0.48,
+        "underInset": 0.0088,
+        "passSeparation": 0.016,
+        "passBehind": 0.006,
+        "passFront": 0.012,
+        "rootDepth": 0.09,
+        "rootLen": 0.026,
+        "bendSpan": 0.02,
+        "tailStub": 0.05,
+        "foldRadius": 0.012,
+        "bightReach": 0.07,
+        "bightDrop": 0.055,
+        "limbLower": 0.08,
+        "edgeGuardRadius": 0.012,
+        "tangentScale": 0.42,
+        "fairingIterations": 36,
+        "fairingThreshold": 0.35,
+        "frameFairingIterations": 18
+      },
+      "reachedState": {
+        "gap": 0.00020731708618672556,
+        "columnGap": 0.0016657866039820812,
+        "closest": [
+          "cuff/0",
+          "cuff/1"
+        ],
+        "tubeColumnGap": 0.0016866945685412166,
+        "lockingCore": {
+          "width": 0.07068083494855637,
+          "height": 0.10729696664331721
+        },
+        "pointsSha256": "e37d6dfe8df98b61a172e73e5bb641b3e1aa938bcec6683c6eb7248f6df54671"
+      },
+      "stall": {
+        "nextTried": 0.029406,
+        "gate": "minimumNonlocalGap",
+        "why": "gap 0.161 mm at cuff/0 | cuff/1",
+        "closest": {
+          "roles": [
+            "cuff/0",
+            "cuff/1"
+          ],
+          "gap": 0.00016081009911762898
+        },
+        "minStep": 0.015625
+      },
+      "steps": [
+        {
+          "s": 1,
+          "value": 0.028,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "683 pairs, closest cuff/0 | cuff/1 gap -0.537 mm"
+        },
+        {
+          "s": 0.5,
+          "value": 0.031,
+          "ok": true,
+          "gap": 0.00031703142349089313,
+          "columnGap": 0.0016544682336744046,
+          "closest": [
+            "over-root/0",
+            "fold"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855636,
+            "height": 0.10729696664331721
+          }
+        },
+        {
+          "s": 1,
+          "value": 0.028,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "683 pairs, closest cuff/0 | cuff/1 gap -0.537 mm"
+        },
+        {
+          "s": 0.75,
+          "value": 0.0295,
+          "ok": true,
+          "gap": 0.00020731708618672556,
+          "columnGap": 0.0016657866039820812,
+          "closest": [
+            "cuff/0",
+            "cuff/1"
+          ],
+          "lockingCore": {
+            "width": 0.07068083494855637,
+            "height": 0.10729696664331721
+          }
+        },
+        {
+          "s": 1,
+          "value": 0.028,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "683 pairs, closest cuff/0 | cuff/1 gap -0.537 mm"
+        },
+        {
+          "s": 0.875,
+          "value": 0.02875,
+          "ok": false,
+          "gate": "penetratingPairs",
+          "why": "500 pairs, closest cuff/0 | cuff/1 gap -0.165 mm"
+        },
+        {
+          "s": 0.8125,
+          "value": 0.029125,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.021 mm at cuff/0 | cuff/1"
+        },
+        {
+          "s": 0.78125,
+          "value": 0.029313,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.114 mm at cuff/0 | cuff/1"
+        },
+        {
+          "s": 0.76563,
+          "value": 0.029406,
+          "ok": false,
+          "gate": "minimumNonlocalGap",
+          "why": "gap 0.161 mm at cuff/0 | cuff/1"
+        }
+      ]
+    }
+  ],
+  "chainedReachedOptions": {
+    "coreOffset": 0.0249375,
+    "cuffWidth": 0.029500000000000002
+  },
+  "note": "loose-v3 is not modified by this script. Reached geometry is only written under work/ with --emit-docs."
+}
