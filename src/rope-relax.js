@@ -1,6 +1,8 @@
 import {robustClosestSegments} from './robust-distance.js';
 import {projectChainLengths} from './rope-lengths.js';
 import {toLocal,toWorld} from './rope-state.js';
+// Bump when an accepted coupled step can change for the same arguments.
+export const SOLVER_VERSION=1;
 // Position-based relaxation of one material polyline around an X-axis column.
 // Step safety: a vertex may move at most half of the current clearance of every
 // non-local segment pair it belongs to. Segment distance is 1-Lipschitz in each
@@ -68,11 +70,13 @@ export function relaxRope(points, options = {}) {
   const cfg = {
     diameter: 0.006, columnRadius: 0.0275, columnFrame: null, coupledLengths: false, gap: 0.0002, iterations: 400, sweeps: 4,
     maxStep: 0.0003, refresh: 4, minBendRadius: 0.0042, localArc: null, bendSmoothing: 0.02,
-    targets: [], surfaceGuard: null, onIteration: null, restLengths: null, stretchSweeps: 1, ccdTolerance: 0.00002, ...options,
+    targets: [], surfaceGuard: null, onIteration: null, restLengths: null, stretchSweeps: 1, ccdTolerance: 0.00002, fixedPoints: null, ...options,
   };
   if(cfg.columnFrame){
     const result=relaxRope(points.map(p=>toLocal(p,cfg.columnFrame)),{...cfg,columnFrame:null,targets:cfg.targets.map(t=>{if(t.axes&&t.axes.length!==3)throw Error('Framed solver targets require all axes');return {...t,positions:t.positions.map(p=>toLocal(p,cfg.columnFrame))};})});
-    return {...result,points:result.points.map(p=>toWorld(p,cfg.columnFrame))};
+    const world=result.points.map(p=>toWorld(p,cfg.columnFrame));
+    for(const i of cfg.fixedPoints??[])world[i]=[...points[i]];
+    return {...result,points:world};
   }
   if(points.length<2||points.some(p=>p.length!==3||!p.every(Number.isFinite)))throw Error('Finite XYZ solver points required');
   if(!(cfg.diameter>0)||!(cfg.gap>=0)||!(cfg.maxStep>0)||!Number.isInteger(cfg.refresh)||cfg.refresh<1)throw Error('Invalid solver dimensions');
@@ -91,6 +95,21 @@ export function relaxRope(points, options = {}) {
   const cutoff = contact + 2 * cfg.maxStep * (cfg.refresh + 1);
   const history = [];
   let pairs = null, rejected = 0, ccdShrinks = 0, surfaceRejects = 0, minPairDistance = Infinity, minAxisDistance = Infinity;
+  const fixed=new Set();
+  if(cfg.fixedPoints!=null){
+    if(!Array.isArray(cfg.fixedPoints))throw Error('fixedPoints must be indices');
+    for(const index of cfg.fixedPoints){
+      if(!Number.isInteger(index)||index<0||index>=n||fixed.has(index))throw Error('fixedPoints indices required');
+      fixed.add(index);
+    }
+  }
+  const inverseMasses=fixed.size?Float64Array.from({length:n},(_,i)=>fixed.has(i)?0:1):null;
+  const projectLengths=(P,iterations,tolerance)=>{
+    const opt={iterations};
+    if(tolerance!=null)opt.tolerance=tolerance;
+    if(inverseMasses)opt.inverseMasses=inverseMasses;
+    projectChainLengths(P,rest,opt);
+  };
 
   const project = (P) => {
     for (let sweep = 0; sweep < cfg.sweeps; sweep++) {
@@ -98,42 +117,69 @@ export function relaxRope(points, options = {}) {
         const w = target.weight / cfg.sweeps;
         for (let k = 0; k < target.indices.length; k++) {
           const i = target.indices[k], q = target.positions[k];
+          if(inverseMasses&&inverseMasses[i]===0)continue;
           for (const axis of target.axes ?? [0, 1, 2]) P[3 * i + axis] += w * (q[axis] - P[3 * i + axis]);
         }
       }
       for (let i = 1; i < n - 1; i++) {
         const a = 3 * (i - 1), b = 3 * i, c = 3 * (i + 1);
-        for (let k = 0; k < 3; k++) P[b + k] += cfg.bendSmoothing * ((P[a + k] + P[c + k]) / 2 - P[b + k]);
+        if(!(inverseMasses&&inverseMasses[i]===0))for (let k = 0; k < 3; k++) P[b + k] += cfg.bendSmoothing * ((P[a + k] + P[c + k]) / 2 - P[b + k]);
         const lo = rest[i - 1], hi = rest[i], phi = Math.min(Math.PI / 2, (lo + hi) / 2 / cfg.minBendRadius);
         const chordMin = Math.sqrt(lo * lo + hi * hi + 2 * lo * hi * Math.cos(phi));
         const dx = P[c] - P[a], dy = P[c + 1] - P[a + 1], dz = P[c + 2] - P[a + 2], chord = Math.hypot(dx, dy, dz);
         if (chord < chordMin && chord > 1e-12) {
-          const f = (chordMin - chord) / chord / 2;
-          P[a] -= f * dx; P[a + 1] -= f * dy; P[a + 2] -= f * dz;
-          P[c] += f * dx; P[c + 1] += f * dy; P[c + 2] += f * dz;
+          if(!inverseMasses){
+            const f = (chordMin - chord) / chord / 2;
+            P[a] -= f * dx; P[a + 1] -= f * dy; P[a + 2] -= f * dz;
+            P[c] += f * dx; P[c + 1] += f * dy; P[c + 2] += f * dz;
+          }else{
+            const wa=inverseMasses[i-1],wc=inverseMasses[i+1],sum=wa+wc;
+            if(sum>0){
+              const corr=(chordMin-chord)/chord,fa=corr*wa/sum,fc=corr*wc/sum;
+              P[a]-=fa*dx;P[a+1]-=fa*dy;P[a+2]-=fa*dz;
+              P[c]+=fc*dx;P[c+1]+=fc*dy;P[c+2]+=fc*dz;
+            }
+          }
         }
       }
       for (let k = 0; k < pairs.length; k += 2) {
         const i = pairs[k], j = pairs[k + 1], h = closest(P, i, j);
         if (h.distance >= contact || h.distance < 1e-12) continue;
-        const push = (contact - h.distance) / h.distance / 2;
-        const wa = [1 - h.s, h.s], wb = [1 - h.t, h.t], norm = (wa[0] ** 2 + wa[1] ** 2 + wb[0] ** 2 + wb[1] ** 2) / 2;
-        for (let m = 0; m < 2; m++) {
-          const pa = 3 * (i + m), pb = 3 * (j + m), fa = push * wa[m] / norm, fb = push * wb[m] / norm;
-          P[pa] += fa * h.dx; P[pa + 1] += fa * h.dy; P[pa + 2] += fa * h.dz;
-          P[pb] -= fb * h.dx; P[pb + 1] -= fb * h.dy; P[pb + 2] -= fb * h.dz;
+        if(!inverseMasses){
+          const push = (contact - h.distance) / h.distance / 2;
+          const wa = [1 - h.s, h.s], wb = [1 - h.t, h.t], norm = (wa[0] ** 2 + wa[1] ** 2 + wb[0] ** 2 + wb[1] ** 2) / 2;
+          for (let m = 0; m < 2; m++) {
+            const pa = 3 * (i + m), pb = 3 * (j + m), fa = push * wa[m] / norm, fb = push * wb[m] / norm;
+            P[pa] += fa * h.dx; P[pa + 1] += fa * h.dy; P[pa + 2] += fa * h.dz;
+            P[pb] -= fb * h.dx; P[pb + 1] -= fb * h.dy; P[pb + 2] -= fb * h.dz;
+          }
+        }else{
+          const nx=h.dx/h.distance,ny=h.dy/h.distance,nz=h.dz/h.distance,s=h.s,t=h.t;
+          const wp=(1-s)*(1-s)*inverseMasses[i]+s*s*inverseMasses[i+1],wq=(1-t)*(1-t)*inverseMasses[j]+t*t*inverseMasses[j+1],sum=wp+wq;
+          if(sum<1e-16)continue;
+          const lambda=(contact-h.distance)/sum;
+          const add=(idx,bary,sign)=>{const f=sign*bary*inverseMasses[idx]*lambda;P[3*idx]+=f*nx;P[3*idx+1]+=f*ny;P[3*idx+2]+=f*nz;};
+          add(i,1-s,1);add(i+1,s,1);add(j,1-t,-1);add(j+1,t,-1);
         }
       }
       for (let i = 0; i < n; i++) {
         const r = Math.hypot(P[3 * i + 1], P[3 * i + 2]);
-        if (hasColumn && r < colMin && r > 1e-12) { P[3 * i + 1] *= colMin / r; P[3 * i + 2] *= colMin / r; }
+        if (hasColumn && r < colMin && r > 1e-12 && !(inverseMasses&&inverseMasses[i]===0)) { P[3 * i + 1] *= colMin / r; P[3 * i + 2] *= colMin / r; }
       }
-      if(cfg.coupledLengths) {projectChainLengths(P,rest,{iterations:cfg.stretchSweeps});continue;}
+      if(cfg.coupledLengths) {projectLengths(P,cfg.stretchSweeps);continue;}
       for (let repeat = 0; repeat < cfg.stretchSweeps; repeat++) for (let i = 0; i < n - 1; i++) {
         const a = 3 * i, b = a + 3, dx = P[b] - P[a], dy = P[b + 1] - P[a + 1], dz = P[b + 2] - P[a + 2];
-        const len = Math.hypot(dx, dy, dz); if(len<1e-14)throw Error('Collapsed solver segment'); const f = (len - rest[i]) / len / 2;
-        P[a] += f * dx; P[a + 1] += f * dy; P[a + 2] += f * dz;
-        P[b] -= f * dx; P[b + 1] -= f * dy; P[b + 2] -= f * dz;
+        const len = Math.hypot(dx, dy, dz); if(len<1e-14)throw Error('Collapsed solver segment');
+        if(!inverseMasses){
+          const f = (len - rest[i]) / len / 2;
+          P[a] += f * dx; P[a + 1] += f * dy; P[a + 2] += f * dz;
+          P[b] -= f * dx; P[b + 1] -= f * dy; P[b + 2] -= f * dz;
+        }else{
+          const wa=inverseMasses[i],wb=inverseMasses[i+1],sum=wa+wb;if(!(sum>0))continue;
+          const corr=(len-rest[i])/len,fa=corr*wa/sum,fb=corr*wb/sum;
+          P[a]+=fa*dx;P[a+1]+=fa*dy;P[a+2]+=fa*dz;
+          P[b]-=fb*dx;P[b+1]-=fb*dy;P[b+2]-=fb*dz;
+        }
       }
     }
   };
@@ -152,7 +198,7 @@ export function relaxRope(points, options = {}) {
       let alpha=Math.min(1,cfg.maxStep/(maxDisp||1)),accepted=false;
       for(let attempt=0;attempt<24&&!accepted;attempt++){
         const Y=Float64Array.from(X,(v,k)=>v+alpha*(P[k]-v));
-        projectChainLengths(Y,rest,{iterations:24,tolerance:1e-11});
+        projectLengths(Y,24,1e-11);
         let safe=true;
         for(let i=0;i<n&&safe;i++)if(Math.hypot(...[0,1,2].map(k=>Y[3*i+k]-X[3*i+k]))>cfg.maxStep*(1+1e-8))safe=false;
         for(let i=1;i<n-1&&safe;i++)if(bendRadius(Y,i)<Math.min(d/2,bendRadius(X,i))-1e-9)safe=false;

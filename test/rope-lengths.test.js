@@ -19,3 +19,14 @@ test('overhand uses the same tube and relaxation engine without a column',()=>{
  const result=relaxRope(state.points,{columnRadius:null,diameter:state.diameter,iterations:3,coupledLengths:true,stretchSweeps:4,restLengths:state.restLengths,bendSmoothing:0});
  assert.ok(result.maxStretch<1e-8);assert.equal(checkTube(makeTube(result.points,state.diameter/2)).valid,true);
 });
+
+test('straight span with two pins remains finite for compatible and incompatible lengths', () => {
+  for (const end of [.020, .022]) {
+    const points = [0,0,0, .009,0,0, end,0,0];
+    const {maxResidual} = projectChainLengths(points,[.010,.010],{inverseMasses:[0,1,0]});
+    assert.ok(points.every(Number.isFinite));
+    assert.equal(points[0],0);
+    assert.equal(points[6],end);
+    assert.ok(end===.020 ? maxResidual<1e-10 : maxResidual>.001);
+  }
+});

@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-09",
+  "status": "prototype_verified_human_trials_pending",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "fixture": {
+    "points": 122,
+    "diameterM": 0.006,
+    "schemaVersion": 2
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "milliseconds": 1195,
+      "message": "已接受 56 個子步。SHA-256 0aa74c652db4…",
+      "A": 1,
+      "B": 1,
+      "missedPicks": 0,
+      "accepted": 56,
+      "passed": true,
+      "cameraLocked": true,
+      "pointerMs": [
+        15.233458000000041,
+        36.748459000000025,
+        54.52716699999996,
+        34.53754200000003,
+        31.808250000000044,
+        29.86054200000001,
+        30.02004199999999,
+        30.651708999999983,
+        32.85808399999996,
+        16.878625000000056,
+        16.720125000000053,
+        14.601374999999962
+      ],
+      "solver": {
+        "accepted": 56,
+        "blockedSubsteps": 0,
+        "medianMs": 9.200000047683716,
+        "p95Ms": 9.799999952316284
+      },
+      "verify": "重算與紀錄一致。",
+      "playbackCameraRestored": true,
+      "undo": true,
+      "independentAudit": {
+        "file": "reports/rope-edit/session1.json",
+        "verified": true,
+        "fileSha256": "269648dc2a5b233d0f45c8fd1e6b5d3c415cff9b1bbb91ef674efbd8bb25e8c8",
+        "hashesMatch": true,
+        "geometry": {
+          "accepted": 56,
+          "pairIntervals": 372680,
+          "invalidMotions": 0,
+          "maxLengthError": 9.976611550777115e-12,
+          "maxTotalLengthError": 4.576028445058e-11,
+          "pinDrift": 0,
+          "surfaces": [
+            {
+              "valid": true,
+              "selfIntersections": 0,
+              "foldedFaces": 0,
+              "columnPenetrations": 0
+            }
+          ]
+        },
+        "passage": {
+          "initialSide": -0.06804755076433323,
+          "minFinalDepth": 0.011711570521109244,
+          "crossed": 9,
+          "required": 9,
+          "maxCrossingRadius": 0.009776188546461013,
+          "success": true
+        }
+      },
+      "pointerSamples": 12,
+      "method": "Chrome mouse events, using canvas raycast and pointer capture"
+    },
+    {
+      "trial": 2,
+      "milliseconds": 1092,
+      "message": "已接受 56 個子步。SHA-256 69d1131ccb93…",
+      "A": 1,
+      "B": 1,
+      "missedPicks": 0,
+      "accepted": 56,
+      "passed": true,
+      "cameraLocked": true,
+      "pointerMs": [
+        18.603541999999834,
+        37.70562500000051,
+        39.52745800000048,
+        51.133874999999534,
+        31.05316700000003,
+        28.627958000000035,
+        14.490083000000595,
+        14.639500000000226,
+        16.539332999999715,
+        16.571374999999534,
+        16.736832999999933,
+        16.683624999999665,
+        16.640124999999898,
+        16.497833000000355,
+        16.23266699999931,
+        17.129167000000052,
+        16.679833000000144,
+        16.603833000000122,
+        17.01995799999986,
+        16.50825000000077
+      ],
+      "solver": {
+        "accepted": 56,
+        "blockedSubsteps": 0,
+        "medianMs": 9.199999928474426,
+        "p95Ms": 9.800000071525574
+      },
+      "verify": "重算與紀錄一致。",
+      "playbackCameraRestored": true,
+      "undo": true,
+      "independentAudit": {
+        "file": "reports/rope-edit/session2.json",
+        "verified": true,
+        "fileSha256": "e172747a275004a0c816f355f72b0232eb748300b8b489fc9f6d8522e2565c31",
+        "hashesMatch": true,
+        "geometry": {
+          "accepted": 56,
+          "pairIntervals": 372680,
+          "invalidMotions": 0,
+          "maxLengthError": 7.07799227214756e-12,
+          "maxTotalLengthError": 2.7208901798303486e-11,
+          "pinDrift": 0,
+          "surfaces": [
+            {
+              "valid": true,
+              "selfIntersections": 0,
+              "foldedFaces": 0,
+              "columnPenetrations": 0
+            }
+          ]
+        },
+        "passage": {
+          "initialSide": -0.06804755076433323,
+          "minFinalDepth": 0.01171157499269418,
+          "crossed": 9,
+          "required": 9,
+          "maxCrossingRadius": 0.009776165267757906,
+          "success": true
+        }
+      },
+      "pointerSamples": 20,
+      "method": "Chrome mouse events, using canvas raycast and pointer capture"
+    },
+    {
+      "trial": 3,
+      "milliseconds": 1090,
+      "message": "已接受 56 個子步。SHA-256 cfe429bfd82b…",
+      "A": 1,
+      "B": 1,
+      "missedPicks": 0,
+      "accepted": 56,
+      "passed": true,
+      "cameraLocked": true,
+      "pointerMs": [
+        18.23004200000105,
+        37.26008399999955,
+        53.58354199999849,
+        33.11225000000013,
+        30.91820799999914,
+        15.006583000000319,
+        30.183250000000044,
+        16.65729199999987
+      ],
+      "solver": {
+        "accepted": 56,
+        "blockedSubsteps": 0,
+        "medianMs": 9.200000047683716,
+        "p95Ms": 10
+      },
+      "verify": "重算與紀錄一致。",
+      "playbackCameraRestored": true,
+      "undo": true,
+      "independentAudit": {
+        "file": "reports/rope-edit/session3.json",
+        "verified": true,
+        "fileSha256": "36c8b6e9a3faf305bfc4491e8dea0361d046eb83ea7f37150eb52c615c66e695",
+        "hashesMatch": true,
+        "geometry": {
+          "accepted": 56,
+          "pairIntervals": 372680,
+          "invalidMotions": 0,
+          "maxLengthError": 9.983033497085181e-12,
+          "maxTotalLengthError": 4.5795700565065545e-11,
+          "pinDrift": 0,
+          "surfaces": [
+            {
+              "valid": true,
+              "selfIntersections": 0,
+              "foldedFaces": 0,
+              "columnPenetrations": 0
+            }
+          ]
+        },
+        "passage": {
+          "initialSide": -0.06804755076433323,
+          "minFinalDepth": 0.011711570618413714,
+          "crossed": 9,
+          "required": 9,
+          "maxCrossingRadius": 0.009776188678626526,
+          "success": true
+        }
+      },
+      "pointerSamples": 8,
+      "method": "Chrome mouse events, using canvas raycast and pointer capture"
+    }
+  ],
+  "controls": {
+    "orbitMovedCameraOnly": true,
+    "cameraFrozenInB": true,
+    "fixedPickRejected": true,
+    "switchIgnoredDuringDrag": true,
+    "snapDisplay": "21.4 mm · 已吸附 45°",
+    "actualWhileHeld": "14.8 mm",
+    "escapeRestored": true,
+    "pointerCancelRestored": true,
+    "escapeDuringFinishRestored": true,
+    "malformedLoadPreservedSession": true
+  },
+  "production": {
+    "builtPageLoads": true,
+    "importReplayVerifyPass": true,
+    "pageErrors": []
+  },
+  "tests": {
+    "passed": 143,
+    "failed": 0
+  },
+  "build": {
+    "passed": true,
+    "warning": "Existing shared OrbitControls/Three.js chunk exceeds 500 kB"
+  },
+  "humanTrials": {
+    "completed": false,
+    "learningCurveAssessed": false,
+    "reason": "No human participant operated the prototype in this run"
+  },
+  "scope": {
+    "nonlocalExclusion": "Skip adjacent segments and pairs with intervening centreline arc below 24 mm",
+    "ccd": "Every accepted linear substep, all eligible pairs and cylinder in local coordinates",
+    "tube": "Full static check at each completed B step, radius 3 mm, radialSegments 12",
+    "sweptTubeSurfaceCertified": false,
+    "initialFixtureOnly": true,
+    "tidyImplemented": false
+  },
+  "preservedFiles": {
+    "handoff.md": "da28c3afb707ba18b5a985aa909200b98cd1fe568a92c820e90a57022b10de04",
+    "reports/somerville-dressed-overlay.json": "e068d58f9c47ba3abfd8509ee3a395b129cd042aa6ab7cabd44965e9e130b5e1",
+    "scripts/overlay-dressed.js": "43993afcd058e4e0c288a560e8c2dfe9476dc3d7e6031ada374242539749b391"
+  }
+}

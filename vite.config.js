@@ -5,7 +5,7 @@ let resolvedConfig;
 // Runtime fetch URLs are not discovered by Rollup. Ship their source data with
 // both HTML entries, without bundling the large, optional local source videos.
 export default {
-  build: { rollupOptions: { input: ['index.html', 'phase5.html', 'at-70.html', 'somerville.html'] } },
+  build: { rollupOptions: { input: ['index.html', 'phase5.html', 'at-70.html', 'somerville.html', 'rope-edit.html'] } },
   plugins: [{
     name: 'rope-runtime-assets',
     apply: 'build',
