@@ -1,0 +1,11 @@
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {buildOverhand} from '../src/overhand-recipe.js';
+import {makeTube,checkTube} from '../src/rope-tube.js';
+import {relaxRope} from '../src/rope-relax.js';
+import {withPositions,materialResiduals} from '../src/rope-state.js';
+const {recipe,state}=buildOverhand();
+const result=relaxRope(state.points,{diameter:state.diameter,columnRadius:null,restLengths:state.restLengths,coupledLengths:true,iterations:8,stretchSweeps:8,bendSmoothing:0});
+const output=withPositions(state,result.points),tube=checkTube(makeTube(output.points,output.diameter/2));
+const doc={schemaVersion:1,units:'m',coordinateSystem:'right-handed Z-up',ropes:[{id:recipe.id,diameter:output.diameter,points:output.points,segmentLabels:output.labels}],knot:{recipe,column:null,material:{s0:output.s0,referenceId:output.referenceId},acceptance:{status:tube.valid?'GEOMETRY_PASS':'FAIL',sourcePose:'NOT_APPLICABLE',motion:'UNVERIFIED'},report:{tube,material:materialResiduals(output),engine:'rope-relax + rope-tube',scope:'Analytic overhand migration fixture; no photographed pose or motion certificate'}}};
+mkdirSync('data/rope-examples',{recursive:true});writeFileSync('data/rope-examples/overhand.json',JSON.stringify(doc)+'\n');
+console.log(JSON.stringify({tube:doc.knot.report.tube,material:doc.knot.report.material}));

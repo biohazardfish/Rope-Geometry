@@ -1,0 +1,992 @@
+[
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-001.jpg",
+    "nominalTimeSeconds": 118.0,
+    "selectedFrameTimeSeconds": 118.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-002.jpg",
+    "nominalTimeSeconds": 118.25,
+    "selectedFrameTimeSeconds": 118.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-003.jpg",
+    "nominalTimeSeconds": 118.5,
+    "selectedFrameTimeSeconds": 118.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-004.jpg",
+    "nominalTimeSeconds": 118.75,
+    "selectedFrameTimeSeconds": 118.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-005.jpg",
+    "nominalTimeSeconds": 119.0,
+    "selectedFrameTimeSeconds": 119.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-006.jpg",
+    "nominalTimeSeconds": 119.25,
+    "selectedFrameTimeSeconds": 119.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-007.jpg",
+    "nominalTimeSeconds": 119.5,
+    "selectedFrameTimeSeconds": 119.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-008.jpg",
+    "nominalTimeSeconds": 119.75,
+    "selectedFrameTimeSeconds": 119.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-009.jpg",
+    "nominalTimeSeconds": 120.0,
+    "selectedFrameTimeSeconds": 120.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-010.jpg",
+    "nominalTimeSeconds": 120.25,
+    "selectedFrameTimeSeconds": 120.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-011.jpg",
+    "nominalTimeSeconds": 120.5,
+    "selectedFrameTimeSeconds": 120.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-012.jpg",
+    "nominalTimeSeconds": 120.75,
+    "selectedFrameTimeSeconds": 120.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-013.jpg",
+    "nominalTimeSeconds": 121.0,
+    "selectedFrameTimeSeconds": 121.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-014.jpg",
+    "nominalTimeSeconds": 121.25,
+    "selectedFrameTimeSeconds": 121.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-015.jpg",
+    "nominalTimeSeconds": 121.5,
+    "selectedFrameTimeSeconds": 121.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-016.jpg",
+    "nominalTimeSeconds": 121.75,
+    "selectedFrameTimeSeconds": 121.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-017.jpg",
+    "nominalTimeSeconds": 122.0,
+    "selectedFrameTimeSeconds": 122.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-018.jpg",
+    "nominalTimeSeconds": 122.25,
+    "selectedFrameTimeSeconds": 122.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-019.jpg",
+    "nominalTimeSeconds": 122.5,
+    "selectedFrameTimeSeconds": 122.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-020.jpg",
+    "nominalTimeSeconds": 122.75,
+    "selectedFrameTimeSeconds": 122.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-021.jpg",
+    "nominalTimeSeconds": 123.0,
+    "selectedFrameTimeSeconds": 123.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-022.jpg",
+    "nominalTimeSeconds": 123.25,
+    "selectedFrameTimeSeconds": 123.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-023.jpg",
+    "nominalTimeSeconds": 123.5,
+    "selectedFrameTimeSeconds": 123.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-024.jpg",
+    "nominalTimeSeconds": 123.75,
+    "selectedFrameTimeSeconds": 123.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-025.jpg",
+    "nominalTimeSeconds": 124.0,
+    "selectedFrameTimeSeconds": 124.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-026.jpg",
+    "nominalTimeSeconds": 124.25,
+    "selectedFrameTimeSeconds": 124.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-027.jpg",
+    "nominalTimeSeconds": 124.5,
+    "selectedFrameTimeSeconds": 124.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-028.jpg",
+    "nominalTimeSeconds": 124.75,
+    "selectedFrameTimeSeconds": 124.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-029.jpg",
+    "nominalTimeSeconds": 125.0,
+    "selectedFrameTimeSeconds": 125.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-030.jpg",
+    "nominalTimeSeconds": 125.25,
+    "selectedFrameTimeSeconds": 125.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-031.jpg",
+    "nominalTimeSeconds": 125.5,
+    "selectedFrameTimeSeconds": 125.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-032.jpg",
+    "nominalTimeSeconds": 125.75,
+    "selectedFrameTimeSeconds": 125.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-033.jpg",
+    "nominalTimeSeconds": 126.0,
+    "selectedFrameTimeSeconds": 126.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-034.jpg",
+    "nominalTimeSeconds": 126.25,
+    "selectedFrameTimeSeconds": 126.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-035.jpg",
+    "nominalTimeSeconds": 126.5,
+    "selectedFrameTimeSeconds": 126.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-036.jpg",
+    "nominalTimeSeconds": 126.75,
+    "selectedFrameTimeSeconds": 126.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-037.jpg",
+    "nominalTimeSeconds": 127.0,
+    "selectedFrameTimeSeconds": 127.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-038.jpg",
+    "nominalTimeSeconds": 127.25,
+    "selectedFrameTimeSeconds": 127.26666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-039.jpg",
+    "nominalTimeSeconds": 127.5,
+    "selectedFrameTimeSeconds": 127.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-040.jpg",
+    "nominalTimeSeconds": 127.75,
+    "selectedFrameTimeSeconds": 127.76666666666667,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-041.jpg",
+    "nominalTimeSeconds": 128.0,
+    "selectedFrameTimeSeconds": 128.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-042.jpg",
+    "nominalTimeSeconds": 128.25,
+    "selectedFrameTimeSeconds": 128.26666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-043.jpg",
+    "nominalTimeSeconds": 128.5,
+    "selectedFrameTimeSeconds": 128.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-044.jpg",
+    "nominalTimeSeconds": 128.75,
+    "selectedFrameTimeSeconds": 128.76666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-045.jpg",
+    "nominalTimeSeconds": 129.0,
+    "selectedFrameTimeSeconds": 129.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-046.jpg",
+    "nominalTimeSeconds": 129.25,
+    "selectedFrameTimeSeconds": 129.26666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-047.jpg",
+    "nominalTimeSeconds": 129.5,
+    "selectedFrameTimeSeconds": 129.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-048.jpg",
+    "nominalTimeSeconds": 129.75,
+    "selectedFrameTimeSeconds": 129.76666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-049.jpg",
+    "nominalTimeSeconds": 130.0,
+    "selectedFrameTimeSeconds": 130.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-050.jpg",
+    "nominalTimeSeconds": 130.25,
+    "selectedFrameTimeSeconds": 130.26666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-051.jpg",
+    "nominalTimeSeconds": 130.5,
+    "selectedFrameTimeSeconds": 130.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-052.jpg",
+    "nominalTimeSeconds": 130.75,
+    "selectedFrameTimeSeconds": 130.76666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-053.jpg",
+    "nominalTimeSeconds": 131.0,
+    "selectedFrameTimeSeconds": 131.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-054.jpg",
+    "nominalTimeSeconds": 131.25,
+    "selectedFrameTimeSeconds": 131.26666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-055.jpg",
+    "nominalTimeSeconds": 131.5,
+    "selectedFrameTimeSeconds": 131.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-056.jpg",
+    "nominalTimeSeconds": 131.75,
+    "selectedFrameTimeSeconds": 131.76666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-057.jpg",
+    "nominalTimeSeconds": 132.0,
+    "selectedFrameTimeSeconds": 132.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-058.jpg",
+    "nominalTimeSeconds": 132.25,
+    "selectedFrameTimeSeconds": 132.26666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-059.jpg",
+    "nominalTimeSeconds": 132.5,
+    "selectedFrameTimeSeconds": 132.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-060.jpg",
+    "nominalTimeSeconds": 132.75,
+    "selectedFrameTimeSeconds": 132.76666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-061.jpg",
+    "nominalTimeSeconds": 133.0,
+    "selectedFrameTimeSeconds": 133.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-062.jpg",
+    "nominalTimeSeconds": 133.25,
+    "selectedFrameTimeSeconds": 133.26666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-063.jpg",
+    "nominalTimeSeconds": 133.5,
+    "selectedFrameTimeSeconds": 133.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-064.jpg",
+    "nominalTimeSeconds": 133.75,
+    "selectedFrameTimeSeconds": 133.76666666666668,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-065.jpg",
+    "nominalTimeSeconds": 134.0,
+    "selectedFrameTimeSeconds": 134.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-066.jpg",
+    "nominalTimeSeconds": 134.25,
+    "selectedFrameTimeSeconds": 134.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-067.jpg",
+    "nominalTimeSeconds": 134.5,
+    "selectedFrameTimeSeconds": 134.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-068.jpg",
+    "nominalTimeSeconds": 134.75,
+    "selectedFrameTimeSeconds": 134.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-069.jpg",
+    "nominalTimeSeconds": 135.0,
+    "selectedFrameTimeSeconds": 135.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-070.jpg",
+    "nominalTimeSeconds": 135.25,
+    "selectedFrameTimeSeconds": 135.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-071.jpg",
+    "nominalTimeSeconds": 135.5,
+    "selectedFrameTimeSeconds": 135.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-072.jpg",
+    "nominalTimeSeconds": 135.75,
+    "selectedFrameTimeSeconds": 135.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-073.jpg",
+    "nominalTimeSeconds": 136.0,
+    "selectedFrameTimeSeconds": 136.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-074.jpg",
+    "nominalTimeSeconds": 136.25,
+    "selectedFrameTimeSeconds": 136.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-075.jpg",
+    "nominalTimeSeconds": 136.5,
+    "selectedFrameTimeSeconds": 136.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-076.jpg",
+    "nominalTimeSeconds": 136.75,
+    "selectedFrameTimeSeconds": 136.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-077.jpg",
+    "nominalTimeSeconds": 137.0,
+    "selectedFrameTimeSeconds": 137.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-078.jpg",
+    "nominalTimeSeconds": 137.25,
+    "selectedFrameTimeSeconds": 137.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-079.jpg",
+    "nominalTimeSeconds": 137.5,
+    "selectedFrameTimeSeconds": 137.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-080.jpg",
+    "nominalTimeSeconds": 137.75,
+    "selectedFrameTimeSeconds": 137.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-081.jpg",
+    "nominalTimeSeconds": 138.0,
+    "selectedFrameTimeSeconds": 138.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-082.jpg",
+    "nominalTimeSeconds": 138.25,
+    "selectedFrameTimeSeconds": 138.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-083.jpg",
+    "nominalTimeSeconds": 138.5,
+    "selectedFrameTimeSeconds": 138.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-084.jpg",
+    "nominalTimeSeconds": 138.75,
+    "selectedFrameTimeSeconds": 138.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-085.jpg",
+    "nominalTimeSeconds": 139.0,
+    "selectedFrameTimeSeconds": 139.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-086.jpg",
+    "nominalTimeSeconds": 139.25,
+    "selectedFrameTimeSeconds": 139.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-087.jpg",
+    "nominalTimeSeconds": 139.5,
+    "selectedFrameTimeSeconds": 139.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-088.jpg",
+    "nominalTimeSeconds": 139.75,
+    "selectedFrameTimeSeconds": 139.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-089.jpg",
+    "nominalTimeSeconds": 140.0,
+    "selectedFrameTimeSeconds": 140.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-090.jpg",
+    "nominalTimeSeconds": 140.25,
+    "selectedFrameTimeSeconds": 140.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-091.jpg",
+    "nominalTimeSeconds": 140.5,
+    "selectedFrameTimeSeconds": 140.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-092.jpg",
+    "nominalTimeSeconds": 140.75,
+    "selectedFrameTimeSeconds": 140.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-093.jpg",
+    "nominalTimeSeconds": 141.0,
+    "selectedFrameTimeSeconds": 141.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-094.jpg",
+    "nominalTimeSeconds": 141.25,
+    "selectedFrameTimeSeconds": 141.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-095.jpg",
+    "nominalTimeSeconds": 141.5,
+    "selectedFrameTimeSeconds": 141.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-096.jpg",
+    "nominalTimeSeconds": 141.75,
+    "selectedFrameTimeSeconds": 141.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-097.jpg",
+    "nominalTimeSeconds": 142.0,
+    "selectedFrameTimeSeconds": 142.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-098.jpg",
+    "nominalTimeSeconds": 142.25,
+    "selectedFrameTimeSeconds": 142.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-099.jpg",
+    "nominalTimeSeconds": 142.5,
+    "selectedFrameTimeSeconds": 142.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-100.jpg",
+    "nominalTimeSeconds": 142.75,
+    "selectedFrameTimeSeconds": 142.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-101.jpg",
+    "nominalTimeSeconds": 143.0,
+    "selectedFrameTimeSeconds": 143.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-102.jpg",
+    "nominalTimeSeconds": 143.25,
+    "selectedFrameTimeSeconds": 143.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-103.jpg",
+    "nominalTimeSeconds": 143.5,
+    "selectedFrameTimeSeconds": 143.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-104.jpg",
+    "nominalTimeSeconds": 143.75,
+    "selectedFrameTimeSeconds": 143.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-105.jpg",
+    "nominalTimeSeconds": 144.0,
+    "selectedFrameTimeSeconds": 144.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-106.jpg",
+    "nominalTimeSeconds": 144.25,
+    "selectedFrameTimeSeconds": 144.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-107.jpg",
+    "nominalTimeSeconds": 144.5,
+    "selectedFrameTimeSeconds": 144.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-108.jpg",
+    "nominalTimeSeconds": 144.75,
+    "selectedFrameTimeSeconds": 144.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-109.jpg",
+    "nominalTimeSeconds": 145.0,
+    "selectedFrameTimeSeconds": 145.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-110.jpg",
+    "nominalTimeSeconds": 145.25,
+    "selectedFrameTimeSeconds": 145.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-111.jpg",
+    "nominalTimeSeconds": 145.5,
+    "selectedFrameTimeSeconds": 145.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-112.jpg",
+    "nominalTimeSeconds": 145.75,
+    "selectedFrameTimeSeconds": 145.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-113.jpg",
+    "nominalTimeSeconds": 146.0,
+    "selectedFrameTimeSeconds": 146.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-114.jpg",
+    "nominalTimeSeconds": 146.25,
+    "selectedFrameTimeSeconds": 146.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-115.jpg",
+    "nominalTimeSeconds": 146.5,
+    "selectedFrameTimeSeconds": 146.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-116.jpg",
+    "nominalTimeSeconds": 146.75,
+    "selectedFrameTimeSeconds": 146.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-117.jpg",
+    "nominalTimeSeconds": 147.0,
+    "selectedFrameTimeSeconds": 147.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-118.jpg",
+    "nominalTimeSeconds": 147.25,
+    "selectedFrameTimeSeconds": 147.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-119.jpg",
+    "nominalTimeSeconds": 147.5,
+    "selectedFrameTimeSeconds": 147.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-120.jpg",
+    "nominalTimeSeconds": 147.75,
+    "selectedFrameTimeSeconds": 147.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-121.jpg",
+    "nominalTimeSeconds": 148.0,
+    "selectedFrameTimeSeconds": 148.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-122.jpg",
+    "nominalTimeSeconds": 148.25,
+    "selectedFrameTimeSeconds": 148.26666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-123.jpg",
+    "nominalTimeSeconds": 148.5,
+    "selectedFrameTimeSeconds": 148.5,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-124.jpg",
+    "nominalTimeSeconds": 148.75,
+    "selectedFrameTimeSeconds": 148.76666666666665,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-duchy/frame-125.jpg",
+    "nominalTimeSeconds": 149.0,
+    "selectedFrameTimeSeconds": 149.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-001.jpg",
+    "nominalTimeSeconds": 160.0,
+    "selectedFrameTimeSeconds": 160.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-002.jpg",
+    "nominalTimeSeconds": 161.0,
+    "selectedFrameTimeSeconds": 161.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-003.jpg",
+    "nominalTimeSeconds": 162.0,
+    "selectedFrameTimeSeconds": 162.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-004.jpg",
+    "nominalTimeSeconds": 163.0,
+    "selectedFrameTimeSeconds": 163.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-005.jpg",
+    "nominalTimeSeconds": 164.0,
+    "selectedFrameTimeSeconds": 164.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-006.jpg",
+    "nominalTimeSeconds": 165.0,
+    "selectedFrameTimeSeconds": 165.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-007.jpg",
+    "nominalTimeSeconds": 166.0,
+    "selectedFrameTimeSeconds": 166.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-008.jpg",
+    "nominalTimeSeconds": 167.0,
+    "selectedFrameTimeSeconds": 167.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-009.jpg",
+    "nominalTimeSeconds": 168.0,
+    "selectedFrameTimeSeconds": 168.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-010.jpg",
+    "nominalTimeSeconds": 169.0,
+    "selectedFrameTimeSeconds": 169.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-011.jpg",
+    "nominalTimeSeconds": 170.0,
+    "selectedFrameTimeSeconds": 170.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-012.jpg",
+    "nominalTimeSeconds": 171.0,
+    "selectedFrameTimeSeconds": 171.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-013.jpg",
+    "nominalTimeSeconds": 172.0,
+    "selectedFrameTimeSeconds": 172.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-014.jpg",
+    "nominalTimeSeconds": 173.0,
+    "selectedFrameTimeSeconds": 173.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-015.jpg",
+    "nominalTimeSeconds": 174.0,
+    "selectedFrameTimeSeconds": 174.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-016.jpg",
+    "nominalTimeSeconds": 175.0,
+    "selectedFrameTimeSeconds": 175.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-017.jpg",
+    "nominalTimeSeconds": 176.0,
+    "selectedFrameTimeSeconds": 176.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-018.jpg",
+    "nominalTimeSeconds": 177.0,
+    "selectedFrameTimeSeconds": 177.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-019.jpg",
+    "nominalTimeSeconds": 178.0,
+    "selectedFrameTimeSeconds": 178.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-020.jpg",
+    "nominalTimeSeconds": 179.0,
+    "selectedFrameTimeSeconds": 179.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-021.jpg",
+    "nominalTimeSeconds": 180.0,
+    "selectedFrameTimeSeconds": 180.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-022.jpg",
+    "nominalTimeSeconds": 181.0,
+    "selectedFrameTimeSeconds": 181.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-023.jpg",
+    "nominalTimeSeconds": 182.0,
+    "selectedFrameTimeSeconds": 182.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-024.jpg",
+    "nominalTimeSeconds": 183.0,
+    "selectedFrameTimeSeconds": 183.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-025.jpg",
+    "nominalTimeSeconds": 184.0,
+    "selectedFrameTimeSeconds": 184.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-026.jpg",
+    "nominalTimeSeconds": 185.0,
+    "selectedFrameTimeSeconds": 185.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-027.jpg",
+    "nominalTimeSeconds": 186.0,
+    "selectedFrameTimeSeconds": 186.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-028.jpg",
+    "nominalTimeSeconds": 187.0,
+    "selectedFrameTimeSeconds": 187.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-029.jpg",
+    "nominalTimeSeconds": 188.0,
+    "selectedFrameTimeSeconds": 188.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-030.jpg",
+    "nominalTimeSeconds": 189.0,
+    "selectedFrameTimeSeconds": 189.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-031.jpg",
+    "nominalTimeSeconds": 190.0,
+    "selectedFrameTimeSeconds": 190.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-032.jpg",
+    "nominalTimeSeconds": 191.0,
+    "selectedFrameTimeSeconds": 191.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-033.jpg",
+    "nominalTimeSeconds": 192.0,
+    "selectedFrameTimeSeconds": 192.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-034.jpg",
+    "nominalTimeSeconds": 193.0,
+    "selectedFrameTimeSeconds": 193.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-035.jpg",
+    "nominalTimeSeconds": 194.0,
+    "selectedFrameTimeSeconds": 194.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-036.jpg",
+    "nominalTimeSeconds": 195.0,
+    "selectedFrameTimeSeconds": 195.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-037.jpg",
+    "nominalTimeSeconds": 196.0,
+    "selectedFrameTimeSeconds": 196.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-038.jpg",
+    "nominalTimeSeconds": 197.0,
+    "selectedFrameTimeSeconds": 197.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-039.jpg",
+    "nominalTimeSeconds": 198.0,
+    "selectedFrameTimeSeconds": 198.0,
+    "sourceFrameRate": 30
+  },
+  {
+    "path": "work/somerville/frames/dressed-topologist/frame-040.jpg",
+    "nominalTimeSeconds": 199.0,
+    "selectedFrameTimeSeconds": 199.0,
+    "sourceFrameRate": 30
+  }
+]

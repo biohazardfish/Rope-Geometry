@@ -1,0 +1,18 @@
+{
+  "points": 3770,
+  "minimumNonlocalGap": 0.0022541712834960297,
+  "minimumColumnGap": 0.004065506473627716,
+  "penetratingPairs": 0,
+  "closest": {
+    "i": 1754,
+    "j": 3619,
+    "roles": [
+      "return-passage/0",
+      "loop-rim/1"
+    ],
+    "gap": 0.0022541712834960297
+  },
+  "groups": {},
+  "hits": [],
+  "limitation": "Seed diagnostic only: excludes local material neighborhoods; actual tube validation still required"
+}

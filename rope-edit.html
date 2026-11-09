@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>繩編輯</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #141516;
+  --panel: #17181a;
+  --line: #2c3034;
+  --text: #d7d9dc;
+  --muted: #8e949c;
+  --accent: #d7b56d;
+  font-family: system-ui, "PingFang TC", "Noto Sans TC", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+* { box-sizing: border-box; }
+body { margin: 0; height: 100dvh; display: grid; grid-template-rows: 42px minmax(0, 1fr); overflow: hidden; }
+button, label.file {
+  font: inherit; color: inherit; cursor: pointer;
+  background: transparent; border: 1px solid var(--line); border-radius: 2px;
+  padding: 5px 8px; line-height: 1.2;
+}
+button:hover, label.file:hover { border-color: #8d8476; color: #fff; }
+button:focus-visible, label.file:focus-within { outline: 1px solid var(--accent); outline-offset: 1px; }
+button:disabled, label.file:has(input:disabled) { opacity: .4; cursor: default; }
+header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 0 14px; border-bottom: 1px solid var(--line); min-width: 0;
+}
+header strong { font-size: 14px; font-weight: 620; letter-spacing: .04em; }
+#coord-readout { color: var(--muted); font-size: 12px; white-space: nowrap; }
+#step-status {
+  margin: 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  color: var(--text); font-size: 13px;
+}
+#step-status.warn { color: #e0c48a; }
+#step-status.error { color: #e7a090; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 272px; min-height: 0; }
+.viewer { position: relative; min-width: 0; background: #1b1d20; }
+#stage { position: absolute; inset: 0; }
+#stage canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.chip, .legend {
+  position: absolute; margin: 0; pointer-events: none;
+  color: #c5c8cc; font-size: 12px; text-shadow: 0 1px 2px #000;
+}
+.chip { top: 12px; left: 14px; letter-spacing: .08em; }
+.legend { left: 112px; right: 16px; bottom: 14px; color: #aeb3b8; }
+aside {
+  overflow: auto; border-left: 1px solid var(--line); background: var(--panel);
+  padding: 14px 14px 22px;
+}
+h2 { margin: 16px 0 6px; font-size: 11px; font-weight: 620; letter-spacing: .12em; color: var(--muted); }
+aside h2:first-child { margin-top: 0; }
+p, dd { margin: 0; font-size: 13px; line-height: 1.45; color: #c8ccd1; }
+.note { color: var(--muted); font-size: 12px; }
+dl { display: grid; grid-template-columns: 3.2em 1fr; gap: 3px 8px; margin: 0; }
+dt { color: var(--muted); font-size: 12px; }
+dd { font-variant-numeric: tabular-nums; }
+#timeline {
+  margin: 0; min-height: 4.8em; white-space: pre-wrap;
+  font: 12px/1.45 ui-monospace, "SFMono-Regular", Menlo, monospace; color: #b7bcc2;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+#aperture-status { margin-top: 8px; color: var(--muted); font-size: 12px; }
+input[type="file"] { display: none; }
+@media (max-width: 860px) {
+  body { height: auto; overflow: auto; }
+  main { grid-template-columns: 1fr; grid-template-rows: min(68dvh, 560px) auto; }
+  aside { border-left: 0; border-top: 1px solid var(--line); }
+  .legend { left: 14px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div><strong>繩編輯</strong> <span id="coord-readout">Z 向上</span></div>
+  <p id="step-status" role="status">準備場景。</p>
+</header>
+<main>
+  <div class="viewer">
+    <div id="stage" role="region" aria-label="竹與繩的工作區" title="左鍵拖繩，空白處不動作。只有按住中鍵會旋轉。Alt 或 Option 加中鍵平移，加右鍵推拉。滾輪推拉。F 框選。拖繩時視角固定，放開、Esc 或失去捕捉後恢復。Shift 讓拖曳吸附 45°。"></div>
+    <p class="chip" id="up-chip">Z 向上</p>
+    <p class="legend">左鍵拖繩 · 中鍵旋轉 · Alt+中鍵平移 · Alt+右鍵推拉 · 滾輪推拉 · F 框選</p>
+  </div>
+  <aside>
+    <h2>座標</h2>
+    <p class="note" id="frame-note">Z 向上。竹子沿 Y 橫放。紅 X、綠 Y、藍 Z。</p>
+    <h2>選取</h2>
+    <dl>
+      <dt>指向</dt><dd id="hover-readout">沒有</dd>
+      <dt>選取</dt><dd id="selection-readout">沒有</dd>
+      <dt>材料</dt><dd id="material-readout">—</dd>
+    </dl>
+    <h2>這一步</h2>
+    <dl>
+      <dt>請求</dt><dd id="request-readout">0.0 mm</dd>
+      <dt>實際</dt><dd id="actual-readout">0.0 mm</dd>
+    </dl>
+    <p id="aperture-status" hidden></p>
+    <h2>時間線</h2>
+    <pre id="timeline" aria-live="polite">尚無步驟</pre>
+    <h2>操作</h2>
+    <div class="actions">
+      <button id="undo" type="button" title="復原上一步（Ctrl 或 ⌘ Z）">復原</button>
+      <button id="play" type="button" title="播放已接受的步驟">播放</button>
+      <button id="verify" type="button" title="依請求路徑重算並核對">驗證</button>
+      <button id="frame-view" type="button" title="把竹與繩放進畫面（F）">框選</button>
+      <button id="reset" type="button" title="回到初始形狀與視角，並清除時間線">重設</button>
+      <button id="export" type="button" title="匯出工作階段">匯出</button>
+      <label class="file" title="載入工作階段。參考不合或檔案損壞時，目前的繩保持不變">載入<input id="import" type="file" accept="application/json,.json"></label>
+    </div>
+  </aside>
+</main>
+<script type="module" src="/src/rope-editor.js"></script>
+</body>
+</html>

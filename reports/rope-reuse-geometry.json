@@ -1,0 +1,506 @@
+[
+  {
+    "name": "loose-6mm",
+    "points": 3500,
+    "radialSegments": 12,
+    "valid": true,
+    "status": "TUBE_GEOMETRY_PASS",
+    "selfIntersections": 0,
+    "intersectionPairs": [],
+    "foldedFaces": 0,
+    "columnPenetrations": 0,
+    "minimumColumnGap": 0.0007018879257414019,
+    "testedPairs": 535999,
+    "triangles": 84000,
+    "epsilon": 0.000001,
+    "topologyVerified": false
+  },
+  {
+    "name": "loose-6mm-refined",
+    "points": 6999,
+    "radialSegments": 24,
+    "valid": true,
+    "status": "TUBE_GEOMETRY_PASS",
+    "selfIntersections": 0,
+    "intersectionPairs": [],
+    "foldedFaces": 0,
+    "columnPenetrations": 0,
+    "minimumColumnGap": 0.0006223147575453933,
+    "testedPairs": 2135210,
+    "triangles": 335952,
+    "epsilon": 0.000001,
+    "topologyVerified": false
+  },
+  {
+    "name": "10mm-same-layout-parameters",
+    "valid": false,
+    "status": "TUBE_GEOMETRY_FAIL",
+    "selfIntersections": 40,
+    "intersectionPairs": [
+      [
+        78325,
+        6903
+      ],
+      [
+        78325,
+        6904
+      ],
+      [
+        6903,
+        78326
+      ],
+      [
+        6904,
+        78326
+      ],
+      [
+        79046,
+        6183
+      ],
+      [
+        79046,
+        6184
+      ],
+      [
+        79045,
+        6183
+      ],
+      [
+        79045,
+        6184
+      ],
+      [
+        79216,
+        6013
+      ],
+      [
+        79216,
+        6014
+      ],
+      [
+        79215,
+        6013
+      ],
+      [
+        79215,
+        6014
+      ],
+      [
+        77871,
+        7357
+      ],
+      [
+        77871,
+        7358
+      ],
+      [
+        7357,
+        77872
+      ],
+      [
+        7358,
+        77872
+      ],
+      [
+        46654,
+        38576
+      ],
+      [
+        46654,
+        38575
+      ],
+      [
+        38576,
+        46653
+      ],
+      [
+        38575,
+        46653
+      ],
+      [
+        45519,
+        39709
+      ],
+      [
+        45519,
+        39710
+      ],
+      [
+        39709,
+        45520
+      ],
+      [
+        45833,
+        39395
+      ],
+      [
+        45833,
+        39396
+      ],
+      [
+        46244,
+        38985
+      ],
+      [
+        46244,
+        38986
+      ],
+      [
+        39395,
+        45834
+      ],
+      [
+        46243,
+        38985
+      ],
+      [
+        46243,
+        38986
+      ],
+      [
+        39710,
+        45520
+      ],
+      [
+        39396,
+        45834
+      ],
+      [
+        48677,
+        36528
+      ],
+      [
+        48677,
+        36551
+      ],
+      [
+        48678,
+        36528
+      ],
+      [
+        48678,
+        36551
+      ],
+      [
+        48123,
+        37081
+      ],
+      [
+        48123,
+        37082
+      ],
+      [
+        37081,
+        48124
+      ],
+      [
+        37082,
+        48124
+      ]
+    ],
+    "foldedFaces": 2,
+    "columnPenetrations": 118,
+    "minimumColumnGap": -0.001370250150463749,
+    "testedPairs": 584399,
+    "triangles": 85248,
+    "epsilon": 0.000001,
+    "topologyVerified": false,
+    "centerline": {
+      "minimumNonlocalGap": -0.0000173830485594665,
+      "minimumColumnGap": -0.0013791886195511074,
+      "penetratingPairs": 553,
+      "closest": {
+        "i": 1135,
+        "j": 2414,
+        "roles": [
+          "cuff-to-first/0",
+          "cuff-to-first/1"
+        ],
+        "gap": -0.0000173830485594665
+      },
+      "groups": {
+        "loop-to-cuff/0 | loop-to-cuff/1": 76,
+        "cuff-to-first/0 | cuff-to-first/1": 322,
+        "first-passage/0 | first-passage/1": 20,
+        "under-cuff/0 | under-cuff/1": 2,
+        "return-approach/0 | return-approach/1": 102,
+        "return-approach/0 | under-cuff/1": 3,
+        "return-passage/0 | return-passage/1": 28
+      },
+      "hits": [
+        {
+          "i": 240,
+          "j": 3310,
+          "gap": -0.0000015901800311662884,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 241,
+          "j": 3309,
+          "gap": -0.000002373191353873677,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 242,
+          "j": 3308,
+          "gap": -0.000003196419993583763,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 243,
+          "j": 3307,
+          "gap": -0.000004028840758707117,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 244,
+          "j": 3306,
+          "gap": -0.000004844641874512251,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 245,
+          "j": 3305,
+          "gap": -0.000005619205994993742,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 246,
+          "j": 3304,
+          "gap": -0.000006328411468477235,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 247,
+          "j": 3303,
+          "gap": -0.000006949108841877369,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 248,
+          "j": 3301,
+          "gap": -0.0000010165864029049176,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 248,
+          "j": 3302,
+          "gap": -0.000007459921373444145,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 249,
+          "j": 3300,
+          "gap": -0.0000010798867125343115,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 249,
+          "j": 3301,
+          "gap": -0.000007842257563938151,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 250,
+          "j": 3299,
+          "gap": -0.0000011227211673126014,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 250,
+          "j": 3300,
+          "gap": -0.000008081481108784816,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 250,
+          "j": 3301,
+          "gap": -0.000001060670797945612,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 251,
+          "j": 3298,
+          "gap": -0.0000011403737495679217,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 251,
+          "j": 3299,
+          "gap": -0.000008167950291293469,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 251,
+          "j": 3300,
+          "gap": -0.0000011044116147249788,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 252,
+          "j": 3297,
+          "gap": -0.000001130740855264517,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 252,
+          "j": 3298,
+          "gap": -0.00000809755168812952,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 252,
+          "j": 3299,
+          "gap": -0.0000011231685522906237,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 253,
+          "j": 3296,
+          "gap": -0.0000010935813170003666,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 253,
+          "j": 3297,
+          "gap": -0.000007871577906921542,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 253,
+          "j": 3298,
+          "gap": -0.0000011146051197841178,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 254,
+          "j": 3295,
+          "gap": -0.0000010293630322063402,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 254,
+          "j": 3296,
+          "gap": -0.00000749615810281129,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 254,
+          "j": 3297,
+          "gap": -0.0000010784448976185884,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 255,
+          "j": 3295,
+          "gap": -0.000006981667015262122,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 255,
+          "j": 3296,
+          "gap": -0.000001015408898798545,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        },
+        {
+          "i": 256,
+          "j": 3294,
+          "gap": -0.000006342510186642392,
+          "roles": [
+            "loop-to-cuff/0",
+            "loop-to-cuff/1"
+          ]
+        }
+      ],
+      "limitation": "Seed diagnostic only: excludes local material neighborhoods; actual tube validation still required"
+    },
+    "meaning": "Parameter sensitivity only, not a second accepted pose. Width/spacing were not increased to fit larger rope."
+  }
+]
