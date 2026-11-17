@@ -1,0 +1,87 @@
+✔ malformed scale calibration is rejected and a missing record stays uncalibrated (0.995875ms)
+✖ oversized model is clamped, translation is recomputed, and the fit is not a success (0.624834ms)
+✔ in-range calibration keeps the unconstrained camera and passes the independent scale check (0.323375ms)
+✔ pose148 calibration is admissible and its unverified contacts are not explicit crossings (1.004375ms)
+✔ reviewed crossings use projected segments, depth, and one rope diameter (0.374625ms)
+✔ equivalent straight path subdivisions yield the same projected length (1.17675ms)
+✔ core box and correspondence spans do not hide extra rope; column, rope, and hand masks can (132.632834ms)
+✖ static reconstruction, motion, and construction stay separate (0.919917ms)
+✖ dressed evaluator keeps an independent candidate report and does not treat it as a finished knot (17.84875ms)
+✔ a reviewed crossing survives subdivision through the crossing itself (0.864084ms)
+✔ extra visible length cannot disappear by densely sampling a slanted straight rope (1.596208ms)
+✔ self-consistent short material coordinates do not satisfy the fixed Somerville total (5.461041ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 9
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.310708
+
+✖ failing tests:
+
+test at test/somerville-dressed-acceptance.test.js:80:1
+✖ oversized model is clamped, translation is recomputed, and the fit is not a success (0.624834ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'PASS' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file:///Users/taichengwong/Projects/RopeGeometry/test/somerville-dressed-acceptance.test.js:84:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/somerville-dressed-acceptance.test.js:274:1
+✖ static reconstruction, motion, and construction stay separate (0.919917ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'FAIL' !== 'PASS'
+  
+      at TestContext.<anonymous> (file:///Users/taichengwong/Projects/RopeGeometry/test/somerville-dressed-acceptance.test.js:294:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/somerville-dressed-acceptance.test.js:321:1
+✖ dressed evaluator keeps an independent candidate report and does not treat it as a finished knot (17.84875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'none'
+  - 'previous-report'
+  
+      at TestContext.<anonymous> (file:///Users/taichengwong/Projects/RopeGeometry/test/somerville-dressed-acceptance.test.js:403:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'none',
+    expected: 'previous-report',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

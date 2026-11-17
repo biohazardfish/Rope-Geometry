@@ -1,0 +1,4107 @@
+{
+  "preset": "dressedTight",
+  "spinePoints": 1059,
+  "ropePoints": 2434,
+  "edgeGuardRadius": 0.012,
+  "spread": 0.0085,
+  "filletCount": 8,
+  "fillets": [
+    {
+      "role": "tail",
+      "radius": 0.012,
+      "spine": [
+        43,
+        52
+      ]
+    },
+    {
+      "role": "over-root",
+      "radius": 0.018000000000000002,
+      "spine": [
+        658,
+        672
+      ]
+    },
+    {
+      "role": "over-root",
+      "radius": 0.018000000000000002,
+      "spine": [
+        679,
+        693
+      ]
+    },
+    {
+      "role": "over-root",
+      "radius": 0.018000000000000002,
+      "spine": [
+        699,
+        713
+      ]
+    },
+    {
+      "role": "under-approach",
+      "radius": 0.012,
+      "spine": [
+        753,
+        762
+      ]
+    },
+    {
+      "role": "under-approach",
+      "radius": 0.012,
+      "spine": [
+        817,
+        826
+      ]
+    },
+    {
+      "role": "return-approach",
+      "radius": 0.012,
+      "spine": [
+        881,
+        890
+      ]
+    },
+    {
+      "role": "return-approach",
+      "radius": 0.012,
+      "spine": [
+        945,
+        954
+      ]
+    }
+  ],
+  "spineTurns": {
+    "countOver20": 0,
+    "countOver45": 0,
+    "countOver90": 0,
+    "worst": [
+      {
+        "i": 140,
+        "role": "loop-to-cuff",
+        "deg": 13.085439306178914,
+        "stepIn": 0.0011846552272951655,
+        "stepOut": 0.0011857685152772673
+      },
+      {
+        "i": 141,
+        "role": "loop-to-cuff",
+        "deg": 12.978170694035093,
+        "stepIn": 0.0011857685152772673,
+        "stepOut": 0.001218310827617742
+      },
+      {
+        "i": 139,
+        "role": "loop-to-cuff",
+        "deg": 12.620090150392576,
+        "stepIn": 0.0012063264742072316,
+        "stepOut": 0.0011846552272951655
+      },
+      {
+        "i": 142,
+        "role": "loop-to-cuff",
+        "deg": 11.99115742440323,
+        "stepIn": 0.001218310827617742,
+        "stepOut": 0.0012855423646354735
+      },
+      {
+        "i": 138,
+        "role": "loop-to-cuff",
+        "deg": 11.971329699580425,
+        "stepIn": 0.0012433153200173254,
+        "stepOut": 0.0012063264742072316
+      },
+      {
+        "i": 172,
+        "role": "cuff",
+        "deg": 11.462739139210758,
+        "stepIn": 0.001352967805095688,
+        "stepOut": 0.001361547854853189
+      },
+      {
+        "i": 586,
+        "role": "first-passage",
+        "deg": 11.405487931943942,
+        "stepIn": 0.001347937066778898,
+        "stepOut": 0.0013546779283981033
+      },
+      {
+        "i": 137,
+        "role": "loop-to-cuff",
+        "deg": 11.294896260098115,
+        "stepIn": 0.0012929146423587775,
+        "stepOut": 0.0012433153200173254
+      },
+      {
+        "i": 637,
+        "role": "over-root",
+        "deg": 11.039716358285308,
+        "stepIn": 0.0012894741464745802,
+        "stepOut": 0.00126601923784673
+      },
+      {
+        "i": 1036,
+        "role": "return-passage/1",
+        "deg": 11.039716358285308,
+        "stepIn": 0.0012894741464745802,
+        "stepOut": 0.00126601923784673
+      },
+      {
+        "i": 638,
+        "role": "over-root",
+        "deg": 10.888454618840795,
+        "stepIn": 0.00126601923784673,
+        "stepOut": 0.0012944064505741766
+      },
+      {
+        "i": 1037,
+        "role": "return-passage/1",
+        "deg": 10.888454618840795,
+        "stepIn": 0.00126601923784673,
+        "stepOut": 0.0012944064505741766
+      },
+      {
+        "i": 171,
+        "role": "cuff",
+        "deg": 10.88026484960548,
+        "stepIn": 0.001389874511673411,
+        "stepOut": 0.001352967805095688
+      },
+      {
+        "i": 585,
+        "role": "cuff-to-first",
+        "deg": 10.858843236758354,
+        "stepIn": 0.0013909014482067165,
+        "stepOut": 0.001347937066778898
+      },
+      {
+        "i": 553,
+        "role": "cuff-to-first",
+        "deg": 10.691807812767019,
+        "stepIn": 0.0013858500346909221,
+        "stepOut": 0.0013837461131062227
+      },
+      {
+        "i": 966,
+        "role": "return-approach",
+        "deg": 10.691068084236989,
+        "stepIn": 0.0013687496787606567,
+        "stepOut": 0.0013661833052467127
+      },
+      {
+        "i": 525,
+        "role": "cuff-to-first",
+        "deg": 10.690507164327164,
+        "stepIn": 0.0014024468731660465,
+        "stepOut": 0.001398683931931158
+      },
+      {
+        "i": 619,
+        "role": "over-root",
+        "deg": 10.688026617328203,
+        "stepIn": 0.0013827171744786287,
+        "stepOut": 0.001376021535515997
+      },
+      {
+        "i": 1018,
+        "role": "fold",
+        "deg": 10.687093138322542,
+        "stepIn": 0.0013854175831368456,
+        "stepOut": 0.0013778863537722396
+      },
+      {
+        "i": 173,
+        "role": "cuff",
+        "deg": 10.660248022897896,
+        "stepIn": 0.001361547854853189,
+        "stepOut": 0.0014167331160519878
+      },
+      {
+        "i": 161,
+        "role": "cuff",
+        "deg": 10.553378759014931,
+        "stepIn": 0.0014048442002322723,
+        "stepOut": 0.0013999091759116587
+      },
+      {
+        "i": 587,
+        "role": "first-passage",
+        "deg": 10.551986173393347,
+        "stepIn": 0.0013546779283981033,
+        "stepOut": 0.0014095353028180724
+      },
+      {
+        "i": 136,
+        "role": "loop-to-cuff",
+        "deg": 10.507137584719915,
+        "stepIn": 0.0013559928756066361,
+        "stepOut": 0.0012929146423587775
+      },
+      {
+        "i": 143,
+        "role": "loop-to-cuff",
+        "deg": 10.233761085744655,
+        "stepIn": 0.0012855423646354735,
+        "stepOut": 0.0013813933685476944
+      },
+      {
+        "i": 1019,
+        "role": "fold",
+        "deg": 10.160309257871658,
+        "stepIn": 0.0013778863537722396,
+        "stepOut": 0.001416137045460869
+      }
+    ]
+  },
+  "limb0Turns": {
+    "countOver20": 1,
+    "countOver45": 0,
+    "countOver90": 0,
+    "worst": [
+      {
+        "i": 1057,
+        "role": "return-approach/1",
+        "deg": 24.223813833390768,
+        "stepIn": 0.0025593311576838323,
+        "stepOut": 0.001917694071446623
+      },
+      {
+        "i": 1036,
+        "role": "return-passage/1",
+        "deg": 19.990074130781167,
+        "stepIn": 0.0012004228620110886,
+        "stepOut": 0.0011533216925960607
+      },
+      {
+        "i": 1035,
+        "role": "return-passage/1",
+        "deg": 18.682431220797366,
+        "stepIn": 0.0013033913679445037,
+        "stepOut": 0.0012004228620110886
+      },
+      {
+        "i": 1037,
+        "role": "return-passage/1",
+        "deg": 15.779098993284924,
+        "stepIn": 0.0011533216925960607,
+        "stepOut": 0.001178351069511965
+      },
+      {
+        "i": 1044,
+        "role": "return-approach/1",
+        "deg": 15.676485822981292,
+        "stepIn": 0.0016084453964800328,
+        "stepOut": 0.001868395328162466
+      },
+      {
+        "i": 1051,
+        "role": "return-approach/1",
+        "deg": 15.524150517322674,
+        "stepIn": 0.0019174552562014032,
+        "stepOut": 0.0022406688139345525
+      },
+      {
+        "i": 1050,
+        "role": "return-approach/1",
+        "deg": 15.426415631202856,
+        "stepIn": 0.0017924549041015295,
+        "stepOut": 0.0019174552562014032
+      },
+      {
+        "i": 1053,
+        "role": "return-approach/1",
+        "deg": 14.78698145195431,
+        "stepIn": 0.002633804450545665,
+        "stepOut": 0.0029775338845320597
+      },
+      {
+        "i": 1054,
+        "role": "return-approach/1",
+        "deg": 14.720369169568322,
+        "stepIn": 0.0029775338845320597,
+        "stepOut": 0.003150237037078928
+      },
+      {
+        "i": 1034,
+        "role": "return-passage/1",
+        "deg": 14.529409710958335,
+        "stepIn": 0.0014264861539821712,
+        "stepOut": 0.0013033913679445037
+      },
+      {
+        "i": 1052,
+        "role": "return-approach/1",
+        "deg": 13.559506142015497,
+        "stepIn": 0.0022406688139345525,
+        "stepOut": 0.002633804450545665
+      },
+      {
+        "i": 741,
+        "role": "under-approach",
+        "deg": 13.32012050763869,
+        "stepIn": 0.001989430889191139,
+        "stepOut": 0.0020014206912462
+      },
+      {
+        "i": 645,
+        "role": "over-root",
+        "deg": 13.184891640767688,
+        "stepIn": 0.0019731533224923007,
+        "stepOut": 0.0021316067578880616
+      },
+      {
+        "i": 137,
+        "role": "loop-to-cuff",
+        "deg": 12.99912363755399,
+        "stepIn": 0.0018575635367558446,
+        "stepOut": 0.0017309340513298722
+      },
+      {
+        "i": 1055,
+        "role": "return-approach/1",
+        "deg": 12.979365449331489,
+        "stepIn": 0.003150237037078928,
+        "stepOut": 0.0030306422355235664
+      },
+      {
+        "i": 136,
+        "role": "loop-to-cuff",
+        "deg": 12.797718571150822,
+        "stepIn": 0.001945876273573504,
+        "stepOut": 0.0018575635367558446
+      },
+      {
+        "i": 753,
+        "role": "under-approach",
+        "deg": 12.599729171982487,
+        "stepIn": 0.0018819528473424333,
+        "stepOut": 0.0018830182974682687
+      },
+      {
+        "i": 138,
+        "role": "loop-to-cuff",
+        "deg": 12.462591419167678,
+        "stepIn": 0.0017309340513298722,
+        "stepOut": 0.0015790916827707435
+      },
+      {
+        "i": 1056,
+        "role": "return-approach/1",
+        "deg": 12.174875342583569,
+        "stepIn": 0.0030306422355235664,
+        "stepOut": 0.0025593311576838323
+      },
+      {
+        "i": 639,
+        "role": "over-root",
+        "deg": 12.041588960687216,
+        "stepIn": 0.0018661600068906282,
+        "stepOut": 0.0019668518612575166
+      },
+      {
+        "i": 553,
+        "role": "cuff-to-first",
+        "deg": 11.918047685529563,
+        "stepIn": 0.001358331637404286,
+        "stepOut": 0.0013635678441945482
+      },
+      {
+        "i": 135,
+        "role": "loop-to-cuff",
+        "deg": 11.817772679662662,
+        "stepIn": 0.0019951066725512772,
+        "stepOut": 0.001945876273573504
+      },
+      {
+        "i": 638,
+        "role": "over-root",
+        "deg": 11.511941436981399,
+        "stepIn": 0.0017174393470035442,
+        "stepOut": 0.0018661600068906282
+      },
+      {
+        "i": 139,
+        "role": "loop-to-cuff",
+        "deg": 11.432330646942185,
+        "stepIn": 0.0015790916827707435,
+        "stepOut": 0.0014257828467331905
+      },
+      {
+        "i": 586,
+        "role": "first-passage",
+        "deg": 11.418869753992993,
+        "stepIn": 0.0013546404659389895,
+        "stepOut": 0.0013504190842578165
+      }
+    ]
+  },
+  "limb1Turns": {
+    "countOver20": 1,
+    "countOver45": 0,
+    "countOver90": 0,
+    "worst": [
+      {
+        "i": 1057,
+        "role": "return-approach/1",
+        "deg": 24.22381383339103,
+        "stepIn": 0.0025593311576838592,
+        "stepOut": 0.0019176940714466688
+      },
+      {
+        "i": 637,
+        "role": "over-root",
+        "deg": 19.9900741307807,
+        "stepIn": 0.0012004228620110932,
+        "stepOut": 0.001153321692596055
+      },
+      {
+        "i": 140,
+        "role": "loop-to-cuff",
+        "deg": 19.529854412191206,
+        "stepIn": 0.001046446986861474,
+        "stepOut": 0.0011207738837460913
+      },
+      {
+        "i": 636,
+        "role": "over-root",
+        "deg": 18.682431220797863,
+        "stepIn": 0.0013033913679445007,
+        "stepOut": 0.0012004228620110932
+      },
+      {
+        "i": 139,
+        "role": "loop-to-cuff",
+        "deg": 18.499672094234448,
+        "stepIn": 0.000992780673196915,
+        "stepOut": 0.001046446986861474
+      },
+      {
+        "i": 141,
+        "role": "loop-to-cuff",
+        "deg": 18.473105205942925,
+        "stepIn": 0.0011207738837460913,
+        "stepOut": 0.0012142990373669971
+      },
+      {
+        "i": 142,
+        "role": "loop-to-cuff",
+        "deg": 15.891390845779755,
+        "stepIn": 0.0012142990373669971,
+        "stepOut": 0.0013191827928220798
+      },
+      {
+        "i": 638,
+        "role": "over-root",
+        "deg": 15.779098993285416,
+        "stepIn": 0.001153321692596055,
+        "stepOut": 0.0011783510695119789
+      },
+      {
+        "i": 645,
+        "role": "over-root",
+        "deg": 15.676485822981196,
+        "stepIn": 0.0016084453964800396,
+        "stepOut": 0.0018683953281624626
+      },
+      {
+        "i": 1051,
+        "role": "return-approach/1",
+        "deg": 15.52415051732244,
+        "stepIn": 0.0019174552562013969,
+        "stepOut": 0.0022406688139345586
+      },
+      {
+        "i": 1050,
+        "role": "return-approach/1",
+        "deg": 15.426415631203358,
+        "stepIn": 0.0017924549041015334,
+        "stepOut": 0.0019174552562013969
+      },
+      {
+        "i": 138,
+        "role": "loop-to-cuff",
+        "deg": 15.406186061513177,
+        "stepIn": 0.0009541256422978057,
+        "stepOut": 0.000992780673196915
+      },
+      {
+        "i": 1053,
+        "role": "return-approach/1",
+        "deg": 14.786981451954336,
+        "stepIn": 0.00263380445054566,
+        "stepOut": 0.002977533884532069
+      },
+      {
+        "i": 1054,
+        "role": "return-approach/1",
+        "deg": 14.720369169568372,
+        "stepIn": 0.002977533884532069,
+        "stepOut": 0.0031502370370789204
+      },
+      {
+        "i": 635,
+        "role": "over-root",
+        "deg": 14.529409710957754,
+        "stepIn": 0.0014264861539821723,
+        "stepOut": 0.0013033913679445007
+      },
+      {
+        "i": 1052,
+        "role": "return-approach/1",
+        "deg": 13.559506142015337,
+        "stepIn": 0.0022406688139345586,
+        "stepOut": 0.00263380445054566
+      },
+      {
+        "i": 1044,
+        "role": "return-approach/1",
+        "deg": 13.184891640767688,
+        "stepIn": 0.0019731533224923055,
+        "stepOut": 0.002131606757888058
+      },
+      {
+        "i": 1055,
+        "role": "return-approach/1",
+        "deg": 12.979365449331462,
+        "stepIn": 0.0031502370370789204,
+        "stepOut": 0.0030306422355235525
+      },
+      {
+        "i": 143,
+        "role": "loop-to-cuff",
+        "deg": 12.630490242670396,
+        "stepIn": 0.0013191827928220798,
+        "stepOut": 0.001428535003141619
+      },
+      {
+        "i": 1056,
+        "role": "return-approach/1",
+        "deg": 12.174875342584233,
+        "stepIn": 0.0030306422355235525,
+        "stepOut": 0.0025593311576838592
+      },
+      {
+        "i": 1038,
+        "role": "return-passage/1",
+        "deg": 12.041588960686727,
+        "stepIn": 0.0018661600068906306,
+        "stepOut": 0.0019668518612575158
+      },
+      {
+        "i": 881,
+        "role": "return-approach",
+        "deg": 11.804317529097922,
+        "stepIn": 0.0018815458159484922,
+        "stepOut": 0.0018830182974682733
+      },
+      {
+        "i": 525,
+        "role": "cuff-to-first",
+        "deg": 11.697556949752778,
+        "stepIn": 0.0013844342764662444,
+        "stepOut": 0.0013769867620565394
+      },
+      {
+        "i": 172,
+        "role": "cuff",
+        "deg": 11.587574108857714,
+        "stepIn": 0.0013770804469108177,
+        "stepOut": 0.0013743857785949991
+      },
+      {
+        "i": 1037,
+        "role": "return-passage/1",
+        "deg": 11.511941436981813,
+        "stepIn": 0.001717439347003544,
+        "stepOut": 0.0018661600068906306
+      }
+    ]
+  },
+  "spineByRole": [],
+  "limb0ByRole": [
+    {
+      "role": "return-approach/1",
+      "count": 4,
+      "maxDeg": 24.223813833390768,
+      "at": [
+        {
+          "i": 1044,
+          "deg": 15.68
+        },
+        {
+          "i": 1050,
+          "deg": 15.43
+        },
+        {
+          "i": 1051,
+          "deg": 15.52
+        },
+        {
+          "i": 1057,
+          "deg": 24.22
+        }
+      ]
+    },
+    {
+      "role": "return-passage/1",
+      "count": 3,
+      "maxDeg": 19.990074130781167,
+      "at": [
+        {
+          "i": 1035,
+          "deg": 18.68
+        },
+        {
+          "i": 1036,
+          "deg": 19.99
+        },
+        {
+          "i": 1037,
+          "deg": 15.78
+        }
+      ]
+    }
+  ],
+  "limb1ByRole": [
+    {
+      "role": "return-approach/1",
+      "count": 3,
+      "maxDeg": 24.22381383339103,
+      "at": [
+        {
+          "i": 1050,
+          "deg": 15.43
+        },
+        {
+          "i": 1051,
+          "deg": 15.52
+        },
+        {
+          "i": 1057,
+          "deg": 24.22
+        }
+      ]
+    },
+    {
+      "role": "over-root",
+      "count": 4,
+      "maxDeg": 19.9900741307807,
+      "at": [
+        {
+          "i": 636,
+          "deg": 18.68
+        },
+        {
+          "i": 637,
+          "deg": 19.99
+        },
+        {
+          "i": 638,
+          "deg": 15.78
+        },
+        {
+          "i": 645,
+          "deg": 15.68
+        }
+      ]
+    },
+    {
+      "role": "loop-to-cuff",
+      "count": 5,
+      "maxDeg": 19.529854412191206,
+      "at": [
+        {
+          "i": 138,
+          "deg": 15.41
+        },
+        {
+          "i": 139,
+          "deg": 18.5
+        },
+        {
+          "i": 140,
+          "deg": 19.53
+        },
+        {
+          "i": 141,
+          "deg": 18.47
+        },
+        {
+          "i": 142,
+          "deg": 15.89
+        }
+      ]
+    }
+  ],
+  "roleBoundaries": [
+    {
+      "i": 585,
+      "from": "cuff-to-first",
+      "at": "cuff-to-first",
+      "to": "first-passage",
+      "spineDeg": 10.86,
+      "limb0Deg": 10.69,
+      "limb1Deg": 11.07
+    },
+    {
+      "i": 586,
+      "from": "cuff-to-first",
+      "at": "first-passage",
+      "to": "first-passage",
+      "spineDeg": 11.41,
+      "limb0Deg": 11.42,
+      "limb1Deg": 11.43
+    },
+    {
+      "i": 1038,
+      "from": "return-passage/1",
+      "at": "return-passage/1",
+      "to": "return-approach/1",
+      "spineDeg": 9.42,
+      "limb0Deg": 7.96,
+      "limb1Deg": 12.04
+    },
+    {
+      "i": 1039,
+      "from": "return-passage/1",
+      "at": "return-approach/1",
+      "to": "return-approach/1",
+      "spineDeg": 7.32,
+      "limb0Deg": 2.5,
+      "limb1Deg": 11.2
+    }
+  ],
+  "sideJumps": [],
+  "sideNearlyParallelToTangent": [],
+  "anchors": [
+    {
+      "i": 0,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 1,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 2,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 3,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 4,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 5,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 6,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 7,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 8,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 9,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 10,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 11,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 12,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 13,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 14,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 15,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 16,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 17,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 18,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 19,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 20,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 21,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 22,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 23,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 24,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 25,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 26,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 27,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 28,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 29,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 30,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 31,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 32,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 33,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 34,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 35,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 36,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 37,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 38,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 39,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 40,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 41,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0333
+    },
+    {
+      "i": 42,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0478
+    },
+    {
+      "i": 43,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.0876
+    },
+    {
+      "i": 44,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.1367
+    },
+    {
+      "i": 45,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.1794
+    },
+    {
+      "i": 46,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2149
+    },
+    {
+      "i": 47,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2427
+    },
+    {
+      "i": 48,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2623
+    },
+    {
+      "i": 49,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2735
+    },
+    {
+      "i": 50,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2764
+    },
+    {
+      "i": 51,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2708
+    },
+    {
+      "i": 52,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2611
+    },
+    {
+      "i": 53,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2568
+    },
+    {
+      "i": 54,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2568
+    },
+    {
+      "i": 55,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2598
+    },
+    {
+      "i": 56,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2686
+    },
+    {
+      "i": 57,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2805
+    },
+    {
+      "i": 58,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.2924
+    },
+    {
+      "i": 59,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3043
+    },
+    {
+      "i": 60,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3162
+    },
+    {
+      "i": 61,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3281
+    },
+    {
+      "i": 62,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3399
+    },
+    {
+      "i": 63,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3518
+    },
+    {
+      "i": 64,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3637
+    },
+    {
+      "i": 65,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3756
+    },
+    {
+      "i": 66,
+      "role": "loop-rim",
+      "source": "core-stack",
+      "roll": 0.3875
+    },
+    {
+      "i": 67,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.3994
+    },
+    {
+      "i": 68,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4112
+    },
+    {
+      "i": 69,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4231
+    },
+    {
+      "i": 70,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.435
+    },
+    {
+      "i": 71,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4469
+    },
+    {
+      "i": 72,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4588
+    },
+    {
+      "i": 73,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4707
+    },
+    {
+      "i": 74,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4825
+    },
+    {
+      "i": 75,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.4944
+    },
+    {
+      "i": 76,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5063
+    },
+    {
+      "i": 77,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5182
+    },
+    {
+      "i": 78,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5301
+    },
+    {
+      "i": 79,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.542
+    },
+    {
+      "i": 80,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5538
+    },
+    {
+      "i": 81,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5657
+    },
+    {
+      "i": 82,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5776
+    },
+    {
+      "i": 83,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.5895
+    },
+    {
+      "i": 84,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6014
+    },
+    {
+      "i": 85,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6133
+    },
+    {
+      "i": 86,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6252
+    },
+    {
+      "i": 87,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.637
+    },
+    {
+      "i": 88,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6489
+    },
+    {
+      "i": 89,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6608
+    },
+    {
+      "i": 90,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6727
+    },
+    {
+      "i": 91,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6846
+    },
+    {
+      "i": 92,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6965
+    },
+    {
+      "i": 93,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7083
+    },
+    {
+      "i": 94,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7202
+    },
+    {
+      "i": 95,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7321
+    },
+    {
+      "i": 96,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.744
+    },
+    {
+      "i": 97,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7559
+    },
+    {
+      "i": 98,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7678
+    },
+    {
+      "i": 99,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7796
+    },
+    {
+      "i": 100,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.7915
+    },
+    {
+      "i": 101,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8034
+    },
+    {
+      "i": 102,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8153
+    },
+    {
+      "i": 103,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8272
+    },
+    {
+      "i": 104,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8391
+    },
+    {
+      "i": 105,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8509
+    },
+    {
+      "i": 106,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8628
+    },
+    {
+      "i": 107,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8747
+    },
+    {
+      "i": 108,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8866
+    },
+    {
+      "i": 109,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8985
+    },
+    {
+      "i": 110,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9104
+    },
+    {
+      "i": 111,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9223
+    },
+    {
+      "i": 112,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9341
+    },
+    {
+      "i": 113,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.946
+    },
+    {
+      "i": 114,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9579
+    },
+    {
+      "i": 115,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9698
+    },
+    {
+      "i": 116,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9817
+    },
+    {
+      "i": 117,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9936
+    },
+    {
+      "i": 118,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0054
+    },
+    {
+      "i": 119,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0173
+    },
+    {
+      "i": 120,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0292
+    },
+    {
+      "i": 121,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0411
+    },
+    {
+      "i": 122,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.05
+    },
+    {
+      "i": 123,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.053
+    },
+    {
+      "i": 124,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.053
+    },
+    {
+      "i": 125,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.053
+    },
+    {
+      "i": 126,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.053
+    },
+    {
+      "i": 127,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0518
+    },
+    {
+      "i": 128,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0499
+    },
+    {
+      "i": 129,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0486
+    },
+    {
+      "i": 130,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0458
+    },
+    {
+      "i": 131,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0407
+    },
+    {
+      "i": 132,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0313
+    },
+    {
+      "i": 133,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 1.0145
+    },
+    {
+      "i": 134,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9843
+    },
+    {
+      "i": 135,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.9304
+    },
+    {
+      "i": 136,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.8329
+    },
+    {
+      "i": 137,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.6557
+    },
+    {
+      "i": 138,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": 0.3452
+    },
+    {
+      "i": 139,
+      "role": "loop-to-cuff",
+      "source": "core-stack",
+      "roll": -0.0932
+    },
+    {
+      "i": 140,
+      "role": "loop-to-cuff",
+      "source": "edge-bend",
+      "roll": 0.1065
+    },
+    {
+      "i": 155,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2115
+    },
+    {
+      "i": 156,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2075
+    },
+    {
+      "i": 157,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2031
+    },
+    {
+      "i": 158,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.198
+    },
+    {
+      "i": 159,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1922
+    },
+    {
+      "i": 160,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1854
+    },
+    {
+      "i": 161,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1778
+    },
+    {
+      "i": 162,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1694
+    },
+    {
+      "i": 163,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1607
+    },
+    {
+      "i": 164,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.152
+    },
+    {
+      "i": 165,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1435
+    },
+    {
+      "i": 166,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1354
+    },
+    {
+      "i": 167,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.128
+    },
+    {
+      "i": 168,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1213
+    },
+    {
+      "i": 169,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1155
+    },
+    {
+      "i": 170,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1109
+    },
+    {
+      "i": 171,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1076
+    },
+    {
+      "i": 172,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1056
+    },
+    {
+      "i": 173,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1046
+    },
+    {
+      "i": 174,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1042
+    },
+    {
+      "i": 175,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 176,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 177,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 178,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 179,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 180,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 181,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 182,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 183,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 184,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 185,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 186,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 187,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 188,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 189,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 190,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 191,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 192,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 193,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 194,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 195,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 196,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 197,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 198,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 199,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.104
+    },
+    {
+      "i": 200,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1039
+    },
+    {
+      "i": 201,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1037
+    },
+    {
+      "i": 202,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1032
+    },
+    {
+      "i": 203,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1021
+    },
+    {
+      "i": 204,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0997
+    },
+    {
+      "i": 205,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0956
+    },
+    {
+      "i": 206,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0892
+    },
+    {
+      "i": 206,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0892
+    },
+    {
+      "i": 207,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0808
+    },
+    {
+      "i": 208,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0715
+    },
+    {
+      "i": 209,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.063
+    },
+    {
+      "i": 210,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0562
+    },
+    {
+      "i": 211,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0513
+    },
+    {
+      "i": 212,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0481
+    },
+    {
+      "i": 213,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0462
+    },
+    {
+      "i": 214,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0453
+    },
+    {
+      "i": 215,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0504
+    },
+    {
+      "i": 216,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0576
+    },
+    {
+      "i": 217,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0613
+    },
+    {
+      "i": 218,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.065
+    },
+    {
+      "i": 219,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0687
+    },
+    {
+      "i": 220,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0724
+    },
+    {
+      "i": 221,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0761
+    },
+    {
+      "i": 222,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0798
+    },
+    {
+      "i": 223,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0835
+    },
+    {
+      "i": 224,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0873
+    },
+    {
+      "i": 225,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.091
+    },
+    {
+      "i": 226,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0947
+    },
+    {
+      "i": 227,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.0984
+    },
+    {
+      "i": 228,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1021
+    },
+    {
+      "i": 229,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1058
+    },
+    {
+      "i": 230,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1095
+    },
+    {
+      "i": 231,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1132
+    },
+    {
+      "i": 232,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1169
+    },
+    {
+      "i": 233,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1206
+    },
+    {
+      "i": 234,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1243
+    },
+    {
+      "i": 235,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1281
+    },
+    {
+      "i": 236,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1318
+    },
+    {
+      "i": 237,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1355
+    },
+    {
+      "i": 238,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1392
+    },
+    {
+      "i": 239,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1429
+    },
+    {
+      "i": 240,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1466
+    },
+    {
+      "i": 241,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1503
+    },
+    {
+      "i": 242,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.154
+    },
+    {
+      "i": 243,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1577
+    },
+    {
+      "i": 244,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1614
+    },
+    {
+      "i": 245,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1651
+    },
+    {
+      "i": 246,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1689
+    },
+    {
+      "i": 247,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1726
+    },
+    {
+      "i": 248,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1763
+    },
+    {
+      "i": 249,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.18
+    },
+    {
+      "i": 250,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1837
+    },
+    {
+      "i": 251,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1874
+    },
+    {
+      "i": 252,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1911
+    },
+    {
+      "i": 253,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1948
+    },
+    {
+      "i": 254,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.1985
+    },
+    {
+      "i": 255,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2022
+    },
+    {
+      "i": 256,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2059
+    },
+    {
+      "i": 257,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2097
+    },
+    {
+      "i": 258,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2134
+    },
+    {
+      "i": 259,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2171
+    },
+    {
+      "i": 260,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2208
+    },
+    {
+      "i": 261,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2245
+    },
+    {
+      "i": 262,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2282
+    },
+    {
+      "i": 263,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2319
+    },
+    {
+      "i": 264,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2356
+    },
+    {
+      "i": 265,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2393
+    },
+    {
+      "i": 266,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.243
+    },
+    {
+      "i": 267,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2467
+    },
+    {
+      "i": 268,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2505
+    },
+    {
+      "i": 269,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2542
+    },
+    {
+      "i": 270,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2579
+    },
+    {
+      "i": 271,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2616
+    },
+    {
+      "i": 272,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2653
+    },
+    {
+      "i": 273,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.269
+    },
+    {
+      "i": 274,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2727
+    },
+    {
+      "i": 275,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2764
+    },
+    {
+      "i": 276,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2801
+    },
+    {
+      "i": 277,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2838
+    },
+    {
+      "i": 278,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2875
+    },
+    {
+      "i": 279,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2912
+    },
+    {
+      "i": 280,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2949
+    },
+    {
+      "i": 281,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.2986
+    },
+    {
+      "i": 282,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3023
+    },
+    {
+      "i": 283,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.306
+    },
+    {
+      "i": 284,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3097
+    },
+    {
+      "i": 285,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3133
+    },
+    {
+      "i": 286,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3168
+    },
+    {
+      "i": 287,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3203
+    },
+    {
+      "i": 288,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3237
+    },
+    {
+      "i": 289,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.327
+    },
+    {
+      "i": 290,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3301
+    },
+    {
+      "i": 291,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.333
+    },
+    {
+      "i": 292,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3356
+    },
+    {
+      "i": 293,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3378
+    },
+    {
+      "i": 294,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3396
+    },
+    {
+      "i": 295,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.341
+    },
+    {
+      "i": 296,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.342
+    },
+    {
+      "i": 297,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3425
+    },
+    {
+      "i": 298,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3427
+    },
+    {
+      "i": 299,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3428
+    },
+    {
+      "i": 300,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3428
+    },
+    {
+      "i": 301,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.343
+    },
+    {
+      "i": 302,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3435
+    },
+    {
+      "i": 303,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3446
+    },
+    {
+      "i": 304,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3462
+    },
+    {
+      "i": 305,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3484
+    },
+    {
+      "i": 306,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3515
+    },
+    {
+      "i": 307,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3553
+    },
+    {
+      "i": 308,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3599
+    },
+    {
+      "i": 309,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3654
+    },
+    {
+      "i": 310,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3719
+    },
+    {
+      "i": 311,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3793
+    },
+    {
+      "i": 312,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.3874
+    },
+    {
+      "i": 313,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.396
+    },
+    {
+      "i": 314,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4048
+    },
+    {
+      "i": 315,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4134
+    },
+    {
+      "i": 316,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4214
+    },
+    {
+      "i": 317,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4286
+    },
+    {
+      "i": 318,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4349
+    },
+    {
+      "i": 319,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4402
+    },
+    {
+      "i": 320,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4447
+    },
+    {
+      "i": 321,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4483
+    },
+    {
+      "i": 322,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4512
+    },
+    {
+      "i": 323,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4533
+    },
+    {
+      "i": 324,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4548
+    },
+    {
+      "i": 325,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4557
+    },
+    {
+      "i": 326,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4562
+    },
+    {
+      "i": 327,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4563
+    },
+    {
+      "i": 328,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4564
+    },
+    {
+      "i": 329,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4564
+    },
+    {
+      "i": 330,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4567
+    },
+    {
+      "i": 331,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4573
+    },
+    {
+      "i": 332,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4584
+    },
+    {
+      "i": 333,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4599
+    },
+    {
+      "i": 334,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4618
+    },
+    {
+      "i": 335,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4641
+    },
+    {
+      "i": 336,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4667
+    },
+    {
+      "i": 337,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4696
+    },
+    {
+      "i": 338,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4728
+    },
+    {
+      "i": 339,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4761
+    },
+    {
+      "i": 340,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4795
+    },
+    {
+      "i": 341,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.483
+    },
+    {
+      "i": 342,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4866
+    },
+    {
+      "i": 343,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4902
+    },
+    {
+      "i": 344,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4939
+    },
+    {
+      "i": 345,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.4975
+    },
+    {
+      "i": 346,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5012
+    },
+    {
+      "i": 347,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5049
+    },
+    {
+      "i": 348,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5086
+    },
+    {
+      "i": 349,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5123
+    },
+    {
+      "i": 350,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.516
+    },
+    {
+      "i": 351,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5197
+    },
+    {
+      "i": 352,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5235
+    },
+    {
+      "i": 353,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5272
+    },
+    {
+      "i": 354,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5309
+    },
+    {
+      "i": 355,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5346
+    },
+    {
+      "i": 356,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5383
+    },
+    {
+      "i": 357,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.542
+    },
+    {
+      "i": 358,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5457
+    },
+    {
+      "i": 359,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5494
+    },
+    {
+      "i": 360,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5531
+    },
+    {
+      "i": 361,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5568
+    },
+    {
+      "i": 362,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5605
+    },
+    {
+      "i": 363,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5643
+    },
+    {
+      "i": 364,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.568
+    },
+    {
+      "i": 365,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5717
+    },
+    {
+      "i": 366,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5754
+    },
+    {
+      "i": 367,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5791
+    },
+    {
+      "i": 368,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5828
+    },
+    {
+      "i": 369,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5865
+    },
+    {
+      "i": 370,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5902
+    },
+    {
+      "i": 371,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5939
+    },
+    {
+      "i": 372,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.5976
+    },
+    {
+      "i": 373,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6013
+    },
+    {
+      "i": 374,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.605
+    },
+    {
+      "i": 375,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6088
+    },
+    {
+      "i": 376,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6125
+    },
+    {
+      "i": 377,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6162
+    },
+    {
+      "i": 378,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6199
+    },
+    {
+      "i": 379,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6236
+    },
+    {
+      "i": 380,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6273
+    },
+    {
+      "i": 381,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.631
+    },
+    {
+      "i": 382,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6347
+    },
+    {
+      "i": 383,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6384
+    },
+    {
+      "i": 384,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6421
+    },
+    {
+      "i": 385,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6458
+    },
+    {
+      "i": 386,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6496
+    },
+    {
+      "i": 387,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6533
+    },
+    {
+      "i": 388,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.657
+    },
+    {
+      "i": 389,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6607
+    },
+    {
+      "i": 390,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6644
+    },
+    {
+      "i": 391,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6681
+    },
+    {
+      "i": 392,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6718
+    },
+    {
+      "i": 393,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6755
+    },
+    {
+      "i": 394,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6792
+    },
+    {
+      "i": 395,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6829
+    },
+    {
+      "i": 396,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6866
+    },
+    {
+      "i": 397,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6904
+    },
+    {
+      "i": 398,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6941
+    },
+    {
+      "i": 399,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.6978
+    },
+    {
+      "i": 400,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7015
+    },
+    {
+      "i": 401,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7052
+    },
+    {
+      "i": 402,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7089
+    },
+    {
+      "i": 403,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7126
+    },
+    {
+      "i": 404,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7163
+    },
+    {
+      "i": 405,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.72
+    },
+    {
+      "i": 406,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7237
+    },
+    {
+      "i": 407,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7274
+    },
+    {
+      "i": 408,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7312
+    },
+    {
+      "i": 409,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7349
+    },
+    {
+      "i": 410,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7386
+    },
+    {
+      "i": 411,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7423
+    },
+    {
+      "i": 412,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.746
+    },
+    {
+      "i": 413,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7497
+    },
+    {
+      "i": 414,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7534
+    },
+    {
+      "i": 415,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7571
+    },
+    {
+      "i": 416,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7608
+    },
+    {
+      "i": 417,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7645
+    },
+    {
+      "i": 418,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7682
+    },
+    {
+      "i": 419,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7719
+    },
+    {
+      "i": 420,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7756
+    },
+    {
+      "i": 421,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7793
+    },
+    {
+      "i": 422,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.783
+    },
+    {
+      "i": 423,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7866
+    },
+    {
+      "i": 424,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7902
+    },
+    {
+      "i": 425,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7937
+    },
+    {
+      "i": 426,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.7972
+    },
+    {
+      "i": 427,
+      "role": "cuff",
+      "source": "cuff-axial",
+      "roll": 0.8005
+    },
+    {
+      "i": 428,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8037
+    },
+    {
+      "i": 429,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8067
+    },
+    {
+      "i": 430,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8094
+    },
+    {
+      "i": 431,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8118
+    },
+    {
+      "i": 432,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8139
+    },
+    {
+      "i": 433,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8155
+    },
+    {
+      "i": 434,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8167
+    },
+    {
+      "i": 435,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8174
+    },
+    {
+      "i": 436,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8178
+    },
+    {
+      "i": 437,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8179
+    },
+    {
+      "i": 438,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8179
+    },
+    {
+      "i": 439,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.818
+    },
+    {
+      "i": 440,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8184
+    },
+    {
+      "i": 441,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8191
+    },
+    {
+      "i": 442,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8204
+    },
+    {
+      "i": 443,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8224
+    },
+    {
+      "i": 444,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.825
+    },
+    {
+      "i": 445,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8284
+    },
+    {
+      "i": 446,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8326
+    },
+    {
+      "i": 447,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8377
+    },
+    {
+      "i": 448,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8437
+    },
+    {
+      "i": 449,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8506
+    },
+    {
+      "i": 450,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8584
+    },
+    {
+      "i": 451,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8668
+    },
+    {
+      "i": 452,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8756
+    },
+    {
+      "i": 453,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8843
+    },
+    {
+      "i": 454,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.8926
+    },
+    {
+      "i": 455,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9002
+    },
+    {
+      "i": 456,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.907
+    },
+    {
+      "i": 457,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9128
+    },
+    {
+      "i": 458,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9177
+    },
+    {
+      "i": 459,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9218
+    },
+    {
+      "i": 460,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.925
+    },
+    {
+      "i": 461,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9275
+    },
+    {
+      "i": 462,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9293
+    },
+    {
+      "i": 463,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9305
+    },
+    {
+      "i": 464,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9311
+    },
+    {
+      "i": 465,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9314
+    },
+    {
+      "i": 466,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9315
+    },
+    {
+      "i": 467,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9315
+    },
+    {
+      "i": 468,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9317
+    },
+    {
+      "i": 469,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9321
+    },
+    {
+      "i": 470,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9329
+    },
+    {
+      "i": 471,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9342
+    },
+    {
+      "i": 472,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9359
+    },
+    {
+      "i": 473,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.938
+    },
+    {
+      "i": 474,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9428
+    },
+    {
+      "i": 475,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9462
+    },
+    {
+      "i": 476,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.945
+    },
+    {
+      "i": 477,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9428
+    },
+    {
+      "i": 478,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9391
+    },
+    {
+      "i": 479,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9338
+    },
+    {
+      "i": 480,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9267
+    },
+    {
+      "i": 481,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9182
+    },
+    {
+      "i": 482,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9093
+    },
+    {
+      "i": 483,
+      "role": "cuff-to-first",
+      "source": "cuff-axial",
+      "roll": 0.9015
+    },
+    {
+      "i": 484,
+      "role": "cuff-to-first",
+      "source": "edge-bend",
+      "roll": 0.9708
+    },
+    {
+      "i": 525,
+      "role": "cuff-to-first",
+      "source": "edge-bend",
+      "roll": 2.4582
+    },
+    {
+      "i": 553,
+      "role": "cuff-to-first",
+      "source": "edge-bend",
+      "roll": 0.9566
+    },
+    {
+      "i": 586,
+      "role": "first-passage",
+      "source": "edge-bend",
+      "roll": 2.522
+    },
+    {
+      "i": 619,
+      "role": "over-root",
+      "source": "edge-bend",
+      "roll": 4.0928
+    },
+    {
+      "i": 637,
+      "role": "over-root",
+      "source": "edge-bend",
+      "roll": 4.0928
+    },
+    {
+      "i": 642,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 643,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 644,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 645,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 646,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 647,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 648,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 649,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 650,
+      "role": "over-root",
+      "source": "passage-lateral",
+      "roll": 5.6636
+    },
+    {
+      "i": 713,
+      "role": "under-approach",
+      "source": "over-sweep",
+      "roll": 8.2366
+    },
+    {
+      "i": 741,
+      "role": "under-approach",
+      "source": "over-sweep",
+      "roll": 8.2366
+    },
+    {
+      "i": 753,
+      "role": "under-approach",
+      "source": "edge-bend",
+      "roll": 6.6658
+    },
+    {
+      "i": 755,
+      "role": "under-approach",
+      "source": "edge-bend",
+      "roll": 6.6658
+    },
+    {
+      "i": 757,
+      "role": "under-approach",
+      "source": "edge-bend",
+      "roll": 6.6658
+    },
+    {
+      "i": 759,
+      "role": "under-approach",
+      "source": "edge-bend",
+      "roll": 6.6658
+    },
+    {
+      "i": 817,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 819,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 825,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 836,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 837,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 838,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 839,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 840,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 841,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 842,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 843,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 844,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 845,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 846,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 847,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 848,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 849,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 850,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 851,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 852,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 853,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 854,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 855,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 856,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 857,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 858,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 859,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 860,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 861,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 862,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 863,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 864,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 865,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 866,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 867,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 868,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 869,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 870,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 871,
+      "role": "return-approach",
+      "source": "under-lateral",
+      "roll": 5.0711
+    },
+    {
+      "i": 881,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 884,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 886,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 889,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 5.9311
+    },
+    {
+      "i": 945,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 6.7903
+    },
+    {
+      "i": 950,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 6.7903
+    },
+    {
+      "i": 953,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 6.7903
+    },
+    {
+      "i": 966,
+      "role": "return-approach",
+      "source": "edge-bend",
+      "roll": 6.7903
+    },
+    {
+      "i": 1018,
+      "role": "fold",
+      "source": "edge-bend",
+      "roll": 7.6496
+    },
+    {
+      "i": 1036,
+      "role": "return-passage/1",
+      "source": "edge-bend",
+      "roll": 7.6496
+    },
+    {
+      "i": 1041,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1042,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1043,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1044,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1045,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1046,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1047,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1048,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1049,
+      "role": "return-approach/1",
+      "source": "passage-lateral",
+      "roll": 6.0788
+    },
+    {
+      "i": 1058,
+      "role": "return-approach/1",
+      "source": "bight-face",
+      "roll": 7.6496
+    }
+  ],
+  "clearance": {
+    "penetratingPairs": 0,
+    "minimumNonlocalGap": 0.00031703142349089053,
+    "minimumColumnGap": 0.0016545350845564915,
+    "closest": {
+      "i": 817,
+      "j": 1218,
+      "roles": [
+        "over-root/0",
+        "fold"
+      ],
+      "gap": 0.00031703142349089053
+    },
+    "groups": {}
+  },
+  "tube": {
+    "valid": true,
+    "selfIntersections": 0,
+    "foldedFaces": 0,
+    "columnPenetrations": 0,
+    "minimumColumnGap": 0.0017005967045297873
+  },
+  "operations": true
+}

@@ -1,0 +1,23 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {buildSomerville,seedClearance} from '../../../src/somerville-build.js';
+import {relaxRope} from '../../../src/somerville-relax.js';
+import {correspondenceSpans,worldByTargetId,poseTargets} from '../../../src/somerville-pose-targets.js';
+import {fitPoseCamera,scorePose} from '../../../src/somerville-pose-fit.js';
+import {makeTube,checkTube} from '../../../src/rope-tube.js';
+import {validateOperations} from '../../../src/somerville-verify.js';
+const params=JSON.parse(readFileSync(process.argv[2],'utf8')),iters=+(process.argv[3]||0),weight=+(process.argv[4]||0.05),out=process.argv[5];
+const ann=JSON.parse(readFileSync('data/somerville-pose148.json','utf8'));
+const doc=buildSomerville(params),arc=doc.somerville.materialArc;
+const spans=correspondenceSpans(doc,ann);
+const report=(pts,label)=>{const w=worldByTargetId(pts,spans),{camera}=fitPoseCamera(w,ann),s=scorePose(w,ann,camera);console.log(label,'rms(px)',s.rmsPx.toFixed(1),'inD',s.rmsInDiameters.toFixed(2),Object.entries(s.perRole).map(([k,v])=>`${k}:${v.rmsPx.toFixed(0)}`).join(' '),'cam',camera.pixelsPerMetre.toFixed(0),camera.originPixel.map(v=>v.toFixed(0)),camera.rollRadians.toFixed(3));return {camera,score:s};};
+console.log('span lengths(mm)',Object.fromEntries(Object.entries(spans).map(([k,v])=>[k,(Math.abs(v.to-v.from)*1000).toFixed(0)+'/'+v.ids.length])));
+report(doc.ropes[0].points,'seed');
+if(iters){const cam={projection:'orthographic',pixelsPerMetre:5000,originPixel:[460,555],rollRadians:0};
+ const targets=poseTargets(arc,spans,ann,cam,weight);const t0=Date.now();
+ const r=relaxRope(doc.ropes[0].points,{iterations:iters,targets,onIteration:h=>{if(h.iteration%200===0)console.log(JSON.stringify(h))}});
+ console.log('ms',Date.now()-t0,'rejected',r.rejected,'maxStretch(mm)',(r.maxStretch*1000).toFixed(3));
+ const res=report(r.points,'relaxed');doc.ropes[0].points=r.points;
+ const sc=seedClearance(doc);console.log('seed',sc.penetratingPairs,(sc.minimumNonlocalGap*1000).toFixed(3),(sc.minimumColumnGap*1000).toFixed(3));
+ const t=checkTube(makeTube(r.points,.003),{column:doc.somerville.column});console.log('tube',t.valid,t.selfIntersections,t.foldedFaces,t.columnPenetrations);
+ console.log('ops',JSON.stringify(validateOperations(doc).checks));
+ if(out)writeFileSync(out,JSON.stringify({doc,spans,camera:res.camera,score:res.score}));}

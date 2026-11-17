@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "claim": "Reproducible numerical regression, NOT Somerville acceptance",
+  "fixtures": [
+    {
+      "path": "data/crossing-valid.json",
+      "sha256": "a8b4160ce613070b287773dbb7144454f029e4e2237270964cf0187ee20a5fcf",
+      "expectedPenetrations": 0,
+      "regressionPassed": true,
+      "status": "CAPSULE_CHECK_PASSED_TOPOLOGY_UNVERIFIED",
+      "valid": true,
+      "topologyVerified": false,
+      "continuity": true,
+      "ropeCount": 1,
+      "segments": 42,
+      "totalLengthM": 0.7999359356962904,
+      "zeroEdges": [],
+      "smoothness": {
+        "representation": "piecewise-linear; C0 at joints, generally not C1",
+        "cornerCount": 12,
+        "maxTurnRadians": 2.356194490192345,
+        "smoothTubeVerified": false
+      },
+      "epsilonM": 1e-9,
+      "requiredClearanceM": 0,
+      "clearanceSatisfied": true,
+      "testedPairs": 820,
+      "excludedAdjacentPairs": 41,
+      "minimumRopeGap": 0.0028571428571428576,
+      "minimumPair": [
+        "rope-1:28",
+        "rope-1:30"
+      ],
+      "selfPenetrations": 0,
+      "minimumColumnGap": null,
+      "columnPenetrations": 0,
+      "columnModel": null,
+      "limitation": "Numerical capsule check at source segmentation; adjacent segments excluded only. Refinement changes local exclusions. No isotopy, smooth-tube embedding, source identity or locking proof."
+    },
+    {
+      "path": "data/multiple-valid-A.json",
+      "sha256": "7aa19caecad9e8551eccac095810392265de752ee356029ebf4d4bc53e0111ef",
+      "expectedPenetrations": 0,
+      "regressionPassed": true,
+      "status": "CAPSULE_CHECK_PASSED_TOPOLOGY_UNVERIFIED",
+      "valid": true,
+      "topologyVerified": false,
+      "continuity": true,
+      "ropeCount": 1,
+      "segments": 55,
+      "totalLengthM": 1.0772885385954036,
+      "zeroEdges": [],
+      "smoothness": {
+        "representation": "piecewise-linear; C0 at joints, generally not C1",
+        "cornerCount": 17,
+        "maxTurnRadians": 2.0344439357957027,
+        "smoothTubeVerified": false
+      },
+      "epsilonM": 1e-9,
+      "requiredClearanceM": 0,
+      "clearanceSatisfied": true,
+      "testedPairs": 1431,
+      "excludedAdjacentPairs": 54,
+      "minimumRopeGap": 0.002649110640673514,
+      "minimumPair": [
+        "rope-p3:40",
+        "rope-p3:42"
+      ],
+      "selfPenetrations": 0,
+      "minimumColumnGap": null,
+      "columnPenetrations": 0,
+      "columnModel": null,
+      "limitation": "Numerical capsule check at source segmentation; adjacent segments excluded only. Refinement changes local exclusions. No isotopy, smooth-tube embedding, source identity or locking proof."
+    },
+    {
+      "path": "data/multiple-valid-B.json",
+      "sha256": "a2462354393f360fa7f8c39021c8f802eb6e40138c55b664b07c865a9bdc09e2",
+      "expectedPenetrations": 0,
+      "regressionPassed": true,
+      "status": "CAPSULE_CHECK_PASSED_TOPOLOGY_UNVERIFIED",
+      "valid": true,
+      "topologyVerified": false,
+      "continuity": true,
+      "ropeCount": 1,
+      "segments": 55,
+      "totalLengthM": 1.080669332988997,
+      "zeroEdges": [],
+      "smoothness": {
+        "representation": "piecewise-linear; C0 at joints, generally not C1",
+        "cornerCount": 20,
+        "maxTurnRadians": 2.0344437899195498,
+        "smoothTubeVerified": false
+      },
+      "epsilonM": 1e-9,
+      "requiredClearanceM": 0,
+      "clearanceSatisfied": true,
+      "testedPairs": 1431,
+      "excludedAdjacentPairs": 54,
+      "minimumRopeGap": 0.0026491152536838487,
+      "minimumPair": [
+        "rope-p3:40",
+        "rope-p3:42"
+      ],
+      "selfPenetrations": 0,
+      "minimumColumnGap": null,
+      "columnPenetrations": 0,
+      "columnModel": null,
+      "limitation": "Numerical capsule check at source segmentation; adjacent segments excluded only. Refinement changes local exclusions. No isotopy, smooth-tube embedding, source identity or locking proof."
+    },
+    {
+      "path": "data/phase5-candidate-A.json",
+      "sha256": "162c77d2e0a443a32cb577b100d9e06a5f3d577a8f62787d10abe33b076618b0",
+      "expectedPenetrations": 36,
+      "regressionPassed": true,
+      "status": "GEOMETRY_FAILED",
+      "valid": false,
+      "topologyVerified": false,
+      "continuity": true,
+      "ropeCount": 1,
+      "segments": 248,
+      "totalLengthM": 4.3856830974460435,
+      "zeroEdges": [],
+      "smoothness": {
+        "representation": "piecewise-linear; C0 at joints, generally not C1",
+        "cornerCount": 191,
+        "maxTurnRadians": 2.66175894817722,
+        "smoothTubeVerified": false
+      },
+      "epsilonM": 1e-9,
+      "requiredClearanceM": 0,
+      "clearanceSatisfied": false,
+      "testedPairs": 30381,
+      "excludedAdjacentPairs": 247,
+      "minimumRopeGap": -0.009060447648776475,
+      "minimumPair": [
+        "candidate-A:104",
+        "candidate-A:143"
+      ],
+      "selfPenetrations": 36,
+      "minimumColumnGap": 0.010000000000000005,
+      "columnPenetrations": 0,
+      "columnModel": "infinite cylinder (conservative relative to a finite cylinder); axis and center as declared",
+      "limitation": "Numerical capsule check at source segmentation; adjacent segments excluded only. Refinement changes local exclusions. No isotopy, smooth-tube embedding, source identity or locking proof."
+    },
+    {
+      "path": "data/phase5-recovery/stage-4.json",
+      "sha256": "22f90c7ff4f8936ff6a6e20ea03b21022a3e8ed0486303835b2f2f7b0287e272",
+      "expectedPenetrations": 0,
+      "regressionPassed": true,
+      "status": "CAPSULE_CHECK_PASSED_TOPOLOGY_UNVERIFIED",
+      "valid": true,
+      "topologyVerified": false,
+      "continuity": true,
+      "ropeCount": 1,
+      "segments": 296,
+      "totalLengthM": 6.908683344079693,
+      "zeroEdges": [],
+      "smoothness": {
+        "representation": "piecewise-linear; C0 at joints, generally not C1",
+        "cornerCount": 71,
+        "maxTurnRadians": 1.7644546272392232,
+        "smoothTubeVerified": false
+      },
+      "epsilonM": 1e-9,
+      "requiredClearanceM": 0,
+      "clearanceSatisfied": true,
+      "testedPairs": 43365,
+      "excludedAdjacentPairs": 295,
+      "minimumRopeGap": 0.0013137084989847704,
+      "minimumPair": [
+        "recovery-stage-4:117",
+        "recovery-stage-4:178"
+      ],
+      "selfPenetrations": 0,
+      "minimumColumnGap": 0.006241980646716769,
+      "columnPenetrations": 0,
+      "columnModel": "infinite cylinder (conservative relative to a finite cylinder); axis and center as declared",
+      "limitation": "Numerical capsule check at source segmentation; adjacent segments excluded only. Refinement changes local exclusions. No isotopy, smooth-tube embedding, source identity or locking proof."
+    },
+    {
+      "path": "data/phase5-recovery/integrated-trial.json",
+      "sha256": "843391b00c4e4afc6ec208d93e80df74cfa7e469cd6b741edc382ae7d00b4c69",
+      "expectedPenetrations": 74,
+      "regressionPassed": true,
+      "status": "GEOMETRY_FAILED",
+      "valid": false,
+      "topologyVerified": false,
+      "continuity": true,
+      "ropeCount": 1,
+      "segments": 380,
+      "totalLengthM": 7.879991522965641,
+      "zeroEdges": [],
+      "smoothness": {
+        "representation": "piecewise-linear; C0 at joints, generally not C1",
+        "cornerCount": 197,
+        "maxTurnRadians": 3.1017853546591923,
+        "smoothTubeVerified": false
+      },
+      "epsilonM": 1e-9,
+      "requiredClearanceM": 0,
+      "clearanceSatisfied": false,
+      "testedPairs": 71631,
+      "excludedAdjacentPairs": 379,
+      "minimumRopeGap": -0.009091543001762289,
+      "minimumPair": [
+        "recovery-integrated-trial:340",
+        "recovery-integrated-trial:342"
+      ],
+      "selfPenetrations": 74,
+      "minimumColumnGap": 0.006241980646716769,
+      "columnPenetrations": 0,
+      "columnModel": "infinite cylinder (conservative relative to a finite cylinder); axis and center as declared",
+      "limitation": "Numerical capsule check at source segmentation; adjacent segments excluded only. Refinement changes local exclusions. No isotopy, smooth-tube embedding, source identity or locking proof."
+    }
+  ],
+  "source": {
+    "ready": false,
+    "problems": [
+      "No complete evidenced FINAL E0->E1 material path",
+      "Complete source correspondence has not been approved in the recorded review",
+      "FINAL material graph is not a single E0->E1 path",
+      "Signed column winding unresolved",
+      "Unresolved observation: rear-cuff",
+      "Unresolved observation: locking-core",
+      "Unresolved observation: endpoint-binding",
+      "Unresolved observation: final-ledger",
+      "Gauss: Incomplete E0->E1 material path or final crossing inventory",
+      "Gauss: Unsigned, unvisited, or unverified crossings"
+    ],
+    "inventoryValid": true,
+    "completeMaterialPath": false,
+    "referenceStatus": "INCOMPLETE",
+    "topologyVerified": false,
+    "writheBoundToSource": false,
+    "finalFragmentCount": 8,
+    "verifiedFinalCrossingRecords": 0,
+    "constructionCrossingsExcluded": [
+      "D8-X01",
+      "D8-X02"
+    ],
+    "unknownConnectionGroups": 4,
+    "graphComplete": false,
+    "gaussExportable": false,
+    "note": "Structural readiness only. ready checks recorded source correspondence, not whether that interpretation of the photograph is true. No knot identity theorem is asserted."
+  },
+  "subdivision": [
+    {
+      "factor": 1,
+      "segments": 296,
+      "rawPenetratingPairs": 0,
+      "withinSameOrAdjacentOriginalSegments": 0,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0,
+      "maximumOriginalPairDistanceErrorM": 0
+    },
+    {
+      "factor": 2,
+      "segments": 592,
+      "rawPenetratingPairs": 12,
+      "withinSameOrAdjacentOriginalSegments": 12,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.0022354286469244266,
+      "maximumOriginalPairDistanceErrorM": 1.1102230246251565e-16
+    },
+    {
+      "factor": 4,
+      "segments": 1184,
+      "rawPenetratingPairs": 1215,
+      "withinSameOrAdjacentOriginalSegments": 1215,
+      "penetratingOriginalNonadjacentPairs": 0,
+      "maximumRawPenetrationM": 0.0061177143234622125,
+      "maximumOriginalPairDistanceErrorM": 1.1102230246251565e-16
+    }
+  ],
+  "integration": {
+    "repairEmitted": false,
+    "referenceTruth": false,
+    "promotedToReference": false,
+    "engineeringHypothesis": "stage-4-local-fixture-only",
+    "classification": "ENGINEERING_HYPOTHESIS_NOT_PROMOTED",
+    "localSignedConstraintsHold": true,
+    "local": {
+      "status": "LOCAL_FIXTURE_VALID_TOPOLOGY_UNVERIFIED",
+      "phase5Accepted": false,
+      "topologyVerified": false,
+      "continuity": true,
+      "selfPenetrations": 0,
+      "signed": [
+        {
+          "id": "loop-X",
+          "satisfied": true,
+          "referenceStatus": "ASSUMED_ROOT_SIGN"
+        },
+        {
+          "id": "first-passage",
+          "satisfied": true,
+          "referenceStatus": "OBSERVED_PROCEDURE_ASSUMED_EMBEDDING"
+        },
+        {
+          "id": "over-X",
+          "satisfied": true,
+          "referenceStatus": "OBSERVED_PROCEDURE_ASSUMED_EMBEDDING"
+        },
+        {
+          "id": "same-direction-return",
+          "satisfied": true,
+          "referenceStatus": null
+        },
+        {
+          "id": "material-operation-order",
+          "satisfied": true,
+          "referenceStatus": null
+        }
+      ]
+    },
+    "underCuffSatisfied": true,
+    "columnPenetrations": 0,
+    "whole": {
+      "status": "GEOMETRY_FAILED",
+      "continuity": true,
+      "selfPenetrations": 74,
+      "phase5Accepted": false,
+      "topologyVerified": false,
+      "verificationAccepted": false
+    },
+    "obstacle": {
+      "id": "frozen-cuff-intersects-frozen-root",
+      "cuffRootPenetrations": 21,
+      "connectorPenetrations": 53,
+      "otherPenetrations": 0,
+      "groups": {
+        "interface-out/0 × root-in/0": 3,
+        "interface-in/0 × root-out/0": 6,
+        "interface-in/0 × interface-in/1": 3,
+        "interface-in/0 × interface-out/1": 3,
+        "interface-in/0 × root-out/1": 3,
+        "interface-in/0 × root-in/1": 1,
+        "cuff/0 × root-in/1": 9,
+        "interface-out/0 × interface-out/1": 3,
+        "interface-out/0 × root-out/1": 3,
+        "cuff/1 × root-in/1": 12,
+        "interface-out/1 × root-out/1": 28
+      },
+      "integrationError": null,
+      "statement": "No repaired integrated candidate was emitted. 21 penetrating pairs are between unchanged cuff arcs and unchanged core segments, and 53 involve the assumed interface connectors (0 in any other class). Editing only the connectors cannot separate those frozen arcs from the frozen roots. Clearing the contact would move preserved cuff coordinates, move the signed local root embedding, or choose a rear-cuff and endpoint permutation that the source ledger does not record. The local fixture is an engineering hypothesis and is not promoted."
+    }
+  }
+}

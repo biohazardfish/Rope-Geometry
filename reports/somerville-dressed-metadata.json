@@ -1,0 +1,20 @@
+{
+  "evaluatedAt": "2026-11-05T12:53:19.325Z",
+  "finishedKnot": false,
+  "designation": "named dressed candidate",
+  "candidatePath": "/Users/taichengwong/Projects/RopeGeometry/data/somerville-final/dressed-candidate.json",
+  "candidatePresent": true,
+  "candidateSha256": "ea7676ee9fbebbc537fe5a7d097f5b53f20c48c968659f8f3fb12a7ceabf85f7",
+  "annotationPath": "/Users/taichengwong/Projects/RopeGeometry/data/somerville-pose148.json",
+  "reportPath": "/Users/taichengwong/Projects/RopeGeometry/reports/somerville-dressed-report.json",
+  "staticReconstruction": "FAIL",
+  "motionContinuity": "UNVERIFIED",
+  "legacyStatus": "FAIL",
+  "bestResidualPx": 109.44359390420993,
+  "bestResidualSource": "current-candidate",
+  "materialSource": "candidate.somerville.materialArc",
+  "candidatePointCount": 2434,
+  "v2PointCountAssumed": false,
+  "overwroteHistoricalFinal": false,
+  "generatorClaimAccepted": false
+}

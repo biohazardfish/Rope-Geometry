@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "somerville-bowline",
+  "projection": "sphere",
+  "status": "PENDING_REVIEW",
+  "materialPath": {
+    "from": "E0",
+    "to": "E1",
+    "complete": false
+  },
+  "crossingInventoryComplete": false,
+  "crossings": [],
+  "visits": [],
+  "source": "data/somerville-bowline-topology-v2.json",
+  "note": "Empty crossings/visits denote NO COMPLETE FINAL-STATE INVENTORY, not a zero-crossing knot. Do not populate them with construction-only crossing IDs. Source evidence has fourteen open observation ports and unresolved rear-cuff and loop-root connectivity."
+}

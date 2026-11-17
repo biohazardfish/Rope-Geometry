@@ -1,0 +1,23 @@
+Connection lost, reconnecting to https://agentn.global.api5.cursor.sh (attempt 1)...
+Retry attempt 1...
+The dressed Somerville seed is built and measured. It is **not** frozen. `data/somerville-final/loose-v3.json` was not written.
+
+**Final-scope numeric operations: pass** for both `dressedTight` and `looseDressed`. That includes one material path, two signed turns, paired cuff order, the aperture, both same-direction passages, eight under-cuff crossings, under-cuff direction, and the real root-X. The construction diagonal is absent, which is the dressed route. Construction correspondence and pose stay **UNVERIFIED**.
+
+**Static geometry: fail.**
+
+| Gate | Result |
+|---|---|
+| Length | Exact `7.138936637394829` m, residual `0`, E0 at the start, spare split across both tails |
+| Bundle spacing | `7.2` mm |
+| Seed column gap | Pass, `+1.100` mm |
+| Seed rope clearance | Fail, gap `−2.777` mm, **39** penetrating pairs |
+| `makeTube` / `checkTube` (12 radial segments, 58,512 triangles) | Fail: `16,620` self-intersections, `733` folded faces, `2,001` column penetrations, tube column gap `−1.865` mm |
+
+The closest seed pair is `over-root/1` with itself. The first passage sits between the two root hits in X, so the over-root line reaches one hit and turns back through the other. Just outside the `24` mm material exclusion the centerlines are about `3.9` mm apart. The other repeated pair is `loop-to-cuff/0` with `loop-to-cuff/1` at the shell’s axial slide, about `5.5` mm apart. The gate is `6.2` mm. Those same corners fold the tube, so the mesh enters the column even though the centerline clears it by `1.1` mm.
+
+Core material is `3.793` m and the two tails are `3.346` m. The front XZ silhouette of the core is **137 × 188 mm** against the `34 × 28` mm image target (residuals `+103` mm and `+160` mm). The ring is `20` mm, not the `11` mm guess: a smaller ring cannot keep both the neck chord and the one-turn aperture. That silhouette is reported, not used as a pass.
+
+A bounded grid on core offset, root depth, and rim pitch did not open the hairpin. The preset that matched the best tie is `coreOffset 0.036`, `rootDepth 0.09`, `rimPitch −0.016`. Saved outputs are `data/somerville-final/dressed-candidate.json` and `reports/somerville-dressed-report.json`.
+
+`test/somerville-dressed.test.js`, `test/somerville-route.test.js`, `test/rope-motion.test.js`, and `test/rope-core.test.js` passed. The dressed tests cover tilt, rigid motion, a reversed passage, and a sunk root. They do not treat this penetrating seed as accepted. v1 and `looseVideo` are unchanged. No motion or PBD was started.

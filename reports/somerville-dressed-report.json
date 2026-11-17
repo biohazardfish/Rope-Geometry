@@ -1,0 +1,815 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "tubeGeometry": true,
+    "operations": true,
+    "centerlinePose": false,
+    "crossingPose": false,
+    "noUnexplainedVisibleRope": false,
+    "materialLength": true,
+    "segmentLengths": true,
+    "positiveClearance": true,
+    "materialLineage": true,
+    "continuousMotion": false
+  },
+  "targetGap": 0.0002,
+  "epsilon": 0.000001,
+  "scope": {
+    "legacyOverall": {
+      "id": "legacy-overall",
+      "checks": [
+        "tubeGeometry",
+        "operations",
+        "centerlinePose",
+        "crossingPose",
+        "noUnexplainedVisibleRope",
+        "materialLength",
+        "segmentLengths",
+        "positiveClearance",
+        "materialLineage",
+        "continuousMotion"
+      ]
+    },
+    "staticReconstruction": {
+      "id": "static-reconstruction",
+      "requires": [
+        "tubeGeometry",
+        "operations",
+        "scale",
+        "materialLength",
+        "segmentLengths",
+        "positiveClearance",
+        "centerlinePose",
+        "crossingPose",
+        "noUnexplainedVisibleRope",
+        "operationSourceCorrespondence"
+      ]
+    },
+    "motionContinuity": {
+      "id": "motion-continuity",
+      "independentOf": "staticReconstruction",
+      "endpointAgreementIsPass": false
+    },
+    "constructionCorrespondence": {
+      "id": "construction-correspondence",
+      "fabricatesSourceClaims": false
+    }
+  },
+  "staticReconstruction": {
+    "status": "FAIL",
+    "checks": {
+      "tubeGeometry": "PASS",
+      "operations": "PASS",
+      "scale": "PASS",
+      "materialLength": "PASS",
+      "segmentLengths": "PASS",
+      "positiveClearance": "PASS",
+      "centerlinePose": "FAIL",
+      "crossingPose": "UNVERIFIED",
+      "noUnexplainedVisibleRope": "FAIL",
+      "operationSourceCorrespondence": "UNVERIFIED"
+    },
+    "scale": {
+      "status": "PASS",
+      "unconstrainedPixelsPerMetre": 5803.3815276984815,
+      "constrainedPixelsPerMetre": 5750,
+      "minPixelsPerMetre": 4250,
+      "maxPixelsPerMetre": 5750,
+      "diameterMetres": 0.006,
+      "clamped": true
+    },
+    "construction": {
+      "status": "UNVERIFIED",
+      "claims": [],
+      "reason": "operation source correspondence is not a reviewed record"
+    }
+  },
+  "motionContinuity": {
+    "endpointAgreementIsPass": false,
+    "status": "UNVERIFIED",
+    "basis": null,
+    "reason": "continuous motion was not supplied; endpoints do not certify a sweep"
+  },
+  "constructionCorrespondence": {
+    "status": "UNVERIFIED",
+    "claims": [],
+    "reason": "operation source correspondence is not a reviewed record",
+    "fabricatesSourceClaims": false
+  },
+  "finishedKnot": false,
+  "designation": "named dressed candidate",
+  "lineage": {
+    "status": "REFERENCE_PRESERVED",
+    "referenceId": "0297ff0f88305b24ce767d0152345a6413deec6365dd8607e5bb77dfaedbae2b",
+    "continuousMotion": "UNVERIFIED",
+    "comparedToV2PointCount": false,
+    "materialSource": "candidate.somerville.materialArc",
+    "v2PointCountAssumed": false
+  },
+  "material": {
+    "referenceLength": 7.138936637394829,
+    "geometryLength": 7.138936637394829,
+    "lengthChange": 0,
+    "maxSegmentStretch": 0,
+    "requiredTotalLength": 7.138936637394829,
+    "totalLengthResidual": 0,
+    "materialTotalResidual": 0
+  },
+  "materialError": null,
+  "materialPolicy": {
+    "source": "candidate.somerville.materialArc",
+    "seedPath": "/Users/taichengwong/Projects/RopeGeometry/data/somerville-final/loose-v3.json",
+    "seedPointCount": 2434,
+    "candidatePointCount": 2434,
+    "matchedSeedPointCount": false,
+    "v2PointCountAssumed": false
+  },
+  "correspondenceError": null,
+  "pose": {
+    "status": "FAIL",
+    "rmsPx": 109.44359390420993,
+    "maxPx": 280.2535664766792,
+    "rmsInDiameters": 3.6481197968069976,
+    "perRole": {
+      "cuff-left": {
+        "kind": "centerline",
+        "status": "PASS",
+        "rmsPx": 27.67510028119539,
+        "maxPx": 51.157978942347604,
+        "rmsInDiameters": 0.922503342706513
+      },
+      "cuff-mid-left": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 36.2679431642629,
+        "maxPx": 65.93921856964725,
+        "rmsInDiameters": 1.2089314388087635
+      },
+      "cuff-mid-right": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 50.69411677899222,
+        "maxPx": 87.58069896934907,
+        "rmsInDiameters": 1.6898038926330738
+      },
+      "cuff-right": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 70.31221033435146,
+        "maxPx": 116.55395817125594,
+        "rmsInDiameters": 2.343740344478382
+      },
+      "bight-upper-leg": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 111.93569088206593,
+        "maxPx": 276.49973608662833,
+        "rmsInDiameters": 3.7311896960688644
+      },
+      "bight-fold": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 237.6684396495861,
+        "maxPx": 280.2535664766792,
+        "rmsInDiameters": 7.9222813216528705
+      },
+      "bight-lower-leg": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 101.67336706368002,
+        "maxPx": 268.16076464030806,
+        "rmsInDiameters": 3.389112235456001
+      },
+      "tail-left": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 96.93337920976242,
+        "maxPx": 165.05976834249253,
+        "rmsInDiameters": 3.231112640325414
+      },
+      "tail-right": {
+        "kind": "centerline",
+        "status": "FAIL",
+        "rmsPx": 97.24550000477217,
+        "maxPx": 180.63982272088396,
+        "rmsInDiameters": 3.241516666825739
+      }
+    },
+    "allRequiredRolesPresent": true,
+    "centerlinePose": {
+      "status": "FAIL",
+      "rmsPx": 109.44359390420993,
+      "maxPx": 280.2535664766792,
+      "rmsInDiameters": 3.6481197968069976,
+      "targetIds": [
+        "cuff-left",
+        "cuff-mid-left",
+        "cuff-mid-right",
+        "cuff-right",
+        "bight-upper-leg",
+        "bight-fold",
+        "bight-lower-leg",
+        "tail-left",
+        "tail-right"
+      ]
+    },
+    "crossingPose": {
+      "status": "UNVERIFIED",
+      "reason": "annotation contains no explicit crossing targets; camera fit cannot certify topology",
+      "crossings": [
+        {
+          "id": "core-left-upper-contact",
+          "bindingStatus": "unverified",
+          "explicit": false,
+          "status": "UNVERIFIED"
+        },
+        {
+          "id": "core-left-lower-contact",
+          "bindingStatus": "unverified",
+          "explicit": false,
+          "status": "UNVERIFIED"
+        }
+      ]
+    }
+  },
+  "bestResidual": {
+    "source": "current-candidate",
+    "rmsPx": 109.44359390420993,
+    "pose": {
+      "status": "FAIL",
+      "rmsPx": 109.44359390420993,
+      "maxPx": 280.2535664766792,
+      "rmsInDiameters": 3.6481197968069976,
+      "perRole": {
+        "cuff-left": {
+          "kind": "centerline",
+          "status": "PASS",
+          "rmsPx": 27.67510028119539,
+          "maxPx": 51.157978942347604,
+          "rmsInDiameters": 0.922503342706513
+        },
+        "cuff-mid-left": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 36.2679431642629,
+          "maxPx": 65.93921856964725,
+          "rmsInDiameters": 1.2089314388087635
+        },
+        "cuff-mid-right": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 50.69411677899222,
+          "maxPx": 87.58069896934907,
+          "rmsInDiameters": 1.6898038926330738
+        },
+        "cuff-right": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 70.31221033435146,
+          "maxPx": 116.55395817125594,
+          "rmsInDiameters": 2.343740344478382
+        },
+        "bight-upper-leg": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 111.93569088206593,
+          "maxPx": 276.49973608662833,
+          "rmsInDiameters": 3.7311896960688644
+        },
+        "bight-fold": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 237.6684396495861,
+          "maxPx": 280.2535664766792,
+          "rmsInDiameters": 7.9222813216528705
+        },
+        "bight-lower-leg": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 101.67336706368002,
+          "maxPx": 268.16076464030806,
+          "rmsInDiameters": 3.389112235456001
+        },
+        "tail-left": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 96.93337920976242,
+          "maxPx": 165.05976834249253,
+          "rmsInDiameters": 3.231112640325414
+        },
+        "tail-right": {
+          "kind": "centerline",
+          "status": "FAIL",
+          "rmsPx": 97.24550000477217,
+          "maxPx": 180.63982272088396,
+          "rmsInDiameters": 3.241516666825739
+        }
+      },
+      "allRequiredRolesPresent": true,
+      "centerlinePose": {
+        "status": "FAIL",
+        "rmsPx": 109.44359390420993,
+        "maxPx": 280.2535664766792,
+        "rmsInDiameters": 3.6481197968069976,
+        "targetIds": [
+          "cuff-left",
+          "cuff-mid-left",
+          "cuff-mid-right",
+          "cuff-right",
+          "bight-upper-leg",
+          "bight-fold",
+          "bight-lower-leg",
+          "tail-left",
+          "tail-right"
+        ]
+      },
+      "crossingPose": {
+        "status": "UNVERIFIED",
+        "reason": "annotation contains no explicit crossing targets; camera fit cannot certify topology",
+        "crossings": [
+          {
+            "id": "core-left-upper-contact",
+            "bindingStatus": "unverified",
+            "explicit": false,
+            "status": "UNVERIFIED"
+          },
+          {
+            "id": "core-left-lower-contact",
+            "bindingStatus": "unverified",
+            "explicit": false,
+            "status": "UNVERIFIED"
+          }
+        ]
+      }
+    }
+  },
+  "crossingPose": {
+    "status": "UNVERIFIED",
+    "reason": "annotation contains no explicit crossing targets; camera fit cannot certify topology",
+    "crossings": [
+      {
+        "id": "core-left-upper-contact",
+        "bindingStatus": "unverified",
+        "explicit": false,
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "core-left-lower-contact",
+        "bindingStatus": "unverified",
+        "explicit": false,
+        "status": "UNVERIFIED"
+      }
+    ]
+  },
+  "camera": {
+    "projection": "orthographic",
+    "pixelsPerMetre": 5750,
+    "originPixel": [
+      511.62125660533593,
+      524.4358091915279
+    ],
+    "rollRadians": -0.5190374553525565
+  },
+  "cameraSource": "constrained-similarity",
+  "scale": {
+    "status": "PASS",
+    "unconstrainedPixelsPerMetre": 5803.3815276984815,
+    "constrainedPixelsPerMetre": 5750,
+    "clamped": true,
+    "unconstrainedScaleStatus": "OUTSIDE_RANGE",
+    "nominalPixelsPerMetre": 5000,
+    "minPixelsPerMetre": 4250,
+    "maxPixelsPerMetre": 5750,
+    "diameterMetres": 0.006,
+    "unconstrainedOriginPixel": [
+      510.9853048289625,
+      522.2586302655326
+    ],
+    "independent": true,
+    "actualDiameterMetres": 0.006
+  },
+  "unexplainedVisible": {
+    "count": 1169,
+    "lengthPx": 9019.534274301785,
+    "samplingResolutionPx": 1,
+    "maxDistancePx": 396.64830626614634,
+    "byRole": {
+      "tail/0": 23,
+      "loop-rim/0": 30,
+      "loop-to-cuff/0": 13,
+      "cuff/0": 128,
+      "cuff-to-first/0": 110,
+      "over-root/0": 79,
+      "under-approach/0": 78,
+      "under-cuff/0": 19,
+      "return-approach/0": 143,
+      "return-passage/0": 2,
+      "bight-leg/0": 1,
+      "return-approach/1": 96,
+      "under-cuff/1": 20,
+      "under-approach/1": 29,
+      "over-root/1": 71,
+      "first-passage/1": 4,
+      "cuff-to-first/1": 95,
+      "cuff/1": 114,
+      "loop-to-cuff/1": 50,
+      "loop-rim/1": 38,
+      "tail/1": 26
+    },
+    "lengthByRole": {
+      "tail/0": 222.88539829543504,
+      "loop-rim/0": 198.83217800509652,
+      "loop-to-cuff/0": 103.54136943307886,
+      "cuff/0": 532.1182390622415,
+      "cuff-to-first/0": 818.0360527758811,
+      "over-root/0": 703.1768623387053,
+      "under-approach/0": 749.5743355440819,
+      "under-cuff/0": 196.78731793687544,
+      "return-approach/0": 1368.3055727328979,
+      "return-passage/0": 6.073082579039358,
+      "bight-leg/0": 3.6019008901111653,
+      "return-approach/1": 872.7218143036872,
+      "under-cuff/1": 190.68119055238088,
+      "under-approach/1": 290.24704442037387,
+      "over-root/1": 695.0686002261376,
+      "first-passage/1": 23.866825664502915,
+      "cuff-to-first/1": 714.6177097152363,
+      "cuff/1": 454.1933086920534,
+      "loop-to-cuff/1": 366.28639730844924,
+      "loop-rim/1": 270.68480369621443,
+      "tail/1": 238.23427012931273
+    },
+    "coreBoxExempt": false,
+    "spanExempt": false
+  },
+  "tube": {
+    "valid": true,
+    "status": "TUBE_GEOMETRY_PASS",
+    "selfIntersections": 0,
+    "intersectionPairs": [],
+    "foldedFaces": 0,
+    "columnPenetrations": 0,
+    "minimumColumnGap": 0.0017005967045297873,
+    "testedPairs": 454364,
+    "triangles": 58416,
+    "epsilon": 0.000001,
+    "topologyVerified": false
+  },
+  "clearance": {
+    "minimumNonlocalGap": 0.00031703142349089053,
+    "minimumColumnGap": 0.0016545350845564915,
+    "penetratingPairs": 0,
+    "closest": {
+      "i": 817,
+      "j": 1218,
+      "roles": [
+        "over-root/0",
+        "fold"
+      ],
+      "gap": 0.00031703142349089053
+    },
+    "groups": {},
+    "hits": [],
+    "limitation": "Seed diagnostic only: excludes local material neighborhoods; actual tube validation still required"
+  },
+  "operations": {
+    "valid": true,
+    "scope": "final",
+    "rootRelation": {
+      "status": "PASS",
+      "hits": [
+        {
+          "limb": 0,
+          "rootRole": "loop-to-cuff",
+          "rootLimb": 0,
+          "depthGap": 0.07307647246598917,
+          "point": [
+            -0.0005200675203985043,
+            -0.05978076838157857,
+            -0.1384364168049466
+          ]
+        },
+        {
+          "limb": 0,
+          "rootRole": "loop-to-cuff",
+          "rootLimb": 1,
+          "depthGap": 0.06451680101757269,
+          "point": [
+            -0.0005273924053314988,
+            -0.0597847566172644,
+            -0.1384339672249523
+          ]
+        },
+        {
+          "limb": 0,
+          "rootRole": "tail",
+          "rootLimb": 0,
+          "depthGap": 0.09068301983929142,
+          "point": [
+            -0.017999696302898435,
+            -0.06929803451246869,
+            -0.132590898497874
+          ]
+        },
+        {
+          "limb": 0,
+          "rootRole": "tail",
+          "rootLimb": 1,
+          "depthGap": 0.08213769318676498,
+          "point": [
+            -0.01801966976666182,
+            -0.06930890961585658,
+            -0.13258421899400483
+          ]
+        },
+        {
+          "limb": 0,
+          "rootRole": "tail",
+          "rootLimb": 0,
+          "depthGap": 0.09088920530036287,
+          "point": [
+            -0.022348064375185245,
+            -0.07166562347525329,
+            -0.13113672201113474
+          ]
+        },
+        {
+          "limb": 0,
+          "rootRole": "tail",
+          "rootLimb": 1,
+          "depthGap": 0.08238834715630253,
+          "point": [
+            -0.022470159996377637,
+            -0.07173210180467111,
+            -0.13109589092726137
+          ]
+        },
+        {
+          "limb": 1,
+          "rootRole": "tail",
+          "rootLimb": 0,
+          "depthGap": 0.09938920530036287,
+          "point": [
+            -0.022348064375185245,
+            -0.07611423406089231,
+            -0.13837964019770432
+          ]
+        },
+        {
+          "limb": 1,
+          "rootRole": "tail",
+          "rootLimb": 1,
+          "depthGap": 0.09088834715630252,
+          "point": [
+            -0.022470159996377633,
+            -0.07618071239031013,
+            -0.13833880911383098
+          ]
+        },
+        {
+          "limb": 1,
+          "rootRole": "tail",
+          "rootLimb": 0,
+          "depthGap": 0.0991830198392914,
+          "point": [
+            -0.017999696302898403,
+            -0.07374664509810767,
+            -0.1398338166844436
+          ]
+        },
+        {
+          "limb": 1,
+          "rootRole": "tail",
+          "rootLimb": 1,
+          "depthGap": 0.09063769318676496,
+          "point": [
+            -0.018019669766661795,
+            -0.07375752020149558,
+            -0.13982713718057443
+          ]
+        },
+        {
+          "limb": 1,
+          "rootRole": "loop-to-cuff",
+          "rootLimb": 0,
+          "depthGap": 0.08157647246598915,
+          "point": [
+            -0.0005200675203984998,
+            -0.06422937896721759,
+            -0.14567933499151617
+          ]
+        },
+        {
+          "limb": 1,
+          "rootRole": "loop-to-cuff",
+          "rootLimb": 1,
+          "depthGap": 0.07301680101757267,
+          "point": [
+            -0.0005273924053314943,
+            -0.06423336720290342,
+            -0.14567688541152188
+          ]
+        }
+      ]
+    },
+    "checks": {
+      "singleMaterialPath": true,
+      "twoTurns": true,
+      "pairedCuffOrder": true,
+      "loopAperture": true,
+      "firstPassage": true,
+      "secondSameDirection": true,
+      "underAllFour": true,
+      "underCuffDirection": true,
+      "overRootBranches": true
+    },
+    "cuffTurns": [
+      {
+        "limb": 0,
+        "turns": 1.978194490759505
+      },
+      {
+        "limb": 1,
+        "turns": 1.9782665851419974
+      }
+    ],
+    "loopTurns": [
+      1.0599948897984866,
+      1.0599653209908797
+    ],
+    "first": [
+      {
+        "limb": 0,
+        "segment": 793,
+        "point": [
+          -0.0038950423930530992,
+          -0.032880679351220084,
+          -0.05432570845612709
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      },
+      {
+        "limb": 1,
+        "segment": 1640,
+        "point": [
+          -0.012352816763126386,
+          -0.033747919031144935,
+          -0.05379304861916334
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      }
+    ],
+    "second": [
+      {
+        "limb": 0,
+        "segment": 1191,
+        "point": [
+          0.012352816763126386,
+          -0.03374791903114493,
+          -0.05379304861916335
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      },
+      {
+        "limb": 1,
+        "segment": 1240,
+        "point": [
+          0.003895042393053099,
+          -0.0328806793512201,
+          -0.05432570845612708
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      }
+    ],
+    "under": [
+      {
+        "limb": 0,
+        "cuffLimb": 1,
+        "segment": 995,
+        "cuffSegment": 1972,
+        "point": [
+          -0.013022443580912355,
+          -0.035427502752932605,
+          -0.0014122849184750423
+        ],
+        "depthGap": 0.00813254326423303
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 0,
+        "segment": 999,
+        "cuffSegment": 460,
+        "point": [
+          -0.004506975587229994,
+          -0.035427502752932605,
+          -0.0014122849184750423
+        ],
+        "depthGap": 0.00811566682686151
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 1,
+        "segment": 1004,
+        "cuffSegment": 1834,
+        "point": [
+          0.003977255599384456,
+          -0.035427502752932605,
+          -0.0014122849184750423
+        ],
+        "depthGap": 0.008114535767817961
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 0,
+        "segment": 1008,
+        "cuffSegment": 598,
+        "point": [
+          0.01249323543010872,
+          -0.035427502752932605,
+          -0.0014122849184750423
+        ],
+        "depthGap": 0.008133209406448759
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 0,
+        "segment": 1424,
+        "cuffSegment": 603,
+        "point": [
+          0.013022586602822937,
+          -0.03407329799671152,
+          -0.009803716827167873
+        ],
+        "depthGap": 0.008126450906694775
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 1,
+        "segment": 1428,
+        "cuffSegment": 1830,
+        "point": [
+          0.004506642700419682,
+          -0.03407329799671152,
+          -0.009803716827167873
+        ],
+        "depthGap": 0.008138746532169401
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 0,
+        "segment": 1433,
+        "cuffSegment": 464,
+        "point": [
+          -0.0039773364114087575,
+          -0.03407329799671152,
+          -0.009803716827167873
+        ],
+        "depthGap": 0.008117145118701978
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 1,
+        "segment": 1437,
+        "cuffSegment": 1968,
+        "point": [
+          -0.012492977376740379,
+          -0.03407329799671152,
+          -0.009803716827167873
+        ],
+        "depthGap": 0.008114365616803655
+      }
+    ],
+    "diagonal": [
+      {
+        "limb": 0,
+        "perCuff": [
+          0,
+          0
+        ]
+      },
+      {
+        "limb": 1,
+        "perCuff": [
+          0,
+          0
+        ]
+      }
+    ],
+    "meaning": "Numerical realization of the declared operational route; not an isotopy certificate or source-pose measurement"
+  },
+  "generatorReport": null,
+  "candidateSha256": "ea7676ee9fbebbc537fe5a7d097f5b53f20c48c968659f8f3fb12a7ceabf85f7",
+  "historicalFinalPreserved": true,
+  "v2PointCountAssumed": false,
+  "limitations": [
+    "Named dressed candidate evaluation. This is not a finished knot.",
+    "Historical final, continuation, and loose JSON files are not modified.",
+    "Motion continuity is not inferred from endpoints or from a static pose.",
+    "Unreviewed crossing bindings and an uncalibrated camera cannot pass."
+  ],
+  "candidatePath": "/Users/taichengwong/Projects/RopeGeometry/data/somerville-final/dressed-candidate.json"
+}

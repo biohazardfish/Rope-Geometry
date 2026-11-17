@@ -1,0 +1,38 @@
+{
+  "coarse": {
+    "status": "PASS",
+    "crossings": [
+      {
+        "id": "known-cross",
+        "bindingStatus": "reviewed",
+        "explicit": true,
+        "residualPx": 0,
+        "limitPx": 30,
+        "projectedPx": [
+          0,
+          0
+        ],
+        "overY": -0.01,
+        "underY": 0.01,
+        "overRole": "over",
+        "underRole": "under",
+        "status": "PASS"
+      }
+    ],
+    "thresholdPx": 30
+  },
+  "subdivided": {
+    "status": "FAIL",
+    "crossings": [
+      {
+        "id": "known-cross",
+        "bindingStatus": "reviewed",
+        "status": "FAIL",
+        "explicit": true,
+        "residualPx": null,
+        "reason": "no projected segment crossing matches the declared roles and material ranges"
+      }
+    ],
+    "thresholdPx": 30
+  }
+}

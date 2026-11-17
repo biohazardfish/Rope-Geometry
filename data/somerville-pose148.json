@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "source": "references/phase4b/duchy-video-148.jpg",
+  "videoTimeSeconds": 148,
+  "imageSize": [
+    1280,
+    1280
+  ],
+  "annotationMethod": "Codex visual tracing of source frame; pixel coordinates, not geometry generated targets",
+  "nominalVisibleRopeDiameterPx": 30,
+  "acceptance": {
+    "visibleCenterlineRmsInDiameters": 1,
+    "crossingPositionErrorInDiameters": 1
+  },
+  "cameraInitialGuess": {
+    "projection": "orthographic",
+    "lookDirection": [
+      0,
+      1,
+      0
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "originPixel": [
+      460,
+      555
+    ],
+    "pixelsPerMetre": 5333.333333333333
+  },
+  "visiblePolylines": [
+    {
+      "id": "cuff-left",
+      "kind": "centerline",
+      "points": [
+        [
+          405,
+          425
+        ],
+        [
+          411,
+          475
+        ],
+        [
+          419,
+          534
+        ],
+        [
+          426,
+          594
+        ],
+        [
+          433,
+          620
+        ]
+      ]
+    },
+    {
+      "id": "cuff-mid-left",
+      "kind": "centerline",
+      "points": [
+        [
+          435,
+          425
+        ],
+        [
+          443,
+          480
+        ],
+        [
+          448,
+          539
+        ],
+        [
+          458,
+          598
+        ],
+        [
+          464,
+          620
+        ]
+      ]
+    },
+    {
+      "id": "cuff-mid-right",
+      "kind": "centerline",
+      "points": [
+        [
+          465,
+          425
+        ],
+        [
+          474,
+          480
+        ],
+        [
+          480,
+          540
+        ],
+        [
+          487,
+          592
+        ],
+        [
+          496,
+          620
+        ]
+      ]
+    },
+    {
+      "id": "cuff-right",
+      "kind": "centerline",
+      "points": [
+        [
+          495,
+          425
+        ],
+        [
+          504,
+          480
+        ],
+        [
+          510,
+          539
+        ],
+        [
+          517,
+          592
+        ],
+        [
+          520,
+          620
+        ]
+      ]
+    },
+    {
+      "id": "bight-upper-leg",
+      "kind": "centerline",
+      "points": [
+        [
+          552,
+          723
+        ],
+        [
+          650,
+          769
+        ],
+        [
+          750,
+          819
+        ],
+        [
+          850,
+          867
+        ],
+        [
+          950,
+          909
+        ],
+        [
+          1027,
+          936
+        ]
+      ]
+    },
+    {
+      "id": "bight-fold",
+      "kind": "centerline",
+      "points": [
+        [
+          1027,
+          936
+        ],
+        [
+          1078,
+          960
+        ],
+        [
+          1080,
+          1000
+        ],
+        [
+          1052,
+          1033
+        ],
+        [
+          1015,
+          1040
+        ],
+        [
+          980,
+          1028
+        ]
+      ]
+    },
+    {
+      "id": "bight-lower-leg",
+      "kind": "centerline",
+      "points": [
+        [
+          980,
+          1028
+        ],
+        [
+          900,
+          986
+        ],
+        [
+          800,
+          923
+        ],
+        [
+          700,
+          858
+        ],
+        [
+          600,
+          793
+        ],
+        [
+          537,
+          746
+        ]
+      ]
+    },
+    {
+      "id": "tail-left",
+      "kind": "centerline",
+      "points": [
+        [
+          393,
+          776
+        ],
+        [
+          382,
+          865
+        ],
+        [
+          375,
+          955
+        ],
+        [
+          370,
+          1050
+        ],
+        [
+          366,
+          1145
+        ],
+        [
+          365,
+          1240
+        ]
+      ]
+    },
+    {
+      "id": "tail-right",
+      "kind": "centerline",
+      "points": [
+        [
+          418,
+          782
+        ],
+        [
+          412,
+          875
+        ],
+        [
+          409,
+          967
+        ],
+        [
+          405,
+          1060
+        ],
+        [
+          402,
+          1150
+        ],
+        [
+          402,
+          1240
+        ]
+      ]
+    }
+  ],
+  "lockingCoreRegion": [
+    385,
+    620,
+    560,
+    770
+  ],
+  "lockingCoreStatus": "Requires separate strand correspondence review; do not infer crossings from region bounding box",
+  "notes": [
+    "Cuff lane labels denote visible left-to-right order, not externally identified physical ends.",
+    "Only the explicitly traced spans are scoring targets; intervening gloved/occluded areas are not scored.",
+    "Frame contains an extended bight supported by a finger; reproduce its pose using shape constraints rather than claiming force equilibrium.",
+    "Initial camera is an engineering estimate. Optimized camera and per-role correspondences must be recorded separately."
+  ],
+  "annotationUncertaintyPx": 10,
+  "scaleCalibration": {
+    "nominalPixelsPerMetre": 5000,
+    "minPixelsPerMetre": 4250,
+    "maxPixelsPerMetre": 5750,
+    "diameterMetres": 0.006,
+    "basis": "Manual visible-width estimates across cuff (27–33 px), bight (26–32 px), and tail (28–34 px). Range fixed before dressed fit; engineering rope diameter 6 mm.",
+    "sourceLedger": "docs/somerville-dressed-core-ledger.md",
+    "status": "engineering-calibration"
+  },
+  "crossings": [
+    {
+      "id": "core-left-upper-contact",
+      "positionPx": [
+        431,
+        667
+      ],
+      "uncertaintyPx": 10,
+      "over": {
+        "role": null
+      },
+      "under": {
+        "role": null
+      },
+      "bindingStatus": "unverified",
+      "observation": "Front oblique strand crosses a descending strand; individual material binding awaits continuity review.",
+      "source": "references/phase4b/duchy-video-148.jpg"
+    },
+    {
+      "id": "core-left-lower-contact",
+      "positionPx": [
+        437,
+        700
+      ],
+      "uncertaintyPx": 10,
+      "over": {
+        "role": null
+      },
+      "under": {
+        "role": null
+      },
+      "bindingStatus": "unverified",
+      "observation": "Lower front branch crosses descending long-side region; individual material binding awaits continuity review.",
+      "source": "references/phase4b/duchy-video-148.jpg"
+    }
+  ],
+  "coreObservations": {
+    "outerBoxPx": [
+      392,
+      611,
+      561,
+      752
+    ],
+    "uncertaintyPx": 10,
+    "coreCenterPx": [
+      477,
+      682
+    ],
+    "sourceLedger": "docs/somerville-dressed-core-ledger.md",
+    "status": "observed silhouettes; not material correspondences"
+  }
+}

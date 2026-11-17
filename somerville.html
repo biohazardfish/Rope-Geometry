@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Somerville · 完整鬆結檢視</title>
+<style>
+:root { color-scheme: dark; font-family: system-ui, "PingFang TC", "Noto Sans TC", sans-serif; color: #e4ecef; background: #121d25; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, select { font: inherit; color: inherit; cursor: pointer; background: #253844; border: 1px solid #597481; border-radius: 4px; padding: 8px 12px; }
+button[aria-pressed="true"] { border-color: #6fd4c4; background: #2a4a52; }
+header { min-height: 56px; padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; border-bottom: 1px solid #45535c; }
+header a { color: #92d6ec; text-decoration: none; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
+.badge { padding: 4px 10px; border-radius: 999px; background: #2a3d48; border: 1px solid #5a7280; }
+.badge.warn { border-color: #c9a66b; color: #f0ddb8; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) min(360px, 34vw); height: calc(100vh - 56px); min-height: 520px; }
+.viewer { position: relative; min-width: 0; background: radial-gradient(circle at 45% 40%, #1e3038, #121d25 60%); }
+#stage { position: absolute; inset: 0; }
+#stage canvas { display: block; width: 100%; height: 100%; }
+.view-controls { position: absolute; left: 16px; bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px; }
+.toolbar { position: absolute; top: 16px; left: 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+#reference { position: absolute; right: 14px; bottom: 14px; width: min(260px, 32vw); margin: 0; background: #121d25ee; border: 1px solid #597481; }
+#reference img { display: block; width: 100%; height: auto; }
+#reference figcaption { padding: 8px 10px; font-size: 12px; line-height: 1.45; color: #c8d6dc; }
+aside { overflow: auto; padding: 18px 20px 28px; border-left: 1px solid #45535c; }
+h1 { font-size: 22px; margin: 0 0 10px; line-height: 1.25; }
+h2 { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #9eb4bd; margin: 18px 0 8px; }
+p, li { font-size: 14px; line-height: 1.55; color: #c5d3d9; }
+.status { padding: 10px 12px; border-radius: 6px; background: #1f2f38; border-left: 3px solid #6fd4c4; margin-bottom: 12px; }
+.status.error { border-left-color: #e8846a; color: #ffc9bb; }
+.status.pending { border-left-color: #8aa4b0; }
+.check-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.check-table th, .check-table td { border-bottom: 1px solid #3a4f58; padding: 6px 4px; text-align: right; }
+.check-table th:first-child, .check-table td:first-child { text-align: left; }
+label.row { display: flex; gap: 8px; align-items: center; margin: 10px 0; }
+@media (max-width: 880px) {
+  main { grid-template-columns: 1fr; grid-template-rows: min(68vh, 560px) auto; height: auto; }
+  aside { border-left: 0; border-top: 1px solid #45535c; }
+}
+</style>
+</head>
+<body>
+<header>
+  <strong>RopeGeometry · 繩結檢視器</strong>
+  <div class="badges">
+    <span class="badge" id="badge-loose">完整鬆結</span>
+    <span class="badge warn" id="badge-align">尚未完成影片姿態對齊</span>
+    <span class="badge warn" id="badge-motion">運動連續未驗證</span>
+  </div>
+  <a href="/phase5.html">Phase 5 候選</a>
+</header>
+<main>
+  <section class="viewer">
+    <div id="stage"></div>
+    <div class="toolbar">
+      <label>模型
+        <select id="model">
+          <option value="loose">loose.json · 完整鬆結（v1）</option>
+          <option value="loose-v2" selected>loose-v2.json · 影片路線鬆結</option>
+          <option value="continuation">Somerville · 守長收緊候選</option>
+          <option value="overhand" data-source="/data/rope-examples/overhand.json">單股單結 · 共用引擎範例</option>
+          <option value="dressed-candidate" data-source="/data/somerville-final/dressed-candidate.json">dressed-candidate.json · 整理後靜態候選</option>
+          <option value="final" disabled>final.json · 靜態重建（尚未通過）</option>
+        </select>
+      </label>
+    </div>
+    <div class="view-controls" id="views"></div>
+    <figure id="reference">
+      <img src="/references/phase4b/duchy-video-148.jpg" alt="TheDuchy 影片 148 秒參考畫面">
+      <figcaption>參考：148 秒畫面（duchy-video-148.jpg）。3D 為 metric 中心線管狀網格，僅供對照。</figcaption>
+    </figure>
+  </section>
+  <aside>
+    <h1>Somerville 管狀幾何</h1>
+    <div id="load-status" class="status pending">正在檢查資料是否已產生…</div>
+    <label class="row"><input id="centerline" type="checkbox" checked> 顯示中心線</label>
+    <label class="row"><input id="semantic" type="checkbox"> 語意分段配色（需 JSON 標籤）</label>
+    <h2>管狀網格檢查（載入時一次）</h2>
+    <div id="check-panel" class="status pending">檢查：等待幾何…</div>
+    <p id="schema-note"></p>
+  </aside>
+</main>
+<script type="module" src="/src/somerville-viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "loose": {
+    "document": "38f566a2349eb0ff7836b810aaeac7f33e6c5c2047e5b474a2f854fd1a46177e",
+    "points": "77fe18c498ee6c75c282023c685ae9ea3f8e9ee65cf27c855bf51e5fd24e71d1",
+    "ribbon": "628c9e6280b836be2f29a4f3ecd32d06857a94ad4303e3b983443ac348aa500b",
+    "length": 7.3109557299401295
+  },
+  "looseVideo": {
+    "document": "58e895d1bedf999fae89396d1c95ae2f9b5c313bd3b6dfd5fe803d6959f83a89",
+    "points": "0f704319464e038e2ac3f27a4738eeb1e97047ab1ab9ce30efe4d1b0afedca64",
+    "ribbon": "6f7c9b00eef787b2521cb8568301009d59e1d324531e68786c3302ceb3a68aca",
+    "length": 7.138936637394829
+  },
+  "videoTight": {
+    "document": "1f2cfb83b0cf8b6b4c8b46d70a1edb3a3326122917f9c64b2f9249e973d87bd3",
+    "points": "76eab939f941f970ec17ccb7d3ac35268a0608a388c8364d0ee85d374726b6b6",
+    "ribbon": "1868e7a64f5766a0e66f4085128a5db94cab5609d699c57f984e2f3a94317bf6",
+    "length": 6.542174962462249
+  }
+}

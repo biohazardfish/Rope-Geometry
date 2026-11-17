@@ -1,0 +1,305 @@
+{
+  "purpose": "Review aid for crossing bindings. Lists roles and material ranges of the projected candidate near each annotated contact. The reviewer decides the binding; this file never marks anything reviewed.",
+  "generatedAt": "2026-11-05T13:00:29.004Z",
+  "candidate": {
+    "path": "data/somerville-final/loose-v3.json",
+    "sha256": "ea7676ee9fbebbc537fe5a7d097f5b53f20c48c968659f8f3fb12a7ceabf85f7",
+    "stage": "loose-v3",
+    "points": 2434
+  },
+  "camera": {
+    "projection": "orthographic",
+    "pixelsPerMetre": 5750,
+    "originPixel": [
+      511.62125660533593,
+      524.4358091915279
+    ],
+    "rollRadians": -0.5190374553525565,
+    "source": "constrained-similarity",
+    "poseRmsPx": 109.44359390420993,
+    "poseStatus": "FAIL",
+    "caveat": "the fitted camera has a large residual; projected positions near the core can be off by tens of pixels"
+  },
+  "frame": {
+    "path": "references/phase4b/duchy-video-148.jpg",
+    "decode": "sips bmp",
+    "imageSize": [
+      1280,
+      1280
+    ]
+  },
+  "depthConvention": "orthographic view from -Y toward +Y; smaller world Y is nearer the camera (projected over strand)",
+  "palette": {
+    "loop-rim": "rgb(255,64,64)",
+    "loop-to-cuff": "rgb(255,160,0)",
+    "cuff": "rgb(255,230,0)",
+    "cuff-to-first": "rgb(160,220,0)",
+    "first-passage": "rgb(0,200,80)",
+    "over-root": "rgb(0,220,220)",
+    "under-approach": "rgb(0,140,255)",
+    "under-cuff": "rgb(90,90,255)",
+    "return-approach": "rgb(170,80,255)",
+    "return-passage": "rgb(255,0,200)",
+    "bight-leg": "rgb(255,120,180)",
+    "fold": "rgb(255,255,255)",
+    "tail": "rgb(150,150,150)"
+  },
+  "roleMaterialRanges": {
+    "tail/0": [
+      0,
+      1.74670363206793
+    ],
+    "loop-rim/0": [
+      1.74670363206793,
+      1.8808522132738386
+    ],
+    "loop-to-cuff/0": [
+      1.8808522132738386,
+      2.0217562507444558
+    ],
+    "cuff/0": [
+      2.0217562507444558,
+      2.461913593553691
+    ],
+    "cuff-to-first/0": [
+      2.461913593553691,
+      2.7477224805890663
+    ],
+    "first-passage/0": [
+      2.7477224805890663,
+      2.7656298359700675
+    ],
+    "over-root/0": [
+      2.7656298359700675,
+      2.928029711221611
+    ],
+    "under-approach/0": [
+      2.928029711221611,
+      3.1136786050816347
+    ],
+    "under-cuff/0": [
+      3.1136786050816347,
+      3.184680389635282
+    ],
+    "return-approach/0": [
+      3.184680389635282,
+      3.498832041997703
+    ],
+    "return-passage/0": [
+      3.498832041997703,
+      3.5150022488164336
+    ],
+    "bight-leg/0": [
+      3.5150022488164336,
+      3.537222070627482
+    ],
+    "fold": [
+      3.537222070627482,
+      3.5748782521628626
+    ],
+    "bight-leg/1": [
+      3.5748782521628626,
+      3.5953056190698094
+    ],
+    "return-passage/1": [
+      3.5953056190698094,
+      3.6130241329107773
+    ],
+    "return-approach/1": [
+      3.6130241329107773,
+      3.9306582753146695
+    ],
+    "under-cuff/1": [
+      3.9306582753146695,
+      4.001688729452361
+    ],
+    "under-approach/1": [
+      4.001688729452361,
+      4.187309598272666
+    ],
+    "over-root/1": [
+      4.187309598272666,
+      4.376249744276719
+    ],
+    "first-passage/1": [
+      4.376249744276719,
+      4.3929610720883545
+    ],
+    "cuff-to-first/1": [
+      4.3929610720883545,
+      4.674040666912701
+    ],
+    "cuff/1": [
+      4.674040666912701,
+      5.114277923047354
+    ],
+    "loop-to-cuff/1": [
+      5.114277923047354,
+      5.259983300553451
+    ],
+    "loop-rim/1": [
+      5.259983300553451,
+      5.394130203414528
+    ],
+    "tail/1": [
+      5.394130203414528,
+      7.138936637394829
+    ]
+  },
+  "contacts": [
+    {
+      "id": "core-left-upper-contact",
+      "positionPx": [
+        431,
+        667
+      ],
+      "uncertaintyPx": 10,
+      "bindingStatus": "unverified",
+      "currentBinding": {
+        "over": null,
+        "under": null
+      },
+      "observation": "Front oblique strand crosses a descending strand; individual material binding awaits continuity review.",
+      "searchRadiusPx": 30,
+      "rolesNearby": [
+        {
+          "role": "cuff/1",
+          "baseRole": "cuff",
+          "minDistancePx": 8.8091690086068,
+          "materialRange": [
+            5.076034345206306,
+            5.085046673716047
+          ],
+          "depthYRange": [
+            0.02709547812311957,
+            0.031163050968622454
+          ],
+          "segmentRange": [
+            2050,
+            2057
+          ]
+        },
+        {
+          "role": "under-cuff/1",
+          "baseRole": "under-cuff",
+          "minDistancePx": 27.424955690392757,
+          "materialRange": [
+            3.99182761834125,
+            3.9937998405634723
+          ],
+          "depthYRange": [
+            -0.03407329799671152,
+            -0.03407329799671152
+          ],
+          "segmentRange": [
+            1442,
+            1444
+          ]
+        }
+      ],
+      "projectedCrossingCandidates": [
+        {
+          "overRole": "under-cuff/1",
+          "underRole": "cuff/1",
+          "overSegment": 1442,
+          "underSegment": 2050,
+          "overMaterial": 3.990674350914208,
+          "underMaterial": 5.074918300131743,
+          "projectedPx": [
+            427.2,
+            637.6
+          ],
+          "residualPx": 29.7,
+          "depthDifferenceMm": 65.58,
+          "withinNominalDiameter": true
+        }
+      ],
+      "wideSearch": {
+        "radiusPx": 90,
+        "rolesNearby": [
+          {
+            "role": "cuff/1",
+            "minDistancePx": 8.8
+          },
+          {
+            "role": "under-cuff/1",
+            "minDistancePx": 27.4
+          },
+          {
+            "role": "cuff/0",
+            "minDistancePx": 57.6
+          },
+          {
+            "role": "under-approach/1",
+            "minDistancePx": 58.8
+          },
+          {
+            "role": "under-cuff/0",
+            "minDistancePx": 75.7
+          }
+        ]
+      }
+    },
+    {
+      "id": "core-left-lower-contact",
+      "positionPx": [
+        437,
+        700
+      ],
+      "uncertaintyPx": 10,
+      "bindingStatus": "unverified",
+      "currentBinding": {
+        "over": null,
+        "under": null
+      },
+      "observation": "Lower front branch crosses descending long-side region; individual material binding awaits continuity review.",
+      "searchRadiusPx": 30,
+      "rolesNearby": [
+        {
+          "role": "cuff/1",
+          "baseRole": "cuff",
+          "minDistancePx": 16.856615005336177,
+          "materialRange": [
+            5.08204256421279,
+            5.09255694747592
+          ],
+          "depthYRange": [
+            0.022164424960938206,
+            0.0286910951758566
+          ],
+          "segmentRange": [
+            2054,
+            2062
+          ]
+        }
+      ],
+      "projectedCrossingCandidates": [],
+      "wideSearch": {
+        "radiusPx": 90,
+        "rolesNearby": [
+          {
+            "role": "cuff/1",
+            "minDistancePx": 16.9
+          },
+          {
+            "role": "under-cuff/1",
+            "minDistancePx": 59.1
+          },
+          {
+            "role": "cuff/0",
+            "minDistancePx": 65.6
+          },
+          {
+            "role": "under-approach/1",
+            "minDistancePx": 71.8
+          },
+          {
+            "role": "loop-to-cuff/1",
+            "minDistancePx": 84
+          }
+        ]
+      }
+    }
+  ],
+  "howToBind": "For a contact, copy over.role / under.role from a chosen projectedCrossingCandidates entry (or decide from the frame), optionally over.materialRange / under.materialRange from overMaterial / underMaterial ± a few cm, and set bindingStatus to \"reviewed\" in data/somerville-pose148.json by hand. Then rerun npm run generate:dressed."
+}

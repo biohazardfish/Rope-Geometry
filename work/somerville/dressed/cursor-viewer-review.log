@@ -1,0 +1,27 @@
+## Codex items 7 & 8
+
+**Item 7 — report ↔ candidate SHA**  
+For `dressed-candidate`, the viewer loads raw text, hashes it with `crypto.subtle` (SHA-256 hex), fetches `/reports/somerville-dressed-report.json`, and copies `staticReconstruction` / `motionContinuity` into in-memory `doc.somerville.acceptance` only when `report.candidateSha256` matches. Embedded acceptance in the JSON is stripped for those fields first so a stale PASS in the file is never shown. With no candidate file or a report without a matching hash (current report has no `candidateSha256`), status stays **未驗證**. Tube checks still run once at load; **`report.valid === false` overrides** a matched static PASS on the header badge.
+
+**Item 8 — wording & framing**  
+Option label: **整理後靜態候選** (was 穿衣). Front/rear/side no longer reset core framing to full rope; only the **全繩取景** button restores `savedFull` target/scale. **核心** still calls `frameCore`; core view direction uses the front offset while keeping the core target.
+
+## Modified files (only owned scope)
+
+| File | Changes |
+|------|---------|
+| `somerville.html` | 整理後 label |
+| `src/somerville-viewer.js` | SHA-gated report merge, tube-over-badge, framing UX, dressed load path |
+
+## Checks
+
+- No new dependencies; no generator/pose/evaluator/tests/docs touched; no broad test run.
+- Temporary Vite on `127.0.0.1:5173`: HTTP 200 for `somerville.html`, `somerville-viewer.js`, `somerville-dressed-report.json` (no other listener was running; temp server stopped after curl).
+- **Git:** `9957391`, `74dd064` on `feature/somerville-egc-knoto-id`, pushed to origin.
+
+## Behavior notes
+
+- All prior model options, `refreshFinalOption()` final gate, and load-time-only geometry unchanged.
+- `dressed-candidate` 404 still shows the existing missing-file message; when it exists later, badges track the report only after SHA match.The Somerville viewer follow-up is done and pushed on `feature/somerville-egc-knoto-id` (commits `9957391` and `74dd064`).
+
+Only `somerville.html` and `src/somerville-viewer.js` changed: **整理後靜態候選** label, SHA-gated merge from `reports/somerville-dressed-report.json` for dressed candidates, tube checks overriding static PASS badges, core framing kept when switching orthographic views, and a **全繩取景** button. A quick curl smoke test against a temporary Vite instance passed; that dev server was stopped afterward (SIGTERM), which is expected.

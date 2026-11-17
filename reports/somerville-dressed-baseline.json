@@ -1,0 +1,36 @@
+{
+  "reference": "data/somerville-final/loose-v2.json",
+  "sha256": "60c3548a7feb7c8d8f3b9bba74ecc29134baf35c937aee019884c1c726ccd601",
+  "units": "m",
+  "totalLength": 7.138936637394963,
+  "byRole": {
+    "tail": 0.4068041535000124,
+    "loop-rim": 0.5276128600158574,
+    "loop-to-cuff": 0.4463864199771299,
+    "cuff": 1.4500508889784516,
+    "cuff-to-first": 1.8902201030392514,
+    "first-passage": 0.19165984892070445,
+    "over-root": 0.3806123216270721,
+    "under-approach": 0.45771510373452406,
+    "under-cuff": 0.23947774684881012,
+    "return-approach": 0.5340667117036542,
+    "return-passage": 0.19190658042542363,
+    "bight-leg": 0.3659028780608946,
+    "fold": 0.05652102056317591
+  },
+  "selectedCoreRoles": [
+    "cuff-to-first",
+    "return-approach",
+    "loop-rim",
+    "under-approach",
+    "loop-to-cuff",
+    "over-root"
+  ],
+  "selectedCoreLength": 4.236613520097489,
+  "coreCenter": [
+    0.012,
+    -0.11,
+    -0.05
+  ],
+  "note": "Geometric material budget of historical engineering candidate, not video measurement."
+}

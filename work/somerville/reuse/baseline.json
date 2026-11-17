@@ -1,0 +1,9 @@
+{
+  "baseline": "loose-v2",
+  "source": "data/somerville-final/loose-v2.json",
+  "sha256": "60c3548a7feb7c8d8f3b9bba74ecc29134baf35c937aee019884c1c726ccd601",
+  "materialLengthM": 7.138936637394829,
+  "pointCount": 3500,
+  "diameterM": 0.006,
+  "purpose": "Frozen input for material lineage. Tighter generated shapes are targets, not replacement material states."
+}

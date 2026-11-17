@@ -1,0 +1,13 @@
+import {buildSomerville,SOMERVILLE_PRESETS,seedClearance} from '../../../src/somerville-build.js';
+import {relaxRope} from '../../../src/somerville-relax.js';
+import {makeTube,checkTube} from '../../../src/rope-tube.js';
+import {validateOperations} from '../../../src/somerville-verify.js';
+const iters=+(process.argv[2]||200);
+const d=buildSomerville(SOMERVILLE_PRESETS.tightCuff),p=d.ropes[0].points,n=p.length;
+const drop=q=>[q[0],q[1],q[2]-0.04];
+const t0=Date.now();
+const r=relaxRope(p,{iterations:iters,targets:[{indices:[0,n-1],positions:[drop(p[0]),drop(p[n-1])],weight:0.2}],onIteration:(h)=>{if(h.iteration%100===0)console.log(JSON.stringify(h),Date.now()-t0,'ms')}});
+console.log('ms/iter',(Date.now()-t0)/iters,'rejected',r.rejected,'maxStretch',r.maxStretch);
+const moved=Math.max(...r.points.map((q,i)=>Math.hypot(...q.map((v,k)=>v-p[i][k]))));console.log('max displacement mm',moved*1000,'E0 z',p[0][2],'->',r.points[0][2]);
+d.ropes[0].points=r.points;const sc=seedClearance(d);console.log('seed',sc.penetratingPairs,sc.minimumNonlocalGap,sc.minimumColumnGap);
+console.log(checkTube(makeTube(r.points,.003),{column:d.somerville.column}));console.log(validateOperations(d).checks);

@@ -5,13 +5,35 @@ A small finite-thickness segment collision demonstrator. Geometry is an engine-i
 ## Run
 
 ```sh
-npm install
+npm ci
 npm test
-npm run report
-npm run generate:crossing
-npm run verify:blender
+npm run verify:geometry
+npm run build
 npm run dev
 ```
+
+Current status (2026-11-05): **Somerville is not complete**. The current
+deliverable is the dressed static seed `data/somerville-final/loose-v3.json`
+(6 mm rope, 3 mm tube radius): zero nonlocal centerline penetrations, +0.317 mm
+minimum nonlocal surface gap, tube self-intersection/fold/column checks 0/0/0 at
+8/12/16/24 radial segments, nine final operation checks PASS, total length
+7.138936637394829 m. The video pose is **not** passed: `staticReconstruction`
+FAIL (centerline RMS 109 px against a 30 px gate), `crossingPose` and
+`motionContinuity` UNVERIFIED. `npm run generate:dressed` regenerates the seed
+and the pose report; see the top of `handoff.md` for which files are current and
+which are historical.
+
+`npm run verify:geometry` still checks the historical Phase 5 integration
+candidate (74 penetrating pairs: 21 cuff/core, 53 interface) with a stable
+distance kernel and writes `reports/verification/current.json`. Its successful
+exit means the regression controls match; it does **not** accept that
+historical candidate. See [the independent CLI review](docs/cli-review.md).
+
+`npm run build` includes runtime JSON, reports, diagrams and cached reference
+images/PDF for both viewers. Preview with `npx vite preview`; optional local
+videos remain excluded. No Blender installation is needed for these checks.
+Historical Blender commands/results below describe earlier experiments only.
+
 
 The local source videos under `references/video/` are intentionally excluded
 from Git because each exceeds GitHub's regular-file limit. The evidence ledger
@@ -82,3 +104,11 @@ failed geometric construction, not treated as proof of a topology contradiction.
 See `reports/phase5-recovery/README.md` for numerical results, failed local
 attempts, and remaining constraints. The Phase 5 viewer includes the four local
 recovery stages and the failed integration for inspection.
+
+## Somerville topology restart (experimental)
+
+The `feature/somerville-egc-knoto-id` branch adds an evidence-gated Extended
+Gauss Code / Knoto-ID export path and a nominal homogenized 6 mm hemp-rope
+material record. Run `npm run audit:somerville` to see what the original
+Phase 4B evidence **does not yet establish**. The historical Phase 5 geometry
+remains failed. See [the integration notes](docs/somerville-egc-integration.md).

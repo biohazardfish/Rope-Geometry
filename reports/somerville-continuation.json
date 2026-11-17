@@ -1,0 +1,570 @@
+{
+  "status": "FAIL",
+  "stage": "bounded material continuation",
+  "referenceId": "60c3548a7feb7c8d8f3b9bba74ecc29134baf35c937aee019884c1c726ccd601",
+  "acceptedBlocks": 8,
+  "requestedBlocks": 8,
+  "iterationsPerBlock": 20,
+  "material": {
+    "referenceLength": 7.138936637394829,
+    "geometryLength": 7.138936637394831,
+    "lengthChange": 2.6645352591003757e-15,
+    "maxSegmentStretch": 8.881784197001252e-16
+  },
+  "tube": {
+    "valid": true,
+    "status": "TUBE_GEOMETRY_PASS",
+    "selfIntersections": 0,
+    "intersectionPairs": [],
+    "foldedFaces": 0,
+    "columnPenetrations": 0,
+    "minimumColumnGap": 0.0009447575681697309,
+    "testedPairs": 532740,
+    "triangles": 84000,
+    "epsilon": 0.000001,
+    "topologyVerified": false
+  },
+  "operations": {
+    "valid": true,
+    "scope": "construction",
+    "rootRelation": {
+      "status": "UNVERIFIED",
+      "hits": []
+    },
+    "checks": {
+      "singleMaterialPath": true,
+      "twoTurns": true,
+      "pairedCuffOrder": true,
+      "loopAperture": true,
+      "firstPassage": true,
+      "secondSameDirection": true,
+      "underAllFour": true,
+      "diagonalOverFrontCuff": true,
+      "underCuffDirection": true
+    },
+    "cuffTurns": [
+      {
+        "limb": 0,
+        "turns": 2.001690358372953
+      },
+      {
+        "limb": 1,
+        "turns": 2.002321685290586
+      }
+    ],
+    "loopTurns": [
+      1.0038913936283338,
+      1.001504141316083
+    ],
+    "first": [
+      {
+        "limb": 0,
+        "segment": 1191,
+        "point": [
+          -0.006771526631459006,
+          -0.11,
+          -0.052842408437772735
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      },
+      {
+        "limb": 1,
+        "segment": 2307,
+        "point": [
+          0.0013342411013537144,
+          -0.11,
+          -0.047479251544961215
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      }
+    ],
+    "second": [
+      {
+        "limb": 0,
+        "segment": 1624,
+        "point": [
+          0.030101488879767043,
+          -0.11,
+          -0.04641578671382077
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      },
+      {
+        "limb": 1,
+        "segment": 1874,
+        "point": [
+          0.023307185285871397,
+          -0.11,
+          -0.05365969273820866
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      }
+    ],
+    "under": [
+      {
+        "limb": 0,
+        "cuffLimb": 1,
+        "segment": 1433,
+        "cuffSegment": 3024,
+        "point": [
+          -0.013026684925114352,
+          -0.03771929582536578,
+          0.005013690107128293
+        ],
+        "depthGap": 0.019521034008861023
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 0,
+        "segment": 1437,
+        "cuffSegment": 475,
+        "point": [
+          -0.0030304500065939845,
+          -0.03771198025195877,
+          0.005018336222059795
+        ],
+        "depthGap": 0.019478782967836956
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 1,
+        "segment": 1446,
+        "cuffSegment": 2842,
+        "point": [
+          0.0168875297684196,
+          -0.03771201142727815,
+          0.00501037849393029
+        ],
+        "depthGap": 0.019416632900764674
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 0,
+        "segment": 1450,
+        "cuffSegment": 656,
+        "point": [
+          0.026899934047291414,
+          -0.03770943022202063,
+          0.005008246576985526
+        ],
+        "depthGap": 0.01931397115098122
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 0,
+        "segment": 2047,
+        "cuffSegment": 661,
+        "point": [
+          0.02773176728407218,
+          -0.03773863681208508,
+          -0.0049758177404352075
+        ],
+        "depthGap": 0.019325298435921637
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 1,
+        "segment": 2052,
+        "cuffSegment": 2837,
+        "point": [
+          0.017782807214391964,
+          -0.03774432700734854,
+          -0.004976140620486706
+        ],
+        "depthGap": 0.019244476100320387
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 0,
+        "segment": 2060,
+        "cuffSegment": 480,
+        "point": [
+          -0.002209677386813142,
+          -0.03775278353169866,
+          -0.004959256639369348
+        ],
+        "depthGap": 0.019520660718022588
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 1,
+        "segment": 2064,
+        "cuffSegment": 3019,
+        "point": [
+          -0.01222860844361569,
+          -0.03771334644563445,
+          -0.004968330874299591
+        ],
+        "depthGap": 0.019432934309553736
+      }
+    ],
+    "diagonal": [
+      {
+        "limb": 0,
+        "perCuff": [
+          2,
+          3
+        ]
+      },
+      {
+        "limb": 1,
+        "perCuff": [
+          2,
+          2
+        ]
+      }
+    ],
+    "meaning": "Numerical realization of the declared operational route; not an isotopy certificate or source-pose measurement"
+  },
+  "finalOperations": {
+    "valid": false,
+    "scope": "final",
+    "rootRelation": {
+      "status": "UNVERIFIED",
+      "hits": []
+    },
+    "checks": {
+      "singleMaterialPath": true,
+      "twoTurns": true,
+      "pairedCuffOrder": true,
+      "loopAperture": true,
+      "firstPassage": true,
+      "secondSameDirection": true,
+      "underAllFour": true,
+      "underCuffDirection": true,
+      "overRootBranches": false
+    },
+    "cuffTurns": [
+      {
+        "limb": 0,
+        "turns": 2.001690358372953
+      },
+      {
+        "limb": 1,
+        "turns": 2.002321685290586
+      }
+    ],
+    "loopTurns": [
+      1.0038913936283338,
+      1.001504141316083
+    ],
+    "first": [
+      {
+        "limb": 0,
+        "segment": 1191,
+        "point": [
+          -0.006771526631459006,
+          -0.11,
+          -0.052842408437772735
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      },
+      {
+        "limb": 1,
+        "segment": 2307,
+        "point": [
+          0.0013342411013537144,
+          -0.11,
+          -0.047479251544961215
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      }
+    ],
+    "second": [
+      {
+        "limb": 0,
+        "segment": 1624,
+        "point": [
+          0.030101488879767043,
+          -0.11,
+          -0.04641578671382077
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      },
+      {
+        "limb": 1,
+        "segment": 1874,
+        "point": [
+          0.023307185285871397,
+          -0.11,
+          -0.05365969273820866
+        ],
+        "insideBothRims": true,
+        "direction": 1
+      }
+    ],
+    "under": [
+      {
+        "limb": 0,
+        "cuffLimb": 1,
+        "segment": 1433,
+        "cuffSegment": 3024,
+        "point": [
+          -0.013026684925114352,
+          -0.03771929582536578,
+          0.005013690107128293
+        ],
+        "depthGap": 0.019521034008861023
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 0,
+        "segment": 1437,
+        "cuffSegment": 475,
+        "point": [
+          -0.0030304500065939845,
+          -0.03771198025195877,
+          0.005018336222059795
+        ],
+        "depthGap": 0.019478782967836956
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 1,
+        "segment": 1446,
+        "cuffSegment": 2842,
+        "point": [
+          0.0168875297684196,
+          -0.03771201142727815,
+          0.00501037849393029
+        ],
+        "depthGap": 0.019416632900764674
+      },
+      {
+        "limb": 0,
+        "cuffLimb": 0,
+        "segment": 1450,
+        "cuffSegment": 656,
+        "point": [
+          0.026899934047291414,
+          -0.03770943022202063,
+          0.005008246576985526
+        ],
+        "depthGap": 0.01931397115098122
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 0,
+        "segment": 2047,
+        "cuffSegment": 661,
+        "point": [
+          0.02773176728407218,
+          -0.03773863681208508,
+          -0.0049758177404352075
+        ],
+        "depthGap": 0.019325298435921637
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 1,
+        "segment": 2052,
+        "cuffSegment": 2837,
+        "point": [
+          0.017782807214391964,
+          -0.03774432700734854,
+          -0.004976140620486706
+        ],
+        "depthGap": 0.019244476100320387
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 0,
+        "segment": 2060,
+        "cuffSegment": 480,
+        "point": [
+          -0.002209677386813142,
+          -0.03775278353169866,
+          -0.004959256639369348
+        ],
+        "depthGap": 0.019520660718022588
+      },
+      {
+        "limb": 1,
+        "cuffLimb": 1,
+        "segment": 2064,
+        "cuffSegment": 3019,
+        "point": [
+          -0.01222860844361569,
+          -0.03771334644563445,
+          -0.004968330874299591
+        ],
+        "depthGap": 0.019432934309553736
+      }
+    ],
+    "diagonal": [
+      {
+        "limb": 0,
+        "perCuff": [
+          2,
+          3
+        ]
+      },
+      {
+        "limb": 1,
+        "perCuff": [
+          2,
+          2
+        ]
+      }
+    ],
+    "meaning": "Numerical realization of the declared operational route; not an isotopy certificate or source-pose measurement"
+  },
+  "log": [
+    {
+      "block": 0,
+      "fraction": 0.125,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 0,
+      "maxSegmentStretch": 4.85722573273506e-17,
+      "minGap": 0.003654594142726692,
+      "displacement": 0.0009486301658970095,
+      "targetReleasedLength": 0.3465674326224182,
+      "surfaceRejects": 0,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 0
+    },
+    {
+      "block": 1,
+      "fraction": 0.25,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 0,
+      "maxSegmentStretch": 5.117434254131581e-17,
+      "minGap": 0.0035993693951782615,
+      "displacement": 0.0012519769311109743,
+      "targetReleasedLength": 0.6983953117288673,
+      "surfaceRejects": 0,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 0
+    },
+    {
+      "block": 2,
+      "fraction": 0.375,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 8.881784197001252e-16,
+      "maxSegmentStretch": 8.881784197001252e-16,
+      "minGap": 0.003578741130629554,
+      "displacement": 0.0016678928374095731,
+      "targetReleasedLength": 1.0546936026795501,
+      "surfaceRejects": 0,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 0
+    },
+    {
+      "block": 3,
+      "fraction": 0.5,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 0,
+      "maxSegmentStretch": 9.73613550891983e-17,
+      "minGap": 0.0035611889188461553,
+      "displacement": 0.002103098209574823,
+      "targetReleasedLength": 1.3915582883235986,
+      "surfaceRejects": 235,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 3
+    },
+    {
+      "block": 4,
+      "fraction": 0.625,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 1.7763568394002505e-15,
+      "maxSegmentStretch": 8.881784197001252e-16,
+      "minGap": 0.0035521904268956024,
+      "displacement": 0.002386596286999827,
+      "targetReleasedLength": 1.728223138351983,
+      "surfaceRejects": 341,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 10
+    },
+    {
+      "block": 5,
+      "fraction": 0.75,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 2.6645352591003757e-15,
+      "maxSegmentStretch": 8.881784197001252e-16,
+      "minGap": 0.0035478012608845047,
+      "displacement": 0.0025763335401486915,
+      "targetReleasedLength": 2.068393378703983,
+      "surfaceRejects": 340,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 9
+    },
+    {
+      "block": 6,
+      "fraction": 0.875,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 1.7763568394002505e-15,
+      "maxSegmentStretch": 8.881784197001252e-16,
+      "minGap": 0.003543422503361345,
+      "displacement": 0.002795181051594888,
+      "targetReleasedLength": 2.402962764819997,
+      "surfaceRejects": 316,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 10
+    },
+    {
+      "block": 7,
+      "fraction": 1,
+      "accepted": true,
+      "tube": true,
+      "lengthChange": 2.6645352591003757e-15,
+      "maxSegmentStretch": 8.881784197001252e-16,
+      "minGap": 0.00353771086508357,
+      "displacement": 0.0031186251763643735,
+      "targetReleasedLength": 2.7308611163671515,
+      "surfaceRejects": 332,
+      "tubeResidual": {
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0
+      },
+      "rejected": 8
+    }
+  ],
+  "limitations": [
+    "Full swept surface motion remains unverified",
+    "Role boundaries retain baseline material intervals; sliding operation correspondences are not certified",
+    "Not a final video-aligned knot"
+  ]
+}

@@ -1,0 +1,71 @@
+✖ a reviewed crossing survives subdivision through the crossing itself (1.276167ms)
+✖ extra visible length cannot disappear by densely sampling a slanted straight rope (1.469667ms)
+✖ self-consistent short material coordinates do not satisfy the fixed Somerville total (5.286917ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 78.690458
+
+✖ failing tests:
+
+test at test/somerville-pose-invariance.test.js:11:1
+✖ a reviewed crossing survives subdivision through the crossing itself (1.276167ms)
+  AssertionError [ERR_ASSERTION]: {"status":"FAIL","crossings":[{"id":"known-cross","bindingStatus":"reviewed","status":"FAIL","explicit":true,"residualPx":null,"reason":"no projected segment crossing matches the declared roles and material ranges"}],"thresholdPx":30}
+  
+  'FAIL' !== 'PASS'
+  
+      at TestContext.<anonymous> (file:///Users/taichengwong/Projects/RopeGeometry/test/somerville-pose-invariance.test.js:21:12)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/somerville-pose-invariance.test.js:26:1
+✖ extra visible length cannot disappear by densely sampling a slanted straight rope (1.469667ms)
+  AssertionError [ERR_ASSERTION]: 101 samples: 2 px
+      at TestContext.<anonymous> (file:///Users/taichengwong/Projects/RopeGeometry/test/somerville-pose-invariance.test.js:32:12)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/somerville-pose-invariance.test.js:36:1
+✖ self-consistent short material coordinates do not satisfy the fixed Somerville total (5.286917ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'PASS' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file:///Users/taichengwong/Projects/RopeGeometry/test/somerville-pose-invariance.test.js:45:12)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

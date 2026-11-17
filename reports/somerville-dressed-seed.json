@@ -1,0 +1,2273 @@
+{
+  "stage": "loose-v3",
+  "frozenLooseV3": true,
+  "tubeRadius": 0.003,
+  "fixedPreset": {
+    "options": {
+      "route": "dressed",
+      "columnRadius": 0.0275,
+      "diameter": 0.006,
+      "clearance": 0.0002,
+      "step": 0.002,
+      "tailStep": 0.011,
+      "spread": 0.0085,
+      "totalLength": 7.138936637394829,
+      "loopRadius": 0.02,
+      "loopTurns": 1.06,
+      "neckAngle": -2.35,
+      "rimPitch": -0.016,
+      "coreAngle": 1.02,
+      "coreOffset": 0.036,
+      "coreX": 0,
+      "planeTilt": 0,
+      "underAngle": 0.16,
+      "cuffWidth": 0.034,
+      "cuffLift": 0.0055,
+      "frontBulge": 0.011,
+      "bulgeWidth": 0.48,
+      "underInset": 0.0088,
+      "passSeparation": 0.016,
+      "passBehind": 0.006,
+      "passFront": 0.012,
+      "rootDepth": 0.09,
+      "rootLen": 0.026,
+      "bendSpan": 0.02,
+      "tailStub": 0.05,
+      "foldRadius": 0.012,
+      "bightReach": 0.07,
+      "bightDrop": 0.055,
+      "limbLower": 0.08,
+      "edgeGuardRadius": 0.012,
+      "tangentScale": 0.42,
+      "fairingIterations": 36,
+      "fairingThreshold": 0.35,
+      "frameFairingIterations": 18
+    },
+    "finalValid": true,
+    "gates": {
+      "finalOperations": true,
+      "constructionDiagonalAbsent": true,
+      "penetratingPairs": true,
+      "minimumNonlocalGap": true,
+      "minimumColumnGap": true,
+      "tube": true,
+      "lengthResidual": true,
+      "spread": true
+    },
+    "penetratingPairs": 0,
+    "minimumNonlocalGap": 0.00031703142349089053,
+    "minimumColumnGap": 0.0016545350845564915,
+    "closest": {
+      "i": 817,
+      "j": 1218,
+      "roles": [
+        "over-root/0",
+        "fold"
+      ],
+      "gap": 0.00031703142349089053
+    },
+    "groups": {},
+    "tube": {
+      "valid": true,
+      "selfIntersections": 0,
+      "foldedFaces": 0,
+      "columnPenetrations": 0,
+      "minimumColumnGap": 0.0017005967045297873,
+      "triangles": 58416,
+      "radius": 0.003,
+      "radialSegments": 12,
+      "intersectionSample": {},
+      "foldedByRole": {},
+      "radialSweep": [
+        {
+          "radialSegments": 8,
+          "valid": true,
+          "selfIntersections": 0,
+          "foldedFaces": 0,
+          "columnPenetrations": 0
+        },
+        {
+          "radialSegments": 16,
+          "valid": true,
+          "selfIntersections": 0,
+          "foldedFaces": 0,
+          "columnPenetrations": 0
+        },
+        {
+          "radialSegments": 24,
+          "valid": true,
+          "selfIntersections": 0,
+          "foldedFaces": 0,
+          "columnPenetrations": 0
+        }
+      ],
+      "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+    },
+    "silhouette": {
+      "allNonTail": {
+        "points": 2024,
+        "width": 0.14304953792564773,
+        "height": 0.18811700909289492,
+        "includes": "every non-tail point, including the cuff and the bight"
+      },
+      "lockingCore": {
+        "points": 388,
+        "width": 0.07068083494855634,
+        "height": 0.1072969666433172,
+        "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+        "modellingChoice": true,
+        "imageTarget": [
+          0.034,
+          0.028
+        ],
+        "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+      }
+    },
+    "material": {
+      "origin": "E0",
+      "totalLength": 7.138936637394829,
+      "spare": "both-tails",
+      "staticSeed": true,
+      "lineage": null,
+      "coreMaterial": 3.6474265713465983,
+      "tailMaterial": 3.49151006604823,
+      "lengthResidual": 0
+    },
+    "sections": [
+      {
+        "role": "tail/0",
+        "length": 1.74670363206793
+      },
+      {
+        "role": "loop-rim/0",
+        "length": 0.13414858120590867
+      },
+      {
+        "role": "loop-to-cuff/0",
+        "length": 0.1409040374706172
+      },
+      {
+        "role": "cuff/0",
+        "length": 0.44015734280923535
+      },
+      {
+        "role": "cuff-to-first/0",
+        "length": 0.2858088870353752
+      },
+      {
+        "role": "first-passage/0",
+        "length": 0.01790735538100119
+      },
+      {
+        "role": "over-root/0",
+        "length": 0.16239987525154342
+      },
+      {
+        "role": "under-approach/0",
+        "length": 0.1856488938600238
+      },
+      {
+        "role": "under-cuff/0",
+        "length": 0.07100178455364725
+      },
+      {
+        "role": "return-approach/0",
+        "length": 0.3141516523624208
+      },
+      {
+        "role": "return-passage/0",
+        "length": 0.016170206818730826
+      },
+      {
+        "role": "bight-leg/0",
+        "length": 0.022219821811048313
+      },
+      {
+        "role": "fold",
+        "length": 0.03765618153538064
+      },
+      {
+        "role": "bight-leg/1",
+        "length": 0.020427366906946798
+      },
+      {
+        "role": "return-passage/1",
+        "length": 0.017718513840967898
+      },
+      {
+        "role": "return-approach/1",
+        "length": 0.3176341424038922
+      },
+      {
+        "role": "under-cuff/1",
+        "length": 0.07103045413769182
+      },
+      {
+        "role": "under-approach/1",
+        "length": 0.1856208688203047
+      },
+      {
+        "role": "over-root/1",
+        "length": 0.18894014600405296
+      },
+      {
+        "role": "first-passage/1",
+        "length": 0.016711327811635535
+      },
+      {
+        "role": "cuff-to-first/1",
+        "length": 0.2810795948243463
+      },
+      {
+        "role": "cuff/1",
+        "length": 0.4402372561346528
+      },
+      {
+        "role": "loop-to-cuff/1",
+        "length": 0.14570537750609702
+      },
+      {
+        "role": "loop-rim/1",
+        "length": 0.13414690286107778
+      },
+      {
+        "role": "tail/1",
+        "length": 1.7448064339803002
+      }
+    ],
+    "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+  },
+  "selectionPolicy": "fixed preset passed every gate; grid recorded for reference only",
+  "selectedOptions": {},
+  "selected": {
+    "finalValid": true,
+    "gates": {
+      "finalOperations": true,
+      "constructionDiagonalAbsent": true,
+      "penetratingPairs": true,
+      "minimumNonlocalGap": true,
+      "minimumColumnGap": true,
+      "tube": true,
+      "lengthResidual": true,
+      "spread": true
+    },
+    "penetratingPairs": 0,
+    "minimumNonlocalGap": 0.00031703142349089053,
+    "minimumColumnGap": 0.0016545350845564915,
+    "closest": {
+      "i": 817,
+      "j": 1218,
+      "roles": [
+        "over-root/0",
+        "fold"
+      ],
+      "gap": 0.00031703142349089053
+    },
+    "groups": {},
+    "tube": {
+      "valid": true,
+      "selfIntersections": 0,
+      "foldedFaces": 0,
+      "columnPenetrations": 0,
+      "minimumColumnGap": 0.0017005967045297873,
+      "triangles": 58416,
+      "radius": 0.003,
+      "radialSegments": 12,
+      "intersectionSample": {},
+      "foldedByRole": {},
+      "radialSweep": [
+        {
+          "radialSegments": 8,
+          "valid": true,
+          "selfIntersections": 0,
+          "foldedFaces": 0,
+          "columnPenetrations": 0
+        },
+        {
+          "radialSegments": 16,
+          "valid": true,
+          "selfIntersections": 0,
+          "foldedFaces": 0,
+          "columnPenetrations": 0
+        },
+        {
+          "radialSegments": 24,
+          "valid": true,
+          "selfIntersections": 0,
+          "foldedFaces": 0,
+          "columnPenetrations": 0
+        }
+      ],
+      "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+    },
+    "silhouette": {
+      "allNonTail": {
+        "points": 2024,
+        "width": 0.14304953792564773,
+        "height": 0.18811700909289492,
+        "includes": "every non-tail point, including the cuff and the bight"
+      },
+      "lockingCore": {
+        "points": 388,
+        "width": 0.07068083494855634,
+        "height": 0.1072969666433172,
+        "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+        "modellingChoice": true,
+        "imageTarget": [
+          0.034,
+          0.028
+        ],
+        "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+      }
+    },
+    "material": {
+      "origin": "E0",
+      "totalLength": 7.138936637394829,
+      "spare": "both-tails",
+      "staticSeed": true,
+      "lineage": null,
+      "coreMaterial": 3.6474265713465983,
+      "tailMaterial": 3.49151006604823,
+      "lengthResidual": 0
+    },
+    "sections": [
+      {
+        "role": "tail/0",
+        "length": 1.74670363206793
+      },
+      {
+        "role": "loop-rim/0",
+        "length": 0.13414858120590867
+      },
+      {
+        "role": "loop-to-cuff/0",
+        "length": 0.1409040374706172
+      },
+      {
+        "role": "cuff/0",
+        "length": 0.44015734280923535
+      },
+      {
+        "role": "cuff-to-first/0",
+        "length": 0.2858088870353752
+      },
+      {
+        "role": "first-passage/0",
+        "length": 0.01790735538100119
+      },
+      {
+        "role": "over-root/0",
+        "length": 0.16239987525154342
+      },
+      {
+        "role": "under-approach/0",
+        "length": 0.1856488938600238
+      },
+      {
+        "role": "under-cuff/0",
+        "length": 0.07100178455364725
+      },
+      {
+        "role": "return-approach/0",
+        "length": 0.3141516523624208
+      },
+      {
+        "role": "return-passage/0",
+        "length": 0.016170206818730826
+      },
+      {
+        "role": "bight-leg/0",
+        "length": 0.022219821811048313
+      },
+      {
+        "role": "fold",
+        "length": 0.03765618153538064
+      },
+      {
+        "role": "bight-leg/1",
+        "length": 0.020427366906946798
+      },
+      {
+        "role": "return-passage/1",
+        "length": 0.017718513840967898
+      },
+      {
+        "role": "return-approach/1",
+        "length": 0.3176341424038922
+      },
+      {
+        "role": "under-cuff/1",
+        "length": 0.07103045413769182
+      },
+      {
+        "role": "under-approach/1",
+        "length": 0.1856208688203047
+      },
+      {
+        "role": "over-root/1",
+        "length": 0.18894014600405296
+      },
+      {
+        "role": "first-passage/1",
+        "length": 0.016711327811635535
+      },
+      {
+        "role": "cuff-to-first/1",
+        "length": 0.2810795948243463
+      },
+      {
+        "role": "cuff/1",
+        "length": 0.4402372561346528
+      },
+      {
+        "role": "loop-to-cuff/1",
+        "length": 0.14570537750609702
+      },
+      {
+        "role": "loop-rim/1",
+        "length": 0.13414690286107778
+      },
+      {
+        "role": "tail/1",
+        "length": 1.7448064339803002
+      }
+    ],
+    "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+  },
+  "gridBest": {
+    "options": {
+      "coreOffset": 0.036,
+      "rootDepth": 0.104,
+      "rimPitch": -0.016
+    },
+    "gates": {
+      "finalOperations": true,
+      "constructionDiagonalAbsent": true,
+      "penetratingPairs": true,
+      "minimumNonlocalGap": true,
+      "minimumColumnGap": true,
+      "tube": true,
+      "lengthResidual": true,
+      "spread": true
+    },
+    "minimumNonlocalGap": 0.0004865052442023232,
+    "pointsSha256": "030a1139b2a2a11422b9d77bb1e0a31bc99273e0e6dfe4fbaac7825177f99a37"
+  },
+  "trials": [
+    {
+      "options": {},
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": true,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.00031703142349089053,
+      "minimumColumnGap": 0.0016545350845564915,
+      "closest": {
+        "i": 817,
+        "j": 1218,
+        "roles": [
+          "over-root/0",
+          "fold"
+        ],
+        "gap": 0.00031703142349089053
+      },
+      "groups": {},
+      "tube": {
+        "valid": true,
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0017005967045297873,
+        "triangles": 58416,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {},
+        "foldedByRole": {},
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2024,
+          "width": 0.14304953792564773,
+          "height": 0.18811700909289492,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 388,
+          "width": 0.07068083494855634,
+          "height": 0.1072969666433172,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.6474265713465983,
+        "tailMaterial": 3.49151006604823,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.74670363206793
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13414858120590867
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.1409040374706172
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015734280923535
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.2858088870353752
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.01790735538100119
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.16239987525154342
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.1856488938600238
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100178455364725
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.3141516523624208
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.3176341424038922
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.1856208688203047
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.18894014600405296
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.016711327811635535
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.2810795948243463
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402372561346528
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.14570537750609702
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13414690286107778
+        },
+        {
+          "role": "tail/1",
+          "length": 1.7448064339803002
+        }
+      ],
+      "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.09,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": true,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.00031703142349089053,
+      "minimumColumnGap": 0.0016545350845564915,
+      "closest": {
+        "i": 817,
+        "j": 1218,
+        "roles": [
+          "over-root/0",
+          "fold"
+        ],
+        "gap": 0.00031703142349089053
+      },
+      "groups": {},
+      "tube": {
+        "valid": true,
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0017005967045297873,
+        "triangles": 58416,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {},
+        "foldedByRole": {},
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2024,
+          "width": 0.14304953792564773,
+          "height": 0.18811700909289492,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 388,
+          "width": 0.07068083494855634,
+          "height": 0.1072969666433172,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.6474265713465983,
+        "tailMaterial": 3.49151006604823,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.74670363206793
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13414858120590867
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.1409040374706172
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015734280923535
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.2858088870353752
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.01790735538100119
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.16239987525154342
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.1856488938600238
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100178455364725
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.3141516523624208
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.3176341424038922
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.1856208688203047
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.18894014600405296
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.016711327811635535
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.2810795948243463
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402372561346528
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.14570537750609702
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13414690286107778
+        },
+        {
+          "role": "tail/1",
+          "length": 1.7448064339803002
+        }
+      ],
+      "pointsSha256": "3db0782f4c0edbe4e6f3b4df30b5e14a22976d47d464c676e505bf57c8b33f59"
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.09,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": false,
+        "minimumColumnGap": true,
+        "tube": false,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.00008173111968377226,
+      "minimumColumnGap": 0.0016545350845564915,
+      "closest": {
+        "i": 1615,
+        "j": 2158,
+        "roles": [
+          "over-root/1",
+          "loop-to-cuff/1"
+        ],
+        "gap": 0.00008173111968377226
+      },
+      "groups": {},
+      "tube": {
+        "valid": false,
+        "selfIntersections": 0,
+        "foldedFaces": 2,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0017008140313772568,
+        "triangles": 58896,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {},
+        "foldedByRole": {
+          "loop-to-cuff/1": 2
+        },
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": false,
+            "selfIntersections": 2,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": false,
+            "selfIntersections": 0,
+            "foldedFaces": 4,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2046,
+          "width": 0.1430640614367339,
+          "height": 0.1881107677743688,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 390,
+          "width": 0.07063476189787937,
+          "height": 0.10540976437354987,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.6812972643473842,
+        "tailMaterial": 3.4576393730474444,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.7298896109982977
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13470723584153732
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.14746405224478276
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015540919911
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.29608532601034065
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.017907355381000745
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.1623231569964858
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.185558267496718
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100178455364725
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.3141616330212087
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.31764376626953483
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.18560924223638597
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.18885721771777764
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.01671132783037521
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.29051847919874074
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402334856290242
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.1525824198236272
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13455455984632092
+        },
+        {
+          "role": "tail/1",
+          "length": 1.7277497620491467
+        }
+      ],
+      "pointsSha256": "0b078ff803a24047f004e66404848a5a25153eb53ec738bfaf35fe07d2ed89b0"
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.104,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": true,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.0004865052442023232,
+      "minimumColumnGap": 0.0004649293917375298,
+      "closest": {
+        "i": 263,
+        "j": 2279,
+        "roles": [
+          "loop-rim/0",
+          "loop-rim/1"
+        ],
+        "gap": 0.0004865052442023232
+      },
+      "groups": {},
+      "tube": {
+        "valid": true,
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.00047034641264161875,
+        "triangles": 59568,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {},
+        "foldedByRole": {},
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2082,
+          "width": 0.14306028370304258,
+          "height": 0.2000405468303813,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 404,
+          "width": 0.07087146282090653,
+          "height": 0.11922050438080359,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.7620504559374184,
+        "tailMaterial": 3.3768861814574103,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.689391689772521
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13414858120590867
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.14090403747061675
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015734280923646
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.2858088870353752
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.01790735538100119
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.17709652827485556
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.20133857103092367
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100513545655707
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.3421097561144415
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.3455506719085104
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.2008060827160545
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.20211450974505407
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.01671132041194312
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.2810795948243463
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402372561346528
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.14570537750609702
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13414690286107778
+        },
+        {
+          "role": "tail/1",
+          "length": 1.6874944916848893
+        }
+      ],
+      "pointsSha256": "030a1139b2a2a11422b9d77bb1e0a31bc99273e0e6dfe4fbaac7825177f99a37"
+    },
+    {
+      "options": {
+        "coreOffset": 0.036,
+        "rootDepth": 0.104,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": false,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.0010909316941873342,
+      "minimumColumnGap": 0.0016657866039820812,
+      "closest": {
+        "i": 805,
+        "j": 1264,
+        "roles": [
+          "over-root/0",
+          "bight-leg/1"
+        ],
+        "gap": 0.0010909316941873342
+      },
+      "groups": {},
+      "tube": {
+        "valid": false,
+        "selfIntersections": 0,
+        "foldedFaces": 2,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0016941146899541112,
+        "triangles": 60000,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {},
+        "foldedByRole": {
+          "loop-to-cuff/1": 2
+        },
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": true,
+            "selfIntersections": 0,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": false,
+            "selfIntersections": 2,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": false,
+            "selfIntersections": 0,
+            "foldedFaces": 4,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2102,
+          "width": 0.14306029637583717,
+          "height": 0.20003430188906401,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 404,
+          "width": 0.07082552682815103,
+          "height": 0.11733329848824511,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.7928715260144306,
+        "tailMaterial": 3.3460651113803976,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.6741024801647735
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.1347072358415371
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.14746405224478343
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015540919911067
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.29608532601034065
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.017907355381000745
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.17701988866206086
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.19962641976676432
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100073049836997
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.34211065426980314
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.345551544572122
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.1993867334937951
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.20203336610356093
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.016711320422702514
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.29051847919874074
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402334856290242
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.1525824198236272
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13455455984632092
+        },
+        {
+          "role": "tail/1",
+          "length": 1.6719626312156244
+        }
+      ],
+      "pointsSha256": "523154df1b5e840b4d612cd0c4663e7fc9d5b72c927249db55db92e5a6dc3d04"
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.09,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": false,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.00031703142349086885,
+      "minimumColumnGap": 0.001654535084556554,
+      "closest": {
+        "i": 822,
+        "j": 1228,
+        "roles": [
+          "over-root/0",
+          "fold"
+        ],
+        "gap": 0.00031703142349086885
+      },
+      "groups": {},
+      "tube": {
+        "valid": false,
+        "selfIntersections": 15,
+        "foldedFaces": 2,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0016833474962891434,
+        "triangles": 58896,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {
+          "loop-to-cuff/0 | loop-to-cuff/0": 15
+        },
+        "foldedByRole": {
+          "loop-to-cuff/0": 2
+        },
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": false,
+            "selfIntersections": 16,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": false,
+            "selfIntersections": 16,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": false,
+            "selfIntersections": 29,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2048,
+          "width": 0.14305360323976252,
+          "height": 0.19152544118069237,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 390,
+          "width": 0.07068083494855637,
+          "height": 0.1072969666433172,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.6882853427915325,
+        "tailMaterial": 3.450651294603296,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.7262742463454703
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13414858120590867
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.14757358132454823
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015540919911
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.2917049685647499
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.017907355381000745
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.1623998677281464
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.18953555851357073
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100178455364725
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.3181385943223778
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.3216192416556751
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.18958675383440493
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.18893902711635224
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.016711327811635535
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.28697265946362194
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402334856290242
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.15228769857591473
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13414690286107778
+        },
+        {
+          "role": "tail/1",
+          "length": 1.7243770482578258
+        }
+      ],
+      "pointsSha256": "8c2a09ce36a620dc6492b712a6bde1747857e827944d940db9ba73ba9647e829"
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.09,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": false,
+        "minimumNonlocalGap": false,
+        "minimumColumnGap": true,
+        "tube": true,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 1,
+      "minimumNonlocalGap": -0.00001884981312605307,
+      "minimumColumnGap": 0.0016545350845564846,
+      "closest": {
+        "i": 1625,
+        "j": 2174,
+        "roles": [
+          "over-root/1",
+          "loop-to-cuff/1"
+        ],
+        "gap": -0.00001884981312605307
+      },
+      "groups": {
+        "loop-to-cuff/1 | over-root/1": 1
+      },
+      "tube": {
+        "valid": true,
+        "selfIntersections": 0,
+        "foldedFaces": 0,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0016599016185193695,
+        "triangles": 59232,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {},
+        "foldedByRole": {},
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": false,
+            "selfIntersections": 0,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": false,
+            "selfIntersections": 0,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": false,
+            "selfIntersections": 4,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2064,
+          "width": 0.1430453354906427,
+          "height": 0.19151919986216626,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 388,
+          "width": 0.07063476189787934,
+          "height": 0.1054097643735499,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.721459207771494,
+        "tailMaterial": 3.417477429623334,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.7098086392862382
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13470723584153732
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.15368237519761996
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.440153891465497
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.3016426613204164
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.017907355381000745
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.16232316453434503
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.18955806349010063
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100178455364725
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.31814642832654405
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.321626794544871
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.1896024801289391
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.18885721363834396
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.01671132783037521
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.2968124433346624
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.44023041635683224
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.15871846692967484
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13455455984632092
+        },
+        {
+          "role": "tail/1",
+          "length": 1.7076687903370962
+        }
+      ],
+      "pointsSha256": "f71b163e0c1c64cff5d61e1c9599241bbeb81dccf27fc9ec14c4985a38792961"
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.104,
+        "rimPitch": -0.016
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": false,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.0004865052442023111,
+      "minimumColumnGap": 0.001654535084556547,
+      "closest": {
+        "i": 260,
+        "j": 2300,
+        "roles": [
+          "loop-rim/0",
+          "loop-rim/1"
+        ],
+        "gap": 0.0004865052442023111
+      },
+      "groups": {},
+      "tube": {
+        "valid": false,
+        "selfIntersections": 15,
+        "foldedFaces": 2,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0016981242433583843,
+        "triangles": 60000,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {
+          "loop-to-cuff/0 | loop-to-cuff/0": 15
+        },
+        "foldedByRole": {
+          "loop-to-cuff/0": 2
+        },
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": false,
+            "selfIntersections": 16,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": false,
+            "selfIntersections": 16,
+            "foldedFaces": 0,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": false,
+            "selfIntersections": 29,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2104,
+          "width": 0.14306088049914362,
+          "height": 0.2034489789181788,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 404,
+          "width": 0.07087146282090655,
+          "height": 0.11922050438080367,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.80018500353843,
+        "tailMaterial": 3.3387516338563987,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.6703244159720194
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.13414858120590867
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.14757358132454867
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.44015540919911045
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.2917049685647499
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.017907355381000745
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.17709647937414985
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.20363979902533824
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100178455364725
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.34610291800304305
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.01617020681873127
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.34954584860937743
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.2036172816270332
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.20211638467817394
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.01671132041194312
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.28697265946362194
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.4402334856290242
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.15228769857591473
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13414690286107778
+        },
+        {
+          "role": "tail/1",
+          "length": 1.6684272178843793
+        }
+      ],
+      "pointsSha256": "d42bce679ffc5cee7b23b681de05a5a6ebcacf241e88ede03342dcfb14e41875"
+    },
+    {
+      "options": {
+        "coreOffset": 0.039999999999999994,
+        "rootDepth": 0.104,
+        "rimPitch": -0.02
+      },
+      "finalValid": true,
+      "gates": {
+        "finalOperations": true,
+        "constructionDiagonalAbsent": true,
+        "penetratingPairs": true,
+        "minimumNonlocalGap": true,
+        "minimumColumnGap": true,
+        "tube": false,
+        "lengthResidual": true,
+        "spread": true
+      },
+      "penetratingPairs": 0,
+      "minimumNonlocalGap": 0.0010909316941873325,
+      "minimumColumnGap": 0.0004649293917375298,
+      "closest": {
+        "i": 809,
+        "j": 1271,
+        "roles": [
+          "over-root/0",
+          "bight-leg/1"
+        ],
+        "gap": 0.0010909316941873325
+      },
+      "groups": {},
+      "tube": {
+        "valid": false,
+        "selfIntersections": 1,
+        "foldedFaces": 2,
+        "columnPenetrations": 0,
+        "minimumColumnGap": 0.0005666120493916342,
+        "triangles": 60336,
+        "radius": 0.003,
+        "radialSegments": 12,
+        "intersectionSample": {
+          "loop-to-cuff/1 | loop-to-cuff/1": 1
+        },
+        "foldedByRole": {
+          "loop-to-cuff/1": 2
+        },
+        "radialSweep": [
+          {
+            "radialSegments": 8,
+            "valid": false,
+            "selfIntersections": 1,
+            "foldedFaces": 1,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 16,
+            "valid": false,
+            "selfIntersections": 1,
+            "foldedFaces": 2,
+            "columnPenetrations": 0
+          },
+          {
+            "radialSegments": 24,
+            "valid": false,
+            "selfIntersections": 0,
+            "foldedFaces": 4,
+            "columnPenetrations": 0
+          }
+        ],
+        "radialSweepMeaning": "same centreline re-meshed at other resolutions; informational, the gate is the 12-segment mesh"
+      },
+      "silhouette": {
+        "allNonTail": {
+          "points": 2120,
+          "width": 0.1430608931642922,
+          "height": 0.20344273397686147,
+          "includes": "every non-tail point, including the cuff and the bight"
+        },
+        "lockingCore": {
+          "points": 402,
+          "width": 0.07082552682815108,
+          "height": 0.11733329848824509,
+          "includes": "loop-rim, first-passage, over-root, return-passage, bight-leg, fold",
+          "modellingChoice": true,
+          "imageTarget": [
+            0.034,
+            0.028
+          ],
+          "imageTargetMeans": "visible locking core on the 148 s frame, not a pass/fail gate"
+        }
+      },
+      "material": {
+        "origin": "E0",
+        "totalLength": 7.138936637394829,
+        "spare": "both-tails",
+        "staticSeed": true,
+        "lineage": null,
+        "coreMaterial": 3.8362303888101237,
+        "tailMaterial": 3.302706248584705,
+        "lengthResidual": 0
+      },
+      "sections": [
+        {
+          "role": "tail/0",
+          "length": 1.6524230487669294
+        },
+        {
+          "role": "loop-rim/0",
+          "length": 0.1347072358415371
+        },
+        {
+          "role": "loop-to-cuff/0",
+          "length": 0.15368237519761996
+        },
+        {
+          "role": "cuff/0",
+          "length": 0.440153891465497
+        },
+        {
+          "role": "cuff-to-first/0",
+          "length": 0.3016426613204164
+        },
+        {
+          "role": "first-passage/0",
+          "length": 0.017907355381000745
+        },
+        {
+          "role": "over-root/0",
+          "length": 0.17701984876564225
+        },
+        {
+          "role": "under-approach/0",
+          "length": 0.2053568629595648
+        },
+        {
+          "role": "under-cuff/0",
+          "length": 0.07100513545655707
+        },
+        {
+          "role": "return-approach/0",
+          "length": 0.34610311470207966
+        },
+        {
+          "role": "return-passage/0",
+          "length": 0.016170206818730826
+        },
+        {
+          "role": "bight-leg/0",
+          "length": 0.022219821811048313
+        },
+        {
+          "role": "fold",
+          "length": 0.03765618153538064
+        },
+        {
+          "role": "bight-leg/1",
+          "length": 0.020427366906946798
+        },
+        {
+          "role": "return-passage/1",
+          "length": 0.017718513840967898
+        },
+        {
+          "role": "return-approach/1",
+          "length": 0.34954603956665764
+        },
+        {
+          "role": "under-cuff/1",
+          "length": 0.07103045413769182
+        },
+        {
+          "role": "under-approach/1",
+          "length": 0.20482357045878086
+        },
+        {
+          "role": "over-root/1",
+          "length": 0.20203254575381102
+        },
+        {
+          "role": "first-passage/1",
+          "length": 0.016711320422702514
+        },
+        {
+          "role": "cuff-to-first/1",
+          "length": 0.2968124433346624
+        },
+        {
+          "role": "cuff/1",
+          "length": 0.44023041635683224
+        },
+        {
+          "role": "loop-to-cuff/1",
+          "length": 0.15871846692967484
+        },
+        {
+          "role": "loop-rim/1",
+          "length": 0.13455455984632092
+        },
+        {
+          "role": "tail/1",
+          "length": 1.6502831998177756
+        }
+      ],
+      "pointsSha256": "fdfc0a10170cba53286fc403e6974aaa8d9042652b2a323bbe0bbdfb59aadc82"
+    }
+  ],
+  "blockers": []
+}
